@@ -333,3 +333,36 @@ h1, h2, h3, h4, h5 {
   border-color: white;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+.image-credit-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  font-size: 0.7rem;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  text-align: right;
+  pointer-events: none; /* Let clicks pass through if needed */
+}
+
+.image-credit a {
+  color: #fff;
+  text-decoration: underline;
+  pointer-events: auto; /* Re-enable clicks for links */
+}
+
+/* Show on hover */
+.custom-card:hover .image-credit,
+.rounded-4:hover .image-credit {
+  opacity: 1;
+}

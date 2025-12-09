@@ -1,0 +1,340 @@
+---
+layout: default
+title: Venue - University of Calabria
+sponsors:
+  - image: /assets/images/ieee mb black png.png
+  - image: /assets/images_26/sponsor/IEEE_Italy_logo_small.png
+  - image: /assets/images_26/sponsor/cis.png
+  - image: /assets/images_26/sponsor/smc.png
+  - image: /assets/images_26/sponsor/unical-2.png
+  - image: /assets/images_26/sponsor/dimes.svg
+---
+
+<style>
+  /* --- Page Specific Styles --- */
+  :root {
+    --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    --text-dark: #212529;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .section-title {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    display: inline-block;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-gradient);
+    border-radius: 2px;
+  }
+
+  .hero-venue {
+    background-image: linear-gradient(rgba(13, 18, 29, 0.7), rgba(13, 18, 29, 0.6)), url('/assets/images_26/imgs/Unical_Rende.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* --- Option 1: Image Credit Overlay (For Cards) --- */
+  .image-credit-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-credit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 12px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    font-size: 0.7rem;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    text-align: right;
+    pointer-events: none;
+  }
+
+  .image-credit a {
+    color: #fff;
+    text-decoration: underline;
+    pointer-events: auto;
+  }
+
+  /* Show on hover for custom cards */
+  .custom-card:hover .image-credit,
+  .rounded-4:hover .image-credit {
+    opacity: 1;
+  }
+
+  /* Hover scale effect for images inside cards */
+  .transition-scale {
+    transition: transform 0.5s ease;
+  }
+  .custom-card:hover .transition-scale {
+    transform: scale(1.1);
+  }
+</style>
+
+<section class="hero-venue text-center">
+  <div class="container px-3 d-flex flex-column align-items-center gap-3">
+    <h1 class="display-3 fw-bolder">University of Calabria</h1>
+    <h3 class="w-75 responsive-width fw-medium text-light opacity-90">
+      Hosting IEEE SWC 2026 at the Largest Residential Campus in Italy
+    </h3>
+  </div>
+
+  <div class="position-absolute bottom-0 end-0 m-3" style="z-index: 10;">
+    <button type="button" class="btn btn-dark btn-sm rounded-circle bg-opacity-50 border-0" 
+            data-bs-toggle="tooltip" data-bs-placement="left" 
+            title="Image: Campus UNICAL by Fernando Santopaolo (CC BY-SA 4.0)"
+            style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
+      <span style="font-family: serif; font-style: italic; font-weight: bold; color: white;">i</span>
+    </button>
+  </div>
+</section>
+
+<section class="page-section container px-3 pt-5 mt-4 d-flex flex-column gap-5">
+  <div class="row align-items-center g-5">
+    <div class="col-lg-7 d-flex flex-column gap-4">
+      <div>
+        <h2 class="section-title">The "Beniamino Andreatta" Convention Center</h2>
+        <p class="fs-5 text-secondary lh-lg">
+          The IEEE Smart World Congress 2026 will take place at the prestigious <strong>"Beniamino Andreatta" Convention Center</strong> at the University of Calabria. 
+          As the architectural and cultural hub of the campus, this state-of-the-art facility is designed to host international conferences, 
+          symposiums, and academic events of all scales.
+        </p>
+        <p class="fs-5 text-secondary lh-lg">
+          The venue includes the impressive <strong>Aula Magna</strong>, a large auditorium equipped with advanced audio-visual technology, ideal for keynote 
+          speeches. It also offers a versatile set of modular meeting rooms for parallel sessions and workshops. The spacious foyers provide an excellent 
+          setting for networking, poster sessions, and exhibitions, ensuring a smooth and engaging experience for all attendees.
+        </p>
+      </div>
+      <div class="d-flex flex-wrap gap-3">
+        <a href="https://www.unical.it/campus/vivere-il-campus/centro-congressi/" target="_blank" class="btn btn-primary rounded-pill px-4 py-2">
+          Visit Venue Website
+        </a>
+        <a href="https://www.google.com/maps/d/u/0/viewer?mid=17RXFIMpyGYs5LC7TGMFLzcFw52Q&ll=39.35810442499999%2C16.225642549999986&z=21" target="_blank" class="btn btn-outline-primary rounded-pill px-4 py-2">
+          Get Directions
+        </a>
+      </div>
+    </div>
+    
+    <div class="col-lg-5">
+      <div class="card bg-light border-0 rounded-4 p-4 shadow-sm">
+        <h4 class="fw-bold mb-4 text-dark">Venue Highlights</h4>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex gap-3">
+            <div class="text-primary fs-4">🏛</div>
+            <div>
+              <h6 class="fw-bold mb-1">Modern Facilities</h6>
+              <p class="small text-muted mb-0">Fully equipped auditorium and modular breakout rooms.</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+            <div class="text-primary fs-4">📶</div>
+            <div>
+              <h6 class="fw-bold mb-1">Smart Connectivity</h6>
+              <p class="small text-muted mb-0">High-speed Eduroam Wi-Fi throughout the venue.</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+            <div class="text-primary fs-4">🍽</div>
+            <div>
+              <h6 class="fw-bold mb-1">On-Site Catering</h6>
+              <p class="small text-muted mb-0">Integrated dining areas for coffee breaks and lunches.</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+            <div class="text-primary fs-4">🚶</div>
+            <div>
+              <h6 class="fw-bold mb-1">Walkable Campus</h6>
+              <p class="small text-muted mb-0">Hotels and residences within walking distance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid bg-light mt-5 py-5">
+  <div class="container px-3">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 order-2 order-lg-1">
+        <div class="rounded-4 overflow-hidden shadow-lg position-relative image-credit-container" style="min-height: 400px;">
+          <img 
+            src="/assets/images_26/imgs/UNICAL_Ponte_P._Bucci_-_panoramio.jpg" 
+            alt="University of Calabria Bridge" 
+            class="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
+          >
+          <div class="image-credit">
+             Photo by <a href="https://commons.wikimedia.org/wiki/File:UNICAL_Ponte_P._Bucci_-_panoramio.jpg" target="_blank">Salvatore Migliari</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0</a>)
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 order-1 order-lg-2 d-flex flex-column gap-4">
+        <div>
+          <h2 class="section-title">About University of Calabria</h2>
+          <h4 class="fw-medium text-dark mb-3">A City of Science and Knowledge</h4>
+          <p class="fs-5 text-secondary">
+            Founded in 1972, the <strong>University of Calabria (UNICAL)</strong> stands out as a unique institution within the Italian academic landscape. 
+            It is the country’s largest and most significant <strong>residential campus</strong>, inspired by British and American university models and designed 
+            to foster a vibrant, immersive learning environment.
+          </p>
+
+          <p class="fs-5 text-secondary">
+            The campus is defined by its iconic architectural landmark: the <strong>"Ponte Pietro Bucci"</strong>, an elevated structure extending for more than 
+            1.3 kilometers. This remarkable bridge connects 14 departments as well as libraries, cultural spaces, theaters, and student facilities—creating both 
+            a physical and symbolic link across disciplines including Engineering, Sciences, Humanities, and Economics.
+          </p>
+
+          <p class="fs-5 text-secondary">
+            Surrounded by Mediterranean hills and designed as an integrated living-learning ecosystem, UNICAL combines academic excellence with modern 
+            infrastructure, offering students and researchers an ideal environment for study, innovation, and collaboration.
+          </p>
+        </div>
+        
+        <div class="row g-4 mt-1">
+          <div class="col-6">
+            <div class="border-start border-primary border-4 ps-3">
+              <h2 class="fw-bold text-primary mb-0">27k+</h2>
+              <p class="text-muted fw-medium">Students</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="border-start border-success border-4 ps-3">
+              <h2 class="fw-bold text-success mb-0">200ha</h2>
+              <p class="text-muted fw-medium">Green Campus Area</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-2">
+          <a href="https://www.unical.it/organizzazione/chi-siamo/storia-missione/" target="_blank" class="btn btn-outline-dark rounded-pill px-4">
+            Discover More About UNICAL
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container px-3 py-5 mb-4">
+  <div class="row text-center justify-content-center mb-5">
+    <div class="col-lg-9">
+      <h2 class="section-title mx-auto">Discover Rende & The Beauty of Calabria</h2>
+      <p class="fs-5 text-secondary">
+        UNICAL is located in the hills of Rende, just a short distance from the historic city of Cosenza.  
+        This strategic setting offers a unique blend of Mediterranean climate, cultural heritage, and contemporary innovation.  
+        Attendees will find themselves in a region where mountains meet the sea, offering rich opportunities for exploration and discovery.
+      </p>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="custom-card h-100 p-0 border-0 shadow-sm overflow-hidden group-hover-target">
+        <div style="height: 200px; overflow: hidden;" class="image-credit-container">
+          <img 
+            src="/assets/images_26/imgs/Castello_svevo_cosenza.jpg" 
+            alt="Cosenza Norman Castle" 
+            class="w-100 h-100 object-fit-cover transition-scale"
+          >
+          <div class="image-credit">
+             Photo: <a href="https://commons.wikimedia.org/wiki/File:Castello_svevo_cosenza.jpg" target="_blank">Norman-Swabian Castle</a> (Public Domain)
+          </div>
+        </div>
+        <div class="p-4">
+          <h5 class="fw-bold mb-3">Historic Cosenza</h5>
+          <p class="text-muted small mb-0">
+            Just minutes from campus lies the "Athens of Calabria." Explore the historic city center, the open-air MAB art museum, and the majestic Norman-Swabian Castle overlooking the city.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="custom-card h-100 p-0 border-0 shadow-sm overflow-hidden group-hover-target">
+        <div style="height: 200px; overflow: hidden;" class="image-credit-container">
+          <img 
+            src="/assets/images_26/imgs/Lago_Cecita.jpg" 
+            alt="Sila National Park" 
+            class="w-100 h-100 object-fit-cover transition-scale"
+          >
+          <div class="image-credit">
+             Photo by <a href="https://commons.wikimedia.org/wiki/File:Lago_Cecita,_Parco_Nazionale_della_Sila,_CS.jpg" target="_blank">Greco Antonella Francesca</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0</a>)
+          </div>
+        </div>
+        <div class="p-4">
+          <h5 class="fw-bold mb-3">Sila National Park</h5>
+          <p class="text-muted small mb-0">
+            A short drive away is the "Green Lung of Europe." The Sila plateau offers pristine lakes, ancient pine forests, and pure air, providing a refreshing escape into nature.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="custom-card h-100 p-0 border-0 shadow-sm overflow-hidden group-hover-target">
+        <div style="height: 200px; overflow: hidden;" class="image-credit-container">
+          <img 
+            src="/assets/images_26/imgs/tropea.jpg" 
+            alt="Calabrian Coast" 
+            class="w-100 h-100 object-fit-cover transition-scale"
+          >
+          <div class="image-credit">
+             Photo by <a href="https://commons.wikimedia.org/wiki/File:Panorama_(Tropea)_27_06_2021_09.jpg" target="_blank">Effems</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0</a>)
+          </div>
+        </div>
+        <div class="p-4">
+          <h5 class="fw-bold mb-3">Stunning Coastlines</h5>
+          <p class="text-muted small mb-0">
+            Calabria boasts 800km of coastline. From the Tyrrhenian cliffs to the Ionian beaches, attendees can easily reach breathtaking seaside locations like Paola or Diamante.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light py-5">
+  {% include colocated-conferences.html %}
+</section>
+
+{% include sponsors.html sponsors=page.sponsors %}
