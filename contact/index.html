@@ -10,100 +10,224 @@ sponsors:
   - image: /assets/images_26/sponsor/dimes.svg
 ---
 
-<!-- Hero Section -->
-<section
-  class="jumbotron text-center mb-5"
-  style="
-    background-image: url('/assets/images/Digital_Twin_Calgary.jpg');
+<style>
+  :root {
+    --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    --card-hover-shadow: 0 15px 30px rgba(13, 110, 253, 0.15);
+  }
+
+  /* Hero Styling */
+  .contact-hero {
+    background-image: linear-gradient(rgba(13, 18, 29, 0.7), rgba(13, 18, 29, 0.7)), url('/assets/images_26/imgs/contact.jpg'); /* Abstract "Connection" image */
     background-size: cover;
     background-position: center;
-    min-height: 60vh;
-    position: relative;
+    min-height: 50vh;
     color: white;
-  "
->
-  <div class="hero-section" style="min-height: 60vh">
-    <div
-      class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3"
-    >
-      <h1 class="display-5 fw-bolder mt-5">Contact Information</h1>
-    </div>
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Contact Cards */
+  .contact-card {
+    border: none;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+  }
+
+  /* Icon Styling */
+  .icon-box {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.1) 0%, rgba(13, 202, 240, 0.1) 100%);
+    color: #0d6efd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .contact-card:hover .icon-box {
+    /* background: var(--primary-gradient); */
+    color: white;
+    transform: scale(1.1);
+  }
+
+  /* Link Styling */
+  .contact-link {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+  
+  .contact-link:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+  }
+
+  .badge-tbd {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border: 1px solid #dee2e6;
+    padding: 0.25em 0.6em;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+</style>
+
+<section class="jumbotron text-center mb-5 contact-hero">
+  <div class="container px-3 d-flex flex-column align-items-center gap-3">
+    <h1 class="display-4 fw-bolder">Contact</h1>
+    <p class="lead text-light opacity-75" style="max-width: 600px;">
+      Have a question about IEEE SWC 2026? Find the right contact below for logistics, submissions, registration, and more.
+    </p>
   </div>
 </section>
 
-<section
-  class="page-section container-fluid px-3 pb-5 d-flex flex-column gap-2"
->
-  <div class="row pt-4">
-    <div class="col-sm-12 d-flex flex-column gap-4">
-      <h2 class="fs-2">
-        For questions with any of the following topics please contact us
-      </h2>
-      <ul class="fs-5 list-unstyled">
-        <li class="mb-2">
-          For questions about <strong>Local logistics</strong> including visa
-          application: 
-          <mark style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">?? &lt;<a href=""
-            >??</a
-          >&gt;</mark>
-        </li>
-        <li class="mb-2">
-          For questions about <strong>Web pages</strong>: Vincenzo Barbuto &lt;<a
-            href="mailto:vincenzo.barbuto@unical.it"
-            >vincenzo.barbuto@unical.it</a
-          >&gt;
-        </li>
-        <li class="mb-2">
-          For questions about <strong>Paper EDAS submissions</strong>: Program
-          Chair(s) of each conference or workshop. (see the web page of each
-          conference or workshop for their email addresses)
-        </li>
-        <li class="mb-2">
-          For questions about <strong>Registrations</strong>: <mark style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">?? &lt;<a href=""
-            >??</a
-          >&gt;</mark>
-        </li>
-        <li class="mb-2">
-          For questions about the <strong>Congress Program</strong>: 
-          <mark style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">?? &lt;<a href=""
-            >??</a
-          >&gt;</mark>
-        </li>
-        <li class="mb-2">
-          For questions about <strong>Publication</strong>: Prof. Raffaele Gravina
-          &lt;<a href="mailto:r.gravina@dimes.unical.it">r.gravina@dimes.unical.it</a
-          >&gt;
-        </li>
-        <li class="mb-2">
-          For questions about <strong>Tutorials</strong>:
-          <mark style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">?? &lt;<a href=""
-            >??</a
-          >&gt;</mark>
-        </li>
-        <li class="mb-2">
-          For questions about <strong>Workshops or Special Sessions</strong>:
-          <mark style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">?? &lt;<a href=""
-            >??</a
-          >&gt;</mark>
-        </li>
-        <li class="mb-2">
-          For questions about <strong>Exhibitions</strong>: 
-          <mark style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">?? &lt;<a href=""
-            >??</a
-          >&gt;</mark>
-        </li>
-
-        <li class="mb-2">
-          For general questions about <strong>The event </strong>: Prof. Giancarlo Fortino
-          &lt;<a href="mailto:giancarlo.fortino@unical.it">giancarlo.fortino@unical.it</a
-          >&gt;
-        </li>
-      </ul>
+<section class="page-section container px-3 pb-5">
+  <div class="row g-4">
+    
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box">❓</div>
+        <h4 class="fw-bold mb-3">General Questions</h4>
+        <p class="text-muted small mb-3">For general inquiries about the event.</p>
+        <div class="mt-auto">
+          <div class="fw-bold text-dark">Prof. Giancarlo Fortino</div>
+          <a href="mailto:giancarlo.fortino@unical.it" class="contact-link">giancarlo.fortino@unical.it</a>
+        </div>
+      </div>
     </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box">🌐</div>
+        <h4 class="fw-bold mb-3">Website Support</h4>
+        <p class="text-muted small mb-3">Issues or questions regarding the website.</p>
+        <div class="mt-auto">
+          <div class="fw-bold text-dark">Vincenzo Barbuto</div>
+          <a href="mailto:vincenzo.barbuto@unical.it" class="contact-link">vincenzo.barbuto@unical.it</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box">🔬</div>
+        <h4 class="fw-bold mb-3">Publication</h4>
+        <p class="text-muted small mb-3">Questions about proceedings and papers.</p>
+        <div class="mt-auto">
+          <div class="fw-bold text-dark">Prof. Raffaele Gravina</div>
+          <a href="mailto:r.gravina@dimes.unical.it" class="contact-link">r.gravina@dimes.unical.it</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box">📍</div>
+        <h4 class="fw-bold mb-3">Local Logistics</h4>
+        <p class="text-muted small mb-3">Visas, accommodation, and travel.</p>
+        <div class="mt-auto">
+          <span class="badge-tbd">TBD</span>
+          <div class="small text-muted mt-2">To be announced soon</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box">📄</div>
+        <h4 class="fw-bold mb-3">Paper Submissions</h4>
+        <p class="text-muted small mb-3">EDAS submission inquiries.</p>
+        <div class="mt-auto">
+          <div class="small">Contact the <strong>Program Chair(s)</strong> of the specific conference/workshop.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box">🧾</div>
+        <h4 class="fw-bold mb-3">Registration</h4>
+        <p class="text-muted small mb-3">Fees, payments, and invoices.</p>
+        <div class="mt-auto">
+          <a href="/registration/" class="btn btn-outline-primary rounded-pill btn-sm px-4">Visit Registration Page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box">📅</div>
+        <h4 class="fw-bold mb-3">Congress Program</h4>
+        <p class="text-muted small mb-3">Schedule and session details.</p>
+        <div class="mt-auto">
+          <div class="small">See individual program pages for specific session chairs.</div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box">🎓</div>
+        <h4 class="fw-bold mb-3">Tutorials</h4>
+        <p class="text-muted small mb-3">Proposals and tutorial info.</p>
+        <div class="mt-auto">
+          <span class="badge-tbd">TBD</span>
+          <div class="small text-muted mt-2">Check Tutorials page later</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box">🛠️</div>
+        <h4 class="fw-bold mb-3">Workshops</h4>
+        <p class="text-muted small mb-3">Workshop organization.</p>
+        <div class="mt-auto">
+          <span class="badge-tbd">TBD</span>
+          <div class="small text-muted mt-2">See Workshop pages</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box">🏢</div>
+        <h4 class="fw-bold mb-3">Exhibitions</h4>
+        <p class="text-muted small mb-3">Sponsorship and booths.</p>
+        <div class="mt-auto">
+          <span class="badge-tbd">TBD</span>
+          <div class="small text-muted mt-2">To be announced soon</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<section class="container-fluid d-flex flex-column gap-4 bg-light">
+<section class="container-fluid d-flex flex-column gap-4 bg-light py-5">
   {% include colocated-conferences.html %}
 </section>
 
