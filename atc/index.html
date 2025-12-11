@@ -45,116 +45,140 @@ sponsors:
   </div>
   <div class="row g-5">
     <div class="col-sm-4 d-flex flex-column gap-4">
-      <div class="card bg-light-subtle shadow-sm">
-        <div class="card-body p-3">
-          <h4 class="fs-5 fw-bold mb-3">Important Dates</h4>
-          <div class="d-flex flex-column gap-2" style="font-size: 0.8rem;">
-            <div class="d-flex justify-content-between align-items-start border-bottom pb-2">
-              <span class="fw-bold text-danger" style="font-size: 0.75rem;">Full Paper Submission:</span>
-              <span class="text-danger fw-semibold"
-                style="font-size: 0.75rem;">{{site.data.swc_data.dates.paperSubmission}}</span>
-            </div>
-            <div class="d-flex justify-content-between align-items-start border-bottom pb-2">
-              <span class="fw-semibold text-dark" style="font-size: 0.75rem;">Authors Notification:</span>
-              <span class="text-muted text-end"
-                style="font-size: 0.75rem;">{{site.data.swc_data.dates.authorsNotification}}</span>
-            </div>
-            <div class="d-flex justify-content-between align-items-start border-bottom pb-2">
-              <span class="fw-semibold text-dark" style="font-size: 0.75rem;">Camera-ready:</span>
-              <span class="text-muted text-end"
-                style="font-size: 0.75rem;">{{site.data.swc_data.dates.cameraReadyDue}}</span>
-            </div>
-            <div class="d-flex justify-content-between align-items-start pt-1">
-              <span class="fw-bold text-success" style="font-size: 0.75rem;">Conference:</span>
-              <span class="text-success fw-semibold"
-                style="font-size: 0.75rem;">{{site.data.swc_data.dates.conferenceDates}}</span>
+
+      <div class="dates-card p-4">
+        <h4 class="fw-bold mb-4">Important Dates</h4>
+        <div class="d-flex flex-column gap-1">
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-danger">Full Paper Submission</span>
+              <span class="fw-bold text-danger">{{site.data.swc_data.dates.paperSubmission}}</span>
             </div>
           </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-secondary">Authors Notification</span>
+              <span class="text-muted">{{site.data.swc_data.dates.authorsNotification}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-secondary">Camera-ready</span>
+              <span class="text-muted">{{site.data.swc_data.dates.cameraReadyDue}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-primary">Conference Dates</span>
+              <span class="fw-bold text-primary">{{site.data.swc_data.dates.conferenceDates}}</span>
+            </div>
+          </div>
+
         </div>
       </div>
-      <div class="card bg-light-subtle shadow-sm">
-        <div class="card-body p-3">
-          <h4 class="fs-5 fw-bold mb-3">Organizing Committee</h4>
-          <div class="d-flex flex-column gap-2" style="font-size: 0.75rem;">
-            <div>
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">General Chairs</h6>
-              <div class="ms-2 d-flex flex-column gap-1">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Giuseppe D'Aniello</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">University of Salerno, Italy</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">David Camacho</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">Technical University of Madrid, Spain</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Francesco Flammini</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">SUPSI, Switzerland and University of Florence, Italy</div>
-                </div>
-              </div>
+
+      <div class="custom-card p-4">
+        <h4 class="fw-bold mb-4">Organizing Committee</h4>
+        <div class="d-flex flex-column gap-3">
+
+          <div>
+            <div class="d-flex align-items-center mb-2">
+              <h6 class="fw-bold text-secondary mb-2">General Chairs</h6>
             </div>
-            <div class="border-top pt-2">
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">Technical Program Chairs</h6>
-              <div class="ms-2 d-flex flex-column gap-1">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Valentina Donzella</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">Queen Mary University of London, UK</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Lidia Fotia</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">University of Salerno, Italy</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Dirk Söffker</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">University of Duisburg-Essen, Germany</div>
-                </div>
-              </div>
-            </div>
-            <div class="border-top pt-2">
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">Workshop/Special Sessions</h6>
-              <div class="ms-2 d-flex flex-column gap-1">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Tzung-Pei Hong</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">National University of Kaohsiung, Taiwan</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Paolo Scarabaggio</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">Polytechnic University of Bari, Italy </div>
-                </div>
-              </div>
-            </div>
-            <div class="border-top pt-2">
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">Publicity Chairs</h6>
-              <div class="ms-2 d-flex flex-column gap-1">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Gianluca Aloi</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">University of Calabria, Italy</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Lyudmila S Mihaylova</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">University of Sheffield, UK</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Hao Zhu</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">Chongqing University of Posts and Telecommunication, China</div>
-                </div>
-              </div>
-            </div>
-            <div class="border-top pt-2">
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">Web Chair</h6>
-              <div class="ms-2">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Vincenzo Barbuto</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">University of Calabria, Italy</div>
-                </div>
-              </div>
-            </div>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark">Giuseppe D'Aniello</div>
+                <div class="small text-muted lh-sm">University of Salerno, Italy</div>
+              </li>
+              <li class="mb-2">
+                <div class="fw-bold text-dark">David Camacho</div>
+                <div class="small text-muted lh-sm">Technical University of Madrid, Spain</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark">Francesco Flammini</div>
+                <div class="small text-muted lh-sm">SUPSI, Switzerland & UniFi, Italy</div>
+              </li>
+            </ul>
           </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Technical Program Chairs</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Valentina Donzella</div>
+                <div class="small text-muted">Queen Mary University of London, UK</div>
+              </li>
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Lidia Fotia</div>
+                <div class="small text-muted">University of Salerno, Italy</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Dirk Söffker</div>
+                <div class="small text-muted">University of Duisburg-Essen, Germany</div>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Workshop/Special Sessions</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Tzung-Pei Hong</div>
+                <div class="small text-muted">National University of Kaohsiung, Taiwan</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Paolo Scarabaggio</div>
+                <div class="small text-muted">Polytechnic University of Bari, Italy</div>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Publicity Chairs</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Gianluca Aloi</div>
+                <div class="small text-muted">University of Calabria, Italy</div>
+              </li>
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Lyudmila S Mihaylova</div>
+                <div class="small text-muted">University of Sheffield, UK</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Hao Zhu</div>
+                <div class="small text-muted">Chongqing University of Posts and Telecom, China</div>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Web Chair</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li>
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Vincenzo Barbuto</div>
+                <div class="small text-muted">University of Calabria, Italy</div>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </div>
     <div class="col-sm-8 d-flex flex-column gap-4">
       <div>
+        <h2 class="section-title fs-2 text-center">Call for Papers</h2>
         <p class="fs-5">
           The rapid expansion of intelligent technologies, large-scale AI models, and interconnected
           cyber-physical-social systems is transforming the way people,
@@ -177,112 +201,116 @@ sponsors:
         </p>
       </div>
       <div>
-    <div>
-        <div class="d-flex align-items-baseline gap-3 mb-5 border-bottom pb-3">
-          <h3 class="fw-bold m-0 text-dark">IEEE ATC 2026 Tracks and Topics</h3>
-          <!-- <span class="text-muted small text-uppercase fw-bold ls-1 d-none d-sm-block">Call for Papers</span> -->
-        </div>
+        <div>
+          <!-- <div class="d-flex align-items-baseline gap-3 mb-5 border-bottom pb-3">
+            <h3 class="section-title fs-2 text-center">IEEE ATC 2026 Tracks and Topics</h3>
+            <span class="text-muted small text-uppercase fw-bold ls-1 d-none d-sm-block">Call for Papers</span>
+          </div> -->
+          <h3 class="section-title fs-4 text-center">IEEE ATC 2026 Tracks and Topics</h3>
+          <div class="row g-4">
 
-        <div class="row g-4">
-
-          <div class="col-lg-6">
-            <div class="track-card">
-              <div class="track-header">
-                <h4 class="track-title">Track 1: Trustworthy Artificial Intelligence</h4>
-              </div>
-              <div class="track-body">
-                <ul class="track-list-clean">
-                  <li>AI safety, ethics, fairness, and responsible AI</li>
-                  <li>Explainability, robustness, and security of AI</li>
-                  <li>Privacy-preserving learning and machine unlearning</li>
-                  <li>Verification and governance of AI systems</li>
-                  <li>Multimodal and cross-modal learning</li>
-                  <li>Signal processing, sensor fusion</li>
-                  <li>Edge AI and distributed intelligence</li>
-                  <li>Applications of AI, LLMs and VLMs in domains such as healthcare, education, and smart cities</li>
-                </ul>
+            <div class="col-lg-6">
+              <div class="track-card">
+                <div class="track-header">
+                  <h4 class="track-title">Track 1: Trustworthy Artificial Intelligence</h4>
+                </div>
+                <div class="track-body">
+                  <ul class="track-list-clean">
+                    <li>AI safety, ethics, fairness, and responsible AI</li>
+                    <li>Explainability, robustness, and security of AI</li>
+                    <li>Privacy-preserving learning and machine unlearning</li>
+                    <li>Verification and governance of AI systems</li>
+                    <li>Multimodal and cross-modal learning</li>
+                    <li>Signal processing, sensor fusion</li>
+                    <li>Edge AI and distributed intelligence</li>
+                    <li>Applications of AI, LLMs and VLMs in domains such as healthcare, education, and smart cities
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6">
-            <div class="track-card">
-              <div class="track-header">
-                <h4 class="track-title">Track 2: Data Fusion and Situational Awareness</h4>
-              </div>
-              <div class="track-body">
-                <ul class="track-list-clean">
-                  <li>Multi-sensor fusion</li>
-                  <li>Learning-based perception and data association</li>
-                  <li>Real-time and edge-based processing</li>
-                  <li>Uncertainty modeling and reasoning</li>
-                  <li>Context awareness and situational awareness </li>
-                  <li>Environment perception and modelling</li>
-                  <li>Self-aware computing</li>
-                  <li>Resilient and robust sensing</li>
-                </ul>
+            <div class="col-lg-6">
+              <div class="track-card">
+                <div class="track-header">
+                  <h4 class="track-title">Track 2: Data Fusion and Situational Awareness</h4>
+                </div>
+                <div class="track-body">
+                  <ul class="track-list-clean">
+                    <li>Multi-sensor fusion</li>
+                    <li>Learning-based perception and data association</li>
+                    <li>Real-time and edge-based processing</li>
+                    <li>Uncertainty modeling and reasoning</li>
+                    <li>Context awareness and situational awareness </li>
+                    <li>Environment perception and modelling</li>
+                    <li>Self-aware computing</li>
+                    <li>Resilient and robust sensing</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6">
-            <div class="track-card">
-              <div class="track-header">
-                <h4 class="track-title">Track 3: Intelligent and Autonomous Systems</h4>
-              </div>
-              <div class="track-body">
-                <ul class="track-list-clean">
-                  <li>Industrial and cyber-physical-social systems modeling</li>
-                  <li>Adaptive and robust control techniques</li>
-                  <li>AI-driven control and reinforcement learning</li>
-                  <li>Intelligent control for autonomous systems</li>
-                  <li>Trustworthy recommender systems</li>
-                  <li>Brain-Machine interaction</li>
-                  <li>Human-AI and human-autonomy teaming</li>
-                </ul>
+            <div class="col-lg-6">
+              <div class="track-card">
+                <div class="track-header">
+                  <h4 class="track-title">Track 3: Intelligent and Autonomous Systems</h4>
+                </div>
+                <div class="track-body">
+                  <ul class="track-list-clean">
+                    <li>Industrial and cyber-physical-social systems modeling</li>
+                    <li>Adaptive and robust control techniques</li>
+                    <li>AI-driven control and reinforcement learning</li>
+                    <li>Intelligent control for autonomous systems</li>
+                    <li>Trustworthy recommender systems</li>
+                    <li>Brain-Machine interaction</li>
+                    <li>Human-AI and human-autonomy teaming</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6">
-            <div class="track-card">
-              <div class="track-header">
-                <h4 class="track-title">Track 4: Safe Assisted and Automated Driving</h4>
-              </div>
-              <div class="track-body">
-                <ul class="track-list-clean">
-                  <li>Novel sensing and AI for automated driving</li>
-                  <li>Smart sensors, signal processing, and fusion</li>
-                  <li>AI safety, trust, and uncertainty propagation</li>
-                  <li>Path planning and motion control</li>
-                  <li>Hybrid intelligence for automated vehicles</li>
-                  <li>Cooperative autonomy</li>
-                  <li>UAV, UGV, USV, and multi-domain autonomous mobility systems</li>
-                </ul>
+            <div class="col-lg-6">
+              <div class="track-card">
+                <div class="track-header">
+                  <h4 class="track-title">Track 4: Safe Assisted and Automated Driving</h4>
+                </div>
+                <div class="track-body">
+                  <ul class="track-list-clean">
+                    <li>Novel sensing and AI for automated driving</li>
+                    <li>Smart sensors, signal processing, and fusion</li>
+                    <li>AI safety, trust, and uncertainty propagation</li>
+                    <li>Path planning and motion control</li>
+                    <li>Hybrid intelligence for automated vehicles</li>
+                    <li>Cooperative autonomy</li>
+                    <li>UAV, UGV, USV, and multi-domain autonomous mobility systems</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
-  </div>
     </div>
 </section>
 
-<section class="container-fluid d-flex flex-column gap-4">
-  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
-    <h2 class="section-title fs-2 text-center fw-bold mb-4">Types of Submissions</h2>
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+  <div class="page-section container-fluid px-3 py-5 d-flex flex-column gap-4">
+    <h3 class="section-title fs-2 text-center">Types of Submissions</h3>
     <p class="fs-5 lh-lg">
-      The conference welcomes high-quality, original research contributions that advance the scientific and technological foundations of the smart world. Authors are invited to submit their work in one of the following categories:
+      The conference welcomes high-quality, original research contributions that advance the scientific and
+      technological foundations of the smart world. Authors are invited to submit their work in one of the following
+      categories:
     </p>
-    
+
     <div class="row g-4 mt-2">
       <div class="col-md-6">
         <div class="card h-100 border-0 shadow-sm topic-card">
           <div class="card-body p-4">
             <h4 class="fw-bold  mb-3">Regular Papers <span class="text-muted fs-6">(4-8 pages)</span></h4>
             <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
-              Complete research studies containing significant findings, rigorous methodology, and comprehensive experimental or theoretical results.
+              Complete research studies containing significant findings, rigorous methodology, and comprehensive
+              experimental or theoretical results.
             </p>
           </div>
         </div>
@@ -290,25 +318,30 @@ sponsors:
       <div class="col-md-6">
         <div class="card h-100 border-0 shadow-sm topic-card">
           <div class="card-body p-4">
-            <h4 class="fw-bold  mb-3">Workshop/Special Session Papers <span class="text-muted fs-6">(2-6 pages)</span></h4>
+            <h4 class="fw-bold  mb-3">Workshop/Special Session Papers <span class="text-muted fs-6">(2-6 pages)</span>
+            </h4>
             <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
-              Concise contributions reporting promising early results, innovative ideas, or ongoing work that is expected to stimulate discussion and further development.
+              Concise contributions reporting promising early results, innovative ideas, or ongoing work that is
+              expected to stimulate discussion and further development.
             </p>
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="alert alert-info mt-4" role="alert">
       <p class="mb-0 fs-5">
-        <strong>Important:</strong> A submission can have at most 2 additional pages with the pages overlength charge, if accepted..
+        <strong>Important:</strong> A submission can have at most 2 additional pages with the pages overlength charge,
+        if accepted.
       </p>
     </div>
+  </div>
+</section>
 
-    <hr style="border-top: 2px solid #dee2e6;" />
-
+<section class="container-fluid d-flex flex-column gap-4">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
     <div class="mt-4">
-      <h3 class="section-title fw-bold mb-4 text-sm-start">Publication and Indexing</h3>
+      <h3 class="section-title fs-2 text-center">Publication and Indexing</h3>
       <p class="fs-5 lh-lg mb-4">
         All accepted and presented papers (regular, workshop/special session) will be:
       </p>
@@ -316,7 +349,8 @@ sponsors:
         <div class="col-md-4">
           <div class="d-flex align-items-start">
             <div class="me-3">
-              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
             </div>
             <div>
               <h5 class="fw-semibold mb-1">IEEE Conference Proceedings</h5>
@@ -327,7 +361,8 @@ sponsors:
         <div class="col-md-4">
           <div class="d-flex align-items-start">
             <div class="me-3">
-              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
             </div>
             <div>
               <h5 class="fw-semibold mb-1">IEEE Xplore</h5>
@@ -338,7 +373,8 @@ sponsors:
         <div class="col-md-4">
           <div class="d-flex align-items-start">
             <div class="me-3">
-              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
             </div>
             <div>
               <h5 class="fw-semibold mb-1">Major Databases</h5>
@@ -349,7 +385,8 @@ sponsors:
       </div>
       <div class="alert alert-warning mt-4" role="alert">
         <p class="mb-0 fs-5">
-          <strong>Note:</strong> For a paper to remain eligible for publication, it must be presented in person (unless otherwise specified). At least one author must register for the conference and deliver the presentation.
+          <strong>Note:</strong> For a paper to remain eligible for publication, it must be presented in person (unless
+          otherwise specified). At least one author must register for the conference and deliver the presentation.
         </p>
       </div>
     </div>
@@ -357,9 +394,10 @@ sponsors:
     <hr style="border-top: 2px solid #dee2e6;" />
 
     <div class="mt-4">
-      <h3 class="section-title fw-bold mb-4 text-sm-start">Special Issue and Extended Versions</h3>
+      <h3 class="section-title fs-2 text-center">Special Issue and Extended Versions</h3>
       <p class="fs-5 lh-lg mb-4">
-        A Special Issue in a high-impact, ISI-indexed journal will be organized in conjunction with the conference. Authors of selected outstanding papers will 
+        A Special Issue in a high-impact, ISI-indexed journal will be organized in conjunction with the conference.
+        Authors of selected outstanding papers will
         receive an invitation to submit an extended version of their work.
       </p>
       <!-- <p class="fs-5 lh-lg mb-4">

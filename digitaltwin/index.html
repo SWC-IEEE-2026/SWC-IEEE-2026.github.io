@@ -1,409 +1,421 @@
 ---
 layout: default
-title: IEEE Digital Twin 2025
+title: IEEE Digital Twin 2026
 sponsors:
-  - image: /assets/images/ieee mb black png.png
-  - image: /assets/images/cis-logo.png
-  - image: /assets/images/IEEE-CS_LogoTM-orange.png
-  - image: /assets/images/SWTC2.png
+- image: /assets/images/ieee mb black png.png
+- image: /assets/images_26/sponsor/IEEE_Italy_logo_small.png
+- image: /assets/images_26/sponsor/cis.png
+- image: /assets/images_26/sponsor/smc.png
+- image: /assets/images_26/sponsor/unical-2.png
+- image: /assets/images_26/sponsor/dimes.svg
 ---
 
 <!-- Hero Section -->
-<section
-  class="jumbotron text-center"
-  style="
+<section class="jumbotron text-center" style="
     background-image: url('/assets/images/Digital_Twin_Calgary.jpg');
     background-size: cover;
     background-position: center;
     min-height: 60vh;
     position: relative;
     color: white;
-  "
->
+  ">
   <div class="hero-section" style="min-height: 60vh">
-    <div
-      class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3"
-    >
+    <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3">
       <h1 class="display-5 fw-bolder mt-5">
-        The 2025 IEEE International Conference on Digital Twin (Hybrid)
+        The 2026 IEEE International Conference on Digital Twin
       </h1>
       <div>
-        <h3>Calgary, Alberta, Canada</h3>
-        <h3 class="">August 18 - 22, 2025</h3>
+        <h3>Rende, Italy</h3>
+        <h3 class="">{{site.data.swc_data.dates.conferenceDates}}</h3>
       </div>
       <div>
-        <a class="btn btn-primary" href="#submission"
-          >Submit Paper to Digital Twin 2025</a
-        >
+        <a class="btn btn-primary" href="#submission">Submit Paper to Digital Twin 2026</a>
       </div>
     </div>
   </div>
 </section>
 
-<section
-  class="page-section container-fluid px-3 pt-5 pb-5 mt-2 d-flex flex-column gap-2"
->
+<section class="page-section container-fluid px-3 pt-5 pb-5 mt-2 d-flex flex-column gap-2">
+  <div>
+    <div class="alert alert-info" role="alert">
+      Early-bird registration starts from <b>{{site.data.swc_data.dates.earlyBird}}</b>.
+      <!-- <a href="/registration/" class="alert-link">Register Now</a> -->
+    </div>
+  </div>
   <div class="row g-5">
     <div class="col-sm-4 d-flex flex-column gap-4">
-      <div class="card bg-light-subtle">
-        <div
-          class="card-body d-flex flex-column justify-content-between align-items-center"
-        >
-          <h4 class="fs-5 fw-bold">Important Dates</h4>
-          <hr class="w-100" />
-          <h5 class="fs-6 fw-bold text-center">Paper Submission Deadline</h5>
-          <h6 class="text-decoration-line-through">April 14, 2025</h6>
-          <h6 class="text-decoration-line-through">
-            {{site.data.swc_data.dates.paperSubmission}}
-          </h6>
-          <hr class="w-100" />
-          <h5 class="fs-6 fw-bold text-center">Workshop Papers Deadline</h5>
-          <h6 class="text-decoration-line-through">February 15, 2025</h6>
-          <hr class="w-100" />
-          <h5 class="fs-6 fw-bold text-center">Authors Notification</h5>
-          <h6 class="text-decoration-line-through">May 31, 2025</h6>
-          <hr class="w-100" />
-          <h5 class="fs-6 fw-bold text-center">Camera-ready Submission</h5>
-          <h6 class="text-decoration-line-through">June 30, 2025</h6>
-          <hr class="w-100" />
-          <h5 class="fs-6 fw-bold text-center">Conference Dates</h5>
-          <h6 class="text-decoration-line-through">August 18 - 22, 2025</h6>
+
+      <div class="dates-card p-4">
+        <h4 class="fw-bold mb-4">Important Dates</h4>
+        <div class="d-flex flex-column gap-1">
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-danger">Full Paper Submission</span>
+              <span class="fw-bold text-danger">{{site.data.swc_data.dates.paperSubmission}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-secondary">Authors Notification</span>
+              <span class="text-muted">{{site.data.swc_data.dates.authorsNotification}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-secondary">Camera-ready</span>
+              <span class="text-muted">{{site.data.swc_data.dates.cameraReadyDue}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-primary">Conference Dates</span>
+              <span class="fw-bold text-primary">{{site.data.swc_data.dates.conferenceDates}}</span>
+            </div>
+          </div>
+
         </div>
       </div>
-      <div class="card bg-light-subtle">
-        <div
-          class="card-body d-flex flex-column justify-content-between align-items-center"
-        >
-          <h4 class="fs-5 fw-bold">Organizing Committee</h4>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Honorary Chairs</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Vincenzo Piuri <br />University of Milan, Italy
-              </h5>
-              <h5 class="fs-6">
-                Diane J. Cook <br />Washington State University, USA
-              </h5>
+
+      <div class="custom-card p-4">
+        <h4 class="fw-bold mb-4">Organizing Committee</h4>
+        <div class="d-flex flex-column gap-3">
+
+          <div>
+            <div class="d-flex align-items-center mb-2">
+              <h6 class="fw-bold text-secondary mb-2">General Chairs</h6>
             </div>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark">Claudio Savaglio</div>
+                <div class="small text-muted lh-sm">University of Calabria, Italy</div>
+              </li>
+              <li class="mb-2">
+                <div class="fw-bold text-dark">Zumin Wang</div>
+                <div class="small text-muted lh-sm">Dalian University, China</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark">Hui Fang</div>
+                <div class="small text-muted lh-sm">Loughborough University, UK</div>
+              </li>
+            </ul>
           </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">General Chairs</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Zumin Wang <br />
-                Dalian University, China
-              </h5>
-              <h5 class="fs-6">
-                Ljiljana Trajkovic <br />
-                Simon Fraser University, Canada
-              </h5>
-              <h5 class="fs-6">
-                Tahar Kechadi <br />
-                University College Dublin, Ireland
-              </h5>
-              <h5 class="fs-6">
-                A. El Saddik <br />
-                University of Ottawa, Canada
-              </h5>
-            </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Technical Program Chairs</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Francesco Cauteruccio</div>
+                <div class="small text-muted">University of Salerno, Italy</div>
+              </li>
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Noel Crespi</div>
+                <div class="small text-muted">Institut Polytechnique de Paris, France</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Andrea Tundis</div>
+                <div class="small text-muted">Deutsche Bundesbank, Germany</div>
+              </li>
+            </ul>
           </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Program Chairs</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Tao Zhu <br />
-                University of South China, China <br />
-                <a href="mailto:tzhu@usc.edu.cn">tzhu@usc.edu.cn</a>
-              </h5>
-              <h5 class="fs-6">
-                Jing Qin <br />
-                Dalian University, China
-              </h5>
-              <h5 class="fs-6">
-                Nyo Thiri Aung <br />
-                University College Dublin, Ireland
-              </h5>
-              <h5 class="fs-6">
-                Pengfei Hu <br />
-                Holisys Ltd. China
-              </h5>
-            </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Workshop/Special Sessions</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Fabrizio Fornari</div>
+                <div class="small text-muted">University of Camerino, Italy</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Vittorio Solina</div>
+                <div class="small text-muted">University of Calabria, Italy</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Lingling Fang</div>
+                <div class="small text-muted">Liaoning Normal University, China</div>
+              </li>
+            </ul>
           </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Panel Chairs</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Kefeng Li <br />
-                Macao Polytechnic University, China
-              </h5>
-              <h5 class="fs-6">
-                Lingling Fang <br />
-                Liaoning Normal University, China
-              </h5>
-            </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Publicity Chairs</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Tao Zhu</div>
+                <div class="small text-muted">University of South China, China</div>
+              </li>
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Roberto Minerva</div>
+                <div class="small text-muted">Institut Polytechnique de Paris, France</div>
+              </li>
+            </ul>
           </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Publicity Chairs</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Hui Fang <br />
-                Loughborough University, UK
-              </h5>
-              <h5 class="fs-6">
-                Helin Gong <br />
-                Shanghai Jiaotong University, China
-              </h5>
-            </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Web Chair</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li>
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Vincenzo Barbuto</div>
+                <div class="small text-muted">University of Calabria, Italy</div>
+              </li>
+            </ul>
           </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Workshop Chairs</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Lu Liu <br />
-                University of Exeter, UK
-              </h5>
-              <h5 class="fs-6">
-                Khawla Alhasan <br />
-                Arab Open University, Kuwait
-              </h5>
-            </div>
-          </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Special Issue Chairs</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Jascha Grübel <br />
-                Wageningen Uni. & Res, Netherlands
-              </h5>
-              <h5 class="fs-6">
-                Pengcheng Zhao <br />
-                University of South China, China
-              </h5>
-            </div>
-          </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Web Chair</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Raymond Morland <br />
-                Athabasca University, Canada
-              </h5>
-            </div>
-          </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Advisory Chairs</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Lan Huang <br />
-                Jilin University, China
-              </h5>
-              <h5 class="fs-6">
-                Oscar Lin <br />
-                Athabasca University, Canada
-              </h5>
-              <h5 class="fs-6">
-                Andreas Holzinger <br />
-                BOKU, Austria
-              </h5>
-            </div>
-          </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Steering Chairs</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Jianhua Ma <br />
-                Hosei University, Japan
-              </h5>
-              <h5 class="fs-6">
-                Laurence T. Yang <br />
-                St. Francis Xavier Uni., Canada
-              </h5>
-              <h5 class="fs-6">
-                Liming Chen <br />
-                Dalian University of Technology, China
-              </h5>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
     <div class="col-sm-8 d-flex flex-column gap-4">
       <div>
-        <h2 class="fs-2 mb-2">
-          Join us at the 2025 IEEE International Conference on Digital Twin
-        </h2>
+        <h2 class="section-title fs-2 text-center fw-bold mb-4">Call for Papers</h2>
         <p class="fs-5">
-          Digital twin, as a recent iconic phrases of fashions, has been coined
-          and broadened somewhat in that it is now being extensively applied, or
-          rather used, to characterize a variety of digital simulation models
-          that run alongside real-time processes that pertain to social and
-          economic systems as well as physical systems since its inception. It
-          is even conceivable that latency between when data is received from
-          the basic system and when the users closest to the system can use is
-          often short enough to enable good corrective actions. Progress towards
-          digital twins will surely enable us to gain ever deeper insights into
-          the nature of reality and its virtual form.
-          <br /><br />The 2025 IEEE International Conference on Digital Twin
-          will provide a high-profile, leading-edge forum for researchers,
-          engineers, and practitioners to present state-of-art advances and
-          innovations on Digital Twin, as well as to identify emerging research
-          topics and define the future of Digital Twin. We seek submissions of
-          papers which invent new techniques, introduce innovative
-          methodologies, and propose new research directions in advanced digital
-          twin theories, methods, implementations, and applications.
+          Digital Twin, as a recent iconic phrases of fashions, has been coined and
+          broadened somewhat in that it is now being extensively applied, or rather
+          used, to characterize a variety of digital simulation models that run
+          alongside real-time processes that pertain to social and economic systems
+          as well as physical systems since its inception. It is even conceivable that
+          latency between when data is received from the basic system and when the
+          users closest to the system can use is often short enough to enable good
+          corrective actions. Progress towards Digital Twins will surely enable us to
+          gain ever deeper insights into the nature of reality and its virtual form.
+          <br /><br />
+          The 2026 IEEE International Conference on Digital Twin will provide a
+          high-profile, leading-edge forum for researchers, engineers, and
+          practitioners to present state-of-art advances and innovations on Digital
+          Twin, as well as to identify emerging research topics and define the future
+          of Digital Twin. We seek submissions of papers which invent new
+          techniques, introduce innovative methodologies, and propose new
+          research directions in advanced digital twin theories, methods,
+          implementations, and applications.
         </p>
       </div>
-      <div class="row">
-        <div class="col-12 mb-3 mb-sm-0 d-flex flex-column gap-4">
-          <h2 class="fs-2">IEEE Digital Twin 2025 Topics</h2>
-          <div class="row pb-3 g-4">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="fs-5">Track 1: Digital Twin Fundamentals</h5>
-                  <ul>
-                    <li>Concepts and theories</li>
-                    <li>Architecture and frameworks</li>
-                    <li>Methodology, lifecycle and processes</li>
-                    <li>Data-driven based modelling and technologies</li>
-                    <li>Simulation based approach and technologies</li>
-                    <li>Multi-physics and multi-scale simulation</li>
-                    <li>Model-based system engineering</li>
-                    <li>Computational dynamic modelling</li>
-                    <li>Process and workflow modelling and simulation</li>
-                    <li>Dynamic prediction and projection</li>
-                  </ul>
+      <div>
+        <div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h5 class="fw-bold mb-4 ">
+                The topics of interest include (but are not limited to) the following:
+              </h5>
+              <!-- Visual topic cards (same layout as home page) -->
+              <div class="row g-3 mb-4">
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Fundamentals, concepts and theories</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card bg-light-subtle h-100">
-                <div class="card-body">
-                  <h5 class="fs-5">Track 2: Digital Twin Interaction</h5>
-                  <ul>
-                    <li>Physical and Virtual twin communication</li>
-                    <li>Physical and Virtual twin interaction</li>
-                    <li>Distributed digital twin systems</li>
-                    <li>Digital twin interoperability</li>
-                    <li>Cooperative and Collaborative digital twin</li>
-                    <li>Digital twin network and organization</li>
-                    <li>Distributed machine learning for digital twins</li>
-                    <li>Twins and user interactions</li>
-                    <li>User interface for digital twin</li>
-                    <li>The Internet of Digital Twins</li>
-                  </ul>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Architecture, standards and frameworks</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card bg-light-subtle h-100">
-                <div class="card-body">
-                  <h5 class="fs-5">
-                    Track 3: Digital Twin Security and Privacy
-                  </h5>
-                  <ul>
-                    <li>Threat modelling in digital twin</li>
-                    <li>Cybersecurity for digital twin</li>
-                    <li>Cross-layer defense for digital twin</li>
-                    <li>Digital twin for cybersecurity</li>
-                    <li>Privacy protection in digital twin</li>
-                    <li>Blockchain-based digital twin</li>
-                    <li>Digital twin based intrusion detection systems</li>
-                    <li>Digital twin based intrusion response systems</li>
-                  </ul>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Methodology, lifecycle and processes management</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card bg-light-subtle h-100">
-                <div class="card-body">
-                  <h5 class="fs-5">
-                    Track 4: Digital Twin Systems and Applications
-                  </h5>
-                  <ul>
-                    <li>Development tools and platforms</li>
-                    <li>Standardization and regulation</li>
-                    <li>Servitisation of digital twin</li>
-                    <li>Automation and manufacturing</li>
-                    <li>Digital health and assisted systems</li>
-                    <li>Smart Cities and transportation</li>
-                    <li>Automotive and aerospace</li>
-                    <li>Sustainable Energy</li>
-                  </ul>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Model-based and data-driven Digital Twin engineering</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Simulation based approach and technologies</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Digital Twin interaction, communication, and
+                      interoperability</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Digital Twin Networks and applications</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">AI and Generative AI for Digital Twin</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">User interface for Digital Twins</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark mb-2">Security and Privacy for Digital Twin</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark mb-2">Digital Twin Systems and Applications</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row" id="submission">
-        <div class="col-sm-12 d-flex flex-column gap-3 justify-content-around">
-          <h3 class="">Digital Twin 2025 Paper Publication</h3>
-          <p class="fs-5">
-            All papers need to be submitted electronically through the
-            conference submission website (EDAS) in PDF format at EDAS. Each
-            paper is limited to 8 pages (or 10 pages with over-length charge)
-            for a regular full paper, 6 pages (or 8 pages with over-length
-            charge) for a full paper including figures and references using the
-            IEEE Computer Society Proceedings manuscripts style.<br /><br />
-            Accepted papers will be published by IEEE (IEEE-DL and EI indexed)
-            in the Smart World Congress Proceedings. Best Paper Awards will be
-            presented to high quality papers. Selected papers will be
-            recommended to a number of special issues of prestigious journal.
-          </p>
-          <div
-            class="d-flex flex-column gap-2 justify-content-start align-items-start"
-          >
-            <a
-              class="btn btn-primary"
-              target="_blank"
-              href="https://edas.info/N33584"
-              >Submit Paper to Digital Twin 2025</a
-            >
+    </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
+    <h3 class="section-title fs-2 text-center fw-bold mb-4">Types of Submissions</h3>
+    <p class="fs-5 lh-lg">
+      The conference welcomes high-quality, original research contributions that advance the scientific and
+      technological foundations of the smart world. Authors are invited to submit their work in one of the following
+      categories:
+    </p>
+
+    <div class="row g-4 mt-2">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm topic-card">
+          <div class="card-body p-4">
+            <h4 class="fw-bold  mb-3">Full Papers <span class="text-muted fs-6">(6 pages)</span></h4>
+            <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
+              Complete research studies containing significant findings, rigorous methodology, and comprehensive
+              experimental or theoretical results.
+            </p>
           </div>
-          <h3>Final Paper Instructions</h3>
-          <p class="fw-bold fs-5">
-            <span style="color: red">Important</span>: Final paper and copyright
-            submissions must be made through IEEE CPS (Conference Publishing
-            Services), <span style="color: red">NOT EDAS</span>!
-          </p>
-          <p class="fs-5">
-            Below is the link to the SWC 2025 Author's Final Paper Formatting
-            and Submission Instructions webpage. It is applicable to all
-            co-located conferences (UIC, ATC, DigitalTwin, Metaverse, ScalCom).
-            This will allow you to:
-          </p>
-          <ul class="fs-5">
-            <li>Verify/convert your paper using PDF eXpress</li>
-            <li>Submit your paper's copyright</li>
-            <li>Submit your final paper</li>
-          </ul>
-          <div
-            class="d-flex flex-column gap-2 justify-content-start align-items-start"
-          >
-            <div class="d-flex flex-row gap-2">
-              <a
-                class="btn btn-primary"
-                target="_blank"
-                href="https://ieeecps.org/cps/v2/auth/login?ak=1&pid=2FBloH8EZnpjmoosiBNJHK"
-                >Submit Final Paper to Digital Twin 2025</a
-              >
-              <a class="btn btn-light" href="/final-paper-instructions/"
-                >View Final Submission Instructions</a
-              >
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm topic-card">
+          <div class="card-body p-4">
+            <h4 class="fw-bold  mb-3">Short Papers <span class="text-muted fs-6">(4 pages)</span></h4>
+            <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
+              Concise contributions reporting promising early results, innovative ideas, or ongoing work that is
+              expected to stimulate discussion and further development.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm topic-card">
+          <div class="card-body p-4">
+            <h4 class="fw-bold  mb-3">Poster & Demo Papers <span class="text-muted fs-6">(2 pages)</span></h4>
+            <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
+              Visual or interactive presentations highlighting prototypes, systems, applications, or preliminary
+              research results. Demonstrations are encouraged to showcase practical innovations and emerging
+              technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-info mt-4" role="alert">
+      <p class="mb-0 fs-5">
+        <strong>Important:</strong> A submission can have at most 2 additional pages with the pages overlength charge,
+        if accepted.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
+    <div class="mt-4">
+      <h3 class="section-title fs-2 text-center fw-bold mb-4">Publication and Indexing</h3>
+      <p class="fs-5 lh-lg mb-4">
+        All accepted and presented papers (regular, workshop/special session) will be:
+      </p>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="d-flex align-items-start">
+            <div class="me-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+            </div>
+            <div>
+              <h5 class="fw-semibold mb-1">IEEE Conference Proceedings</h5>
+              <p class="text-muted mb-0" style="font-size: 0.9rem;">Included in the official conference proceedings</p>
             </div>
           </div>
         </div>
+        <div class="col-md-4">
+          <div class="d-flex align-items-start">
+            <div class="me-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+            </div>
+            <div>
+              <h5 class="fw-semibold mb-1">IEEE Xplore</h5>
+              <p class="text-muted mb-0" style="font-size: 0.9rem;">Submitted for publication in IEEE Xplore</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex align-items-start">
+            <div class="me-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+            </div>
+            <div>
+              <h5 class="fw-semibold mb-1">Major Databases</h5>
+              <p class="text-muted mb-0" style="font-size: 0.9rem;">Indexed in Elsevier, IET, and Scopus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-warning mt-4" role="alert">
+        <p class="mb-0 fs-5">
+          <strong>Note:</strong> For a paper to remain eligible for publication, it must be presented in person (unless
+          otherwise specified). At least one author must register for the conference and deliver the presentation.
+        </p>
+      </div>
+    </div>
+
+    <hr style="border-top: 2px solid #dee2e6;" />
+
+    <div class="mt-4">
+      <h3 class="section-title fs-2 text-center fw-bold mb-4">Special Issue and Extended Versions</h3>
+      <p class="fs-5 lh-lg mb-4">
+        A Special Issue in a high-impact, ISI-indexed journal will be organized in conjunction with the conference.
+        Authors of selected outstanding papers will
+        receive an invitation to submit an extended version of their work.
+      </p>
+      <!-- <p class="fs-5 lh-lg mb-4">
+        Extended submissions must:
+      </p> -->
+      <!-- <div class="card bg-light-subtle border-0 shadow-sm">
+        <div class="card-body p-4">
+          <ul class="fs-5 mb-0" style="line-height: 2;">
+            <li>Contain at least <strong>30% new material</strong></li>
+            <li>Provide deeper insights, expanded experiments, or additional contributions beyond the conference version</li>
+            <li>Undergo a full journal peer-review process</li>
+          </ul>
+        </div>
+      </div> -->
+      <div class="alert alert-info mt-4" role="alert">
+        <p class="mb-0 fs-5">
+          Information about the journal partner and submission deadlines will be announced soon.
+        </p>
       </div>
     </div>
   </div>

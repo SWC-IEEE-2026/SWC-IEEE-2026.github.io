@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
   background: #fff;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
+  height: auto;
   overflow: hidden;
 }
 
@@ -182,6 +182,12 @@ h1, h2, h3, h4, h5 {
   background-color: #fff;
   border-radius: var(--card-border-radius);
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dates-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-hover-shadow);
 }
 
 .date-item {
@@ -371,6 +377,28 @@ h1, h2, h3, h4, h5 {
     border-left: 4px solid #0d6efd;
     background-color: #f8f9fa;
   }
+
+/* --- Sponsors --- */
+.sponsors-row {
+  align-items: center;
+}
+.sponsor-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+}
+.sponsor-logo {
+  max-height: 65px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .sponsor-col { height: 48px; }
+  .sponsor-logo { max-height: 48px; }
+}
 
 /* --- Contact Page --- */
 .contact-hero {

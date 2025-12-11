@@ -2,10 +2,10 @@
   class="page-section container-fluid px-3 py-5 d-flex flex-column gap-4"
 >
   <h2 class="section-title fs-2 text-center">Sponsors</h2>
-  <div class="row justify-content-around g-5 pb-5">
+  <div class="row sponsors-row justify-content-around g-5 pb-5">
     {% for sponsor in include.sponsors %}
-    <div class="col-auto d-flex justify-content-center" style="height: 65px">
-      <img src="{{ sponsor.image }}" class="mh-100" />
+    <div class="col-auto sponsor-col">
+      <img src="{{ sponsor.image }}" class="sponsor-logo img-fluid" alt="Sponsor logo" />
     </div>
     {% endfor %}
   </div>

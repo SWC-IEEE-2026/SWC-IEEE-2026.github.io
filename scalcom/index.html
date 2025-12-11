@@ -1,6 +1,13 @@
 ---
 layout: default
-title: IEEE ScalCom 2025
+title: IEEE ScalCom 2026
+sponsors:
+- image: /assets/images/ieee mb black png.png
+- image: /assets/images_26/sponsor/IEEE_Italy_logo_small.png
+- image: /assets/images_26/sponsor/cis.png
+- image: /assets/images_26/sponsor/smc.png
+- image: /assets/images_26/sponsor/unical-2.png
+- image: /assets/images_26/sponsor/dimes.svg
 ---
 
 <!-- Hero Section -->
@@ -20,358 +27,396 @@ title: IEEE ScalCom 2025
       class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3"
     >
       <h1 class="display-5 fw-bolder mt-5">
-        The 25th IEEE International Conference on Scalable Computing and
-        Communications (Hybrid)
+        The 26th IEEE International Conference on Scalable Computing and
+        Communications
       </h1>
       <div>
-        <h3>Calgary, Alberta, Canada</h3>
-        <h3 class="">August 18 - 22, 2025</h3>
+        <h3>Rende, Italy</h3>
+        <h3 class="">{{site.data.swc_data.dates.conferenceDates}}</h3>
       </div>
       <div>
         <a class="btn btn-primary" href="#submission"
-          >Submit Paper to ScalCom 2025</a
+          >Submit Paper to ScalCom 2026</a
         >
       </div>
     </div>
   </div>
 </section>
 
-<section
-  class="page-section container-fluid px-3 pt-5 pb-5 mt-2 d-flex flex-column gap-2"
->
+<section class="page-section container-fluid px-3 pt-5 pb-5 mt-2 d-flex flex-column gap-2">
+  <div>
+    <div class="alert alert-info" role="alert">
+      Early-bird registration starts from <b>{{site.data.swc_data.dates.earlyBird}}</b>.
+      <!-- <a href="/registration/" class="alert-link">Register Now</a> -->
+    </div>
+  </div>
   <div class="row g-5">
     <div class="col-sm-4 d-flex flex-column gap-4">
-      <div class="card bg-light-subtle">
-        <div
-          class="card-body d-flex flex-column justify-content-between align-items-center"
-        >
-          <h4 class="fs-5 fw-bold">Important Dates</h4>
-          <hr class="w-100" />
-          <h5 class="fs-6 fw-bold text-center">Paper Submission Deadline</h5>
-          <h6 class="text-decoration-line-through">April 14, 2025</h6>
-          <h6 class="text-decoration-line-through">May 10, 2025</h6>
-          <hr class="w-100" />
-          <h5 class="fs-6 fw-bold text-center">Authors Notification</h5>
-          <h6 class="text-decoration-line-through">June 1, 2025</h6>
-          <hr class="w-100" />
-          <h5 class="fs-6 fw-bold text-center">Camera-ready Submission</h5>
-          <h6 class="text-decoration-line-through">July 1, 2025</h6>
-          <hr class="w-100" />
-          <h5 class="fs-6 fw-bold text-center">Registration</h5>
-          <h6 class="text-decoration-line-through">July 1, 2025</h6>
-          <hr class="w-100" />
-          <h5 class="fs-6 fw-bold text-center">Conference Dates</h5>
-          <h6 class="text-decoration-line-through">August 18 - 22, 2025</h6>
+
+      <div class="dates-card p-4">
+        <h4 class="fw-bold mb-4">Important Dates</h4>
+        <div class="d-flex flex-column gap-1">
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-danger">Full Paper Submission</span>
+              <span class="fw-bold text-danger">{{site.data.swc_data.dates.paperSubmission}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-secondary">Authors Notification</span>
+              <span class="text-muted">{{site.data.swc_data.dates.authorsNotification}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-secondary">Camera-ready</span>
+              <span class="text-muted">{{site.data.swc_data.dates.cameraReadyDue}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-primary">Conference Dates</span>
+              <span class="fw-bold text-primary">{{site.data.swc_data.dates.conferenceDates}}</span>
+            </div>
+          </div>
+
         </div>
       </div>
-      <div class="card bg-light-subtle">
-        <div
-          class="card-body d-flex flex-column justify-content-between align-items-center"
-        >
-          <h4 class="fs-5 fw-bold">Organizing Committee</h4>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">General Chair</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Liang Chen <br />
-                University of Northern BC, Canada
-              </h5>
+
+      <div class="custom-card p-4">
+        <h4 class="fw-bold mb-4">Organizing Committee</h4>
+        <div class="d-flex flex-column gap-3">
+
+          <div>
+            <div class="d-flex align-items-center mb-2">
+              <h6 class="fw-bold text-secondary mb-2">General Chairs</h6>
             </div>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark">Claudio Savaglio</div>
+                <div class="small text-muted lh-sm">University of Calabria, Italy</div>
+              </li>
+              <li class="mb-2">
+                <div class="fw-bold text-dark">Zumin Wang</div>
+                <div class="small text-muted lh-sm">Dalian University, China</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark">Hui Fang</div>
+                <div class="small text-muted lh-sm">Loughborough University, UK</div>
+              </li>
+            </ul>
           </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Program Chairs</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Cen Chen <br />
-                South China University of Technology, China <br />
-                <a href="chencen@scut.edu.cn">chencen@scut.edu.cn</a>
-              </h5>
-              <h5 class="fs-6">
-                Fan Jiang <br />
-                University of Northern BC, Canada, <br />
-                <a href="Fan.Jiang@unbc.ca">Fan.Jiang@unbc.ca</a>
-              </h5>
-            </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Technical Program Chairs</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Francesco Cauteruccio</div>
+                <div class="small text-muted">University of Salerno, Italy</div>
+              </li>
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Noel Crespi</div>
+                <div class="small text-muted">Institut Polytechnique de Paris, France</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Andrea Tundis</div>
+                <div class="small text-muted">Deutsche Bundesbank, Germany</div>
+              </li>
+            </ul>
           </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Panel Chair</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Man Lin <br />
-                St. Francis Xavier University, Canada
-              </h5>
-            </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Workshop/Special Sessions</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Fabrizio Fornari</div>
+                <div class="small text-muted">University of Camerino, Italy</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Vittorio Solina</div>
+                <div class="small text-muted">University of Calabria, Italy</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Lingling Fang</div>
+                <div class="small text-muted">Liaoning Normal University, China</div>
+              </li>
+            </ul>
           </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Local Chairs</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Rossitza Marinova <br />
-                Concordia University of Edmonton, Canada
-              </h5>
-              <h5 class="fs-6">
-                Anthony Azimi <br />
-                SAIT, Canada
-              </h5>
-            </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Publicity Chairs</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Tao Zhu</div>
+                <div class="small text-muted">University of South China, China</div>
+              </li>
+              <li class="mb-2">
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Roberto Minerva</div>
+                <div class="small text-muted">Institut Polytechnique de Paris, France</div>
+              </li>
+            </ul>
           </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Tutorial Chair</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Hong Lin <br />
-                University of Houston-Downtown, US
-              </h5>
-            </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Web Chair</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li>
+                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Vincenzo Barbuto</div>
+                <div class="small text-muted">University of Calabria, Italy</div>
+              </li>
+            </ul>
           </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Publication Chair</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Carson K. Leung <br />
-                University of Manitoba, Canada
-              </h5>
-            </div>
-          </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Web Chair</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Raymond Morland <br />
-                Athabasca University, Canada
-              </h5>
-            </div>
-          </div>
-          <hr class="w-100" />
-          <div class="d-flex gap-1 flex-column w-100">
-            <h5 class="fs-6 fw-bold">Steering Committee Chairs</h5>
-            <div class="d-flex flex-column">
-              <h5 class="fs-6">
-                Jianhua Ma <br />
-                Hosei University, Japan
-              </h5>
-              <h5 class="fs-6">
-                Laurence T. Yang <br />
-                St. Francis Xavier Uni., Canada
-              </h5>
-              <h5 class="fs-6">
-                Liming Chen <br />
-                Dalian University of Technology, China
-              </h5>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
     <div class="col-sm-8 d-flex flex-column gap-4">
       <div>
-        <h2 class="fs-2 mb-2">
-          Join us at the 2025 IEEE International Conference on Scalable
-          Computing and Communication
-        </h2>
+        <h2 class="section-title fs-2 text-center fw-bold mb-4">Call for Papers</h2>
         <p class="fs-5">
-          Scalability is one of the key evaluation criteria of computing
-          systems. High scalability represents a kind of elasticity, which can
-          guarantee high throughput, small delay, and high performance. Scalable
-          computing and communications are particularly crucial in fields such
-          as artificial intelligence, big data processing, and scientific
-          computing, where large-scale data processing or complex computational
-          tasks are common. To boost scalability, it's vital to utilize
-          supportive tools & platforms, and high-performance communications &
-          networking technologies. Additionally, optimizing algorithms and
-          models are essential for efficiently managing increasing workloads and
-          data volumes. Moreover, with the development of AI large model
-          technology, scalable intelligent computing systems are also very
-          important for creating intelligent environments, services and
-          applications.
+          Scalability is one of the key evaluation criteria of computing systems. High scalability represents a kind of elasticity, 
+          which can guarantee high throughput, small delay, and high performance. Scalable computing and communications are particularly 
+          crucial in fields such as artificial intelligence, big data processing, and scientific computing, where large-scale data 
+          processing or complex computational tasks are common. To boost scalability, it's vital to utilize supportive tools & platforms, 
+          and high-performance communications & networking technologies. Additionally, optimizing algorithms and models are essential for 
+          efficiently managing increasing workloads and data volumes. Moreover, with the development of AI large model technology, scalable 
+          intelligent computing systems are also very important for creating intelligent environments, services and applications.
           <br /><br />
-          The 25th IEEE International Conference on Scalable Computing and
-          Communications (ScalCom 2025) will include a highly selective program
-          of technical papers, panel discussions and keynote speeches. We
-          welcome high quality papers that describe original and unpublished
-          research advancing the state of the art in scalable communication &
-          networks. Topics for submissions include but are not limited to the
-          following theory, technology, and applications.
+          The 26th IEEE International Conference on Scalable Computing and Communications (ScalCom 2026) will include a highly selective 
+          program of technical papers, panel discussions and keynote speeches. We welcome high quality papers that describe original and 
+          unpublished research advancing the state of the art in scalable communication & networks. 
         </p>
       </div>
-      <div class="row">
-        <div class="col-12 mb-3 mb-sm-0 d-flex flex-column gap-4">
-          <h2 class="fs-2">IEEE ScalCom 2025 Tracks and Topics</h2>
-          <div class="row pb-3 g-4">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="fs-5">
-                    Track 1: Tools & Platforms for Supporting Scalability
-                  </h5>
-                  <ul>
-                    <li>Parallel and Distributed Programming Tools</li>
-                    <li>Cloud Programming Tools</li>
-                    <li>Cloud Infrastructure Management</li>
-                    <li>Edge-Cloud Collaborative Computing Platforms</li>
-                    <li>Large-scale Heterogeneous Computing Systems</li>
-                    <li>Fault-tolerance in Large Scale Applications</li>
-                    <li>Scalable Serverless Systems</li>
-                    <li>Scalable Federated Computing</li>
-                    <li>Distributed Database</li>
-                    <li>Scalable Blockchain System</li>
-                  </ul>
+      <div>
+        <div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h5 class="fw-bold mb-4 ">
+                The topics of interest include (but are not limited to) the following:
+              </h5>
+              <!-- Visual topic cards (same layout as home page) -->
+              <div class="row g-3 mb-4">
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Fundamentals, concepts and theories</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card bg-light-subtle h-100">
-                <div class="card-body">
-                  <h5 class="fs-5">
-                    Track 2: Scalable Communication & Networks
-                  </h5>
-                  <ul>
-                    <li>High-Performance Network Protocols for Scalability</li>
-                    <li>
-                      Scalability Solutions for Internet of Things (IoT)
-                      Networks
-                    </li>
-                    <li>Scalable Architectures for 5G/6G Networks</li>
-                    <li>
-                      Energy-Efficient and Scalable Wireless Communication
-                      Systems
-                    </li>
-                    <li>
-                      Machine Learning and AI for Network Optimization and
-                      Scalability
-                    </li>
-                    <li>
-                      Cross-Layer Design for Enhanced Scalability in Networks
-                    </li>
-                    <li>Security and Privacy in Scalable Networks</li>
-                  </ul>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Architecture, standards and frameworks</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card bg-light-subtle h-100">
-                <div class="card-body">
-                  <h5 class="fs-5">Track 3: Scalable Algorithms & Models</h5>
-                  <ul>
-                    <li>Parallel & Distributed Programming Models</li>
-                    <li>Distributed Programming Models</li>
-                    <li>Edge-Cloud Collaborative Computing Models</li>
-                    <li>Scalable Machine Learning Algorithms</li>
-                    <li>
-                      Efficient Deep Learning Architectures for Scalability
-                    </li>
-                    <li>
-                      Efficient Algorithms for Distributed Data Storage and
-                      Retrieval
-                    </li>
-                    <li>Energy-Efficient Algorithms for Scalable Computing</li>
-                    <li>
-                      Scalable Algorithms for Real-Time Big Data Analytics
-                    </li>
-                    <li>Scalable Graph Processing Algorithms</li>
-                  </ul>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Methodology, lifecycle and processes management</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card bg-light-subtle h-100">
-                <div class="card-body">
-                  <h5 class="fs-5">Track 4: Scalability in Large-scale AI</h5>
-                  <ul>
-                    <li>Cloud and Edge Computing for AI</li>
-                    <li>Parallel and Distributed Computing for AI</li>
-                    <li>
-                      Efficient Training Strategies for Large-Scale AI Models
-                    </li>
-                    <li>AI Model Compression and Quantization</li>
-                    <li>Energy-efficient Computing for Scalable AI</li>
-                    <li>Model and Data Parallelism</li>
-                    <li>Deploying Large Scale AI</li>
-                    <li>Resource Management for AI Workloads</li>
-                    <li>Security and Privacy in Scalable AI Systems</li>
-                    <li>Federated Learning for AI</li>
-                  </ul>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Model-based and data-driven Digital Twin engineering</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Simulation based approach and technologies</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Digital Twin interaction, communication, and
+                      interoperability</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">Digital Twin Networks and applications</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">AI and Generative AI for Digital Twin</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark">User interface for Digital Twins</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark mb-2">Security and Privacy for Digital Twin</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div
+                    class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center justify-content-center text-center">
+                    <span class="fw-bold fs-6 text-dark mb-2">Digital Twin Systems and Applications</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row" id="submission">
-        <div class="col-sm-12 d-flex flex-column gap-3 justify-content-around">
-          <h3 class="">Paper Submission</h3>
-          <p class="fs-5">
-            All papers need to be submitted electronically through the
-            conference submission website (EDAS) in PDF format at EDAS. Each
-            paper is limited to 8 pages (or 10 pages with over-length charge)
-            for a regular full paper, 6 pages (or 8 pages with over-length
-            charge) for a full paper including figures and references using the
-            IEEE Computer Society Proceedings manuscripts style.
-          </p>
-          <p class="fs-5">
-            Based on the reviews, the program committee will determine whether a
-            paper is accepted and, if so, in which category.
-          </p>
-          <h3 class="">Paper Publication</h3>
-          <p class="fs-5">
-            Accepted conference papers will be published by IEEE (IEEE-DL and EI
-            indexed). At least one author of each accepted paper is required to
-            register and present their work at the conference. Best paper awards
-            will be presented at the conference. Selected high quality papers
-            will be nominated to publish at high-level journal, after further
-            extensions and revisions.
-          </p>
-          <div
-            class="d-flex flex-column gap-2 justify-content-start align-items-start"
-          >
-            <a
-              class="btn btn-primary"
-              target="_blank"
-              href="https://edas.info/N33585"
-            >
-              Submit Paper to ScalCom 2025
-            </a>
+    </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
+    <h3 class="section-title fs-2 text-center fw-bold mb-4">Types of Submissions</h3>
+    <p class="fs-5 lh-lg">
+      The conference welcomes high-quality, original research contributions that advance the scientific and
+      technological foundations of the smart world. Authors are invited to submit their work in one of the following
+      categories:
+    </p>
+
+    <div class="row g-4 mt-2">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm topic-card">
+          <div class="card-body p-4">
+            <h4 class="fw-bold  mb-3">Full Papers <span class="text-muted fs-6">(6 pages)</span></h4>
+            <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
+              Complete research studies containing significant findings, rigorous methodology, and comprehensive
+              experimental or theoretical results.
+            </p>
           </div>
-          <h3>Final Paper Instructions</h3>
-          <p class="fw-bold fs-5">
-            <span style="color: red">Important</span>: Final paper and copyright
-            submissions must be made through IEEE CPS (Conference Publishing
-            Services), <span style="color: red">NOT EDAS</span>!
-          </p>
-          <p class="fs-5">
-            Below is the link to the SWC 2025 Author's Final Paper Formatting
-            and Submission Instructions webpage. It is applicable to all
-            co-located conferences (UIC, ATC, DigitalTwin, Metaverse, ScalCom).
-            This will allow you to:
-          </p>
-          <ul class="fs-5">
-            <li>Verify/convert your paper using PDF eXpress</li>
-            <li>Submit your paper's copyright</li>
-            <li>Submit your final paper</li>
-          </ul>
-          <div
-            class="d-flex flex-column gap-2 justify-content-start align-items-start"
-          >
-            <div class="d-flex flex-row gap-2">
-              <a
-                class="btn btn-primary"
-                target="_blank"
-                href="https://ieeecps.org/cps/v2/auth/login?ak=1&pid=2FBloH8EZnpjmoosiBNJHK"
-                >Submit Final Paper to ScalCom 2025</a
-              >
-              <a class="btn btn-light" href="/final-paper-instructions/"
-                >View Final Submission Instructions</a
-              >
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm topic-card">
+          <div class="card-body p-4">
+            <h4 class="fw-bold  mb-3">Short Papers <span class="text-muted fs-6">(4 pages)</span></h4>
+            <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
+              Concise contributions reporting promising early results, innovative ideas, or ongoing work that is
+              expected to stimulate discussion and further development.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm topic-card">
+          <div class="card-body p-4">
+            <h4 class="fw-bold  mb-3">Poster & Demo Papers <span class="text-muted fs-6">(2 pages)</span></h4>
+            <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
+              Visual or interactive presentations highlighting prototypes, systems, applications, or preliminary
+              research results. Demonstrations are encouraged to showcase practical innovations and emerging
+              technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-info mt-4" role="alert">
+      <p class="mb-0 fs-5">
+        <strong>Important:</strong> A submission can have at most 2 additional pages with the pages overlength charge,
+        if accepted.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
+    <div class="mt-4">
+      <h3 class="section-title fs-2 text-center fw-bold mb-4">Publication and Indexing</h3>
+      <p class="fs-5 lh-lg mb-4">
+        All accepted and presented papers (regular, workshop/special session) will be:
+      </p>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="d-flex align-items-start">
+            <div class="me-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+            </div>
+            <div>
+              <h5 class="fw-semibold mb-1">IEEE Conference Proceedings</h5>
+              <p class="text-muted mb-0" style="font-size: 0.9rem;">Included in the official conference proceedings</p>
             </div>
           </div>
         </div>
+        <div class="col-md-4">
+          <div class="d-flex align-items-start">
+            <div class="me-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+            </div>
+            <div>
+              <h5 class="fw-semibold mb-1">IEEE Xplore</h5>
+              <p class="text-muted mb-0" style="font-size: 0.9rem;">Submitted for publication in IEEE Xplore</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex align-items-start">
+            <div class="me-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+            </div>
+            <div>
+              <h5 class="fw-semibold mb-1">Major Databases</h5>
+              <p class="text-muted mb-0" style="font-size: 0.9rem;">Indexed in Elsevier, IET, and Scopus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-warning mt-4" role="alert">
+        <p class="mb-0 fs-5">
+          <strong>Note:</strong> For a paper to remain eligible for publication, it must be presented in person (unless
+          otherwise specified). At least one author must register for the conference and deliver the presentation.
+        </p>
+      </div>
+    </div>
+
+    <hr style="border-top: 2px solid #dee2e6;" />
+
+    <div class="mt-4">
+      <h3 class="section-title fs-2 text-center fw-bold mb-4">Special Issue and Extended Versions</h3>
+      <p class="fs-5 lh-lg mb-4">
+        A Special Issue in a high-impact, ISI-indexed journal will be organized in conjunction with the conference.
+        Authors of selected outstanding papers will
+        receive an invitation to submit an extended version of their work.
+      </p>
+      <!-- <p class="fs-5 lh-lg mb-4">
+        Extended submissions must:
+      </p> -->
+      <!-- <div class="card bg-light-subtle border-0 shadow-sm">
+        <div class="card-body p-4">
+          <ul class="fs-5 mb-0" style="line-height: 2;">
+            <li>Contain at least <strong>30% new material</strong></li>
+            <li>Provide deeper insights, expanded experiments, or additional contributions beyond the conference version</li>
+            <li>Undergo a full journal peer-review process</li>
+          </ul>
+        </div>
+      </div> -->
+      <div class="alert alert-info mt-4" role="alert">
+        <p class="mb-0 fs-5">
+          Information about the journal partner and submission deadlines will be announced soon.
+        </p>
       </div>
     </div>
   </div>
@@ -381,28 +426,4 @@ title: IEEE ScalCom 2025
   {% include colocated-conferences.html %}
 </section>
 
-<section
-  class="page-section container-fluid px-3 py-5 d-flex flex-column gap-4"
->
-  <h2 class="fs-2 text-center">Sponsors</h2>
-  <div class="row justify-content-around g-5 pb-5">
-    <div class="col-auto d-flex justify-content-center" style="height: 50px">
-      <img src="/assets/images/ieee mb black png.png" class="mh-100" />
-    </div>
-    <div class="col-auto d-flex justify-content-center" style="height: 50px">
-      <img src="/assets/images/IEEE-CS_LogoTM-orange.png" class="mh-100" />
-    </div>
-  </div>
-  <h2 class="fs-2 text-center">Supporters</h2>
-  <div class="row justify-content-around g-5 pb-5">
-    <div class="col-auto d-flex justify-content-center" style="height: 50px">
-      <img src="/assets/images/tcsc_ieee.png" class="mh-100" />
-    </div>
-    <div class="col-auto d-flex justify-content-center" style="height: 50px">
-      <img src="/assets/images/ieee_cybermatics.png" class="mh-100" />
-    </div>
-    <div class="col-auto d-flex justify-content-center" style="height: 50px">
-      <img src="/assets/images/SWTC2.png" class="mh-100" />
-    </div>
-  </div>
-</section>
+{% include sponsors.html sponsors=page.sponsors %}

@@ -2,30 +2,25 @@
 layout: default
 title: IEEE SWC 2026 Call for Papers
 sponsors:
-  - image: /assets/images/ieee mb black png.png
-  - image: /assets/images_26/sponsor/IEEE_Italy_logo_small.png
-  - image: /assets/images_26/sponsor/cis.png
-  - image: /assets/images_26/sponsor/smc.png
-  - image: /assets/images_26/sponsor/unical-2.png
-  - image: /assets/images_26/sponsor/dimes.svg
+- image: /assets/images/ieee mb black png.png
+- image: /assets/images_26/sponsor/IEEE_Italy_logo_small.png
+- image: /assets/images_26/sponsor/cis.png
+- image: /assets/images_26/sponsor/smc.png
+- image: /assets/images_26/sponsor/unical-2.png
+- image: /assets/images_26/sponsor/dimes.svg
 ---
 
 <!-- Hero Section -->
-<section
-  class="jumbotron text-center"
-  style="
+<section class="jumbotron text-center" style="
     background-image: url('/assets/images/jack-carter-_oYcF7p42xM-unsplash.jpg');
     background-size: cover;
     background-position: center 65%;
     min-height: 70vh;
     position: relative;
     color: white;
-  "
->
+  ">
   <div class="hero-section" style="min-height: 70vh">
-    <div
-      class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3"
-    >
+    <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3">
       <h1 class="display-5 fw-bolder mt-5">
         Call for Papers and Special Session/Workshop Proposals
       </h1>
@@ -38,17 +33,13 @@ sponsors:
         <h3 class="">{{site.data.swc_data.dates.conferenceDates}}</h3>
       </div>
       <div>
-        <a class="btn btn-primary" href="#submission"
-          >Submit Paper to SWC 2026</a
-        >
+        <a class="btn btn-primary" href="#submission">Submit Paper to SWC 2026</a>
       </div>
     </div>
   </div>
 </section>
 
-<section
-  class="page-section container-fluid px-3 pt-3 pb-5 mt-2 d-flex flex-column gap-2"
->
+<section class="page-section container-fluid px-3 pt-3 pb-5 mt-2 d-flex flex-column gap-2">
   <div>
     <div class="alert alert-info" role="alert">
       Early-bird registration starts from <b>{{site.data.swc_data.dates.earlyBird}}</b>.
@@ -64,162 +55,212 @@ sponsors:
   </div>
   <div class="row g-5">
     <div class="col-sm-4 d-flex flex-column gap-4">
-      <div class="card bg-light-subtle shadow-sm">
-        <div class="card-body p-3">
-          <h4 class="fs-5 fw-bold mb-3">Important Dates</h4>
-          <div class="d-flex flex-column gap-2" style="font-size: 0.8rem;">
-            <div class="d-flex justify-content-between align-items-start border-bottom pb-2">
-              <span class="fw-bold text-danger" style="font-size: 0.75rem;">Full Paper Submission:</span>
-              <span class="text-danger fw-semibold" style="font-size: 0.75rem;">{{site.data.swc_data.dates.paperSubmission}}</span>
-            </div>
-            <div class="d-flex justify-content-between align-items-start border-bottom pb-2">
-              <span class="fw-semibold text-dark" style="font-size: 0.75rem;">Authors Notification:</span>
-              <span class="text-muted text-end" style="font-size: 0.75rem;">{{site.data.swc_data.dates.authorsNotification}}</span>
-            </div>
-            <div class="d-flex justify-content-between align-items-start border-bottom pb-2">
-              <span class="fw-semibold text-dark" style="font-size: 0.75rem;">Demo/Poster/WiP:</span>
-              <span class="text-muted text-end" style="font-size: 0.75rem;">{{site.data.swc_data.dates.demoPosterWIPPaperDue}}</span>
-            </div>
-            <div class="d-flex justify-content-between align-items-start border-bottom pb-2">
-              <span class="fw-semibold text-dark" style="font-size: 0.75rem;">Camera-ready:</span>
-              <span class="text-muted text-end" style="font-size: 0.75rem;">{{site.data.swc_data.dates.cameraReadyDue}}</span>
-            </div>
-            <div class="d-flex justify-content-between align-items-start border-bottom pb-2">
-              <span class="fw-semibold text-dark" style="font-size: 0.75rem;">Tutorial/WS/SS Proposal:</span>
-              <span class="text-muted text-end" style="font-size: 0.75rem;">{{site.data.swc_data.dates.tutorialWorkshopSpecialSessionDue}}</span>
-            </div>
-            <div class="d-flex justify-content-between align-items-start border-bottom pb-2">
-              <span class="fw-semibold text-dark" style="font-size: 0.75rem;">Tutorial/WS/SS Acceptance:</span>
-              <span class="text-muted text-end" style="font-size: 0.75rem;">{{site.data.swc_data.dates.tutorialWorkshopSpecialSessionAcceptance}}</span>
-            </div>
-            <div class="d-flex justify-content-between align-items-start pt-1">
-              <span class="fw-bold text-success" style="font-size: 0.75rem;">Conference:</span>
-              <span class="text-success fw-semibold" style="font-size: 0.75rem;">{{site.data.swc_data.dates.conferenceDates}}</span>
+      <div class="dates-card p-4">
+        <h4 class="fw-bold mb-4">Important Dates</h4>
+        <div class="d-flex flex-column gap-1">
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-danger">Full Paper Submission</span>
+              <span class="fw-bold text-danger">{{site.data.swc_data.dates.paperSubmission}}</span>
             </div>
           </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-secondary">Authors Notification</span>
+              <span class="text-muted">{{site.data.swc_data.dates.authorsNotification}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-secondary">Demo/Poster/WiP</span>
+              <span class="text-muted">{{site.data.swc_data.dates.demoPosterWIPPaperDue}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-secondary">Camera-ready</span>
+              <span class="text-muted">{{site.data.swc_data.dates.cameraReadyDue}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-secondary">Tutorial/WS/SS Proposal</span>
+              <span class="text-muted">{{site.data.swc_data.dates.tutorialWorkshopSpecialSessionDue}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-secondary">Tutorial/WS/SS Acceptance</span>
+              <span class="text-muted">{{site.data.swc_data.dates.tutorialWorkshopSpecialSessionAcceptance}}</span>
+            </div>
+          </div>
+
+          <div class="date-item">
+            <div class="d-flex flex-column">
+              <span class="fw-bold text-primary">Conference Dates</span>
+              <span class="fw-bold text-primary">{{site.data.swc_data.dates.conferenceDates}}</span>
+            </div>
+          </div>
+
         </div>
       </div>
-      <div class="card bg-light-subtle shadow-sm">
-        <div class="card-body p-3">
-          <h4 class="fs-5 fw-bold mb-3">Organizing Committee</h4>
-          <div class="d-flex flex-column gap-2" style="font-size: 0.75rem;">
-            <div>
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">General Chairs</h6>
-              <div class="ms-2 d-flex flex-column gap-1">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Giancarlo Fortino <span class="text-muted">(Executive)</span></div>
-                  <div class="text-muted" style="font-size: 0.7rem;">University of Calabria, Italy</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Enrique Herrera-Viedma</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">University of Granada, Spain</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Mengchu Zhou</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">New Jersey Institute of Technology, USA</div>
-                </div>
-              </div>
-            </div>
-            <div class="border-top pt-2">
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">Technical Program Chairs</h6>
-              <div class="ms-2 d-flex flex-column gap-1">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Flavia Delicato</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">Fluminense Federal University, Brazil</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Daoyi Dong</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">Australian National University, Australia</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Valeria Loscrì</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">INRIA, France</div>
-                </div>
-              </div>
-            </div>
-            <div class="border-top pt-2">
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">Workshop/Special Sessions</h6>
-              <div class="ms-2 d-flex flex-column gap-1">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Pietro Manzoni</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">Polytechnic University of Valencia, Spain</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Maria Ganzha</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">Warsaw University of Technology, Poland</div>
-                </div>
-              </div>
-            </div>
-            <div class="border-top pt-2">
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">Publicity Chairs</h6>
-              <div class="ms-2 d-flex flex-column gap-1">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Min Chen</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">South China University of Technology, China</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Oscar Lin</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">Athabasca University, Canada</div>
-                </div>
-              </div>
-            </div>
-            <div class="border-top pt-2">
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">Industry & Sponsorship</h6>
-              <div class="ms-2 d-flex flex-column gap-1">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Adam Drobot</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">OpenTechWorks, Inc., USA</div>
-                </div>
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Pasquale Mazzei</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">Neosperience, Italy</div>
-                </div>
-              </div>
-            </div>
-            <div class="border-top pt-2">
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">Finance Chair</h6>
-              <div class="ms-2">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Antonio Guerrieri</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">ICAR-CNR, Italy</div>
-                </div>
-              </div>
-            </div>
-            <div class="border-top pt-2">
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">Publication Chair</h6>
-              <div class="ms-2">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Raffaele Gravina</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">University of Calabria, Italy</div>
-                </div>
-              </div>
-            </div>
-            <div class="border-top pt-2">
-              <h6 class="fw-bold text-dark mb-1" style="font-size: 0.8rem;">Web Chair</h6>
-              <div class="ms-2">
-                <div>
-                  <div class="fw-bold" style="font-size: 0.85rem;">Vincenzo Barbuto</div>
-                  <div class="text-muted" style="font-size: 0.7rem;">University of Calabria, Italy</div>
-                </div>
-              </div>
-            </div>
+      <div class="custom-card p-4">
+        <h4 class="fw-bold mb-4">Organizing Committee</h4>
+        <div class="d-flex flex-column gap-3">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">General Chairs</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark">Giancarlo Fortino <span class="text-muted">(Executive)</span></div>
+                <div class="small text-muted">University of Calabria, Italy</div>
+              </li>
+              <li class="mb-2">
+                <div class="fw-bold text-dark">Enrique Herrera-Viedma</div>
+                <div class="small text-muted">University of Granada, Spain</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark">Mengchu Zhou</div>
+                <div class="small text-muted">New Jersey Institute of Technology, USA</div>
+              </li>
+            </ul>
           </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Technical Program Chairs</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark">Flavia Delicato</div>
+                <div class="small text-muted">Fluminense Federal University, Brazil</div>
+              </li>
+              <li class="mb-2">
+                <div class="fw-bold text-dark">Daoyi Dong</div>
+                <div class="small text-muted">Australian National University, Australia</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark">Valeria Loscrì</div>
+                <div class="small text-muted">INRIA, France</div>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Workshop/Special Sessions</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark">Pietro Manzoni</div>
+                <div class="small text-muted">Polytechnic University of Valencia, Spain</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark">Maria Ganzha</div>
+                <div class="small text-muted">Warsaw University of Technology, Poland</div>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Publicity Chairs</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark">Min Chen</div>
+                <div class="small text-muted">South China University of Technology, China</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark">Oscar Lin</div>
+                <div class="small text-muted">Athabasca University, Canada</div>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Industry & Sponsorship</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li class="mb-2">
+                <div class="fw-bold text-dark">Adam Drobot</div>
+                <div class="small text-muted">OpenTechWorks, Inc., USA</div>
+              </li>
+              <li>
+                <div class="fw-bold text-dark">Pasquale Mazzei</div>
+                <div class="small text-muted">Neosperience, Italy</div>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Finance Chair</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li>
+                <div class="fw-bold text-dark">Antonio Guerrieri</div>
+                <div class="small text-muted">ICAR-CNR, Italy</div>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Publication Chair</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li>
+                <div class="fw-bold text-dark">Raffaele Gravina</div>
+                <div class="small text-muted">University of Calabria, Italy</div>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="text-muted opacity-25 my-1">
+
+          <div>
+            <h6 class="fw-bold text-secondary mb-2">Web Chair</h6>
+            <ul class="list-unstyled mb-0 ms-1">
+              <li>
+                <div class="fw-bold text-dark">Vincenzo Barbuto</div>
+                <div class="small text-muted">University of Calabria, Italy</div>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </div>
     <div class="col-sm-8 d-flex flex-column gap-4">
       <div>
+        <h2 class="section-title fs-2 text-center">Call for Papers</h2>
         <p class="fs-5">
-          The smart world is set to enhance everyday things with abilities of sensation, communication, computation and intelligence so that 
-          many tasks and processes could be simplified, efficient, and enjoyable. It consists of numerous "smart things" that can be endowed 
-          with different levels/forms of intelligence and be connected together for a network level of intelligence. At the same time, the 
-          fairness and ethics in utilizing such an intelligence is of extreme importance. Research on ubiquitous and trustworthy 
-          smart world is an emerging research field covering many interdisciplinary areas that benefits humanity and will have significant 
+          The smart world is set to enhance everyday things with abilities of sensation, communication, computation and
+          intelligence so that
+          many tasks and processes could be simplified, efficient, and enjoyable. It consists of numerous "smart things"
+          that can be endowed
+          with different levels/forms of intelligence and be connected together for a network level of intelligence. At
+          the same time, the
+          fairness and ethics in utilizing such an intelligence is of extreme importance. Research on ubiquitous and
+          trustworthy
+          smart world is an emerging research field covering many interdisciplinary areas that benefits humanity and
+          will have significant
           societal impacts.
           <br /><br />
-          The IEEE Smart World Congress (SWC) originated from the 2005 Workshop on Ubiquitous Smart Worlds (USW, Taipei) and the 2005 Symposium 
-          on Ubiquitous Intelligence and Smart World (UISW, Nagasaki).  SWC’s 2026 in Italy at the University of Calabria aims to provide a high-profile, 
-          leading-edge platform for researchers and engineers to exchange and explore state-of-art advances and innovations in graceful integrations of Cyber, 
+          The IEEE Smart World Congress (SWC) originated from the 2005 Workshop on Ubiquitous Smart Worlds (USW, Taipei)
+          and the 2005 Symposium
+          on Ubiquitous Intelligence and Smart World (UISW, Nagasaki). SWC’s 2026 in Italy at the University of Calabria
+          aims to provide a high-profile,
+          leading-edge platform for researchers and engineers to exchange and explore state-of-art advances and
+          innovations in graceful integrations of Cyber,
           Physical and Social Worlds with Ubiquitous Intelligence.
         </p>
       </div>
@@ -281,12 +322,66 @@ sponsors:
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
-              <div class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center justify-content-center text-center">
+              <div
+                class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center justify-content-center text-center">
                 <span class="fw-bold fs-6 text-dark mb-2">Smart Applications</span>
-                <small class="text-muted" style="font-size: 0.85rem; line-height: 1.4;">Smart Health, Smart Vehicles, Smart Manufacturing, etc.</small>
+                <small class="text-muted" style="font-size: 0.85rem; line-height: 1.4;">Smart Health, Smart Vehicles,
+                  Smart Manufacturing, etc.</small>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <h3 class="section-title fs-2 text-center">Types of Submissions</h3>
+        <p class="fs-5 lh-lg">
+          The conference welcomes high-quality, original research contributions that advance the scientific and
+          technological foundations of the smart world. Authors are invited to submit their work in one of the following
+          categories:
+        </p>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-12">
+            <div class="card h-100 border-0 shadow-sm topic-card">
+              <div class="card-body p-4">
+                <h4 class="fw-bold  mb-3">Full Papers <span class="text-muted fs-6">(6 pages)</span></h4>
+                <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
+                  Complete research studies containing significant findings, rigorous methodology, and comprehensive
+                  experimental or theoretical results.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card h-100 border-0 shadow-sm topic-card">
+              <div class="card-body p-4">
+                <h4 class="fw-bold  mb-3">Short Papers <span class="text-muted fs-6">(4 pages)</span></h4>
+                <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
+                  Concise contributions reporting promising early results, innovative ideas, or ongoing work that is
+                  expected to stimulate discussion and further development.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card h-100 border-0 shadow-sm topic-card">
+              <div class="card-body p-4">
+                <h4 class="fw-bold  mb-3">Poster & Demo Papers <span class="text-muted fs-6">(2 pages)</span></h4>
+                <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
+                  Visual or interactive presentations highlighting prototypes, systems, applications, or preliminary
+                  research results. Demonstrations are encouraged to showcase practical innovations and emerging
+                  technologies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-info mt-4" role="alert">
+          <p class="mb-0 fs-5">
+            <strong>Important:</strong> All submissions must be original, not previously published, and not under review
+            elsewhere.
+          </p>
         </div>
       </div>
     </div>
@@ -364,56 +459,10 @@ sponsors:
   </div>
 </section> -->
 
-<section class="container-fluid d-flex flex-column gap-4">
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
   <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
-    <h2 class="section-title fs-2 text-center fw-bold mb-4">Types of Submissions</h2>
-    <p class="fs-5 lh-lg">
-      The conference welcomes high-quality, original research contributions that advance the scientific and technological foundations of the smart world. Authors are invited to submit their work in one of the following categories:
-    </p>
-    
-    <div class="row g-4 mt-2">
-      <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm topic-card">
-          <div class="card-body p-4">
-            <h4 class="fw-bold  mb-3">Full Papers <span class="text-muted fs-6">(6 pages)</span></h4>
-            <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
-              Complete research studies containing significant findings, rigorous methodology, and comprehensive experimental or theoretical results.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm topic-card">
-          <div class="card-body p-4">
-            <h4 class="fw-bold  mb-3">Short Papers <span class="text-muted fs-6">(4 pages)</span></h4>
-            <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
-              Concise contributions reporting promising early results, innovative ideas, or ongoing work that is expected to stimulate discussion and further development.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm topic-card">
-          <div class="card-body p-4">
-            <h4 class="fw-bold  mb-3">Poster & Demo Papers <span class="text-muted fs-6">(2 pages)</span></h4>
-            <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6;">
-              Visual or interactive presentations highlighting prototypes, systems, applications, or preliminary research results. Demonstrations are encouraged to showcase practical innovations and emerging technologies.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="alert alert-info mt-4" role="alert">
-      <p class="mb-0 fs-5">
-        <strong>Important:</strong> All submissions must be original, not previously published, and not under review elsewhere.
-      </p>
-    </div>
-
-    <hr style="border-top: 2px solid #dee2e6;" />
-
     <div class="mt-4">
-      <h3 class="section-title fw-bold mb-4 text-sm-start">Publication and Indexing</h3>
+      <h3 class="section-title fs-2 text-center">Publication and Indexing</h3>
       <p class="fs-5 lh-lg mb-4">
         All accepted and presented papers (full, short, and poster/demo) will be:
       </p>
@@ -421,7 +470,8 @@ sponsors:
         <div class="col-md-4">
           <div class="d-flex align-items-start">
             <div class="me-3">
-              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
             </div>
             <div>
               <h5 class="fw-semibold mb-1">IEEE Conference Proceedings</h5>
@@ -432,7 +482,8 @@ sponsors:
         <div class="col-md-4">
           <div class="d-flex align-items-start">
             <div class="me-3">
-              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
             </div>
             <div>
               <h5 class="fw-semibold mb-1">IEEE Xplore</h5>
@@ -443,7 +494,8 @@ sponsors:
         <div class="col-md-4">
           <div class="d-flex align-items-start">
             <div class="me-3">
-              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
             </div>
             <div>
               <h5 class="fw-semibold mb-1">Major Databases</h5>
@@ -454,7 +506,8 @@ sponsors:
       </div>
       <div class="alert alert-warning mt-4" role="alert">
         <p class="mb-0 fs-5">
-          <strong>Note:</strong> Accepted papers must be presented in person (unless otherwise specified) to be eligible for publication.
+          <strong>Note:</strong> Accepted papers must be presented in person (unless otherwise specified) to be eligible
+          for publication.
         </p>
       </div>
     </div>
@@ -462,9 +515,10 @@ sponsors:
     <hr style="border-top: 2px solid #dee2e6;" />
 
     <div class="mt-4">
-      <h3 class="section-title fw-bold mb-4 text-sm-start">Special Issue and Extended Versions</h3>
+      <h3 class="section-title fs-2 text-center">Special Issue and Extended Versions</h3>
       <p class="fs-5 lh-lg mb-4">
-        A Special Issue in a high-impact, ISI-indexed journal will be organized in conjunction with the conference. Authors of selected outstanding papers will 
+        A Special Issue in a high-impact, ISI-indexed journal will be organized in conjunction with the conference.
+        Authors of selected outstanding papers will
         receive an invitation to submit an extended version of their work.
       </p>
       <!-- <p class="fs-5 lh-lg mb-4">
@@ -488,15 +542,11 @@ sponsors:
   </div>
 </section>
 
-<section class="container-fluid d-flex flex-column gap-4 bg-light">
-  {% include colocated-conferences.html %}
-</section>
-
-<section class="container-fluid d-flex flex-column gap-4 bg-light">
+<section class="container-fluid d-flex flex-column gap-4">
   <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
-    <h2 class="section-title fs-2 text-center">
+    <h3 class="section-title fs-2 text-center">
       Call for Proposals of Special Sessions or Workshops
-    </h2>
+    </h3>
     <p class="fs-5">
       The IEEE SWC 2026 and its co-located conferences invite proposals for
       Special Sessions and Workshops that complement the main conference
@@ -531,10 +581,9 @@ sponsors:
     <h3 class="section-title fw-bold mb-4 text-sm-start">Submission Process</h3>
     <p class="fs-5">
       Submit your proposal as a Word file to the special session /workshop chair
-      <mark style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">?? at (<a href=""
-        >??</a
-      >) by [Date], 2026 and the decision on Acceptance will be notified by
-      [Date], 2026.</mark>
+      <mark style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">?? at (<a href="">??</a>) by
+        [Date], 2026 and the decision on Acceptance will be notified by
+        [Date], 2026.</mark>
     </p>
     <h3 class="section-title fw-bold mb-4 text-sm-start">
       IEEE SWC 2026 Special Sessions and Workshops Information and
@@ -564,7 +613,11 @@ sponsors:
   </div>
 </section>
 
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+  {% include colocated-conferences.html %}
+</section>
+
 {% include sponsors.html sponsors=page.sponsors %}
 
-  </div>
+</div>
 </section>
