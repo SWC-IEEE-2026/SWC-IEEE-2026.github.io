@@ -2,12 +2,13 @@
 layout: default
 title: IEEE UIC 2026
 sponsors:
-- image: /assets/images/ieee mb black png.png
-- image: /assets/images_26/sponsor/IEEE_Italy_logo_small.png
-- image: /assets/images_26/sponsor/cis.png
-- image: /assets/images_26/sponsor/smc.png
-- image: /assets/images_26/sponsor/unical-2.png
-- image: /assets/images_26/sponsor/dimes.svg
+  - image: /assets/images/ieee mb black png.png
+  - image: /assets/images_26/sponsor/IEEE_Italy_logo_small.png
+  - image: /assets/images_26/sponsor/icis.png
+  - image: /assets/images_26/sponsor/cis.png
+  - image: /assets/images_26/sponsor/smc.png
+  - image: /assets/images_26/sponsor/unical-2.png
+  - image: /assets/images_26/sponsor/dimes.svg
 ---
 
 <!-- Hero Section -->
@@ -57,240 +58,289 @@ sponsors:
     </div>
   </div>
   <div class="row g-5">
-    <div class="col-sm-4 d-flex flex-column gap-4">
-      <div class="dates-card p-4">
-        <h4 class="fw-bold mb-4">Important Dates</h4>
-        <div class="d-flex flex-column gap-1">
+    <div class="col-lg-4">
 
-          <div class="date-item">
-            <div class="d-flex flex-column">
-              <span class="fw-bold text-danger">Full Paper Submission</span>
-              <span class="fw-bold text-danger">{{site.data.swc_data.dates.paperSubmission}}</span>
-            </div>
-          </div>
+      <div class="custom-card p-0 h-100 overflow-hidden" style="border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: all 0.3s ease;">
 
-          <div class="date-item">
-            <div class="d-flex flex-column">
-              <span class="fw-bold text-secondary">Authors Notification</span>
-              <span class="text-muted">{{site.data.swc_data.dates.authorsNotification}}</span>
-            </div>
-          </div>
+        <div class="px-4 pt-4 pb-3" style="background: #ffffff;">
+          <h4 class="fw-semibold mb-3 text-dark d-flex align-items-center" style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; color: #6c757d;">
+            <span>Conference Info</span>
+          </h4>
 
-          <div class="date-item">
-            <div class="d-flex flex-column">
-              <span class="fw-bold text-secondary">Camera-ready</span>
-              <span class="text-muted">{{site.data.swc_data.dates.cameraReadyDue}}</span>
-            </div>
-          </div>
-
-          <div class="date-item">
-            <div class="d-flex flex-column">
-              <span class="fw-bold text-primary">Conference Dates</span>
-              <span class="fw-bold text-primary">{{site.data.swc_data.dates.conferenceDates}}</span>
-            </div>
-          </div>
-
+          <ul class="nav nav-pills nav-fill nav-pills-minimal gap-1" id="sidebarTabs-uic" role="tablist" style="padding-bottom: 0.5rem;">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active small text-uppercase py-2 px-3" id="dates-tab-uic" data-bs-toggle="tab"
+                data-bs-target="#dates-pane-uic" type="button" role="tab" aria-selected="true" style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.5px; border-radius: 6px; transition: all 0.2s ease;">
+                Dates
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link small text-uppercase py-2 px-3" id="committee-tab-uic" data-bs-toggle="tab"
+                data-bs-target="#committee-pane-uic" type="button" role="tab" aria-selected="false" style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.5px; border-radius: 6px; transition: all 0.2s ease;">
+                Committee
+              </button>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="custom-card p-4">
-        <h4 class="fw-bold mb-4">Organizing Committee</h4>
-        <div class="d-flex flex-column gap-3">
 
-          <div>
-            <div class="d-flex align-items-center mb-2">
-              <h6 class="fw-bold text-secondary mb-2">General Chairs</h6>
+        <div class="tab-content" id="sidebarTabContent-uic" style="background: #ffffff;">
+
+          <div class="tab-pane fade show active" id="dates-pane-uic" role="tabpanel">
+            <div class="p-4 d-flex flex-column gap-1">
+
+              <div class="date-item">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold text-danger">Full Paper Submission</span>
+                  <span class="fw-bold text-danger">{{site.data.swc_data.dates.paperSubmission}}</span>
+                </div>
+              </div>
+
+              <div class="date-item">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold text-secondary">Authors Notification</span>
+                  <span class="text-muted">{{site.data.swc_data.dates.authorsNotification}}</span>
+                </div>
+              </div>
+
+              <div class="date-item">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold text-secondary">Camera-ready</span>
+                  <span class="text-muted">{{site.data.swc_data.dates.cameraReadyDue}}</span>
+                </div>
+              </div>
+
+              <div class="mt-2 p-3 rounded-3 border border-success bg-light text-success shadow-sm">
+                <div class="d-flex flex-column align-items-center text-center">
+                  <span class="small text-uppercase fw-bold text-success" style="letter-spacing: 1px;">Conference
+                    Dates</span>
+                  <span class="fs-5 fw-bold text-success">{{site.data.swc_data.dates.conferenceDates}}</span>
+                </div>
+              </div>
+
             </div>
-            <ul class="list-unstyled mb-0 ms-1">
-              <li class="mb-2">
-                <div class="fw-bold text-dark">Antonella Guzzo</div>
-                <div class="small text-muted lh-sm">University of Calabria, Italy</div>
-              </li>
-              <li class="mb-2">
-                <div class="fw-bold text-dark">Francesco Piccialli</div>
-                <div class="small text-muted lh-sm">University of Naples Federico II, Italy</div>
-              </li>
-              <li class="mb-2">
-                <div class="fw-bold text-dark">Jaideep Vidya</div>
-                <div class="small text-muted lh-sm">Rutgers University, USA</div>
-              </li>
-            </ul>
           </div>
 
-          <hr class="text-muted opacity-25 my-1">
+          <div class="tab-pane fade" id="committee-pane-uic" role="tabpanel">
 
-          <div>
-            <h6 class="fw-bold text-secondary mb-2">Technical Program Chairs</h6>
-            <ul class="list-unstyled mb-0 ms-1">
-              <li class="mb-2">
-                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Ying Zhang</div>
-                <div class="small text-muted">Northwestern Polytechnical University, China</div>
-              </li>
-              <li class="mb-2">
-                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Magnus Johnsson</div>
-                <div class="small text-muted">Kristianstad University, Sweden</div>
-              </li>
-              <li>
-                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Fabio Giampaolo</div>
-                <div class="small text-muted">University of Naples Federico II, Italy</div>
-              </li>
-            </ul>
-          </div>
+            <div class="accordion accordion-flush" id="committeeAccordion-uic">
 
-          <hr class="text-muted opacity-25 my-1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fw-bold text-dark shadow-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseGeneral-uic" aria-expanded="true">
+                    General Chairs
+                  </button>
+                </h2>
+                <div id="collapseGeneral-uic" class="accordion-collapse collapse show" data-bs-parent="#committeeAccordion-uic">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <div class="fw-bold text-dark small">Antonella Guzzo</div>
+                        <div class="small text-muted">University of Calabria, Italy</div>
+                      </li>
+                      <li>
+                        <div class="fw-bold text-dark small">Francesco Piccialli</div>
+                        <div class="small text-muted">University of Naples Federico II, Italy</div>
+                      </li>
+                      <li>
+                        <div class="fw-bold text-dark small">Jaideep Vidya</div>
+                        <div class="small text-muted">Rutgers University, USA</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-          <div>
-            <h6 class="fw-bold text-secondary mb-2">Workshop/Special Sessions</h6>
-            <ul class="list-unstyled mb-0 ms-1">
-              <li class="mb-2">
-                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Dipanwita Thakur</div>
-                <div class="small text-muted">University of Calabria, Italy</div>
-              </li>
-              <li>
-                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Fahed Alkhabbas</div>
-                <div class="small text-muted">Malmö University, Sweden</div>
-              </li>
-            </ul>
-          </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold text-dark shadow-none"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechnical-uic" aria-expanded="false">
+                    Technical Program Chairs
+                  </button>
+                </h2>
+                <div id="collapseTechnical-uic" class="accordion-collapse collapse" data-bs-parent="#committeeAccordion-uic">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <div class="fw-bold text-dark small">Ying Zhang</div>
+                        <div class="small text-muted">Northwestern Polytechnical University, China</div>
+                      </li>
+                      <li>
+                        <div class="fw-bold text-dark small">Magnus Johnsson</div>
+                        <div class="small text-muted">Kristianstad University, Sweden</div>
+                      </li>
+                      <li>
+                        <div class="fw-bold text-dark small">Fabio Giampaolo</div>
+                        <div class="small text-muted">University of Naples Federico II, Italy</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-          <hr class="text-muted opacity-25 my-1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold text-dark shadow-none"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseWorkshop-uic" aria-expanded="false">
+                    Workshop/Special Sessions
+                  </button>
+                </h2>
+                <div id="collapseWorkshop-uic" class="accordion-collapse collapse" data-bs-parent="#committeeAccordion-uic">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <div class="fw-bold text-dark small">Dipanwita Thakur</div>
+                        <div class="small text-muted">University of Calabria, Italy</div>
+                      </li>
+                      <li>
+                        <div class="fw-bold text-dark small">Fahed Alkhabbas</div>
+                        <div class="small text-muted">Malmö University, Sweden</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-          <div>
-            <h6 class="fw-bold text-secondary mb-2">Publicity Chairs</h6>
-            <ul class="list-unstyled mb-0 ms-1">
-              <li class="mb-2">
-                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Badal Soni</div>
-                <div class="small text-muted">National Institute of Technology Silchar, India</div>
-              </li>
-              <li class="mb-2">
-                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Carmela Comito</div>
-                <div class="small text-muted">ICAR-CNR, Italy</div>
-              </li>
-              <li class="mb-2">
-                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Hangli Ge</div>
-                <div class="small text-muted">University of Tokyo, Japan</div>
-              </li>
-            </ul>
-          </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold text-dark shadow-none"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapsePublicity-uic" aria-expanded="false">
+                    Publicity Chairs
+                  </button>
+                </h2>
+                <div id="collapsePublicity-uic" class="accordion-collapse collapse" data-bs-parent="#committeeAccordion-uic">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <div class="fw-bold text-dark small">Badal Soni</div>
+                        <div class="small text-muted">National Institute of Technology Silchar, India</div>
+                      </li>
+                      <li>
+                        <div class="fw-bold text-dark small">Carmela Comito</div>
+                        <div class="small text-muted">ICAR-CNR, Italy</div>
+                      </li>
+                      <li>
+                        <div class="fw-bold text-dark small">Hangli Ge</div>
+                        <div class="small text-muted">The University of Tokyo, Japan</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-          <hr class="text-muted opacity-25 my-1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold text-dark shadow-none"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb-uic" aria-expanded="false">
+                    Web Chair
+                  </button>
+                </h2>
+                <div id="collapseWeb-uic" class="accordion-collapse collapse" data-bs-parent="#committeeAccordion-uic">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <div class="fw-bold text-dark small">Vincenzo Barbuto</div>
+                        <div class="small text-muted">University of Calabria, Italy</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-          <div>
-            <h6 class="fw-bold text-secondary mb-2">Web Chair</h6>
-            <ul class="list-unstyled mb-0 ms-1">
-              <li>
-                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Vincenzo Barbuto</div>
-                <div class="small text-muted">University of Calabria, Italy</div>
-              </li>
-            </ul>
+            </div>
           </div>
 
         </div>
       </div>
     </div>
-    <div class="col-sm-8 d-flex flex-column gap-4">
+    <div class="col-lg-8 d-flex flex-column gap-4">
       <div>
         <h2 class="section-title fs-2 text-center">Call for Papers</h2>
         <p class="fs-5 text-muted text-align-justify">
           Ubiquitous sensors, devices, networks, and information are driving the emergence of a smart world, where computational 
           intelligence is seamlessly embedded into the physical environment to deliver reliable, context-aware services to people. 
           This pervasive intelligence is reshaping the computing landscape, enabling novel classes of applications and systems and 
-          greatly expanding the boundaries of what computing can achieve. By infusing everyday objects with intelligence, a wide 
-          range of tasks and processes can be simplified, optimized, and made more engaging.
+          greatly expanding the boundaries of what computing can achieve. By infusing everyday objects with intelligence, a wide range 
+          of tasks and processes can be simplified, optimized, and made more engaging.
           <br /><br />
           Ubiquitous computing aims to design and realize such intelligent environments, services, and applications. We invite high-quality, 
           original, and unpublished contributions that advance the state of the art in ubiquitous intelligence and computing.
         </p>
       </div>
       <div class="row">
-        <div class="col-sm-12">
-          <h5 class="fw-bold mb-4 section-title text-sm-start">
-            The topics of interest include (but are not limited to) the following:
-          </h5>
+        <div class="col-12">
+          <div class="track-card h-100 shadow-sm overflow-hidden">
 
-          <div class="row g-3 mb-4">
-
-            <div class="col-lg-6">
-              <div class="topic-card topic-card-horizontal h-100 shadow-sm">
-                <i class="bi bi-smartwatch"></i>
-                <span class="fw-bold fs-6 text-dark">Smart Wearables</span>
-              </div>
+            <div class="track-header bg-light border-bottom p-3 d-flex align-items-center">
+              <i class="bi bi-layers-fill text-primary me-2 fs-4"></i>
+              <h4 class="mb-0 fw-bold text-dark">Topics of Interest</h4>
             </div>
 
-            <div class="col-lg-6">
-              <div class="topic-card topic-card-horizontal h-100 shadow-sm">
-                <i class="bi bi-recycle"></i>
-                <span class="fw-bold fs-6 text-dark">Sustainable and Green AI</span>
-              </div>
-            </div>
+            <div class="track-body p-4">
+              <p class="text-muted mb-4 small text-uppercase fw-bold ls-1">The topics include (but are not limited to):
+              </p>
 
-            <div class="col-lg-6">
-              <div class="topic-card topic-card-horizontal h-100 shadow-sm">
-                <i class="bi bi-bounding-box-circles"></i>
-                <span class="fw-bold fs-6 text-dark">Digital Twin and IoT</span>
-              </div>
-            </div>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="list-group list-group-flush">
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0" style="min-height: 3rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Intelligent/Smart networks and pervasive communication</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0" style="min-height: 3rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Smart devices and intelligent objects</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0" style="min-height: 3rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Reliability and resilience of pervasive systems</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0" style="min-height: 3rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Evolution of traditional computing paradigms</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0" style="min-height: 3rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Human-environment interaction in intelligent spaces</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0" style="min-height: 3rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Knowledge Representation and Reasoning</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="col-lg-6">
-              <div class="topic-card topic-card-horizontal h-100 shadow-sm">
-                <i class="bi bi-router"></i>
-                <span class="fw-bold fs-6 text-dark">Edge Intelligence</span>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="topic-card topic-card-horizontal h-100 shadow-sm">
-                <i class="bi bi-shield-lock"></i>
-                <span class="fw-bold fs-6 text-dark">Privacy Computing and Data Security</span>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="topic-card topic-card-horizontal h-100 shadow-sm">
-                <i class="bi bi-headset-vr"></i>
-                <span class="fw-bold fs-6 text-dark">Cognitive Environments and Metaverse</span>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="topic-card topic-card-horizontal h-100 shadow-sm">
-                <i class="bi bi-robot"></i>
-                <span class="fw-bold fs-6 text-dark">AI and Machine Learning</span>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="topic-card topic-card-horizontal h-100 shadow-sm">
-                <i class="bi bi-mortarboard"></i>
-                <span class="fw-bold fs-6 text-dark">Gen AI-driven Educational Systems</span>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="topic-card topic-card-horizontal h-100 shadow-sm">
-                <i class="bi bi-broadcast"></i>
-                <span class="fw-bold fs-6 text-dark">Ubiquitous Intelligence and Computing</span>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="topic-card topic-card-horizontal h-100 shadow-sm">
-                <i class="bi bi-hdd-network"></i>
-                <span class="fw-bold fs-6 text-dark">Smart Networks</span>
-              </div>
-            </div>
-
-            <div class="col-lg-6 mx-auto">
-              <div class="topic-card topic-card-horizontal h-100 shadow-sm">
-                <i class="bi bi-grid-fill"></i>
-                <div class="d-flex flex-column">
-                  <span class="fw-bold fs-6 text-dark">Smart Applications</span>
-                  <small class="text-muted" style="font-size: 0.85rem; line-height: 1.2;">
-                    Smart Health, Smart Vehicles, Smart Manufacturing, etc.
-                  </small>
+                <div class="col-md-6">
+                  <div class="list-group list-group-flush">
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0" style="min-height: 3rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Green and Sustainability AI computation</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0" style="min-height: 3rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Edge and fog computing for distributed intelligence</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0" style="min-height: 3rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Scalability of ubiquitous systems</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0" style="min-height: 3rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Security, privacy, and data protection in ubiquitous computing</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-start py-2 border-0 ps-0" style="min-height: 3rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                      <span class="text-secondary fw-medium">Social and ethical implications of pervasive intelligence</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-start py-2 border-0 ps-0" style="min-height: 3rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                      <span class="text-secondary fw-medium">Smart Applications (e.g. in smart cities, healthcare, and intelligent environments)</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
         </div>
       </div>
@@ -451,48 +501,39 @@ sponsors:
     <div class="mt-4">
       <h3 class="section-title fs-2 text-center">Publication and Indexing</h3>
       <p class="fs-5 lh-lg mb-4 text-align-justify text-muted">
-        All accepted and presented papers (full, short, and poster/demo) will be:
+        All accepted and presented papers (full, short, and poster/demo) will be considered for the
+        conference proceedings and indexing in major repositories.
       </p>
-      <div class="row g-3">
-        <div class="col-md-4">
-          <div class="d-flex align-items-start">
-            <div class="me-3">
-              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
-                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+      <div class="row g-4 justify-content-center mb-5">
+
+        <div class="col-md-5">
+          <div class="custom-card p-4 h-100 d-flex align-items-center">
+            <div class="me-4">
+              <div
+                class="bg-primary-gradient text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                style="width: 3.5rem; height: 3.5rem; font-size: 1.5rem; font-weight: bold;">✓</div>
             </div>
             <div>
-              <h5 class="fw-semibold mb-1">IEEE Conference Proceedings</h5>
-              <p class="text-muted mb-0 text-align-justify text-muted" style="font-size: 0.9rem;">Included in the
-                official conference proceedings</p>
+              <h5 class="fw-bold mb-1">IEEE Xplore</h5>
+              <p class="text-muted mb-0">Submitted for publication in IEEE Xplore Digital Library.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="d-flex align-items-start">
-            <div class="me-3">
-              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
-                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
+
+        <div class="col-md-5">
+          <div class="custom-card p-4 h-100 d-flex align-items-center">
+            <div class="me-4">
+              <div
+                class="bg-primary-gradient text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                style="width: 3.5rem; height: 3.5rem; font-size: 1.5rem; font-weight: bold;">✓</div>
             </div>
             <div>
-              <h5 class="fw-semibold mb-1">IEEE Xplore</h5>
-              <p class="text-muted mb-0 text-align-justify text-muted" style="font-size: 0.9rem;">Submitted for
-                publication in IEEE Xplore</p>
+              <h5 class="fw-bold mb-1">Major Databases</h5>
+              <p class="text-muted mb-0">Indexed in Elsevier, IET, and Scopus.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="d-flex align-items-start">
-            <div class="me-3">
-              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
-                style="width: 2.5rem; height: 2.5rem; font-size: 1.2rem; font-weight: bold;">✓</div>
-            </div>
-            <div>
-              <h5 class="fw-semibold mb-1">Major Databases</h5>
-              <p class="text-muted mb-0 text-align-justify text-muted" style="font-size: 0.9rem;">Indexed in Elsevier,
-                IET, and Scopus</p>
-            </div>
-          </div>
-        </div>
+
       </div>
       <div class="mt-4 mx-auto w-100">
         <div class="alert alert-warning d-flex align-items-center shadow-sm border-0" role="alert"
@@ -501,8 +542,8 @@ sponsors:
           <div>
             <p class="mb-0 fs-6">
               <strong>Note:</strong> For a paper to remain eligible for publication, it must be presented in person
-              (unless
-              otherwise specified). At least one author must register for the conference and deliver the presentation.
+              (unless otherwise specified). At least one author must register for the conference and deliver the
+              presentation.
             </p>
           </div>
         </div>
@@ -518,27 +559,15 @@ sponsors:
         Authors of selected outstanding papers will
         receive an invitation to submit an extended version of their work.
       </p>
-      <!-- <p class="fs-5 lh-lg mb-4">
-        Extended submissions must:
-      </p> -->
-      <!-- <div class="card bg-light-subtle border-0 shadow-sm">
-        <div class="card-body p-4">
-          <ul class="fs-5 mb-0" style="line-height: 2;">
-            <li>Contain at least <strong>30% new material</strong></li>
-            <li>Provide deeper insights, expanded experiments, or additional contributions beyond the conference version</li>
-            <li>Undergo a full journal peer-review process</li>
-          </ul>
-        </div>
-      </div> -->
-      <div class="mt-4 mx-auto w-100">
-        <div class="alert alert-info d-flex align-items-center shadow-sm border-0" role="alert"
-          style="border-left: 5px solid var(--bs-alert-color) !important;">
-          <i class="bi bi-info-circle-fill fs-4 me-3"></i>
-          <div>
-            <p class="mb-0 fs-6">
-              Information about the journal partner and submission deadlines will be announced soon.
-            </p>
-          </div>
+    </div>
+    <div class="mt-4 mx-auto w-100">
+      <div class="alert alert-info d-flex align-items-center shadow-sm border-0" role="alert"
+        style="border-left: 5px solid var(--bs-alert-color) !important;">
+        <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+        <div>
+          <p class="mb-0 fs-6">
+            Information about the journal partner and submission deadlines will be announced soon.
+          </p>
         </div>
       </div>
     </div>
@@ -550,6 +579,3 @@ sponsors:
 </section>
 
 {% include sponsors.html sponsors=page.sponsors %}
-
-</div>
-</section>
