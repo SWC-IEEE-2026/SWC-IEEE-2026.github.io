@@ -57,7 +57,7 @@ h5 {
 
 /* --- Hero Section --- */
 .hero-section-wrapper {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('/assets/images_26/imgs/image035.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('/assets/images_26/imgs/Comune_di_Rende.jpg');
   background-size: cover;
   background-position: center;
   min-height: 90vh;
@@ -66,6 +66,7 @@ h5 {
   justify-content: center;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 /* .hero-content {

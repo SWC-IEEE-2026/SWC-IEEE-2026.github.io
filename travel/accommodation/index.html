@@ -2,82 +2,195 @@
 layout: default
 title: Accommodation
 sponsors:
-  - image: /assets/images/ieee mb black png.png
-  - image: /assets/images/cis-logo.png
-  - image: /assets/images/IEEE-CS_LogoTM-orange.png
-  - image: /assets/images/tcsc_ieee.png
-  - image: /assets/images/IEEE_HI_TC.jpg
-  - image: /assets/images/ieee_cpss.png
+- image: /assets/images/ieee mb black png.png
+- image: /assets/images_26/sponsor/IEEE_Italy_logo_small.png
+- image: /assets/images_26/sponsor/icis.png
+- image: /assets/images_26/sponsor/cis.png
+- image: /assets/images_26/sponsor/smc.png
+- image: /assets/images_26/sponsor/unical-2.png
+- image: /assets/images_26/sponsor/dimes.svg
 ---
 
-<!-- Hero Section -->
-<section
-  class="jumbotron text-center mb-5"
-  style="
-    background-image: url('/assets/images/patrik-jensen-_QOR7cwVDik-unsplash.jpg');
+<style>
+  /* Hero Section */
+  .hero-accommodation {
+    background-image: linear-gradient(rgba(13, 18, 29, 0.75), rgba(13, 18, 29, 0.65)), url('/assets/images_26/imgs/Unical_Rende.jpg');
     background-size: cover;
-    background-position: 50% 20%;
-    min-height: 60vh;
+    background-position: center;
+    min-height: 55vh;
     position: relative;
     color: white;
-  "
->
-  <div class="hero-section">
-    <div
-      class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3"
-    >
-      <h1 class="display-5 fw-bolder mt-5">
-        IEEE Smart World Congress 2025<br />
-        Accommodation
-      </h1>
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Venue Info Box */
+  .venue-box {
+    background-color: #f8f9fa;
+    border-left: 5px solid #0d6efd;
+    border-radius: 4px;
+  }
+
+  /* Cards */
+  .accommodation-card {
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .accommodation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+  }
+
+  /* Icons */
+  .icon-square {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    flex-shrink: 0;
+  }
+  
+  .bg-icon-primary { background: rgba(13, 110, 253, 0.1); color: #0d6efd; }
+  .bg-icon-success { background: rgba(25, 135, 84, 0.1); color: #198754; }
+  .bg-icon-info { background: rgba(13, 202, 240, 0.1); color: #0dcaf0; }
+
+  /* Typography */
+  .text-balance { text-wrap: balance; }
+</style>
+
+<section class="hero-accommodation text-center">
+  <div class="container px-4">
+    <h1 class="display-3 fw-bolder mb-3">Accommodation</h1>
+    <p class="lead fw-normal mx-auto text-balance text-light opacity-75" style="max-width: 700px;">
+      Find the perfect place to stay near the University of Calabria. From on-campus residences to partner hotels.
+    </p>
+  </div>
+</section>
+
+<section class="container py-5 mt-4">
+  
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <div class="venue-box p-4 d-flex flex-column flex-md-row align-items-md-center gap-3 shadow-sm">
+        <div class="icon-square bg-icon-primary mb-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+        </div>
+        <div>
+          <h5 class="fw-bold mb-1">Conference Venue</h5>
+          <p class="mb-0 text-secondary">
+            "Beniamino Andreatta" Convention Center<br>
+            <small class="text-muted">University of Calabria, Via P. Bucci, Rende (CS), Italy</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mb-5">
+    <div class="col-lg-6">
+      <div class="accommodation-card p-4 p-md-5">
+        <div class="d-flex justify-content-between align-items-start">
+          <div class="icon-square bg-icon-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+              <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+            </svg>
+          </div>
+          <span class="badge rounded-pill bg-success bg-opacity-10 text-success">On Campus</span>
+        </div>
+        
+        <h3 class="fw-bold mb-3">Socrates Residence</h3>
+        <p class="text-secondary mb-4">
+          Located within the university campus, approximately <strong>5 minutes walking distance</strong> from the venue. The most convenient option for attendees wishing to stay close to the action.
+        </p>
+        
+        <div class="mt-auto">
+          <div class="d-grid mb-3">
+             <a href="https://www.ialbergo.it/booking/dispoB.aspx?ID=570&lang=gb" target="_blank" class="btn btn-secondary btn-lg">
+                Check Availability
+             </a>
+          </div>
+          <span class="text-muted small fw-bold text-uppercase">Highlights</span>
+          <ul class="list-unstyled text-secondary mt-2 mb-0 small">
+              <li>✓ 5 min walk to venue</li>
+              <li>✓ Campus atmosphere</li>
+              <li>✓ Budget friendly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="accommodation-card p-4 p-md-5 border-primary border-opacity-25">
+        <div class="d-flex justify-content-between align-items-start">
+            <div class="icon-square bg-icon-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M3 2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V2zm2 1v1h1V3H5zm0 2v1h1V5H5zm0 2v1h1V7H5zm0 2v1h1V9H5zm0 2v1h1v-1H5zm0 2v1h1v-1H5zm-2-9v1h1V3H3zm0 2v1h1V5H3zm0 2v1h1V7H3zm0 2v1h1V9H3zm0 2v1h1v-1H3zm0 2v1h1v-1H3z"/>
+                <path d="M10 2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H10V2zm2 1v1h1V3h-1zm0 2v1h1V5h-1zm0 2v1h1V7h-1zm0 2v1h1V9h-1zm0 2v1h1v-1h-1zm0 2v1h1v-1h-1zm-2-9v1h1V3h-1zm0 2v1h1V5h-1zm0 2v1h1V7h-1zm0 2v1h1V9h-1zm0 2v1h1v-1h-1zm0 2v1h1v-1h-1z"/>
+              </svg>
+            </div>
+            <span class="badge rounded-pill bg-primary bg-opacity-10 text-primary">Partner Deal</span>
+        </div>
+
+        <h3 class="fw-bold mb-3">Majorana Group</h3>
+        <p class="text-secondary mb-3">
+            Special contracted rates for IEEE SWC 2026. Includes <strong>Hotel Majorana</strong> and <strong>Garnì House Majorana</strong> B&B. Walking distance from campus and connected via public bus.
+        </p>
+        
+        <div class="mt-auto">
+            <div class="d-grid gap-2 mt-4">
+                <a href="mailto:info@majoranagroup.com?subject=IEEE SWC 2026 Booking Inquiry" class="btn btn-primary btn-lg">
+                  Book via Email
+                </a>
+                <a href="https://www.majoranagroup.com/" target="_blank" class="btn btn-outline-secondary">
+                  Visit Website
+                </a>
+            </div>
+            <div class="text-center mt-2">
+               <small class="text-muted">Contact: info@majoranagroup.com</small>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="accommodation-card p-4 p-md-5 bg-light border-0">
+        <div class="d-flex flex-column flex-md-row gap-4 align-items-center text-center text-md-start">
+          <div class="icon-square bg-white shadow-sm text-secondary">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+          </div>
+          <div>
+            <h4 class="fw-bold mb-2">Other Options</h4>
+            <p class="text-secondary mb-0">
+              For other hotels and B&Bs, we recommend searching in the <strong>Rende</strong> area via <a href="https://www.booking.com" target="_blank" class="text-decoration-none fw-bold">Booking.com</a>.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section
-  class="page-section container-fluid px-3 pb-5 d-flex flex-column gap-2"
->
-  <div class="row g-5">
-    <div class="col-sm-12 d-flex flex-column gap-4">
-      <h2 class="fs-1">Hotels</h2>
-      <div class="card p-4 bg-light">
-        <h3>Hyatt Regency Calgary</h3>
-        <p class="fs-5">
-          Group rates available at the Hyatt Regency Calgary <br />
-          700 Centre Street SE <br />
-          Calgary, Alberta T2G 5P6 Canada
-        </p>
-        <div class="d-flex flex-column justify-content-start align-items-start">
-          <a
-            class="btn btn-primary"
-            href="https://www.hyatt.com/en-US/group-booking/CALRC/G-SWC5"
-            target="_blank"
-            >Make a Reservation at Hyatt Regency</a
-          >
-        </div>
-      </div>
-      <div class="card p-4 bg-light">
-        <h3>Calgary Marriott Downtown</h3>
-        <p class="fs-5">
-          $229.00 CAD per night - Last Day to Book : Wednesday, July 23, 2025
-          <br />
-          110 9 Ave SE <br />
-          Calgary, Alberta T2G 0P5 Canada
-        </p>
-        <div class="d-flex flex-column justify-content-start align-items-start">
-          <a
-            class="btn btn-primary"
-            href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1750967290097&key=GRP&app=resvlink"
-            target="_blank"
-            >Make a Reservation at Marriott</a
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="container-fluid d-flex flex-column gap-4 bg-light">
+<section class="container-fluid d-flex flex-column gap-4 bg-light mt-5">
   {% include colocated-conferences.html %}
 </section>
 
