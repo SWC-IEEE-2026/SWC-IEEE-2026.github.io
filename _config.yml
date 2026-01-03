@@ -3,7 +3,7 @@ email: vincenzo.barbuto@unical.it
 description: >- # this means to ignore newlines until "baseurl:"
   Join us for the 2026 IEEE Smart World Congress in Cosenza, Calabria, Italy August 2026
 baseurl: ""
-url: "https://ieee-smart-world-congress-2026.github.io/IEEE-SWC-2026.github.io"
+url: "https://ieee-swc-2026.github.io"
 author:
   name: "IEEE SWC 2026 Organizing Committee"
   email: vincenzo.barbuto@unical.it
