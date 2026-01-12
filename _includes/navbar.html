@@ -1,74 +1,47 @@
-<nav
-  class="navbar navbar-expand-xl navbar-dark bg-black px-sm-3 px-2 fixed-top"
-  style="padding-top: 0.9rem !important; padding-bottom: 0.9rem !important"
->
+<nav class="navbar navbar-expand-xl navbar-dark bg-black px-sm-3 px-2 fixed-top"
+  style="padding-top: 0.9rem !important; padding-bottom: 0.9rem !important">
   <div class="container-fluid navbar-content p-0">
-    <a
-      class="navbar-brand d-flex flex-row align-items-center gap-2"
-      href="{{ '/' | relative_url }}"
-      ><img src="{{ '/assets/images/ieee mb white png.png' | relative_url }}" height="22px" />
+    <a class="navbar-brand d-flex flex-row align-items-center gap-2" href="{{ '/' | relative_url }}"><img
+        src="{{ '/assets/images/ieee mb white png.png' | relative_url }}" height="22px" />
 
       <!-- <p class="m-0 d-sm-block d-none mt-1">Smart World Congress 2025</p> -->
       <p class="m-0 mt-1 fw-semibold">SWC 2026</p>
     </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item dropdown align-content-center">
-          <a
-            class="nav-link dropdown-toggle text-white"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Conferences
           </a>
           <ul class="dropdown-menu dropdown-menu-black">
             <li>
+              <a class="dropdown-item text-wrap" href="{{ '/swc/' | relative_url }}">SWC 2026</a>
+            </li>
+            <li>
               <a class="dropdown-item text-wrap" href="{{ '/atc' | relative_url }}">ATC 2026</a>
             </li>
             <li>
-              <a class="dropdown-item text-wrap" href="{{ '/digitaltwin' | relative_url }}"
-                >Digital Twin 2026</a
-              >
+              <a class="dropdown-item text-wrap" href="{{ '/digitaltwin' | relative_url }}">Digital Twin 2026</a>
             </li>
             <li>
-              <a class="dropdown-item text-wrap" href="{{ '/metaverse' | relative_url }}"
-                >Metaverse 2026</a
-              >
+              <a class="dropdown-item text-wrap" href="{{ '/metaverse' | relative_url }}">Metaverse 2026</a>
             </li>
             <li>
-              <a class="dropdown-item text-wrap" href="{{ '/scalcom' | relative_url }}"
-                >ScalCom 2026</a
-              >
+              <a class="dropdown-item text-wrap" href="{{ '/scalcom' | relative_url }}">ScalCom 2026</a>
             </li>
             <li>
               <a class="dropdown-item text-wrap" href="{{ '/uic' | relative_url }}">UIC 2026</a>
             </li>
-            <li class="border-top mt-2 pt-2">
-              <a class="dropdown-item" href="{{ '/cfp/' | relative_url }}">Call for Papers</a>
-            </li>
           </ul>
         </li>
         <li class="nav-item dropdown align-content-center">
-          <a
-            class="nav-link dropdown-toggle text-white"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Workshops
           </a>
           <ul class="dropdown-menu dropdown-menu-black">
@@ -97,21 +70,14 @@
               </a>
             </li> -->
             <li><span class="dropdown-item">Coming soon...</span></li>
-            <li class="border-top mt-2 pt-2">
-              <a class="dropdown-item text-wrap" href="{{ '/cfp/' | relative_url }}"
-                >Call for Papers</a
-              >
-            </li>
+            <!-- <li class="border-top mt-2 pt-2">
+              <a class="dropdown-item text-wrap" href="{{ '/swc/' | relative_url }}">Call for Papers</a>
+            </li> -->
           </ul>
         </li>
         <li class="nav-item dropdown align-content-center">
-          <a
-            class="nav-link dropdown-toggle text-white"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Special Sessions
           </a>
           <ul class="dropdown-menu dropdown-menu-black">
@@ -134,11 +100,9 @@
               </a>
             </li> -->
             <li><span class="dropdown-item">Coming soon...</span></li>
-            <li class="border-top mt-2 pt-2">
-              <a class="dropdown-item text-wrap" href="{{ '/cfp/' | relative_url }}"
-                >Call for Papers</a
-              >
-            </li>
+            <!-- <li class="border-top mt-2 pt-2">
+              <a class="dropdown-item text-wrap" href="{{ '/swc/' | relative_url }}">Call for Papers</a>
+            </li> -->
           </ul>
         </li>
         <!-- <li class="nav-item dropdown align-content-center">
@@ -246,13 +210,8 @@
           </ul> -->
         </li>
         <li class="nav-item dropdown align-content-center">
-          <a
-            class="nav-link dropdown-toggle text-white text-wrap"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <a class="nav-link dropdown-toggle text-white text-wrap" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Tutorials
           </a>
           <ul class="dropdown-menu dropdown-menu-black dropdown-menu-end">
@@ -331,38 +290,24 @@
           <a class="nav-link text-white" href="{{ \'/program\' | relative_url }}">Program</a>
         </li> -->
         <li class="nav-item dropdown align-content-center">
-          <a
-            class="nav-link dropdown-toggle text-white"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             About
           </a>
           <ul class="dropdown-menu dropdown-menu-black dropdown-menu-end">
             <li>
-              <a
-                class="dropdown-item text-wrap"
-                style="min-width: 250px"
-                href="{{ '/venue/unical_congress_center/' | relative_url }}"
-                >Venue</a
-              >
+              <a class="dropdown-item text-wrap" style="min-width: 250px"
+                href="{{ '/venue/unical_congress_center/' | relative_url }}">Venue</a>
             </li>
             <li>
-              <a class="dropdown-item text-wrap" href="{{ '/travel/getting-there/' | relative_url }}"
-                >Getting There</a
-              >
+              <a class="dropdown-item text-wrap" href="{{ '/travel/getting-there/' | relative_url }}">Getting There</a>
             </li>
             <li>
-              <a class="dropdown-item" href="{{ '/travel/accommodation/' | relative_url }}"
-                >Accommodation</a
-              >
+              <a class="dropdown-item" href="{{ '/travel/accommodation/' | relative_url }}">Accommodation</a>
             </li>
             <li>
-              <a class="dropdown-item" href="{{ '/travel/visa-information' | relative_url }}"
-                >Visa and Invitation Letter</a
-              >
+              <a class="dropdown-item" href="{{ '/travel/visa-information' | relative_url }}">Visa and Invitation
+                Letter</a>
             </li>
           </ul>
         </li>

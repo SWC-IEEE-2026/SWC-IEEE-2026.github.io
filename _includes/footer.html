@@ -1,8 +1,5 @@
 <footer class="bg-black text-light py-4">
-  <div
-    class="m-auto container-fluid px-3 px-md-3 px-lg-3 px-xxl-0 py-3"
-    style="max-width: 1400px"
-  >
+  <div class="m-auto container-fluid px-3 px-md-3 px-lg-3 px-xxl-0 py-3" style="max-width: 1400px">
     <div class="row g-5">
       <div class="col-12 col-md-3 col-lg-4 d-flex flex-column gap-3">
         <div class="navbar-brand d-flex flex-row align-items-center gap-2">
@@ -15,11 +12,12 @@
           smart technologies like IoT, AI, smart cities, and cybersecurity.
         </p>
       </div>
-      <div
-        class="col-12 col-sm-6 col-md-3 col-lg-2 d-flex flex-column gap-lg-3"
-      >
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2 d-flex flex-column gap-lg-3">
         <h3 class="fs-4 mt-1">Conferences</h3>
         <ul class="list-unstyled">
+          <li>
+            <a class="dropdown-item" href="{{ '/swc' | relative_url }}">SWC 2026</a>
+          </li>
           <li>
             <a class="dropdown-item" href="{{ '/atc' | relative_url }}">ATC 2026</a>
           </li>
@@ -37,9 +35,7 @@
           </li>
         </ul>
       </div>
-      <div
-        class="col-12 col-sm-6 col-md-3 col-lg-2 d-flex flex-column gap-lg-3"
-      >
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2 d-flex flex-column gap-lg-3">
         <h3 class="fs-4 mt-1">Links</h3>
         <ul class="list-unstyled">
           <li>
@@ -54,16 +50,12 @@
             >
           </li> -->
           <li>
-            <a class="dropdown-item" href="{{ '/travel/visa-information/' | relative_url }}"
-              >Visa Information</a
-            >
+            <a class="dropdown-item" href="{{ '/travel/visa-information/' | relative_url }}">Visa Information</a>
           </li>
         </ul>
       </div>
       <div class="col-md-3 col-lg-4 mb-4">
-        <div
-          class="d-flex flex-column gap-2 justify-content-start align-content-start"
-        >
+        <div class="d-flex flex-column gap-2 justify-content-start align-content-start">
           <!-- <a href="/registration" class="btn btn-secondary text-decoration-none"
             >Register for SWC 2026</a
           > -->
@@ -74,16 +66,13 @@
           >
             <i class="bi bi-download"></i> Download Program Schedule (PDF)
           </a> -->
-          <a href="{{ '/cfp' | relative_url }}" class="btn btn-primary text-decoration-none"
-            >Call for Papers and Proposals</a
-          >
+          <a href="{{ '/swc' | relative_url }}" class="btn btn-primary text-decoration-none">Call for Papers and
+            Proposals</a>
         </div>
       </div>
     </div>
   </div>
-  <div
-    class="container d-flex flex-row justify-content-center align-items-center py-1"
-  >
+  <div class="container d-flex flex-row justify-content-center align-items-center py-1">
     <p class="m-0">
       &copy; {{ site.time | date: "%Y" }} IEEE Smart World Congress 2026
     </p>

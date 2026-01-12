@@ -1,5 +1,10 @@
 [
   {
+    "shortTitle": "IEEE SWC 2026",
+    "shortDescription": "The 12th IEEE International Smart World Congress",
+    "url": "/swc"
+  },
+  {
     "shortTitle": "IEEE Digital Twin 2026",
     "shortDescription": "The 2026 IEEE International Conference on Digital Twin",
     "url": "/digitaltwin"
