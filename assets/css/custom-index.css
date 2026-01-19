@@ -953,3 +953,134 @@ h5 {
   font-size: 0.8rem;
   margin-top: 2px;
 }
+
+/* --- Sponsors Page Styles --- */
+
+.sponsor-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images_26/imgs/sponsors.jpg');
+  background-size: cover;
+  background-position: center 50%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.sponsor-hero .hero-content {
+  text-align: center;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.sponsor-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: separate;
+  /* Changed for border-radius */
+  border-spacing: 0;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.sponsor-table th {
+  background: var(--primary-gradient);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 1.25rem 1rem;
+  text-align: left;
+  white-space: nowrap;
+  border: none;
+  letter-spacing: 0.5px;
+}
+
+.sponsor-table th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.sponsor-table th:last-child {
+  border-top-right-radius: 12px;
+}
+
+.sponsor-table td {
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid #f0f2f5;
+  vertical-align: middle;
+  color: #495057;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+}
+
+.sponsor-table tr:last-child td {
+  border-bottom: none;
+}
+
+.sponsor-table tr:hover td {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* First column highlighting */
+.sponsor-table tr td:first-child,
+.sponsor-table tr th:first-child {
+  font-weight: 600;
+  position: sticky;
+  left: 0;
+  z-index: 10;
+  /* ensure bg is persistent for sticky */
+  background-color: inherit;
+}
+
+.sponsor-table tr:hover td:first-child {
+  background-color: #f8f9fa;
+}
+
+.sponsor-table thead th:first-child {
+  background: var(--primary-gradient);
+  /* Reset for header */
+}
+
+/* Checkmarks */
+.check-mark {
+  color: var(--primary-color);
+  font-weight: 900;
+  font-size: 1.2rem;
+  display: inline-block;
+  transform: scale(0);
+  animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes popIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Contact Box - Shared Style */
+.contact-box-minimal {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contact-box-minimal:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
