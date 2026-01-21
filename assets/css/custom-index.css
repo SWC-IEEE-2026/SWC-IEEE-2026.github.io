@@ -1084,3 +1084,27 @@ h5 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   background: #fff;
 }
+
+/* --- Registration Page --- */
+.registration-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/product-school-nOvIa_x_tfo-unsplash.jpg');
+  background-size: cover;
+  background-position: center 50%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding-top: 120px;
+}
+
+.registration-banner {
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 2rem;
+}
