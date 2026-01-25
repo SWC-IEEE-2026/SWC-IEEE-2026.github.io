@@ -1,39 +1,20 @@
 ---
 layout: default
 title: Visa Information
-sponsors:
-  - image: ../../assets/images/ieee mb black png.png
-    url: https://www.ieee.org/
-  - image: ../../assets/images_26/sponsor/IEEE_Italy_logo_small.png
-    url: https://italy.ieeer8.org/
-  - image: ../../assets/images_26/sponsor/icis.png
-    url: https://cis.ieee.org/
-  - image: ../../assets/images_26/sponsor/cis.png
-    url: https://r8.ieee.org/italy-cis/
-  - image: ../../assets/images_26/sponsor/smc.png
-    url: https://r8.ieee.org/italy-smc/
-  - image: ../../assets/images_26/sponsor/unical-2.png
-    url: https://www.unical.it/
-  - image: ../../assets/images_26/sponsor/dimes.svg
-    url: https://dimes.unical.it/
+
 ---
 
 <!-- Hero Section -->
-<section
-  class="jumbotron text-center mb-5"
-  style="
+<section class="jumbotron text-center mb-5" style="
     background-image: url('../../assets/images/global-residence-index-LPdaW746WAw-unsplash.jpg');
     background-size: cover;
     background-position: 50% 75%;
     min-height: 60vh;
     position: relative;
     color: white;
-  "
->
+  ">
   <div class="hero-section">
-    <div
-      class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3"
-    >
+    <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3">
       <h1 class="display-5 fw-bolder mt-5">
         IEEE Smart World Congress 2026<br />
         Visa Information & Invitation Letters
@@ -43,13 +24,13 @@ sponsors:
 </section>
 
 <section class="page-section container px-3 pb-5 d-flex flex-column gap-2">
-  
+
   <div class="row">
     <div class="col-lg-12 d-flex flex-column gap-3">
       <h2 class="section-title fs-2 text-center text-sm-start">Do you need a Visa?</h2>
       <p class="fs-5 text-secondary">
-        Visas are required for some nationalities to travel to Italy for the conference. 
-        Please contact your travel agent and/or the Italian Consulate/Embassy in your country 
+        Visas are required for some nationalities to travel to Italy for the conference.
+        Please contact your travel agent and/or the Italian Consulate/Embassy in your country
         for the latest information on Italy visa requirements as soon as possible.
       </p>
       <div class="mx-auto w-100">
@@ -58,7 +39,7 @@ sponsors:
           <i class="bi bi-exclamation-triangle-fill fs-4 me-3"></i>
           <div>
             <p class="mb-0 fs-6">
-              <strong>Important:</strong> Visa processing times may vary. You are strongly advised to make your 
+              <strong>Important:</strong> Visa processing times may vary. You are strongly advised to make your
               visa application at your earliest convenience if one is needed.
             </p>
           </div>
@@ -70,9 +51,9 @@ sponsors:
   <div class="row">
     <div class="col-lg-12 d-flex flex-column gap-3">
       <h2 class="section-title fs-2 text-center text-sm-start">Invitation Letter Request</h2>
-      
+
       <p class="fs-5 text-secondary">
-        Do you require an official invitation letter or paper acceptance notification? 
+        Do you require an official invitation letter or paper acceptance notification?
         Please ensure the following details are provided accurately in your request:
       </p>
 
@@ -103,7 +84,8 @@ sponsors:
           <i class="bi bi-info-circle-fill fs-4 me-3"></i>
           <div>
             <p class="mb-0 fs-6">
-              <strong>Note:</strong> Invitation letters for VISA applications can be issued to <u>registered participants only</u>.
+              <strong>Note:</strong> Invitation letters for VISA applications can be issued to <u>registered
+                participants only</u>.
             </p>
           </div>
         </div>
@@ -112,7 +94,7 @@ sponsors:
       <div class="mt-4 p-4 bg-light rounded-4 border text-center">
         <h4 class="fw-bold mb-3">How to Request</h4>
         <p class="fs-5 mb-4">
-          Please send the required information (clearly identified) to the General Chair to have your 
+          Please send the required information (clearly identified) to the General Chair to have your
           invitation letter / acceptance notification issued.
         </p>
         <a href="mailto:giancarlo.fortino@unical.it" class="btn btn-primary btn-lg rounded-pill px-5">
@@ -122,11 +104,11 @@ sponsors:
 
     </div>
   </div>
-  
+
 </section>
 
 <section class="container-fluid d-flex flex-column gap-4 bg-light">
   {% include colocated-conferences.html %}
 </section>
 
-{% include sponsors.html sponsors=page.sponsors %}
+{% include sponsors.html sponsors=site.data.sponsors %}

@@ -1,21 +1,7 @@
 ---
 layout: default
 title: Home
-sponsors:
-  - image: ../../assets/images/ieee mb black png.png
-    url: https://www.ieee.org/
-  - image: ../../assets/images_26/sponsor/IEEE_Italy_logo_small.png
-    url: https://italy.ieeer8.org/
-  - image: ../../assets/images_26/sponsor/icis.png
-    url: https://cis.ieee.org/
-  - image: ../../assets/images_26/sponsor/cis.png
-    url: https://r8.ieee.org/italy-cis/
-  - image: ../../assets/images_26/sponsor/smc.png
-    url: https://r8.ieee.org/italy-smc/
-  - image: ../../assets/images_26/sponsor/unical-2.png
-    url: https://www.unical.it/
-  - image: ../../assets/images_26/sponsor/dimes.svg
-    url: https://dimes.unical.it/
+
 ---
 
 <section class="hero-section-wrapper text-center">
@@ -31,9 +17,10 @@ sponsors:
       <h3>Rende, Calabria, Italy</h3>
       <h3 class="text-info">{{site.data.swc_data.dates.conferenceDates}}</h3>
     </div>
-    <!-- <div class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center w-100">
-      <a href="/registration" class="btn btn-secondary btn-lg px-5 shadow-sm">Register for SWC 2026</a>
-    </div> -->
+    <div class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center w-100">
+      <a href="{{ '/registration' | relative_url }}" class="btn btn-secondary-gradient btn-lg px-5 shadow-sm">Register
+        for SWC 2026</a>
+    </div>
   </div>
 </section>
 
@@ -598,4 +585,4 @@ sponsors:
   </div>
 </section>
 
-{% include sponsors.html sponsors=page.sponsors %}
+{% include sponsors.html sponsors=site.data.sponsors %}

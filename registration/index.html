@@ -1,21 +1,7 @@
 ---
 layout: default
 title: Registration
-sponsors:
-  - image: ../../assets/images/ieee mb black png.png
-    url: https://www.ieee.org/
-  - image: ../../assets/images_26/sponsor/IEEE_Italy_logo_small.png
-    url: https://italy.ieeer8.org/
-  - image: ../../assets/images_26/sponsor/icis.png
-    url: https://cis.ieee.org/
-  - image: ../../assets/images_26/sponsor/cis.png
-    url: https://r8.ieee.org/italy-cis/
-  - image: ../../assets/images_26/sponsor/smc.png
-    url: https://r8.ieee.org/italy-smc/
-  - image: ../../assets/images_26/sponsor/unical-2.png
-    url: https://www.unical.it/
-  - image: ../../assets/images_26/sponsor/dimes.svg
-    url: https://dimes.unical.it/
+
 ---
 
 <!-- Hero Section -->
@@ -57,9 +43,10 @@ sponsors:
         </ul>
         <div class="alert alert-warning border-0 bg-opacity-10 bg-warning">
           <p class="mb-0">
-            For authors with multiple accepted papers, one full registration is valid for a maximum of 3 papers, with
-            the 2nd and 3rd papers each requiring an additional <b>300,00 €</b>.
-            If a 4th paper is to be registered, the author must complete a new registration.
+            For authors with multiple accepted papers, one full registration is valid for a <b>maximum of 2 papers</b>.
+            An additional fee
+            of <b>€350</b> is required for the <b>2nd paper</b>. If a 3rd paper is to be registered, the author must
+            complete a new full registration.
           </p>
         </div>
       </div>
@@ -171,4 +158,4 @@ sponsors:
   {% include colocated-conferences.html %}
 </section>
 
-{% include sponsors.html sponsors=page.sponsors %}
+{% include sponsors.html sponsors=site.data.sponsors %}

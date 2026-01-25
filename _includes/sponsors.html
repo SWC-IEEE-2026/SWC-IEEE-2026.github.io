@@ -1,27 +1,22 @@
 <section class="container-fluid px-3 py-5 d-flex flex-column gap-4">
   <div class="container">
-    
+
     <h2 class="section-title fs-2 text-center">Sponsors</h2>
-    
+
     <div class="row justify-content-center g-4 pb-5">
       {% for sponsor in include.sponsors %}
-      
+
       <div class="col-12 col-md-6 col-lg-4">
         <a href="{{ sponsor.url | default: '#' }}" target="_blank" class="text-decoration-none d-block h-100">
           <div class="sponsor-tile">
-            <img 
-              src="{{ sponsor.image }}" 
-              alt="Sponsor logo"
-              loading="lazy"
-              decoding="async"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
+            <img src="{{ sponsor.image | relative_url }}" alt="Sponsor logo" loading="lazy" decoding="async"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
           </div>
         </a>
       </div>
-      
+
       {% endfor %}
     </div>
-    
+
   </div>
 </section>
