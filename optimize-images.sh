@@ -91,7 +91,7 @@ convert_to_webp() {
     local webp_count=0
     
     # Convert sponsor logos
-    for img_file in "$SPONSOR_DIR"/*.{png,jpg} 2>/dev/null; do
+    for img_file in "$SPONSOR_DIR"/*.{png,jpg}; do
         if [ -f "$img_file" ]; then
             local basename="${img_file%.*}"
             local webp_file="$basename.webp"
@@ -105,7 +105,7 @@ convert_to_webp() {
     done
     
     # Convert hero images with quality 85
-    for img_file in "$IMAGES_DIR"/*.{png,jpg} 2>/dev/null; do
+    for img_file in "$IMAGES_DIR"/*.{png,jpg}; do
         if [ -f "$img_file" ]; then
             local basename="${img_file%.*}"
             local webp_file="$basename.webp"
