@@ -1,0 +1,469 @@
+---
+layout: default
+title: SE 2026
+---
+
+<!-- Hero Section -->
+<section class="jumbotron text-center" style="
+    background-image: url('../../assets/images_26/imgs/smart_edu.webp');
+    background-size: cover;
+    background-position: center 55%;
+    min-height: 60vh !important;
+    position: relative;
+    color: white;
+  ">
+    <div class="hero-section" style="min-height: 60vh !important">
+        <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3">
+            <h1 class="display-5 fw-bolder mt-5">
+                IEEE International Symposium on Smart Education 2026 (SmartEdu 2026)
+            </h1>
+            <div>
+                <h3>University of Calabria - Rende, Italy</h3>
+                <h3 class="">7-11 September 2026</h3>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+                <a class="btn btn-primary rounded-pill px-4 py-2 shadow-sm fw-bold" href="#" target="_blank">Submit
+                    Paper</a>
+                <a class="btn btn-pdf rounded-pill px-4 py-2 shadow-sm fw-bold" href="https://drive.google.com/file/d/1T4PVN-h3-Ff1D2HZ0zuwk6mgUfdbxyTW/view?usp=sharing" target="_blank">
+                    <i class="bi bi-file-earmark-pdf-fill me-2"></i>Download CFP Flyer
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="page-section container-fluid px-3 pt-3 pb-5 mt-2 d-flex flex-column gap-2">
+    <div class="row g-5">
+        <div class="col-lg-4">
+
+            <div class="custom-card p-0 h-100 overflow-hidden"
+                style="border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: all 0.3s ease;">
+
+                <div class="px-4 pt-4 pb-3" style="background: #ffffff;">
+                    <h4 class="fw-semibold mb-3 text-dark d-flex align-items-center"
+                        style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; color: #6c757d;">
+                        <span>Conference Info</span>
+                    </h4>
+
+                    <ul class="nav nav-pills nav-fill nav-pills-minimal gap-1" id="sidebarTabs-atc" role="tablist"
+                        style="padding-bottom: 0.5rem;">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active small text-uppercase py-2 px-3" id="dates-tab-atc"
+                                data-bs-toggle="tab" data-bs-target="#dates-pane-atc" type="button" role="tab"
+                                aria-selected="true"
+                                style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.5px; border-radius: 6px; transition: all 0.2s ease;">
+                                Dates
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link small text-uppercase py-2 px-3" id="committee-tab"
+                                data-bs-toggle="tab" data-bs-target="#committee-pane" type="button" role="tab"
+                                aria-selected="false"
+                                style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.5px; border-radius: 6px; transition: all 0.2s ease;">
+                                Committee
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="sidebarTabContent-atc" style="background: #ffffff;">
+
+                    <div class="tab-pane fade show active" id="dates-pane-atc" role="tabpanel">
+                        <div class="p-4 d-flex flex-column gap-1">
+
+                            <div class="date-item">
+                                <div class="d-flex flex-column">
+                                    <span class="fw-bold text-danger">Full Paper Submission</span>
+                                    <span
+                                        class="fw-bold text-danger">{{site.data.swc_data.dates.paperSubmission}}</span>
+                                </div>
+                            </div>
+
+                            <div class="date-item">
+                                <div class="d-flex flex-column">
+                                    <span class="fw-bold text-secondary">Authors Notification</span>
+                                    <span class="text-muted">{{site.data.swc_data.dates.authorsNotification}}</span>
+                                </div>
+                            </div>
+
+                            <div class="date-item">
+                                <div class="d-flex flex-column">
+                                    <span class="fw-bold text-secondary">Camera-ready</span>
+                                    <span class="text-muted">{{site.data.swc_data.dates.cameraReadyDue}}</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-2 p-3 rounded-3 border border-success bg-light text-success shadow-sm">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <span class="small text-uppercase fw-bold text-success"
+                                        style="letter-spacing: 1px;">Conference
+                                        Dates</span>
+                                    <span
+                                        class="fs-5 fw-bold text-success">{{site.data.swc_data.dates.conferenceDates}}</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="committee-pane" role="tabpanel">
+
+                        <div class="accordion accordion-flush" id="committeeAccordion">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold text-dark shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseGeneral"
+                                        aria-expanded="true">
+                                        General Chairs
+                                    </button>
+                                </h2>
+                                <div id="collapseGeneral" class="accordion-collapse collapse show"
+                                    data-bs-parent="#committeeAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <div class="fw-bold text-dark small">Oscar Lin</div>
+                                                <div class="small text-muted">Athabasca University, Canada</div>
+                                            </li>
+                                            <li>
+                                                <div class="fw-bold text-dark small">Giancarlo Fortino</div>
+                                                <div class="small text-muted">University of Calabria, Italy</div>
+                                            </li>
+                                            <li>
+                                                <div class="fw-bold text-dark small">Qun Jin</div>
+                                                <div class="small text-muted">Waseda University, Japan</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold text-dark shadow-none"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechnical"
+                                        aria-expanded="false">
+                                        Technical Program Chairs
+                                    </button>
+                                </h2>
+                                <div id="collapseTechnical" class="accordion-collapse collapse"
+                                    data-bs-parent="#committeeAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <div class="fw-bold text-dark small">Jason Benard</div>
+                                                <div class="small text-muted">Athabasca University, Canada</div>
+                                            </li>
+                                            <li>
+                                                <div class="fw-bold text-dark small">Francesco Pupo</div>
+                                                <div class="small text-muted">University of Calabria, Italy</div>
+                                            </li>
+                                            <li>
+                                                <div class="fw-bold text-dark small">Azza Basiouni</div>
+                                                <div class="small text-muted">Liwa University, UAE</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold text-dark shadow-none"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapsePublicity"
+                                        aria-expanded="false">
+                                        Publicity Chairs
+                                    </button>
+                                </h2>
+                                <div id="collapsePublicity" class="accordion-collapse collapse"
+                                    data-bs-parent="#committeeAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <div class="fw-bold text-dark small">Hongxin Yan</div>
+                                                <div class="small text-muted">Athabasca University, Canada</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold text-dark shadow-none"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb"
+                                        aria-expanded="false">
+                                        Web Chair
+                                    </button>
+                                </h2>
+                                <div id="collapseWeb" class="accordion-collapse collapse"
+                                    data-bs-parent="#committeeAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <div class="fw-bold text-dark small">Vincenzo Barbuto</div>
+                                                <div class="small text-muted">University of Calabria, Italy</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8 d-flex flex-column gap-4">
+            <div>
+                <h2 class="section-title fs-2 text-center">Call for Papers</h2>
+                <p class="fs-5 text-muted text-align-justify">
+                    After a successful workshop on Smart Education in the Age of GenAI at the IEEE Smart World Congress
+                    2025 in Calgary, Canada, and International Workshop on LLM and Agentic AI for Personalized Learning
+                    (LAAPL 2025) in Hong Kong, China, this Symposium will explore the intersection of AI technologies
+                    and its application in Education.
+                    <br /><br />
+                    As AI technologies increasingly shape learning environments, addressing challenges related to
+                    content quality, ethical alignment, and adaptive learning is essential. Bringing together
+                    researchers, learning scientists, industry experts, and policy makers, this symposium will discuss
+                    strategies for optimizing GenAI-generated educational materials, improving human-AI collaboration,
+                    utilizing RL for personalized learning pathways, and using ML-driven learning analytics to analyze
+                    learning activities and assessments of knowledge, skills and motivation. In addition, this symposium
+                    aims to catalyze actionable insights for creating Agentic AI systems that augment human expertise
+                    and enabling personalized and adaptive learning while prioritizing pedagogical integrity.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="track-card h-100 shadow-sm overflow-hidden">
+
+                        <div class="track-header bg-light border-bottom p-3 d-flex align-items-center">
+                            <i class="bi bi-layers-fill text-primary me-2 fs-4"></i>
+                            <h4 class="mb-0 fw-bold text-dark">Topics of Interest</h4>
+                        </div>
+
+                        <div class="track-body p-4">
+                            <p class="text-muted mb-4 small text-uppercase fw-bold ls-1">The topics include (but are not
+                                limited to):
+                            </p>
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
+                                    <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                                    <span class="text-secondary fw-medium">Technical Challenges in AI-Driven
+                                        Education</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
+                                    <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                                    <span class="text-secondary fw-medium">LLM-powered conversational chatbots for
+                                        education</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
+                                    <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                                    <span class="text-secondary fw-medium">Agentic AI for Adaptive/Personalized
+                                        Learning</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
+                                    <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                                    <span class="text-secondary fw-medium">Human-AI Interaction Design</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
+                                    <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                                    <span class="text-secondary fw-medium">Ethical and Governance Considerations</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
+                                    <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                                    <span class="text-secondary fw-medium">Case Studies and Applications on Smart
+                                        Education</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
+                                    <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                                    <span class="text-secondary fw-medium">Novel AI/RL/ML algorithms for Smart
+                                        Education</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
+                                    <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                                    <span class="text-secondary fw-medium">Empirical studies on AI’s impact on learning
+                                        effectiveness</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
+                                    <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                                    <span class="text-secondary fw-medium">Evaluation frameworks for AI-generated
+                                        content</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
+
+    <div class="text-center mx-auto" style="max-width: 800px;">
+      <h3 class="section-title fs-2 fw-bold mb-4">Types of Submissions</h3>
+      <p class="fs-5 lh-lg text-muted">
+        The conference welcomes high-quality, original research contributions that advance the scientific and
+        technological foundations of the smart world. Authors are invited to submit their work in one of the following
+        categories:
+      </p>
+    </div>
+
+    <div class="row g-4 mt-2 justify-content-center">
+
+      <div class="col-lg-4 d-flex">
+        <div class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center text-center w-100">
+          <i class="bi bi-file-earmark-richtext topic-icon mb-3"></i>
+
+          <h4 class="fw-bold mb-2 text-dark">Full Papers</h4>
+
+          <span class="badge bg-primary rounded-pill mb-3 px-3 py-2 text-white">6 pages</span>
+
+          <p class="mb-0 text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+            Complete research studies containing significant findings, rigorous methodology, and comprehensive
+            experimental or theoretical results.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 d-flex">
+        <div class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center text-center w-100">
+          <i class="bi bi-file-earmark-text topic-icon mb-3"></i>
+
+          <h4 class="fw-bold mb-2 text-dark">Short Papers</h4>
+
+          <span class="badge bg-primary rounded-pill mb-3 px-3 py-2 text-white">4 pages</span>
+
+          <p class="mb-0 text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+            Concise contributions reporting promising early results, innovative ideas, or ongoing work that is
+            expected to stimulate discussion and further development.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 d-flex">
+        <div class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center text-center w-100">
+          <i class="bi bi-easel topic-icon mb-3"></i>
+
+          <h4 class="fw-bold mb-2 text-dark">Poster & Demo Papers</h4>
+
+          <span class="badge bg-primary text-dark rounded-pill mb-3 px-3 py-2 text-white">2 pages</span>
+
+          <p class="mb-0 text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+            Visual or interactive presentations showcasing prototypes, systems, applications, or early research results
+            that highlight practical innovations and emerging technologies.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-4 mx-auto w-100">
+      <div class="alert alert-info d-flex align-items-center shadow-sm border-0" role="alert"
+        style="border-left: 5px solid var(--bs-alert-color) !important;">
+        <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+        <div>
+          <p class="mb-0 fs-6">
+            <strong>Important:</strong> A submission can have at most 2 additional pages with the pages overlength
+            charge, if accepted.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
+    <div class="mt-4">
+      <h3 class="section-title fs-2 text-center">Publication and Indexing</h3>
+      <p class="fs-5 lh-lg mb-4 text-align-justify text-muted">
+        All accepted and presented papers (full, short, and poster/demo) will be considered for the
+        conference proceedings and indexing in major repositories.
+      </p>
+      <div class="row g-4 justify-content-center mb-5">
+
+        <div class="col-md-5">
+          <div class="custom-card p-4 h-100 d-flex align-items-center">
+            <div class="me-4">
+              <div
+                class="bg-primary-gradient text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                style="width: 3.5rem; height: 3.5rem; font-size: 1.5rem; font-weight: bold;">✓</div>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1">IEEE Xplore</h5>
+              <p class="text-muted mb-0">Submitted for publication in IEEE Xplore Digital Library.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="custom-card p-4 h-100 d-flex align-items-center">
+            <div class="me-4">
+              <div
+                class="bg-primary-gradient text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                style="width: 3.5rem; height: 3.5rem; font-size: 1.5rem; font-weight: bold;">✓</div>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1">Major Databases</h5>
+              <p class="text-muted mb-0">Indexed in Elsevier, IET, and Scopus.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="mt-4 mx-auto w-100">
+        <div class="alert alert-warning d-flex align-items-center shadow-sm border-0" role="alert"
+          style="border-left: 5px solid var(--bs-alert-color)!important;">
+          <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+          <div>
+            <p class="mb-0 fs-6">
+              <strong>Note:</strong> For a paper to remain eligible for publication, it must be presented in person
+              (unless otherwise specified). At least one author must register for the conference and deliver the
+              presentation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="border-top: 2px solid #dee2e6;" />
+
+    <div class="mt-4">
+      <h3 class="section-title fs-2 text-center">Special Issue and Extended Versions</h3>
+      <p class="fs-5 lh-lg mb-4 text-align-justify text-muted">
+        A Special Issue in a high-impact, ISI-indexed journal will be organized in conjunction with the conference.
+        Authors of selected outstanding papers will
+        receive an invitation to submit an extended version of their work.
+      </p>
+    </div>
+    <div class="mt-4 mx-auto w-100">
+      <div class="alert alert-info d-flex align-items-center shadow-sm border-0" role="alert"
+        style="border-left: 5px solid var(--bs-alert-color) !important;">
+        <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+        <div>
+          <p class="mb-0 fs-6">
+            Information about the journal partner and submission deadlines will be announced soon.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+  {% include colocated-conferences.html %}
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}
