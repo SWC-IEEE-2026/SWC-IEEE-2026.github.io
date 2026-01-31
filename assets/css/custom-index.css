@@ -973,7 +973,7 @@ h5 {
 /* --- Sponsors Page Styles --- */
 
 .sponsor-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images_26/imgs/sponsors.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images_26/imgs/sponsors.webp');
   background-size: cover;
   background-position: center 50%;
   min-height: 50vh;

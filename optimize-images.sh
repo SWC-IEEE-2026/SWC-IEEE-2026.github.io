@@ -14,6 +14,7 @@ NC='\033[0m' # No Color
 ASSETS_DIR="assets/images_26"
 SPONSOR_DIR="$ASSETS_DIR/sponsor"
 IMAGES_DIR="$ASSETS_DIR/imgs"
+PEOPLE_DIR="$ASSETS_DIR/people"
 
 echo -e "${YELLOW}===================================${NC}"
 echo -e "${YELLOW}IEEE SWC 2026 - Image Optimization${NC}"
@@ -44,10 +45,13 @@ check_dependencies() {
 show_sizes() {
     echo -e "${YELLOW}Current Image Sizes:${NC}"
     echo "Sponsor logos:"
-    du -sh "$SPONSOR_DIR"/*.{png,jpg,svg} 2>/dev/null | sort -h || echo "  No images found"
+    du -sh "$SPONSOR_DIR"/*.{png,jpg,jpeg,svg} 2>/dev/null | sort -h || echo "  No images found"
     echo ""
     echo "Hero images:"
-    du -sh "$IMAGES_DIR"/*.{png,jpg,webp} 2>/dev/null | sort -h || echo "  No images found"
+    du -sh "$IMAGES_DIR"/*.{png,jpg,jpeg,webp} 2>/dev/null | sort -h || echo "  No images found"
+    echo ""
+    echo "People images:"
+    du -sh "$PEOPLE_DIR"/*.{png,jpg,jpeg,webp} 2>/dev/null | sort -h || echo "  No images found"
     echo ""
 }
 
@@ -59,7 +63,7 @@ optimize_pngs() {
     local total_before=0
     local total_after=0
     
-    for png_file in "$SPONSOR_DIR"/*.png "$IMAGES_DIR"/*.png; do
+    for png_file in "$SPONSOR_DIR"/*.png "$IMAGES_DIR"/*.png "$PEOPLE_DIR"/*.png; do
         if [ -f "$png_file" ]; then
             local before=$(stat -f%z "$png_file" 2>/dev/null || stat -c%s "$png_file" 2>/dev/null)
             total_before=$((total_before + before))
@@ -91,7 +95,21 @@ convert_to_webp() {
     local webp_count=0
     
     # Convert sponsor logos
-    for img_file in "$SPONSOR_DIR"/*.{png,jpg}; do
+    for img_file in "$SPONSOR_DIR"/*.{png,jpg,jpeg}; do
+        if [ -f "$img_file" ]; then
+            local basename="${img_file%.*}"
+            local webp_file="$basename.webp"
+            
+            if [ ! -f "$webp_file" ]; then
+                echo "  Converting: $(basename "$img_file")"
+                cwebp -q 80 "$img_file" -o "$webp_file"
+                webp_count=$((webp_count + 1))
+            fi
+        fi
+    done
+    
+    # Convert people images with quality 80
+    for img_file in "$PEOPLE_DIR"/*.{png,jpg,jpeg}; do
         if [ -f "$img_file" ]; then
             local basename="${img_file%.*}"
             local webp_file="$basename.webp"
@@ -105,7 +123,7 @@ convert_to_webp() {
     done
     
     # Convert hero images with quality 85
-    for img_file in "$IMAGES_DIR"/*.{png,jpg}; do
+    for img_file in "$IMAGES_DIR"/*.{png,jpg,jpeg}; do
         if [ -f "$img_file" ]; then
             local basename="${img_file%.*}"
             local webp_file="$basename.webp"
