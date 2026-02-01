@@ -1,0 +1,85 @@
+main:
+  - title: Conferences
+    dropdown: true
+    menu_class: dropdown-menu-glass
+    items:
+      - title: SWC 2026
+        url: /swc/
+      - title: ATC 2026
+        url: /atc
+      - title: Digital Twin 2026
+        url: /digitaltwin
+      - title: Metaverse 2026
+        url: /metaverse
+      - title: ScalCom 2026
+        url: /scalcom
+      - title: UIC 2026
+        url: /uic
+
+  - title: Symposia
+    dropdown: true
+    menu_class: dropdown-menu-glass
+    items:
+      - title: SmartEdu 2026
+        url: /symposia/smartedu/
+
+  - title: Workshops
+    dropdown: true
+    menu_class: dropdown-menu-glass
+    items:
+      - title: "Coming soon..."
+        text_only: true
+      - divider: true
+        class: "border-top mt-2 pt-2"
+        items:
+          - title: Call for Papers
+            url: /swc/#call-for-ws-ss
+
+  - title: Special Sessions
+    dropdown: true
+    menu_class: dropdown-menu-glass
+    items:
+      - title: "Coming soon..."
+        text_only: true
+      - divider: true
+        class: "border-top mt-2 pt-2"
+        items:
+          - title: Call for Papers
+            url: /swc/#call-for-ws-ss
+
+  - title: Keynotes
+    dropdown: true
+    menu_class: dropdown-menu-glass
+    items:
+      - title: Dr. Schahram Dustdar
+        url: /keynotes/schahram-dustdar
+      - title: Dr. Vincenzo Piuri
+        url: /keynotes/vincenzo-piuri
+      - title: Dr. Zidong Wang
+        url: /keynotes/zidong-wang
+
+  - title: Tutorials
+    dropdown: true
+    menu_class: dropdown-menu-glass dropdown-menu-end
+    link_class: text-wrap
+    items:
+      - title: "Coming soon..."
+        text_only: true
+
+  - title: About
+    dropdown: true
+    menu_class: dropdown-menu-glass dropdown-menu-end
+    items:
+      - title: Venue
+        url: /venue/unical_congress_center/
+      - title: Getting There
+        url: /travel/getting-there/
+      - title: Accommodation
+        url: /travel/accommodation/
+      - title: Visa and Invitation Letter
+        url: /travel/visa-information
+      - title: Sponsors
+        url: /sponsors
+        
+  - title: Contact
+    url: /contact
