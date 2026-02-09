@@ -16,6 +16,7 @@ main:
       - title: UIC 2026
         url: /uic
 
+
   - title: Symposia
     dropdown: true
     menu_class: dropdown-menu-glass
@@ -23,22 +24,16 @@ main:
       - title: SmartEdu 2026
         url: /symposia/smartedu/
 
-  - title: Workshops
+  - title: Workshops & SS
     dropdown: true
     menu_class: dropdown-menu-glass
     items:
+      - title: Workshops
+        header: true
       - title: "Coming soon..."
         text_only: true
-      - divider: true
-        class: "border-top mt-2 pt-2"
-        items:
-          - title: Call for Papers
-            url: /swc/#call-for-ws-ss
-
-  - title: Special Sessions
-    dropdown: true
-    menu_class: dropdown-menu-glass
-    items:
+      - title: Special Sessions
+        header: true
       - title: "Coming soon..."
         text_only: true
       - divider: true
@@ -57,16 +52,22 @@ main:
         url: /keynotes/vincenzo-piuri
       - title: Dr. Zidong Wang
         url: /keynotes/zidong-wang
-
-  - title: Tutorials
+  
+  - title: PhD & Tutorials
     dropdown: true
-    menu_class: dropdown-menu-glass dropdown-menu-end
+    menu_class: dropdown-menu-glass
     link_class: text-wrap
     items:
+      - title: Tutorials
+        header: true
+      - title: "Coming soon..."
+        text_only: true
+      - title: PhD Forum
+        header: true
       - title: "Coming soon..."
         text_only: true
 
-  - title: About
+  - title: Attending
     dropdown: true
     menu_class: dropdown-menu-glass dropdown-menu-end
     items:

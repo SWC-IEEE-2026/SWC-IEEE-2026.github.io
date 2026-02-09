@@ -29,6 +29,10 @@
               <a class="dropdown-item" href="{{ deepitem.url | relative_url }}">{{ deepitem.title }}</a>
               {% endfor %}
             </li>
+            {% elsif subitem.header %}
+            <li>
+              <h6 class="dropdown-header">{{ subitem.title }}</h6>
+            </li>
             {% elsif subitem.text_only %}
             <li><span class="dropdown-item">{{ subitem.title }}</span></li>
             {% else %}
