@@ -48,6 +48,8 @@ main:
     items:
       - title: Dr. Schahram Dustdar
         url: /keynotes/schahram-dustdar
+      - title: Dr. Qingsong Wen
+        url: /keynotes/qingsong-wen
       - title: Dr. Vincenzo Piuri
         url: /keynotes/vincenzo-piuri
       - title: Dr. Zidong Wang

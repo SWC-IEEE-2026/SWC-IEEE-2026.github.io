@@ -1,0 +1,87 @@
+---
+layout: default
+title: Keynotes - Dr. Qingsong Wen
+---
+
+<!-- Hero Section -->
+<section class="jumbotron text-center" style="
+    background-image: url('../../assets/images_26/imgs/qingsong_wen.webp');
+    background-position: center 55%;
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+    color: white;
+  ">
+    <div class="hero-overlay-gradient w-100">
+        <div class="container minimal-hero-content py-5 mt-5">
+            <div class="keynote-badge mb-4">Keynote Talk</div>
+            <h1 class="display-3 fw-bolder mb-4" style="line-height: 1.2;">
+                Agentic AI Tutors for Smart Education at Scale
+            </h1>
+            <h3 class="mb-4">Dr. Qingsong Wen</h3>
+            <div class="keynote-meta-minimal mb-0">
+                <span><i class="fas fa-calendar-alt"></i>8 September 2026</span>
+                <span><i class="fas fa-map-marker-alt"></i>Location TBD</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="abstract" class="page-section container py-5 mt-4">
+    <div class="text-reading-width">
+        <h2 class="section-title text-center mb-5" style="padding-bottom: 0;">Abstract</h2>
+
+        <h3 class="abstract-title-large">
+            Join us in exploring how agentic AI tutors enable adaptive and personalized learning in real-world education systems
+        </h3>
+
+        <p class="abstract-text text-align-justify">
+            Recent advances in large language and multimodal models have enabled agentic AI tutors to operate autonomously in real-world 
+            education systems. This keynote presents how adaptive and personalized educational AI agents are designed and deployed at scale 
+            using state-of-the-art techniques, including multi-agent LLM reasoning, multimodal error analysis, dialog-driven interaction, and 
+            longitudinal learner modeling. Drawing on large-scale applications from Squirrel Ai Learning, the talk demonstrates how these AI 
+            tutors perform fine-grained misconception diagnosis, personalized feedback generation, and adaptive learning path optimization 
+            through continuous interaction with real student data. Validated through large-scale real-world deployments, this work highlights 
+            key technical lessons on reliability, robustness, and trust in smart education ecosystems.
+        </p>
+    </div>
+</section>
+
+<section class="page-section container py-4">
+    <div class="glass-card p-4">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-4 text-center">
+                <div class="position-relative d-inline-block">
+                    <img src="{{ '/assets/images_26/people/QingsongWen.webp' | relative_url }}"
+                        alt="Dr. Qingsong Wen" class="circle-img shadow-lg"
+                        style="width: 180px; height: 180px; border-width: 6px;" />
+                    <div class="position-absolute bottom-0 start-50 translate-middle-x bg-primary text-white px-2 py-1 rounded-pill shadow"
+                        style="width: max-content; font-size: 0.85rem;">
+                        Speaker
+                    </div>
+                </div>
+                <h4 class="mt-3 mb-1">Dr. Qingsong Wen</h4>
+                <h6 class="text-muted small"><i>Squirrel Ai Learning, China and University of Oxford, UK</i></h6>
+            </div>
+            <div class="col-md-8 px-md-4">
+                <h3 class="section-title text-center mb-3">Biography</h3>
+                <p class="text-align-justify" style="line-height: 1.6;">
+                    <a href="https://sites.google.com/site/qingsongwen8/" class="fw-bold text-decoration-none">Qingsong Wen</a> is currently the 
+                    Head of AI & Chief Scientist at Squirrel Ai Learning (a top EdTech unicorn), and PhD Supervisor at University of Oxford. Before 
+                    that, he worked at Alibaba, Qualcomm, Marvell, etc., and received his M.S. and Ph.D. degrees from Georgia Institute of Technology, 
+                    USA. His research interests include machine learning, data mining, and signal processing, especially AI for Time Series, AI for
+                     Education, LLM & AI Agent. He has published near 200 top-ranked AI conference and journal papers. Currently, he serves as Associate 
+                     Vice President for Cybernetics of IEEE SMC Society, Chair of IEEE CIS Task Force on AI for Time Series and Spatio-Temporal Data, and
+                     Vice Chair of INNS AI for Education Section. He also regularly serves as Area Chair of the top AI conferences including NeurIPS, ICML, 
+                     ICLR, KDD, etc, and (Senior) Associate Editor for IEEE TSP and IEEE TPAMI.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+    {% include colocated-conferences.html %}
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}
