@@ -46,14 +46,22 @@ main:
     dropdown: true
     menu_class: dropdown-menu-glass
     items:
+      - title: 8 September
+        header: true
       - title: Dr. Schahram Dustdar
         url: /keynotes/schahram-dustdar
       - title: Dr. Qingsong Wen
         url: /keynotes/qingsong-wen
-      - title: Dr. Vincenzo Piuri
-        url: /keynotes/vincenzo-piuri
+      - title: 9 September
+        header: true
       - title: Dr. Zidong Wang
         url: /keynotes/zidong-wang
+      - title: 10 September
+        header: true
+      - title: Dr. Vincenzo Piuri
+        url: /keynotes/vincenzo-piuri
+      - title: Dr. Weisong Shi
+        url: /keynotes/weisong-shi
   
   - title: PhD & Tutorials
     dropdown: true

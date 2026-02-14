@@ -1,0 +1,95 @@
+---
+layout: default
+title: Keynotes - Dr. Weisong Shi
+---
+
+<!-- Hero Section -->
+<section class="jumbotron text-center" style="
+    background-image: url('../../assets/images_26/imgs/weisong_keynote.webp');
+    background-position: center 55%;
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+    color: white;
+  ">
+    <div class="hero-overlay-gradient w-100">
+        <div class="container minimal-hero-content py-5 mt-5">
+            <div class="keynote-badge mb-4">Keynote Talk</div>
+            <h1 class="display-3 fw-bolder mb-4" style="line-height: 1.2;">
+                Physical Intelligence on the Edge: A Vision for the Decade Ahead
+            </h1>
+            <h3 class="mb-4">Dr. Weisong Shi</h3>
+            <div class="keynote-meta-minimal mb-0">
+                <span><i class="fas fa-calendar-alt"></i>10 September 2026</span>
+                <span><i class="fas fa-map-marker-alt"></i>Location TBD</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="abstract" class="page-section container py-5 mt-4">
+    <div class="text-reading-width">
+        <h2 class="section-title text-center mb-5" style="padding-bottom: 0;">Abstract</h2>
+
+        <h3 class="abstract-title-large">
+            Join us in exploring the hidden potential and added value of Physical Intelligence on the Edge.
+        </h3>
+
+        <p class="abstract-text text-align-justify">
+            Physical Intelligence on the Edge (PIE) is an emerging paradigm in which raw sensor
+            streams are transformed into real-time, safety-critical intelligence that can act in the physical
+            world. This talk traces the evolution from centralized to distributed and edge architectures and
+            argues that PIE marks a qualitative shift: the edge becomes the primary platform for tightly
+            integrating sensing, reasoning, and actuation under stringent real-time constraints. Dr. Shi will
+            introduce five research thrusts—embodied spatial reasoning, embodied temporal reasoning,
+            edge-native customization, symbiosis, and sustainability—and use a hypothetical PIE scenario
+            to highlight a core gap in today’s systems: while current edge platforms can run components of
+            perception and inference, they still cannot autonomously close the sense-think-act loop with
+            certifiable guarantees on timing and safety. Finally, he will talk about the recent development
+            of D-STAR, a live and evolving testbed for vehicle computing on the STAR campus at the
+            University of Delaware.
+        </p>
+    </div>
+</section>
+
+<section class="page-section container py-4">
+    <div class="glass-card p-4">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-4 text-center">
+                <div class="position-relative d-inline-block">
+                    <img src="{{ '/assets/images_26/people/Weisong_Shi_HR.webp' | relative_url }}"
+                        alt="Dr. Weisong Shi" class="circle-img shadow-lg"
+                        style="width: 180px; height: 180px; border-width: 6px;" />
+                    <div class="position-absolute bottom-0 start-50 translate-middle-x bg-primary text-white px-2 py-1 rounded-pill shadow"
+                        style="width: max-content; font-size: 0.85rem;">
+                        Speaker
+                    </div>
+                </div>
+                <h4 class="mt-3 mb-1">Dr. Weisong Shi</h4>
+                <h6 class="text-muted small"><i>University of Delaware, USA</i></h6>
+            </div>
+            <div class="col-md-8 px-md-4">
+                <h3 class="section-title text-center mb-3">Biography</h3>
+                <p class="text-align-justify" style="line-height: 1.6;">
+                    <a class="fw-bold text-decoration-none">Weisong Shi</a> 
+                    is an Alumni Distinguished Professor and Department Chair of Computer and Information Sciences at the University 
+                    of Delaware (UD). He leads the Connected and Autonomous Research (CAR) Laboratory. Dr. Shi is the Honorary Center 
+                    Director of a recently funded NSF eCAT Industry-University Cooperative Research Center (IUCRC) (2023-2028), 
+                    focusing on Electric, Connected, and Autonomous Technology for Mobility. He is an internationally renowned expert 
+                    in edge computing, autonomous driving, and connected health. His pioneer paper, “Edge Computing: Vision and 
+                    Challenges,” has been cited over 10k times. He is the Editor-in-Chief of IEEE Internet Computing Magazine and 
+                    the founding steering committee chair of several conferences, including the ACM/IEEE Symposium on Edge
+                    Computing (SEC), IEEE/ACM International Conference on Connected Health (CHASE), and IEEE
+                    International Conference on Mobility (MOST). He is a fellow of IEEE and a member of CRA’s
+                    Computing Community Consortium (CCC) Council.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+    {% include colocated-conferences.html %}
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

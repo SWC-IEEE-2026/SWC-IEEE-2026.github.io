@@ -31,7 +31,9 @@
             </li>
             {% elsif subitem.header %}
             <li>
-              <h6 class="dropdown-header">{{ subitem.title }}</h6>
+              <h6 class="dropdown-header fw-bold text-uppercase"
+                style="color: rgba(255, 255, 255, 0.6); font-size: 0.75rem; letter-spacing: 1px; {% unless forloop.first %}margin-top: 0.5rem;{% endunless %}">
+                {{ subitem.title }}</h6>
             </li>
             {% elsif subitem.text_only %}
             <li><span class="dropdown-item">{{ subitem.title }}</span></li>
