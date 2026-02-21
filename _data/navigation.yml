@@ -77,6 +77,9 @@ main:
       - title: "Coming soon..."
         text_only: true
 
+  - title: Special Issues
+    url: /special-issues/
+
   - title: Attending
     dropdown: true
     menu_class: dropdown-menu-glass dropdown-menu-end

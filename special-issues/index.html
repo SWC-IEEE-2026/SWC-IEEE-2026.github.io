@@ -1,0 +1,341 @@
+---
+layout: default
+title: Special Issues
+---
+
+<style>
+    :root {
+        --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+        --card-hover-shadow: 0 20px 40px rgba(13, 110, 253, 0.12);
+    }
+
+    /* Hero Section Styling */
+    .special-issues-hero {
+        background-image: linear-gradient(rgba(13, 18, 29, 0.75), rgba(13, 18, 29, 0.85)), url('../assets/images_26/imgs/general_cfp.webp');
+        background-size: cover;
+        background-position: center 55%;
+        min-height: 55vh !important;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    /* Card Styling */
+    .special-issue-card {
+        border: none;
+        border-radius: 20px;
+        background: #ffffff;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        z-index: 1;
+    }
+
+    /* Decorative top gradient border */
+    .special-issue-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        background: var(--primary-gradient);
+        z-index: 2;
+        transition: height 0.4s ease;
+    }
+
+    /* Hover effect for cards */
+    .special-issue-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--card-hover-shadow);
+    }
+
+    /* Journal Badge */
+    .journal-badge {
+        background: rgba(13, 110, 253, 0.08);
+        color: #0d6efd;
+        border: 1px solid rgba(13, 110, 253, 0.2);
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        padding: 0.4em 1em;
+        border-radius: 50rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+
+    /* Deadline Styling */
+    .deadline-box {
+        display: inline-flex;
+        align-items: center;
+        background: #fff0f0;
+        color: #dc3545;
+        padding: 0.35rem 0.8rem;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+
+    /* Editor List Styling */
+    .editor-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .editor-list li {
+        padding: 8px 0;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.06);
+        display: flex;
+        align-items: flex-start;
+        color: #495057;
+        font-size: 0.9rem;
+    }
+
+    .editor-list li:last-child {
+        border-bottom: none;
+    }
+
+    .editor-list .editor-icon {
+        color: #adb5bd;
+        margin-right: 10px;
+        margin-top: 2px;
+    }
+
+    .editor-affiliation {
+        display: block;
+        color: #868e96;
+        font-size: 0.8rem;
+        margin-top: 2px;
+        font-style: italic;
+    }
+
+    .card-action-btn {
+        border-radius: 12px;
+        padding: 0.6rem 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="jumbotron text-center special-issues-hero">
+    <div class="container px-3 d-flex flex-column align-items-center gap-3">
+        <div class="mb-2">
+            <span class="badge bg-primary text-uppercase px-3 py-2 rounded-pill ls-1 mb-3">Publications</span>
+        </div>
+        <h1 class="display-3 fw-bolder mb-3" style="letter-spacing: -1px;">
+            Special Issues
+        </h1>
+    </div>
+</section>
+
+<section class="page-section container px-4 py-5 my-4">
+
+    <!-- Intro Text Container -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10 text-center">
+            <p class="fs-4 text-muted mx-auto" style="font-weight: 300; line-height: 1.6;">
+                Selected papers from all events of the IEEE SWC Multi-conference will be invited to be extended and
+                submitted to the following featured special issues in high-impact journals.
+            </p>
+        </div>
+    </div>
+
+    <!-- Cards Container (1 per row) -->
+    <div class="row g-5 justify-content-center">
+
+        <!-- Special Issue 1 -->
+        <div class="col-lg-10 col-md-11 d-flex">
+            <div class="special-issue-card w-100">
+                <div class="p-4 p-md-5 d-flex flex-column flex-grow-1">
+
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <span class="journal-badge">Frontiers in AI</span>
+                    </div>
+
+                    <h4 class="fw-bold mb-4 text-dark" style="font-size: 1.25rem; line-height: 1.5;">
+                        Emerging Design and Technologies for Sustainable Metaverses: A Cross-disciplinary Exploration
+                    </h4>
+
+                    <div class="mb-4">
+                        <div class="deadline-box">
+                            <i class="bi bi-calendar-event me-2"></i> Deadline: Nov 2026
+                        </div>
+                    </div>
+
+                    <div class="mb-4 flex-grow-1">
+                        <h6 class="text-secondary fw-bold text-uppercase mb-3"
+                            style="font-size: 0.8rem; letter-spacing: 1px;">Guest Editors</h6>
+                        <ul class="editor-list">
+                            <li>
+                                <i class="bi bi-person-circle editor-icon"></i>
+                                <div>
+                                    <span class="fw-medium">Prof. Chien-Sing Lee</span>
+                                    <span class="editor-affiliation">Sunway University, Bandar Sunway, Malaysia</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-person-circle editor-icon"></i>
+                                <div>
+                                    <span class="fw-medium">Prof. Giancarlo Fortino</span>
+                                    <span class="editor-affiliation">University of Calabria, Rende, Italy</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-auto pt-4 border-top">
+                        <a href="https://www.frontiersin.org/research-topics/75512/emerging-design-and-technologies-for-sustainable-metaverses-a-cross-disciplinary-exploration"
+                            target="_blank"
+                            class="btn btn-outline-primary w-100 card-action-btn d-flex align-items-center justify-content-center gap-2">
+                            <span>View Details</span> <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Issue 2 -->
+        <div class="col-lg-10 col-md-11 d-flex">
+            <div class="special-issue-card w-100">
+                <div class="p-4 p-md-5 d-flex flex-column flex-grow-1">
+
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <span class="journal-badge">Smart Cities MDPI</span>
+                    </div>
+
+                    <h4 class="fw-bold mb-4 text-dark" style="font-size: 1.25rem; line-height: 1.5;">
+                        Innovative IoT Solutions for Sustainable Smart Cities
+                    </h4>
+
+                    <div class="mb-4">
+                        <div class="deadline-box">
+                            <i class="bi bi-calendar-event me-2"></i> Deadline: Nov 2026
+                        </div>
+                    </div>
+
+                    <div class="mb-4 flex-grow-1">
+                        <h6 class="text-secondary fw-bold text-uppercase mb-3"
+                            style="font-size: 0.8rem; letter-spacing: 1px;">Guest Editors</h6>
+                        <ul class="editor-list">
+                            <li>
+                                <i class="bi bi-person-circle editor-icon"></i>
+                                <div>
+                                    <span class="fw-medium">Dr. Giancarlo Nota</span>
+                                    <span class="editor-affiliation">University of Salerno, Salerno, Italy</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-person-circle editor-icon"></i>
+                                <div>
+                                    <span class="fw-medium">Prof. Giancarlo Fortino</span>
+                                    <span class="editor-affiliation">University of Calabria, Rende, Italy</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-auto pt-4 border-top">
+                        <a href="https://www.mdpi.com/journal/smartcities/special_issues/75KBM19Q4I" target="_blank"
+                            class="btn btn-outline-primary w-100 card-action-btn d-flex align-items-center justify-content-center gap-2">
+                            <span>View Details</span> <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Issue 3 -->
+        <div class="col-lg-10 col-md-11 d-flex">
+            <div class="special-issue-card w-100">
+                <div class="p-4 p-md-5 d-flex flex-column flex-grow-1">
+
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <span class="journal-badge">Biomedicine, Elsevier</span>
+                    </div>
+
+                    <h4 class="fw-bold mb-4 text-dark" style="font-size: 1.25rem; line-height: 1.5;">
+                        Exploring the Frontiers of Radiomics: Unveiling Novel Insights through Advanced Techniques and
+                        Multimodal Approaches
+                    </h4>
+
+                    <div class="mb-4">
+                        <div class="deadline-box">
+                            <i class="bi bi-calendar-event me-2"></i> Deadline: Dec 2027
+                        </div>
+                    </div>
+
+                    <div class="mb-4 flex-grow-1">
+                        <h6 class="text-secondary fw-bold text-uppercase mb-3"
+                            style="font-size: 0.8rem; letter-spacing: 1px;">Guest Editors</h6>
+                        <ul class="editor-list">
+                            <li>
+                                <i class="bi bi-person-circle editor-icon"></i>
+                                <div>
+                                    <span class="fw-medium">Prof. Giancarlo Fortino</span>
+                                    <span class="editor-affiliation">University of Calabria, Rende, Italy</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-person-circle editor-icon"></i>
+                                <div>
+                                    <span class="fw-medium">Dr. Antonella Guzzo</span>
+                                    <span class="editor-affiliation">University of Calabria, Rende, Italy</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-person-circle editor-icon"></i>
+                                <div>
+                                    <span class="fw-medium">Prof. Filippo Molinari</span>
+                                    <span class="editor-affiliation">Polytechnic of Turin, Turin, Italy</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-person-circle editor-icon"></i>
+                                <div>
+                                    <span class="fw-medium">Prof. Ye Li</span>
+                                    <span class="editor-affiliation">Chinese Academy of Sciences Shenzhen Institutes of Advanced Technology, Shenzhen, China</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-person-circle editor-icon"></i>
+                                <div>
+                                    <span class="fw-medium">Prof. Karen Panetta</span>
+                                    <span class="editor-affiliation">Tufts University, Medford, MA, USA</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-person-circle editor-icon"></i>
+                                <div>
+                                    <span class="fw-medium">Prof. Maria Francesca Spadea</span>
+                                    <span class="editor-affiliation">Karlsruhe Institute of Technology, Karlsruhe, Germany</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-auto pt-4 border-top">
+                        <a href="https://www.sciencedirect.com/special-issue/10WJNQ07306" target="_blank"
+                            class="btn btn-outline-primary w-100 card-action-btn d-flex align-items-center justify-content-center gap-2">
+                            <span>View Details</span> <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light py-5">
+    {% include colocated-conferences.html %}
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}
