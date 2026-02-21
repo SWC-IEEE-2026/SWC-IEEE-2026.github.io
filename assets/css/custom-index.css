@@ -1209,3 +1209,133 @@ h5 {
   margin: 0;
   flex-grow: 1;
 }
+
+/* --- Special Issues Page --- */
+.special-issues-hero {
+  background-image: linear-gradient(rgba(13, 18, 29, 0.75), rgba(13, 18, 29, 0.85)), url('../images_26/imgs/general_cfp.webp');
+  background-size: cover;
+  background-position: center 55%;
+  min-height: 55vh !important;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.special-issue-card {
+  border: none;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  z-index: 1;
+}
+
+.special-issue-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: var(--primary-gradient);
+  z-index: 2;
+  transition: height 0.4s ease;
+}
+
+.special-issue-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.journal-badge {
+  background: var(--primary-gradient);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.5em 1.25em;
+  border-radius: 50rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+}
+
+.deadline-box {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(220, 53, 69, 0.08);
+  color: #dc3545;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: 1px solid rgba(220, 53, 69, 0.15);
+}
+
+.guest-editors-title {
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  color: #adb5bd;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.editor-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.editor-list li {
+  padding: 10px 12px;
+  margin-bottom: 4px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: flex-start;
+  color: #495057;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.editor-list.row li {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.editor-list li:hover {
+  background: #f8f9fa;
+}
+
+.editor-list li:last-child {
+  border-bottom: none;
+}
+
+.editor-list .editor-icon {
+  color: #adb5bd;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.editor-affiliation {
+  display: block;
+  color: #868e96;
+  font-size: 0.8rem;
+  margin-top: 2px;
+  font-style: italic;
+}
+
+.card-action-btn {
+  border-radius: 12px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
