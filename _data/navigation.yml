@@ -23,6 +23,8 @@ main:
     items:
       - title: SmartEdu 2026
         url: /symposia/smartedu/
+      - title: Women in the Smart World Forum 2026
+        url: /symposia/wswf/
 
   - title: Workshops & SS
     dropdown: true
