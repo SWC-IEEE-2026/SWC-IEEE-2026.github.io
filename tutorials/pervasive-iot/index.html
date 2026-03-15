@@ -1,0 +1,378 @@
+---
+layout: default
+title: Pervasive IoT Tutorial 2026
+
+---
+
+<!-- Hero Section -->
+<section class="jumbotron text-center" style="
+    background: linear-gradient(135deg, #1E3A8A 0%, #0ea5e9 100%);
+    height: 60vh;
+    position: relative;
+    color: white;
+    overflow: hidden;
+  ">
+  <!-- Decorative glow overlay -->
+  <div style="
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(14,165,233,0.18) 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 80%, rgba(30,58,138,0.25) 0%, transparent 50%);
+    pointer-events: none;
+  "></div>
+  <div class="hero-section" style="background-color: transparent;">
+    <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3"
+      style="position:relative; z-index:1;">
+      <div class="mb-1">
+        <span class="badge rounded-pill px-3 py-2 fw-semibold"
+          style="background: rgba(255,255,255,0.12); font-size: 0.85rem; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.2);">Tutorial
+          @ IEEE SWC 2026</span>
+      </div>
+      <h1 class="display-6 fw-bolder mt-2"
+        style="text-shadow: 0 2px 20px rgba(0,0,0,0.4); line-height: 1.2; max-width: 860px;">
+        Beyond Connected Things: New Paradigms for the Pervasive IoT
+      </h1>
+      <div class="d-flex gap-4 mt-1" style="opacity: 0.9;">
+        <span><i class="bi bi-geo-alt-fill me-1"></i>Rende, Italy</span>
+        <span><i class="bi bi-calendar3 me-1"></i>{{site.data.swc_data.dates.conferenceDates}}</span>
+        <span><i class="bi bi-clock me-1"></i>Half-day (3 hours)</span>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+<section class="container-fluid bg-white px-0 mt-2">
+  <div class="page-section container px-3 pt-3 pb-5 d-flex flex-column gap-2">
+    <div class="row g-5">
+      <div class="col-12 d-flex flex-column gap-4">
+        <div>
+          <h2 class="section-title fs-2 text-center">Description</h2>
+          <p class="fs-5 lh-lg text-muted">
+            The Internet of Things (IoT) is already a reality in many application domains, ranging from industrial
+            settings to smart cities, from healthcare to logistics and transportation. In Italy, in 2024, the number of
+            connected IoT devices has reached 155 million, approximately 2.6 objects per inhabitant. In the same year,
+            the IoT market has increased by 9%, with respect to 2023, reaching an overall budget of 9.7 billion €. Most
+            of the budget is concentrated on Smart Cars (17% of the overall budget in 2024), Smart Metering (16%), Smart
+            Buildings (15%), Smart Cities (10%), Smart Factories (10%), Smart Homes (9%), Smart Logistics (9%), Smart
+            Agriculture (6%), Smart Asset Management (4%). This trend is expected to increase more in the future,
+            evolving towards the so-called Pervasive IoT.
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            The future Pervasive IoT will be an extremely complex environment. It will be characterized by a very large
+            number of connected devices: it is expected that 40 billion devices will be connected by 2030. These IoT
+            devices will be very heterogeneous in nature, ranging from simple wearable devices to high-end IoT devices,
+            such as Unmanned Aerial Vehicles (UAVs). Also, they connect to the Internet through a variety of
+            communication technologies. Depending on the specific application domain, more or less stringent Quality of
+            Service (QoS) constraints will be required, in terms of latency, reliability and security. Artificial
+            Intelligence (AI) services will be increasingly embodied in future IoT devices. However, some complex tasks
+            will require to be executed at Edge and/or Cloud Computing platforms. Hence, intelligence will be embedded
+            along the Cloud-to-Things Continuum.
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            The large number of connected devices, coupled with the QoS requirements, will ask for new computing
+            paradigms. At the same time, new models, algorithms, and systems will be required for localization and
+            tracking in complex scenarios with heterogeneous network technologies, based on integrated
+            sensing-communication approaches. Finally, sustainability and environmental impact will be also very
+            relevant aspects, due to the large number of devices and their impact, in terms of energy consumption,
+            device management, and device disposal.
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            In this tutorial, we intend to introduce and discuss some of the new (computation and communication)
+            paradigms required in the future Pervasive IoT, which are briefly described below. Specifically, for each
+            topic considered, we will survey the solutions available in the literature. Open issues will also be
+            emphasized.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="track-card h-100 shadow-sm overflow-hidden">
+          <div class="track-header bg-light border-bottom p-3 d-flex align-items-center">
+            <i class="bi bi-book-fill text-primary me-2 fs-4"></i>
+            <h4 class="mb-0 fw-bold text-dark">Tutorial Description</h4>
+          </div>
+          <div class="track-body p-4 d-flex flex-column gap-3">
+
+            <div>
+              <h5 class="fw-bold text-dark"><i class="bi bi-battery-charging text-primary me-2"></i>Battery-less IoT and
+                Intermittent Computing</h5>
+              <p class="text-muted">
+                Sustainability will play a very relevant role in the future Pervasive IoT era. Moving towards a future
+                with hundreds of billions of IoT devices poses several challenges, mainly concerning (i) energy
+                consumption, (ii) device management and disposal, and (iii) environmental impact. Although these
+                challenges are not completely new, they are made more relevant by the increasing number of connected
+                objects. Recently, battery-less solutions have been investigated to address the problem of energy
+                consumption and environmental impact. Leveraging energy harvesting systems capable of scavenging energy
+                from the external environment, battery-less solutions avoid the problem of recharging batteries and, in
+                principle, allows an endless lifetime. On the other hand, energy may not be available at any time and,
+                hence, an intermittent computing paradigm must be considered when taking a battery-less approach.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="fw-bold text-dark"><i class="bi bi-broadcast text-primary me-2"></i>Device and Network
+                Heterogeneity</h5>
+              <p class="text-muted">
+                The Pervasive IoT will be characterized by a very large number of heterogeneous devices connected
+                through many different communication technologies. Recently, new wireless technologies are emerging to
+                connect to a large number of IoT devices, involved in applications with different and dynamically
+                changing QoS requirements. We will present some of these emerging technologies, such as 6G, WiFi7, and
+                LiFi. Also, we will try to emphasize the pros and cons of different communication technologies, and
+                their suitability to different application scenarios.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="fw-bold text-dark"><i class="bi bi-cloud-arrow-up text-primary me-2"></i>Cloud-to-Things
+                Continuum (C2TC)</h5>
+              <p class="text-muted">
+                In the future IoT, more AI services will be embodied in IoT devices. However, in more complex
+                applications, some tasks will require to be executed at Cloud and/Edge computing platforms. Hence,
+                intelligence will be distributed along the C2TC. The challenge will be to manage computing and
+                networking resources in C2TC in a scalable and efficient manner, especially when critical applications
+                (i.e., applications Infrastructure continuum represents our environment, where we can move from edge
+                computing (by exploiting remote resources) to the Cloud, going through Fog resources to set up the
+                entire framework for services deployment.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="fw-bold text-dark"><i class="bi bi-cpu text-primary me-2"></i>Joint Allocation of
+                Computing/Network Resources in the C2TC</h5>
+              <p class="text-muted">
+                Strategies for resource allocation should be aimed at optimizing the available computing/network
+                resources in C2TC, while satisfying the QoS requirements of applications. Applications with (very)
+                different QoS requirements typically coexist on the same IoT system. Hence, resource allocation
+                strategies must be flexible. When dealing with critical applications with very stringent QoS
+                requirements (e.g., industrial or healthcare applications), novel probabilistic approaches may be
+                required.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="fw-bold text-dark"><i class="bi bi-arrow-repeat text-primary me-2"></i>Dynamic Service
+                Reconfiguration</h5>
+              <p class="text-muted">
+                Pervasive IoT systems are also characterized by a large dynamism. New applications can be deployed,
+                while some old applications can be removed. Also, the QoS may change over time, depending on the
+                external conditions. Hence, optimal strategies for joint computing/network allocation must be
+                complemented with adaptive solutions that can dynamically change the resource allocation, while
+                guaranteeing the QoS provision without discontinuities.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="fw-bold text-dark"><i class="bi bi-grid text-primary me-2"></i>Microservices-based Applications
+                in the C2TC</h5>
+              <p class="text-muted">
+                Modern Pervasive IoT applications are increasingly based on microservices, decomposing complex
+                functionalities into loosely coupled components that can be dynamically placed across Edge, Fog, and
+                Cloud nodes according to latency, reliability, and resource constraints. Energy consumption is also a
+                key concern in microservices-based systems, as the numerous placement and orchestration decisions may
+                rapidly increase the overall operational cost and impact the system's sustainability. Supporting
+                microservices introduces new challenges in orchestration and fine grained resource allocation, requiring
+                placement and orchestration policies that optimize resource utilization, limit energy consumption, and
+                ensure QoS requirements.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="alert alert-info d-flex align-items-center mt-4 shadow-sm border-0" role="alert"
+          style="border-left: 5px solid var(--bs-info) !important;">
+          <i class="bi bi-info-circle-fill fs-5 me-3"></i>
+          <p class="mb-0 small"><strong>Notice:</strong> A PDF copy of the presentation will be made available to
+            attendees through the conference website.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<section class="container-fluid bg-light px-0">
+  <div class="page-section container px-3 py-5 d-flex flex-column gap-4">
+
+    <!-- Tentative Schedule -->
+    <div class="text-center mx-auto" style="max-width: 900px;">
+      <h3 class="section-title fs-2 fw-bold mb-4">Schedule</h3>
+      <p class="fs-5 lh-lg text-muted mb-4">The following is a time schedule for the tutorial (total: 3 hours).</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="custom-card shadow-sm overflow-hidden">
+          <table class="table table-hover mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col" style="width: 30%;">Duration</th>
+                <th scope="col">Topic</th>
+              </tr>
+            </thead>
+            <tbody class="text-muted">
+              <tr>
+                <td class="fw-bold text-secondary">10 min</td>
+                <td>Introduction</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-secondary">20 min</td>
+                <td>Batteryless IoT and Intermittent Computing</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-secondary">60 min</td>
+                <td>Emerging Network Technologies for the Pervasive IoT (LiFi, WiFi7, B5G, …)</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-secondary">15 min</td>
+                <td>Examples of Pervasive IoT Applications</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-secondary">20 min</td>
+                <td>Cloud-to-Things Continuum (C2TC)</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-secondary">10 min</td>
+                <td>Joint Allocation of Computing and Network Resources in the C2TC</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-secondary">15 min</td>
+                <td>Optimal Resource Allocation in the C2TC</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-secondary">15 min</td>
+                <td>Dynamic Reconfiguration</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-secondary">15 min</td>
+                <td>Microservices-based Applications</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Instructor Biographies -->
+<section class="container-fluid bg-light px-0">
+  <div class="page-section container px-3 py-5 d-flex flex-column gap-4">
+
+    <div class="text-center mx-auto" style="max-width: 900px;">
+      <h3 class="section-title fs-2 fw-bold mb-2">Instructors' Biographies</h3>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Giuseppe Anastasi -->
+      <div class="col-lg-10">
+        <div class="custom-card p-4 shadow-sm d-flex flex-column flex-md-row gap-4 align-items-start">
+          <div class="flex-shrink-0 text-center">
+            <img src="{{ '/assets/images_26/people/giuseppe_anastasi.webp' | relative_url }}" alt="Giuseppe Anastasi"
+              class="rounded-circle shadow"
+              style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #e2e8f0;">
+            <div class="mt-2 fw-bold text-dark small">Giuseppe Anastasi</div>
+            <div class="text-muted" style="font-size: 0.8rem;">University of Pisa, Italy</div>
+          </div>
+          <div class="flex-grow-1 text-align-justify">
+            <p class="text-muted mb-2">
+              Giuseppe Anastasi is a Professor of Computer Engineering at the Department of Information Engineering
+              (DII) of the University of Pisa, Italy. He is the Rector's Delegate for Digital Transition and Innovation
+              and the Director Emeritus of the CrossLab for Digital Transformation. From 2016 to 2020 he was the Head of
+              the DII.
+            </p>
+            <p class="text-muted mb-2">
+              His scientific interests include Internet of Things, Cloud/Fog/Edge Computing, Cyber-physical Systems,
+              Cybersecurity, Smart Environments, and Quantum Networks. He has published more than 180 research papers,
+              receiving more than 12,000 citations (H-index=48, Google Scholar). He has been included in the Stanford
+              University's list of the Top 2% of Most Cited Scientists in the World for five years in a row (2020–2024).
+            </p>
+            <a href="https://www.linkedin.com/in/giuseppe-anastasi-5660b37/" target="_blank"
+              class="btn btn-outline-primary btn-sm rounded-pill px-3">
+              <i class="bi bi-linkedin me-1"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Francesca Righetti -->
+      <div class="col-lg-10">
+        <div class="custom-card p-4 shadow-sm d-flex flex-column flex-md-row gap-4 align-items-start">
+          <div class="flex-shrink-0 text-center">
+            <img src="{{ '/assets/images_26/people/francesca_righetti.webp' | relative_url }}" alt="Francesca Righetti"
+              class="rounded-circle shadow"
+              style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #e2e8f0;">
+            <div class="mt-2 fw-bold text-dark small">Francesca Righetti</div>
+            <div class="text-muted" style="font-size: 0.8rem;">Pegaso University, Italy</div>
+          </div>
+          <div class="flex-grow-1 text-align-justify">
+            <p class="text-muted mb-2">
+              Francesca Righetti is an Associate Professor at the Department of Information Science and Technology of
+              the Pegaso University, Italy. She received her Ph.D. in Information Engineering from the University of
+              Pisa.
+            </p>
+            <p class="text-muted mb-2">
+              Her research focuses on Internet of Things, Cloud/Fog/Edge Computing, Cybersecurity, and IoT applications
+              for Smart Industry and Smart Healthcare. She served as Guest Editor of the Special Issue "Industrial IoT
+              Networks to Support Future Cloud-to-Things Applications" in the <em>Ad Hoc Networks Journal</em>
+              (Elsevier) and has been a TPC member of IEEE WoWMoM, IEEE SMARTCOMP, IEEE ISCC, IEEE CCNC, IEEE MSN, and
+              IEEE MELECON.
+            </p>
+            <a href="https://www.linkedin.com/in/francescarighetti/" target="_blank"
+              class="btn btn-outline-primary btn-sm rounded-pill px-3">
+              <i class="bi bi-linkedin me-1"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marco Pettorali -->
+      <div class="col-lg-10">
+        <div class="custom-card p-4 shadow-sm d-flex flex-column flex-md-row gap-4 align-items-start">
+          <div class="flex-shrink-0 text-center">
+            <img src="{{ '/assets/images_26/people/marco_pettorali.webp' | relative_url }}" alt="Marco Pettorali"
+              class="rounded-circle shadow"
+              style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #e2e8f0;">
+            <div class="mt-2 fw-bold text-dark small">Marco Pettorali</div>
+            <div class="text-muted" style="font-size: 0.8rem;">University of Pisa, Italy</div>
+          </div>
+          <div class="flex-grow-1 text-align-justify">
+            <p class="text-muted mb-2">
+              Marco Pettorali is an Assistant Professor at the Department of Information Engineering, University of
+              Pisa. He received his Ph.D. degree in Information Engineering from the University of Pisa in 2025.
+            </p>
+            <p class="text-muted mb-2">
+              His research interests include the Cloud-to-Things Continuum (C2TC), the Industrial Internet of Things
+              (IIoT), and wireless sensor networks (WSNs) for industrial applications. He is TPC Co-Chair of the IEEE
+              International Workshop on Smart Service Systems (SmartSys 2026) and has served on the TPC of IEEE WoWMoM,
+              IEEE SMARTCOMP, and IEEE ISCC.
+            </p>
+            <a href="https://marcopettorali.github.io/" target="_blank"
+              class="btn btn-outline-primary btn-sm rounded-pill px-3">
+              <i class="bi bi-globe me-1"></i>Website
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div style="background-color: white !important;">
+  {% include colocated-conferences.html %}
+</div>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

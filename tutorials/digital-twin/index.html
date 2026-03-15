@@ -1,0 +1,244 @@
+---
+layout: default
+title: Digital Twin Tutorial 2026
+
+---
+
+<!-- Hero Section -->
+<section class="jumbotron text-center" style="
+    background: linear-gradient(135deg, #4c1d95 0%, #8b5cf6 100%);
+    height: 60vh;
+    position: relative;
+    color: white;
+    overflow: hidden;
+  ">
+  <!-- Decorative glow overlay -->
+  <div style="
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(139,92,246,0.18) 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 80%, rgba(76,29,149,0.25) 0%, transparent 50%);
+    pointer-events: none;
+  "></div>
+  <div class="hero-section" style="background-color: transparent;">
+    <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3"
+      style="position:relative; z-index:1;">
+      <div class="mb-1">
+        <span class="badge rounded-pill px-3 py-2 fw-semibold"
+          style="background: rgba(255,255,255,0.12); font-size: 0.85rem; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.2);">Tutorial
+          @ IEEE SWC 2026</span>
+      </div>
+      <h1 class="display-6 fw-bolder mt-2"
+        style="text-shadow: 0 2px 20px rgba(0,0,0,0.4); line-height: 1.2; max-width: 860px;">
+        Digital Twin Engineering: Architectures, AI Techniques, and the TopDown/BottomUp Lifecycle of Behavior Model Construction
+      </h1>
+      <div class="d-flex gap-4 mt-1" style="opacity: 0.9;">
+        <span><i class="bi bi-geo-alt-fill me-1"></i>Rende, Italy</span>
+        <span><i class="bi bi-calendar3 me-1"></i>{{site.data.swc_data.dates.conferenceDates}}</span>
+        <span><i class="bi bi-clock me-1"></i>Half-day (3 hours)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid bg-white px-0 mt-2">
+  <div class="page-section container px-3 pt-3 pb-5 d-flex flex-column gap-2">
+    <div class="row g-5">
+      <div class="col-12 d-flex flex-column gap-4">
+        <div>
+          <h2 class="section-title fs-2 text-center">Description</h2>
+          <p class="fs-5 lh-lg text-muted">
+            Digital Twins are complex software systems that must integrate architectural rigor, data‑driven
+            intelligence, and lifecycle‑oriented engineering. Yet, despite their widespread adoption, the
+            methodological foundations for constructing robust and evolvable behavior models remain fragmented.
+            This tutorial provides a comprehensive and software oriented exploration of Digital Twin engineering,
+            focusing on how architectural choices, AI techniques, and top‑down/bottom‑up methodologies shape
+            viable behavior models across the entire lifecycle of a Twin.
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            The tutorial introduces the salient characteristics of a Digital Twin from a software perspective:
+            representativeness, entanglement, modularity, explainability, and operational resilience. These
+            properties are framed as engineering constraints that influence how Twins are designed, deployed, and
+            evolved. Building on this foundation, a functional taxonomy of Digital Twins—Passive, Predictive,
+            Proscriptive, Simulation‑based, and Prescriptive—is presented (based on ETSI Jargon). Each DT category
+            is mapped to the software architectures that support them.
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            The tutorial then considers two approaches to Digital Twin construction: Data‑Driven and Model‑Based.
+            An analysis about how statistical learning, behavior‑based modeling, and hybrid strategies can be
+            orchestrated to produce behavior models that balance interpretability, adaptability, and computational
+            efficiency is attempted. Particular attention is given to the engineering trade‑offs that arise when
+            integrating heterogeneous data sources, domain knowledge, and real‑time constraints.
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            A specific section explores the role of Artificial Intelligence in both building and executing Digital Twins.
+            We discuss how Deep Learning supports state prediction and estimation; how Generative AI can
+            synthesize difficult to occur scenarios, augment sparse datasets, or propose behavioral refinements; and
+            how Reinforcement Learning can be embedded “in the loop” to optimize control policies or guide
+            autonomous decision‑making. We also explore the role that reasoning‑capable models may have and
+            how model‑based reasoning can complement data‑driven components to enhance transparency,
+            verifiability, and long‑term maintainability as well as explainability.
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            Considering these elements, a path toward a Digital Twin Development Environment (DTDE) is shaped.
+            This includes the use of behavior templates, specialization workflows, and modular software
+            components that support both centralized and highly distributed deployments. We highlight how
+            distributed systems principles—coordination, resource allocation, negotiation, and flexible deployment
+            of newer needed functions—become essential when Twins operate across heterogeneous
+            infrastructures or interact with multiple stakeholders.
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            Finally, the tutorial focuses on a unified view of the Digital Twin lifecycle, emphasizing how top‑down
+            architectural design and bottom‑up emergent behavior may co‑evolve. We discuss lifecycle stages from
+            conception to deployment, monitoring, adaptation, and decommissioning, showing how behavior
+            models evolve through iterative refinement, continuous validation, and the interplay between physical
+            and digital components.
+          </p>
+          <div class="alert alert-info d-flex align-items-center mt-4 shadow-sm border-0" role="alert" style="border-left: 5px solid var(--bs-info) !important;">
+            <i class="bi bi-info-circle-fill fs-5 me-3"></i>
+            <p class="mb-0 small"><strong>Notice:</strong> A PDF copy of the presentation will be made available to attendees through the conference website.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tutorial Outline -->
+<section class="container-fluid bg-light px-0">
+  <div class="page-section container px-3 py-5 d-flex flex-column gap-4">
+    <div class="text-center mx-auto" style="max-width: 900px;">
+      <h3 class="section-title fs-2 fw-bold mb-4">Tutorial Outline</h3>
+      <p class="fs-5 lh-lg text-muted mb-4">The tutorial will consist of the following sections:</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="custom-card p-4 shadow-sm">
+          <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+            <li class="d-flex align-items-start gap-3">
+              <span class="badge rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 24px; height: 24px; flex-shrink: 0;">1</span>
+              <span class="text-muted fs-5">Properties and characteristics of a Digital Twin: a software perspective.</span>
+            </li>
+            <li class="d-flex align-items-start gap-3">
+              <span class="badge rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 24px; height: 24px; flex-shrink: 0;">2</span>
+              <span class="text-muted fs-5">Different types of Digital Twin and their supporting functional software architectures (Passive, Predictive, Proscriptive, Simulation and Prescriptive types)</span>
+            </li>
+            <li class="d-flex align-items-start gap-3">
+              <span class="badge rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 24px; height: 24px; flex-shrink: 0;">3</span>
+              <span class="text-muted fs-5">Building a Digital Twin: Data Driven and Model Based approaches</span>
+            </li>
+            <li class="d-flex align-items-start gap-3">
+              <span class="badge rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 24px; height: 24px; flex-shrink: 0;">4</span>
+              <div>
+                <span class="text-muted fs-5 d-block">Artificial Intelligence support in building and executing Digital Twins.</span>
+                <ul class="list-unstyled mt-2 ps-3 border-start" style="border-width: 2px !important;">
+                  <li class="text-muted mb-1 small"><i class="bi bi-dot me-1"></i>How Deep Learning, Generative AI, and Reinforcement Learning can be in the loop.</li>
+                  <li class="text-muted small"><i class="bi bi-dot me-1"></i>Adding reasoning capabilities Model based?</li>
+                </ul>
+              </div>
+            </li>
+            <li class="d-flex align-items-start gap-3">
+              <span class="badge rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 24px; height: 24px; flex-shrink: 0;">5</span>
+              <div>
+                <span class="text-muted fs-5 d-block">Towards a Digital Twin Development Environment:</span>
+                <ul class="list-unstyled mt-2 ps-3 border-start" style="border-width: 2px !important;">
+                  <li class="text-muted mb-1 small"><i class="bi bi-dot me-1"></i>From behavior templates to specialization.</li>
+                  <li class="text-muted small"><i class="bi bi-dot me-1"></i>From centralized to highly distributed deployments.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="d-flex align-items-start gap-3">
+              <span class="badge rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 24px; height: 24px; flex-shrink: 0;">6</span>
+              <span class="text-muted fs-5">A general perspective on the Digital Twin Lifecycle</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Instructor Biographies -->
+<section class="container-fluid bg-white px-0">
+  <div class="page-section container px-3 py-5 d-flex flex-column gap-4">
+
+    <div class="text-center mx-auto" style="max-width: 900px;">
+      <h3 class="section-title fs-2 fw-bold mb-2">Instructors' Biographies</h3>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Roberto Minerva -->
+      <div class="col-lg-10">
+        <div class="custom-card p-4 shadow-sm d-flex flex-column flex-md-row gap-4 align-items-start">
+          <div class="flex-shrink-0 text-center">
+            <img src="{{ '/assets/images_26/people/roberto_minerva.webp' | relative_url }}" alt="Roberto Minerva"
+              class="rounded-circle shadow"
+              style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #e2e8f0;">
+            <div class="mt-2 fw-bold text-dark small">Roberto Minerva</div>
+            <div class="text-muted" style="font-size: 0.8rem;">Institut Polytechnique de <br/> Paris, France</div>
+          </div>
+          <div class="flex-grow-1 text-align-justify">
+            <p class="text-muted mb-2">
+              Roberto Minerva is an Emeritus Associate Professor at the Institut Polytechnique de Paris – Télécom
+              SudParis. His career bridges decades of research in industrial innovation with academic contributions,
+              focusing on the convergence of Distributed Systems, the Internet of Things (IoT), and advanced
+              platforms driven by Artificial Intelligence (AI) and Digital Twin technology.
+            </p>
+            <p class="text-muted mb-2">
+              Dr. Minerva’s academic foundation includes a Master’s Degree in Computer Science from the University
+              of Bari (Italy), a Ph.D. in Computer Science and Telecommunications, and the HDR from Sorbonne
+              University (France). From 1987 to 2016, his industrial tenure was spent at CSELT/TILAB (the advanced research branch of
+              TIM – Telecom Italia), a historical hub for Italian telecommunications innovation. He began as a
+              researcher and served as a Research Manager from 1996 on, leading groups dedicated to pioneering
+              foundational technologies, including SDN/NFV, 5G, Big Data, and IoT. He contributed to international
+              cooperative efforts like TINA-C (Service Architectures) and provided global leadership as Chairman of the
+              IEEE IoT Initiative between 2013 and 2016. In 2017, he transitioned to the academic sector, joining
+              Télécom SudParis before achieving Emeritus status.
+            </p>
+            <a href="https://www.linkedin.com/in/robertominerva/" target="_blank"
+              class="btn btn-outline-primary btn-sm rounded-pill px-3">
+              <i class="bi bi-linkedin me-1"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vincenzo Barbuto -->
+      <div class="col-lg-10">
+        <div class="custom-card p-4 shadow-sm d-flex flex-column flex-md-row gap-4 align-items-start">
+          <div class="flex-shrink-0 text-center">
+            <img src="{{ '/assets/images_26/people/vincenzo_barbuto.webp' | relative_url }}" alt="Vincenzo Barbuto"
+              class="rounded-circle shadow"
+              style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #e2e8f0;">
+            <div class="mt-2 fw-bold text-dark small">Vincenzo Barbuto</div>
+            <div class="text-muted" style="font-size: 0.8rem;">University of Calabria, Italy</div>
+          </div>
+          <div class="flex-grow-1 text-align-justify">
+            <p class="text-muted mb-2">
+            Vincenzo Barbuto is a Researcher at the Department of Computer, Modeling, Electronics and Systems Engineering (DIMES) 
+            at the University of Calabria, Italy, and a member of the SPEME Laboratory. He received his M.Sc. degrees from the University 
+            of Calabria and Télécom SudParis (Institut Polytechnique de Paris) in 2022, and his Ph.D. in Information and Communication 
+            Technologies from the University of Calabria in 2025. From March 2024 to March 2025, he was a Visiting Student Researcher at the 
+            University of California, Berkeley. His research interests include Edge Intelligence/Edge AI, Internet of Things, Cyber-Physical 
+            Systems, and Digital Twins in the Edge–Cloud Continuum. He has co-authored several peer-reviewed papers in international venues.
+            </p>
+            <a href="https://www.linkedin.com/in/vincenzobarbuto/" target="_blank"
+              class="btn btn-outline-primary btn-sm rounded-pill px-3">
+              <i class="bi bi-linkedin me-1"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div style="background-color: white !important;">
+  {% include colocated-conferences.html %}
+</div>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

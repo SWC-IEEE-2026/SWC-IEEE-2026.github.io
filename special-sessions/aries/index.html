@@ -1,0 +1,445 @@
+---
+layout: default
+title: ARIES 2026
+
+---
+
+<!-- Hero Section -->
+<section class="jumbotron text-center" style="
+    background: linear-gradient(135deg, #451a03 0%, #78350f 100%);
+    height: 60vh;
+    position: relative;
+    color: white;
+    overflow: hidden;
+  ">
+  <!-- Decorative glow overlay -->
+  <div style="
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(0,180,255,0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 80%, rgba(80,0,200,0.18) 0%, transparent 50%);
+    pointer-events: none;
+  "></div>
+  <div class="hero-section" style="background-color: transparent;">
+    <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3" style="position:relative; z-index:1;">
+      <div class="mb-1">
+        <span class="badge rounded-pill px-3 py-2 fw-semibold" style="background: rgba(255,255,255,0.12); font-size: 0.85rem; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.2);">Special Session @ IEEE SWC 2026</span>
+      </div>
+      <h1 class="display-6 fw-bolder mt-2" style="text-shadow: 0 2px 20px rgba(0,0,0,0.4); line-height: 1.2; max-width: 860px;">
+        ARIES: Autonomous Resilient Intelligent Energy Systems
+      </h1>
+      <div class="d-flex gap-4 mt-1" style="opacity: 0.9;">
+        <span><i class="bi bi-geo-alt-fill me-1"></i>Rende, Italy</span>
+        <span><i class="bi bi-calendar3 me-1"></i>{{site.data.swc_data.dates.conferenceDates}}</span>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+        <a class="btn btn-primary rounded-pill px-4 py-2 shadow-sm fw-bold"
+          href="https://conferences.sparcly.ai/author/conferences/63/entity/198/show?conference_id=63&conference_entity_id=198" target="_blank">
+          <i class="bi bi-send-fill me-2"></i>Submit Paper
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section container-fluid px-3 pt-3 pb-5 mt-2 d-flex flex-column gap-2">
+  <div class="row g-5">
+    <div class="col-lg-4">
+
+      <div class="custom-card p-0 h-100 overflow-hidden"
+        style="border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: all 0.3s ease;">
+
+        <div class="px-4 pt-4 pb-3" style="background: #ffffff;">
+          <h4 class="fw-semibold mb-3 text-dark d-flex align-items-center"
+            style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; color: #6c757d;">
+            <span>Special Session Info</span>
+          </h4>
+
+          <ul class="nav nav-pills nav-fill nav-pills-minimal gap-1" id="sidebarTabs-aries" role="tablist"
+            style="padding-bottom: 0.5rem;">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active small text-uppercase py-2 px-3" id="dates-tab-aries" data-bs-toggle="tab"
+                data-bs-target="#dates-pane-aries" type="button" role="tab" aria-selected="true"
+                style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.5px; border-radius: 6px; transition: all 0.2s ease;">
+                Dates
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link small text-uppercase py-2 px-3" id="committee-tab-aries" data-bs-toggle="tab"
+                data-bs-target="#committee-pane-aries" type="button" role="tab" aria-selected="false"
+                style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.5px; border-radius: 6px; transition: all 0.2s ease;">
+                Organizers & TPC
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="sidebarTabContent-aries" style="background: #ffffff;">
+
+          <div class="tab-pane fade show active" id="dates-pane-aries" role="tabpanel">
+            <div class="p-4 d-flex flex-column gap-1">
+
+              <div class="date-item">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold text-danger">Full Paper Submission</span>
+                  <span class="fw-bold text-danger">{{site.data.swc_data.dates.paperSubmission}}</span>
+                </div>
+              </div>
+
+              <div class="date-item">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold text-secondary">Authors Notification</span>
+                  <span class="text-muted">{{site.data.swc_data.dates.authorsNotification}}</span>
+                </div>
+              </div>
+
+              <div class="date-item">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold text-secondary">Camera-ready</span>
+                  <span class="text-muted">{{site.data.swc_data.dates.cameraReadyDue}}</span>
+                </div>
+              </div>
+
+              <div class="mt-2 p-3 rounded-3 border border-success bg-light text-success shadow-sm">
+                <div class="d-flex flex-column align-items-center text-center">
+                  <span class="small text-uppercase fw-bold text-success" style="letter-spacing: 1px;">Conference
+                    Dates</span>
+                  <span class="fs-5 fw-bold text-success">{{site.data.swc_data.dates.conferenceDates}}</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="committee-pane-aries" role="tabpanel">
+
+            <div class="accordion accordion-flush" id="committeeAccordion-aries">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fw-bold text-dark shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseGeneral-aries" aria-expanded="true">
+                    Special Session Chairs
+                  </button>
+                </h2>
+                <div id="collapseGeneral-aries" class="accordion-collapse collapse show"
+                  data-bs-parent="#committeeAccordion-aries">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-2">
+                        <div class="fw-bold text-dark small">Paolo Scarabaggio</div>
+                        <div class="small text-muted">Politechnic University of Bari, Italy</div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="fw-bold text-dark small">Polina Ovsiannikova</div>
+                        <div class="small text-muted">Aalto University, Helsinki, Finland</div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="fw-bold text-dark small">Nicola Mignoni</div>
+                        <div class="small text-muted">Politechnic University of Bari, Italy</div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="fw-bold text-dark small">Raffaele Carli</div>
+                        <div class="small text-muted">Politechnic University of Bari, Italy</div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="fw-bold text-dark small">Valeriy Vyatkin</div>
+                        <div class="small text-muted">Aalto University & Luleå University of Technology</div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="fw-bold text-dark small">Mariagrazia Dotoli</div>
+                        <div class="small text-muted">Politechnic University of Bari, Italy</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold text-dark shadow-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTPC-aries" aria-expanded="false">
+                    Technical Program Committee
+                  </button>
+                </h2>
+                <div id="collapseTPC-aries" class="accordion-collapse collapse"
+                  data-bs-parent="#committeeAccordion-aries">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-2">
+                        <div class="fst-italic text-dark small">TPC members to be defined.</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8 d-flex flex-column gap-4">
+      <div class="mt-2 mx-auto w-100">
+        <div class="alert alert-secondary d-flex align-items-center shadow-sm border-0" role="alert"
+          style="border-left: 5px solid #6c757d !important;">
+          <i class="bi bi-people-fill fs-4 me-3 text-secondary"></i>
+          <div>
+            <p class="mb-0 fs-6 text-secondary">
+              <strong>Technical Program Committee:</strong> TPC members are to be defined. The list will be published as soon as the committee is finalized.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="section-title fs-2 text-center">Call for Papers</h2>
+        <p class="fs-5 text-align-justify text-muted">
+          The quest for building high-performance, autonomous energy systems has always been in engineers’ minds. Nevertheless, the modern world faces an unprecedented dilemma: achieving economic growth without depleting energy and natural resources or harming the environment. At the same time, energy systems are becoming increasingly complex cyber-physical-social systems, integrating heterogeneous entities such as renewable energy sources, battery energy storage systems, microgrids, grid networks, electric vehicles, and prosumer communities. These systems generate vast amounts of data, demand real-time decision-making under uncertainty, and are exposed to cybersecurity threats, yet they often remain hamstrung by outdated control and management techniques that lack autonomy, transparency, and resilience.
+          <br /><br />
+          This special session aims to challenge conventional approaches for controlling and optimizing energy systems and inspire new solutions grounded in autonomous and trusted computing paradigms. We seek contributions that leverage, but are not limited to, mathematical optimization, artificial intelligence, reinforcement learning, edge computing, and privacy-preserving distributed methods to make energy systems more intelligent, trustworthy, and fault-tolerant. We invite original articles from scholars and practitioners presenting theoretical concepts and practical approaches. Submissions must emphasize novelty, originality, and mathematical rigor.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="track-card h-100 shadow-sm overflow-hidden">
+
+            <div class="track-header bg-light border-bottom p-3 d-flex align-items-center">
+              <i class="bi bi-layers-fill text-primary me-2 fs-4"></i>
+              <h4 class="mb-0 fw-bold text-dark">Topics of Interest</h4>
+            </div>
+
+            <div class="track-body p-4">
+              <p class="text-muted mb-4 small text-uppercase fw-bold ls-1">The topics include (but are not limited to):
+              </p>
+
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="list-group list-group-flush">
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">New theories and methods for optimizing complex energy systems, including stochastic, robust, and scenario-based approaches.</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">AI-driven autonomous control and optimization of smart grids, microgrids, and virtual power plants.</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Techniques for managing and coordinating flexible loads in residential and industrial settings.</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Algorithms for optimizing distributed energy systems, including peer-to-peer energy trading and multi-agent coordination.</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Approaches to coping with uncertainties arising from renewable energy sources, loads, and market signals.</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Optimization methods for utilizing EV flexibility in grid-ancillary services, charging/discharging scheduling, and fleet management.</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Trustworthy and explainable AI for energy forecasting, demand response, and fault detection.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="list-group list-group-flush">
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Reinforcement learning and adaptive control for battery energy storage systems (BESS) and demand-side management.</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Privacy-preserving federated learning and distributed AI for energy resource management.</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Cybersecurity, anomaly detection, and resilient architectures for cyber-physical energy infrastructures.</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Edge and fog computing for real-time energy monitoring, control, and self-aware grid operation.</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Human-centric decision support systems considering user preferences, behaviors, and prosumer engagement.</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Digital twins and simulation-based approaches for energy system planning, operation, and resilience assessment.</span>
+                    </div>
+                    <div class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0"
+                      style="min-height: 3.5rem;">
+                      <i class="bi bi-caret-right-fill text-primary me-2"></i>
+                      <span class="text-secondary fw-medium">Data-driven and machine learning approaches for energy forecasting and uncertainty quantification.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
+
+    <div class="text-center mx-auto" style="max-width: 800px;">
+      <h3 class="section-title fs-2 fw-bold mb-4">Types of Submissions</h3>
+      <p class="fs-5 lh-lg text-muted">
+        The Special Session welcomes high-quality, original research contributions that advance the scientific and
+        technological foundations of the smart world. All submissions must use the official <a
+          href="https://www.ieee.org/conferences/publishing/templates" target="_blank"
+          class="fw-bold text-decoration-none">IEEE conference paper template</a>. Authors are invited to submit their
+        work in one of the following
+        categories:
+      </p>
+    </div>
+
+    <div class="row g-4 mt-2 justify-content-center">
+
+      <div class="col-lg-4 d-flex">
+        <div class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center text-center w-100">
+          <i class="bi bi-file-earmark-richtext topic-icon mb-3"></i>
+
+          <h4 class="fw-bold mb-2 text-dark">Full Papers</h4>
+
+          <span class="badge bg-primary rounded-pill mb-3 px-3 py-2 text-white">6 pages</span>
+
+          <p class="mb-0 text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+            Complete research studies containing significant findings, rigorous methodology, and comprehensive
+            experimental or theoretical results.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 d-flex">
+        <div class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center text-center w-100">
+          <i class="bi bi-file-earmark-text topic-icon mb-3"></i>
+
+          <h4 class="fw-bold mb-2 text-dark">Short Papers</h4>
+
+          <span class="badge bg-primary rounded-pill mb-3 px-3 py-2 text-white">4 pages</span>
+
+          <p class="mb-0 text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+            Concise contributions reporting promising early results, innovative ideas, or ongoing work that is
+            expected to stimulate discussion and further development.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 d-flex">
+        <div class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center text-center w-100">
+          <i class="bi bi-easel topic-icon mb-3"></i>
+
+          <h4 class="fw-bold mb-2 text-dark">Poster & Demo Papers</h4>
+
+          <span class="badge bg-primary text-dark rounded-pill mb-3 px-3 py-2 text-white">2 pages</span>
+
+          <p class="mb-0 text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+            Visual or interactive presentations showcasing prototypes, systems, applications, or early research results
+            that highlight practical innovations and emerging technologies.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-4 mx-auto w-100">
+      <div class="alert alert-info d-flex align-items-center shadow-sm border-0" role="alert"
+        style="border-left: 5px solid var(--bs-alert-color) !important;">
+        <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+        <div>
+          <p class="mb-0 fs-6">
+            <strong>Important:</strong> A submission can have at most 2 additional pages with the pages overlength
+            charge, if accepted.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
+    <div class="mt-4">
+      <h3 class="section-title fs-2 text-center">Publication and Indexing</h3>
+      <p class="fs-5 lh-lg mb-4 text-align-justify text-muted">
+        All accepted and presented papers will be considered for the
+        conference proceedings and indexing in major repositories.
+      </p>
+      <div class="row g-4 justify-content-center mb-5">
+
+        <div class="col-md-5">
+          <div class="custom-card p-4 h-100 d-flex align-items-center">
+            <div class="me-4">
+              <div
+                class="bg-primary-gradient text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                style="width: 3.5rem; height: 3.5rem; font-size: 1.5rem; font-weight: bold;">✓</div>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1">IEEE Xplore</h5>
+              <p class="text-muted mb-0">Submitted for publication in IEEE Xplore Digital Library.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="custom-card p-4 h-100 d-flex align-items-center">
+            <div class="me-4">
+              <div
+                class="bg-primary-gradient text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                style="width: 3.5rem; height: 3.5rem; font-size: 1.5rem; font-weight: bold;">✓</div>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1">Major Databases</h5>
+              <p class="text-muted mb-0">Indexed in Elsevier, IET, and Scopus.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="mt-4 mx-auto w-100">
+        <div class="alert alert-warning d-flex align-items-center shadow-sm border-0" role="alert"
+          style="border-left: 5px solid var(--bs-alert-color)!important;">
+          <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+          <div>
+            <p class="mb-0 fs-6">
+              <strong>Note:</strong> For a paper to remain eligible for publication, it must be presented in person
+              (unless otherwise specified). At least one author must register for the conference and deliver the
+              presentation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+  {% include colocated-conferences.html %}
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

@@ -1,0 +1,199 @@
+---
+layout: default
+title: Smart CPS Tutorial 2026
+
+---
+
+<!-- Hero Section -->
+<section class="jumbotron text-center" style="
+    background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+    height: 60vh;
+    position: relative;
+    color: white;
+    overflow: hidden;
+  ">
+  <!-- Decorative glow overlay -->
+  <div style="
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(16,185,129,0.18) 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 80%, rgba(6,95,70,0.25) 0%, transparent 50%);
+    pointer-events: none;
+  "></div>
+  <div class="hero-section" style="background-color: transparent;">
+    <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3"
+      style="position:relative; z-index:1;">
+      <div class="mb-1">
+        <span class="badge rounded-pill px-3 py-2 fw-semibold"
+          style="background: rgba(255,255,255,0.12); font-size: 0.85rem; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.2);">Tutorial
+          @ IEEE SWC 2026</span>
+      </div>
+      <h1 class="display-6 fw-bolder mt-2"
+        style="text-shadow: 0 2px 20px rgba(0,0,0,0.4); line-height: 1.2; max-width: 860px;">
+        Designing and Assembling Smart Cyber-Physical Systems
+      </h1>
+      <div class="d-flex gap-4 mt-1" style="opacity: 0.9;">
+        <span><i class="bi bi-geo-alt-fill me-1"></i>Rende, Italy</span>
+        <span><i class="bi bi-calendar3 me-1"></i>{{site.data.swc_data.dates.conferenceDates}}</span>
+        <span><i class="bi bi-clock me-1"></i>Half-day (3 hours)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid bg-white px-0 mt-2">
+  <div class="page-section container px-3 pt-3 pb-5 d-flex flex-column gap-2">
+    <div class="row g-5">
+      <div class="col-12 d-flex flex-column gap-4">
+        <div>
+          <h2 class="section-title fs-2 text-center">Description</h2>
+          <p class="fs-5 lh-lg text-muted">
+            Dealing with nowadays complex systems is very difficult. Cyber-Physical Systems (CPSs) are even more critical
+            as they need to cope with software (in some sense something people are used to) with hardware (typically
+            geographically distributed, among different domains). Future systems will always be a combination of physical
+            and cyber parts, and thus it is mandatory to know how to deal will them and, in particular, consider IoT
+            devices as full-fledged resources to play with, as we usually do with computing, storage and networking.
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            This tutorial will introduce the participants to deal with such systems where there is no distinction among the
+            different parts: computing, storage, networking and Internet of Things (IoT) all contribute to setting up the
+            modern processing environments and for this reason it is mandatory to keep them simultaneously under control.
+            In particular, the tutorial intends to offer a comprehensive approach to design, implement and use CPSs, i.e.,
+            computing systems with a strong interaction between the physical environment (equipped with sensors and
+            actuators) and the cyber part (the Fog and Cloud in a wide sense). Sensors, boards, edge devices, computing,
+            storage, networking resources are seen as elements of a whole picture where everything can be virtualized and
+            composed to create the infrastructure on top of which services and applications can be deployed.
+            Infrastructure continuum represents our environment, where we can move from edge computing (by exploiting
+            remote resources) to the Cloud, going through Fog resources to set up the entire framework for services
+            deployment.
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            This tutorial proposes a new approach to the design and programming of CPSs by considering them as complex
+            “systems of systems” that need a specific methodology for their design and management. Better to say, all
+            current systems are seen as CPS by nature and for this reason the interaction among the physical and the cyber
+            parts has to be managed since the very first phases of their design. The IoT dimension is part of the overall
+            infrastructure and IoT resources have to be considered since the very beginning, and kept at the same level of
+            consideration of other more traditional resources such as computing, storage and networking. The tutorial will
+            teach how to design a network architecture with all the virtualized resources in place, how to optimise their
+            interaction and keep everything under the full control of the system manager.
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            The half day tutorial will drive students, researchers, practitioners, professionals to learn theory behind CPS
+            and concretely work with CPSs putting into practice what they have learned with concrete examples and handson
+            experiments. Furthermore, we contribute to improve the quality of education being the lectures also
+            supported by the text book “Assembling Smart Cyber-Physical Systems: heterogeneous, diffuse and green
+            technological infrastructures for cities and industries” authored by Z. Benomar, F. Longo, G. Merlino and A.
+            Puliafito and a software repository with modules, components and app. This will simplify the learning process
+            and support remote and continuous learning.
+          </p>
+          <div class="alert alert-info d-flex align-items-center mt-4 shadow-sm border-0" role="alert" style="border-left: 5px solid var(--bs-info) !important;">
+            <i class="bi bi-info-circle-fill fs-5 me-3"></i>
+            <p class="mb-0 small"><strong>Notice:</strong> A PDF copy of the presentation will be made available to attendees through the conference website.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Instructor Biographies -->
+<section class="container-fluid bg-light px-0">
+  <div class="page-section container px-3 py-5 d-flex flex-column gap-4">
+
+    <div class="text-center mx-auto" style="max-width: 900px;">
+      <h3 class="section-title fs-2 fw-bold mb-2">Instructors' Biographies</h3>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Francesco Longo -->
+      <div class="col-lg-10">
+        <div class="custom-card p-4 shadow-sm d-flex flex-column flex-md-row gap-4 align-items-start">
+          <div class="flex-shrink-0 text-center">
+            <img src="{{ '/assets/images_26/people/francesco_longo.webp' | relative_url }}" alt="Francesco Longo"
+              class="rounded-circle shadow"
+              style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #e2e8f0;">
+            <div class="mt-2 fw-bold text-dark small">Francesco Longo</div>
+            <div class="text-muted" style="font-size: 0.8rem;">University of Messina, Italy</div>
+          </div>
+          <div class="flex-grow-1 text-align-justify">
+            <p class="text-muted mb-2">
+              Francesco Longo serves as an associate professor in computer engineering at the University of Messina,
+              Italy. His research focuses on the design and implementation of secure and autonomous distributed
+              systems. He played a key role in designing the Stack4Things middleware. Additionally, he co-founded
+              SmartMe.io, a startup specializing in hardware and software solutions for designing and managing
+              Cyber-Physical Systems. He has authored over 150 peer-reviewed scientific publications.
+            </p>
+            <a href="https://www.linkedin.com/in/francesco-longo-784856206/" target="_blank"
+              class="btn btn-outline-primary btn-sm rounded-pill px-3">
+              <i class="bi bi-linkedin me-1"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Giovanni Merlino -->
+      <div class="col-lg-10">
+        <div class="custom-card p-4 shadow-sm d-flex flex-column flex-md-row gap-4 align-items-start">
+          <div class="flex-shrink-0 text-center">
+            <img src="{{ '/assets/images_26/people/giovanni_merlino.webp' | relative_url }}" alt="Giovanni Merlino"
+              class="rounded-circle shadow"
+              style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #e2e8f0;">
+            <div class="mt-2 fw-bold text-dark small">Giovanni Merlino</div>
+            <div class="text-muted" style="font-size: 0.8rem;">University of Messina, Italy</div>
+          </div>
+          <div class="flex-grow-1 text-align-justify">
+            <p class="text-muted mb-2">
+              Giovanni Merlino is an associate professor in computer science engineering at the University of Messina,
+              Italy. His research focuses on mobile and distributed systems with particular emphasis on IoT and
+              Cyber-Physical Systems modeled as software-defined infrastructure, especially in terms of hybrid IT/OT
+              convergence and decentralization protocols. He played a key role in designing the Stack4Things
+              middleware. He is co-founder of SmartMe.io, an academic spino" and startup company, and co-inventor and
+              holder of a patent. He has authored over 100 peer-reviewed scientific publications.
+            </p>
+            <a href="https://www.linkedin.com/in/giovannimerlino/" target="_blank"
+              class="btn btn-outline-primary btn-sm rounded-pill px-3">
+              <i class="bi bi-linkedin me-1"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Antonio Puliafito -->
+      <div class="col-lg-10">
+        <div class="custom-card p-4 shadow-sm d-flex flex-column flex-md-row gap-4 align-items-start">
+          <div class="flex-shrink-0 text-center">
+            <img src="{{ '/assets/images_26/people/antonio_puliafito.webp' | relative_url }}" alt="Antonio Puliafito"
+              class="rounded-circle shadow"
+              style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #e2e8f0;">
+            <div class="mt-2 fw-bold text-dark small">Antonio Puliafito</div>
+            <div class="text-muted" style="font-size: 0.8rem;">University of Messina, Italy</div>
+          </div>
+          <div class="flex-grow-1 text-align-justify">
+            <p class="text-muted mb-2">
+              Antonio Puliafito is a full professor of computer engineering at the University of Messina, Italy. His
+              interests include distributed systems, networking, IoT and Cloud computing. He participated in several
+              European projects such as Reservoir, Vision, CloudWave, Beacon and SLICES. He has contributed to the
+              development of the Stack4Things middleware. He is the founder of SmartMe.io, a startup focused on hw and
+              sw solutions to design and manage Cyber Physical Systems. He is author and co-author of more than 500
+              scientific papers.
+            </p>
+            <a href="https://www.linkedin.com/in/antoniopuliafito/" target="_blank"
+              class="btn btn-outline-primary btn-sm rounded-pill px-3">
+              <i class="bi bi-linkedin me-1"></i>LinkedIn
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div style="background-color: white !important;">
+  {% include colocated-conferences.html %}
+</div>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

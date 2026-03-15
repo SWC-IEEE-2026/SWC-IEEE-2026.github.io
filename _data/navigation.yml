@@ -32,12 +32,32 @@ main:
     items:
       - title: Workshops
         header: true
-      - title: "Coming soon..."
-        text_only: true
+      - title: WS - 6G-enabled Edge AI-based Energy-Efficient and Secure Signal Processing for Smart Healthcare
+        url: /workshops/6g-edgeai/
+      - title: WS - AI-RADIO 2026
+        url: /workshops/ai-radio/
+      - title: WS - CitiVerse 2026
+        url: /workshops/citi-verse/
+      - title: WS - Digital Twin Frameworks for Real-World Robotic Learning
+        url: /workshops/dt-robotic/
+      - title: WS - NextGen-XDV 2026
+        url: /workshops/nextgen-xdv/
+      - title: WS - PRInCePS 2026
+        url: /workshops/princeps/
+      - title: WS - Translational XR Applications for Healthcare and Wellbeing
+        url: /workshops/xr-health/
+      - title: WS - Trustworthy Generative Robotics
+        url: /workshops/generative-robotics/
+      - title: "WS - Ubiquitous Intelligence 2026: AI-Driven Models for Smart Healthcare"
+        url: /workshops/ubiquitous-intelligence/
       - title: Special Sessions
         header: true
-      - title: "Coming soon..."
-        text_only: true
+      - title: "SS - ARIES"
+        url: /special-sessions/aries/
+      - title: "SS - SuPer-IoT"
+        url: /special-sessions/super-iot/
+      - title: "SS - Transforming Data Analytics for Global Impact on Sustainability, Healthcare, and a Resilient Future"
+        url: /special-sessions/data-analytics/
       - divider: true
         class: "border-top mt-2 pt-2"
         items:
@@ -72,8 +92,12 @@ main:
     items:
       - title: Tutorials
         header: true
-      - title: "Coming soon..."
-        text_only: true
+      - title: "Beyond Connected Things: New Paradigms for the Pervasive IoT"
+        url: /tutorials/pervasive-iot/
+      - title: "Designing and Assembling Smart Cyber-Physical Systems"
+        url: /tutorials/smart-cps/
+      - title: "Digital Twin Engineering"
+        url: /tutorials/digital-twin/
       - title: PhD Forum
         header: true
       - title: "Coming soon..."
