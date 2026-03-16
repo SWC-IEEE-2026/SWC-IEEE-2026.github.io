@@ -54,6 +54,8 @@ main:
         header: true
       - title: "SS - ARIES"
         url: /special-sessions/aries/
+      - title: "SS - SHIFT"
+        url: /special-sessions/shift/
       - title: "SS - SuPer-IoT"
         url: /special-sessions/super-iot/
       - title: "SS - Transforming Data Analytics for Global Impact on Sustainability, Healthcare, and a Resilient Future"
