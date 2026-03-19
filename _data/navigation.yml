@@ -58,6 +58,8 @@ main:
         url: /special-sessions/aries/
       - title: "SS - SHIFT"
         url: /special-sessions/shift/
+      - title: "SS - SSITLS"
+        url: /special-sessions/ssitls/
       - title: "SS - SuPer-IoT"
         url: /special-sessions/super-iot/
       - divider: true
