@@ -32,24 +32,24 @@ main:
     items:
       - title: Workshops
         header: true
-      - title: WS - 6G-enabled Edge AI-based Energy-Efficient and Secure Signal Processing for Smart Healthcare
-        url: /workshops/6g-edgeai/
       - title: WS - AI-RADIO 2026
         url: /workshops/ai-radio/
       - title: WS - CitiVerse 2026
         url: /workshops/citi-verse/
       - title: WS - Digital Twin Frameworks for Real-World Robotic Learning
         url: /workshops/dt-robotic/
+      - title: WS - EASE-6G 2026
+        url: /workshops/ease-6g/
       - title: WS - NextGen-XDV 2026
         url: /workshops/nextgen-xdv/
       - title: WS - PRInCePS 2026
         url: /workshops/princeps/
-      - title: WS - XR-HEART 2026
-        url: /workshops/xr-heart/
       - title: WS - Trustworthy Generative Robotics
         url: /workshops/generative-robotics/
       - title: "WS - Ubiquitous Intelligence 2026: AI-Driven Models for Smart Healthcare"
         url: /workshops/ubiquitous-intelligence/
+      - title: WS - XR-HEART 2026
+        url: /workshops/xr-heart/
       - title: Special Sessions
         header: true
       - title: "SS - AI&ML"
