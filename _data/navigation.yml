@@ -36,14 +36,14 @@ main:
         url: /workshops/ai-radio/
       - title: WS - CitiVerse 2026
         url: /workshops/citi-verse/
-      - title: WS - Digital Twin Frameworks for Real-World Robotic Learning
-        url: /workshops/dt-robotic/
       - title: WS - EASE-6G 2026
         url: /workshops/ease-6g/
       - title: WS - NextGen-XDV 2026
         url: /workshops/nextgen-xdv/
       - title: WS - PRInCePS 2026
         url: /workshops/princeps/
+      - title: WS - RoboTwin 2026
+        url: /workshops/robo-twin/
       - title: WS - Trustworthy Generative Robotics
         url: /workshops/generative-robotics/
       - title: "WS - Ubiquitous Intelligence 2026: AI-Driven Models for Smart Healthcare"
