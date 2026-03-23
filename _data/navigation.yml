@@ -44,8 +44,8 @@ main:
         url: /workshops/princeps/
       - title: WS - RoboTwin 2026
         url: /workshops/robo-twin/
-      - title: WS - Trustworthy Generative Robotics
-        url: /workshops/generative-robotics/
+      - title: WS - TrustGenBOT 2026
+        url: /workshops/trust-gen-bot/
       - title: "WS - Ubiquitous Intelligence 2026: AI-Driven Models for Smart Healthcare"
         url: /workshops/ubiquitous-intelligence/
       - title: WS - XR-HEART 2026
