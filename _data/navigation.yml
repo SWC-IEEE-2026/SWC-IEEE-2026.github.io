@@ -32,23 +32,23 @@ main:
     items:
       - title: Workshops
         header: true
-      - title: WS - AI-RADIO 2026
+      - title: WS - AI-RADIO
         url: /workshops/ai-radio/
-      - title: WS - CitiVerse 2026
+      - title: WS - CitiVerse
         url: /workshops/citi-verse/
-      - title: WS - EASE-6G 2026
+      - title: WS - EASE-6G
         url: /workshops/ease-6g/
-      - title: WS - NextGen-XDV 2026
+      - title: WS - Secure & Trusted NextGen-XDV Mobility
         url: /workshops/nextgen-xdv/
-      - title: WS - PRInCePS 2026
+      - title: WS - PRInCePS
         url: /workshops/princeps/
-      - title: WS - RoboTwin 2026
+      - title: WS - RoboTwin
         url: /workshops/robo-twin/
-      - title: WS - TrustGenBOT 2026
+      - title: WS - TrustGenBOT
         url: /workshops/trust-gen-bot/
-      - title: "WS - UI4Health 2026"
+      - title: "WS - UI4Health"
         url: /workshops/ui4health/
-      - title: WS - XR-HEART 2026
+      - title: WS - XR-HEART
         url: /workshops/xr-heart/
       - title: Special Sessions
         header: true
