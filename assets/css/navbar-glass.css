@@ -36,6 +36,23 @@
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     padding: 0.5rem;
     margin-top: 0.5rem !important;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* Custom Scrollbar for Dropdown Menu */
+.dropdown-menu-glass::-webkit-scrollbar {
+    width: 6px;
+}
+.dropdown-menu-glass::-webkit-scrollbar-track {
+    background: transparent;
+}
+.dropdown-menu-glass::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+.dropdown-menu-glass::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .dropdown-menu-glass .dropdown-item {

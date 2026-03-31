@@ -38,6 +38,8 @@ main:
         url: /workshops/citi-verse/
       - title: WS - EASE-6G
         url: /workshops/ease-6g/
+      - title: "WS - IoWT"
+        url: /workshops/iowt/
       - title: WS - Secure & Trusted NextGen-XDV Mobility
         url: /workshops/nextgen-xdv/
       - title: WS - PRInCePS
