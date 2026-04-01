@@ -83,10 +83,11 @@ title: Women in the Smart World Forum 2026
                                 <div class="d-flex flex-column gap-1 ps-1">
                                     <div class="date-item">
                                         <div class="d-flex flex-column">
-                                            <span class="fw-bold text-danger" style="font-size: 0.85rem;">Submission
-                                                Deadline</span>
-                                            <span class="fw-bold text-danger" style="font-size: 0.85rem;">April 1,
-                                                2026</span>
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <span class="fw-bold text-danger" style="font-size: 0.85rem;">Submission Deadline</span>
+                                                <span class="badge bg-danger rounded-pill shadow-sm" style="font-size: 0.65rem;">Extended</span>
+                                            </div>
+                                            <span class="fw-bold text-danger" style="font-size: 0.85rem;">{{site.data.swc_data.dates.paperSubmission}}</span>
                                         </div>
                                     </div>
                                     <div class="date-item">
@@ -119,10 +120,11 @@ title: Women in the Smart World Forum 2026
                                 <div class="d-flex flex-column gap-1 ps-1">
                                     <div class="date-item">
                                         <div class="d-flex flex-column">
-                                            <span class="fw-bold text-danger" style="font-size: 0.85rem;">Submission
-                                                Deadline</span>
-                                            <span class="fw-bold text-danger" style="font-size: 0.85rem;">May 1,
-                                                2026</span>
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <span class="fw-bold text-danger" style="font-size: 0.85rem;">Submission Deadline</span>
+                                                <span class="badge bg-danger rounded-pill shadow-sm" style="font-size: 0.65rem;">Extended</span>
+                                            </div>
+                                            <span class="fw-bold text-danger" style="font-size: 0.85rem;">{{site.data.swc_data.dates.paperSubmission}}</span>
                                         </div>
                                     </div>
                                     <div class="date-item">
@@ -344,6 +346,10 @@ title: Women in the Smart World Forum 2026
         </div>
 
         <div class="col-lg-8 d-flex flex-column gap-4">
+            <div class="alert alert-warning alert-dismissible fade show text-center shadow-sm mb-4" role="alert">
+                <strong>Paper Submission Extended!</strong> The deadline for paper submissions has been extended to <strong>{{site.data.swc_data.dates.paperSubmission}}</strong>. Don't miss the chance to submit your work!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <div>
                 <h2 class="section-title fs-2 text-center">About the Forum</h2>
                 <p class="fs-5 text-muted text-align-justify">
