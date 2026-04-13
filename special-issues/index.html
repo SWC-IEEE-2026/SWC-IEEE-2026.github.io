@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Special Issues
+title: Special Issues & Fast-Track
 ---
 
 <!-- Hero Section -->
@@ -12,12 +12,12 @@ title: Special Issues
         </div>
         <h1 class="display-3 fw-bolder mb-3 text-white"
             style="letter-spacing: -1.5px; text-shadow: 0 4px 15px rgba(0,0,0,0.4);">
-            Special Issues
+            Special Issues & Fast-Track
         </h1>
         <p class="fs-4 text-light mx-auto mb-0"
             style="max-width: 850px; font-weight: 300; line-height: 1.6; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">
             Selected papers from all events of the IEEE SWC Multi-conference will be invited to be extended and
-            submitted to the following featured special issues in high-impact journals.
+            submitted to the following featured special issues and fast-track tracks in high-impact journals.
         </p>
     </div>
 </section>
@@ -31,45 +31,27 @@ title: Special Issues
     }
 
     .nav-wrapper {
-        padding: 2rem;
+        padding: 2rem 2rem 0.5rem 2rem;
         background: #fff;
     }
 
-    .custom-tabs {
-        background-color: #f1f5f9;
-        border-radius: 1rem;
-        padding: 0.35rem;
-        border: 1px solid #e2e8f0;
-        gap: 0;
+    .nav-pills .nav-link {
+        color: #6c757d;
     }
 
-    .custom-tabs .nav-item {
-        margin: 0;
-        z-index: 1;
-    }
-
-    .custom-tabs .nav-link {
-        color: #475569;
-        font-weight: 500;
-        letter-spacing: 0.2px;
-        border: none;
-        border-radius: 0.75rem;
-        padding: 0.85rem 1.25rem;
-        background: transparent;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-    }
-
-    .custom-tabs .nav-link:hover {
-        color: #0f172a;
-    }
-
-    .custom-tabs .nav-link.active {
+    .nav-pills .nav-link.active {
+        background-color: var(--bs-primary-soft, #eef2ff);
         color: var(--bs-primary);
-        background-color: #fff;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.05);
-        font-weight: 600;
-        z-index: 2;
+    }
+
+    .issue-card {
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid rgba(0, 0, 0, 0.03) !important;
+    }
+
+    .issue-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08) !important;
     }
 
     .tab-content {
@@ -78,12 +60,12 @@ title: Special Issues
     }
 
     .content-pane-inner {
-        padding: 2.5rem;
+        padding: 1rem 2.5rem 2.5rem 2.5rem;
     }
 
     @media (min-width: 992px) {
         .content-pane-inner {
-            padding: 4rem;
+            padding: 1.5rem 4rem 4rem 4rem;
         }
     }
 </style>
@@ -91,282 +73,247 @@ title: Special Issues
 <section class="page-section container px-4 py-5 my-4">
     <div class="special-issues-container">
 
-        <!-- Tabs Navigation -->
-        <div class="nav-wrapper">
-            <ul class="nav custom-tabs nav-fill flex-column flex-lg-row" id="specialIssuesTabs" role="tablist">
+        <!-- Main Top-Level Navigation -->
+        <div class="nav-wrapper pb-1">
+            <ul class="nav nav-pills justify-content-center shadow-sm p-2 bg-white rounded-5" id="mainSpecialIssuesTabs" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active w-100" id="tab-metaverses" data-bs-toggle="pill"
-                        data-bs-target="#pane-metaverses" type="button" role="tab" aria-controls="pane-metaverses"
-                        aria-selected="true">
-                        Emerging Metaverses
+                    <button class="nav-link active fw-bold px-4 py-2 rounded-pill" id="tab-special-issues" data-bs-toggle="pill"
+                        data-bs-target="#pane-special-issues" type="button" role="tab" aria-controls="pane-special-issues"
+                        aria-selected="true" style="font-size: 1.1rem; transition: background-color 0.3s; color: var(--bs-primary);">
+                        <i class="bi bi-journals me-2"></i>Special Issues
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link w-100" id="tab-smart-cities" data-bs-toggle="pill"
-                        data-bs-target="#pane-smart-cities" type="button" role="tab" aria-controls="pane-smart-cities"
-                        aria-selected="false">
-                        Smart Cities
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link w-100" id="tab-radiomics" data-bs-toggle="pill"
-                        data-bs-target="#pane-radiomics" type="button" role="tab" aria-controls="pane-radiomics"
-                        aria-selected="false">
-                        Frontiers of Radiomics
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link w-100" id="tab-bdcc" data-bs-toggle="pill" data-bs-target="#pane-bdcc"
-                        type="button" role="tab" aria-controls="pane-bdcc" aria-selected="false">
-                        BDCC 2026
+                    <button class="nav-link fw-bold px-4 py-2 rounded-pill" id="tab-fasttrack" data-bs-toggle="pill"
+                        data-bs-target="#pane-fasttrack" type="button" role="tab" aria-controls="pane-fasttrack"
+                        aria-selected="false" style="font-size: 1.1rem; transition: background-color 0.3s; color: #f59e0b;">
+                        <i class="bi bi-lightning-fill me-2"></i>Fast-Track Opportunities
                     </button>
                 </li>
             </ul>
         </div>
 
-        <!-- Tabs Content -->
-        <div class="tab-content w-100" id="specialIssuesTabContent">
+        <div class="tab-content w-100" id="mainSpecialIssuesTabContent">
+            
+            <!-- ====== PANE: SPECIAL ISSUES ====== -->
+            <div class="tab-pane fade show active" id="pane-special-issues" role="tabpanel" aria-labelledby="tab-special-issues">
+                <div class="content-pane-inner">
+                    <p class="fs-5 text-muted mb-5 text-center">We invite submissions to the following featured special issues in high-impact journals.</p>
+                    
+                    <div class="row g-4 justify-content-center">
 
-            <!-- Tab Pane 1: Metaverses -->
-            <div class="tab-pane fade show active" id="pane-metaverses" role="tabpanel"
-                aria-labelledby="tab-metaverses">
-                <div class="content-pane-inner d-flex flex-column h-100">
-                    <div class="row justify-content-center flex-grow-1">
-                        <div class="col-lg-10 d-flex flex-column">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <span class="journal-badge">Frontiers in Artificial Intelligence</span>
-                            </div>
-
-                            <h3 class="fw-bold mb-4 text-dark" style="line-height: 1.4;">
-                                Emerging Design and Technologies for Sustainable Metaverses: A Cross-disciplinary
-                                Exploration
-                            </h3>
-
-                            <div class="mb-4">
-                                <div class="deadline-box d-inline-block">
-                                    <i class="bi bi-calendar-event me-2"></i> Deadline: Nov 2026
+                        <!-- Card 1: Metaverses -->
+                        <div class="col-lg-6">
+                            <div class="card issue-card h-100 border-0 shadow-sm rounded-4">
+                                <div class="card-body p-4 d-flex flex-column text-start">
+                                    <span class="badge bg-primary-soft text-primary align-self-start mb-3 px-3 py-2 rounded-pill">Frontiers in Artificial Intelligence</span>
+                                    <h4 class="fw-bold mb-3 d-flex align-items-start text-dark" style="line-height: 1.4; font-size: 1.2rem;">
+                                        <i class="bi bi-journal-check text-primary fs-4 me-2 mt-n1"></i> Emerging Design and Technologies for Sustainable Metaverses: A Cross-disciplinary Exploration
+                                    </h4>
+                                    
+                                    <div class="mb-3 text-danger fw-bold small">
+                                        <i class="bi bi-calendar-event me-1"></i> Deadline: Nov 2026
+                                    </div>
+                                    
+                                    <div class="mb-4 bg-light p-3 rounded-3 flex-grow-1">
+                                        <h6 class="fw-bold fs-6 mb-2 text-dark"><i class="bi bi-people-fill me-2 text-secondary"></i>Guest Editors</h6>
+                                        <ul class="list-unstyled small mb-0 d-flex flex-column gap-2 text-muted">
+                                            <li><strong>Prof. Chien-Sing Lee</strong> (Sunway University)</li>
+                                            <li><strong>Prof. Giancarlo Fortino</strong> (University of Calabria)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mt-auto pt-2">
+                                        <a href="https://www.frontiersin.org/research-topics/75512/emerging-design-and-technologies-for-sustainable-metaverses-a-cross-disciplinary-exploration"
+                                            target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-4 w-100 fw-bold">
+                                            View Details <i class="bi bi-arrow-right ms-1"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="mb-5 flex-grow-1">
-                                <h5 class="guest-editors-title mb-3">Guest Editors</h5>
-                                <ul class="editor-list">
-                                    <li>
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Prof. Chien-Sing Lee</span>
-                                            <span class="editor-affiliation">Sunway University, Bandar Sunway,
-                                                Malaysia</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Prof. Giancarlo Fortino</span>
-                                            <span class="editor-affiliation">University of Calabria, Rende, Italy</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="mt-auto pt-4 border-top">
-                                <a href="https://www.frontiersin.org/research-topics/75512/emerging-design-and-technologies-for-sustainable-metaverses-a-cross-disciplinary-exploration"
-                                    target="_blank"
-                                    class="btn btn-primary btn-lg w-100 d-flex align-items-center justify-content-center gap-2">
-                                    <span>View Special Issue Details</span> <i class="bi bi-arrow-right"></i>
-                                </a>
+                        <!-- Card 2: Smart Cities -->
+                        <div class="col-lg-6">
+                            <div class="card issue-card h-100 border-0 shadow-sm rounded-4">
+                                <div class="card-body p-4 d-flex flex-column text-start">
+                                    <span class="badge bg-primary-soft text-primary align-self-start mb-3 px-3 py-2 rounded-pill">Smart Cities, MDPI</span>
+                                    <h4 class="fw-bold mb-3 d-flex align-items-start text-dark" style="line-height: 1.4; font-size: 1.2rem;">
+                                        <i class="bi bi-journal-check text-primary fs-4 me-2 mt-n1"></i> Innovative IoT Solutions for Sustainable Smart Cities
+                                    </h4>
+                                    
+                                    <div class="mb-3 text-danger fw-bold small">
+                                        <i class="bi bi-calendar-event me-1"></i> Deadline: Nov 2026
+                                    </div>
+                                    
+                                    <div class="mb-4 bg-light p-3 rounded-3 flex-grow-1">
+                                        <h6 class="fw-bold fs-6 mb-2 text-dark"><i class="bi bi-people-fill me-2 text-secondary"></i>Guest Editors</h6>
+                                        <ul class="list-unstyled small mb-0 d-flex flex-column gap-2 text-muted">
+                                            <li><strong>Dr. Giancarlo Nota</strong> (University of Salerno)</li>
+                                            <li><strong>Prof. Giancarlo Fortino</strong> (University of Calabria)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mt-auto pt-2">
+                                        <a href="https://www.mdpi.com/journal/smartcities/special_issues/75KBM19Q4I"
+                                            target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-4 w-100 fw-bold">
+                                            View Details <i class="bi bi-arrow-right ms-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Card 3: Radiomics -->
+                        <div class="col-lg-6">
+                            <div class="card issue-card h-100 border-0 shadow-sm rounded-4">
+                                <div class="card-body p-4 d-flex flex-column text-start">
+                                    <span class="badge bg-primary-soft text-primary align-self-start mb-3 px-3 py-2 rounded-pill">Computer Methods and Programs in Biomedicine, Elsevier</span>
+                                    <h4 class="fw-bold mb-3 d-flex align-items-start text-dark" style="line-height: 1.4; font-size: 1.2rem;">
+                                        <i class="bi bi-journal-check text-primary fs-4 me-2 mt-n1"></i> Exploring the Frontiers of Radiomics: Unveiling Novel Insights through Advanced Techniques and Multimodal Approaches
+                                    </h4>
+                                    
+                                    <div class="mb-3 text-danger fw-bold small">
+                                        <i class="bi bi-calendar-event me-1"></i> Deadline: Dec 2027
+                                    </div>
+                                    
+                                    <div class="mb-4 bg-light p-3 rounded-3 flex-grow-1">
+                                        <h6 class="fw-bold fs-6 mb-2 text-dark"><i class="bi bi-people-fill me-2 text-secondary"></i>Guest Editors</h6>
+                                        <ul class="list-unstyled small mb-0 text-muted" style="column-count: 2; column-gap: 15px;">
+                                            <li><strong>Prof. G. Fortino</strong></li>
+                                            <li><strong>Dr. A. Guzzo</strong></li>
+                                            <li><strong>Prof. F. Molinari</strong></li>
+                                            <li><strong>Prof. Y. Li</strong></li>
+                                            <li><strong>Prof. K. Panetta</strong></li>
+                                            <li><strong>Prof. M.F. Spadea</strong></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mt-auto pt-2">
+                                        <a href="https://www.sciencedirect.com/special-issue/10WJNQ07306"
+                                            target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-4 w-100 fw-bold">
+                                            View Details <i class="bi bi-arrow-right ms-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: BDCC -->
+                        <div class="col-lg-6">
+                            <div class="card issue-card h-100 border-0 shadow-sm rounded-4">
+                                <div class="card-body p-4 d-flex flex-column text-start">
+                                    <span class="badge bg-primary-soft text-primary align-self-start mb-3 px-3 py-2 rounded-pill">Big Data and Cognitive Computing (BDCC), MDPI</span>
+                                    <h4 class="fw-bold mb-3 d-flex align-items-start text-dark" style="line-height: 1.4; font-size: 1.2rem;">
+                                        <i class="bi bi-journal-check text-primary fs-4 me-2 mt-n1"></i> Big Data and Cognitive Computing in 2026
+                                    </h4>
+                                    
+                                    <div class="mb-3 text-danger fw-bold small">
+                                        <i class="bi bi-calendar-event me-1"></i> Deadline: 31 March 2027
+                                    </div>
+                                    
+                                    <div class="mb-4 bg-light p-3 rounded-3 flex-grow-1">
+                                        <h6 class="fw-bold fs-6 mb-2 text-dark"><i class="bi bi-people-fill me-2 text-secondary"></i>Guest Editors</h6>
+                                        <ul class="list-unstyled small mb-0 d-flex flex-column gap-2 text-muted">
+                                            <li><strong>Prof. Dr. Min Chen</strong> (SCUT, China)</li>
+                                            <li><strong>Prof. Dr. Giancarlo Fortino</strong> (University of Calabria)</li>
+                                            <li><strong>Dr. Wenjing Xiao</strong> (Guangxi University)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mt-auto pt-2">
+                                        <a href="https://www.mdpi.com/journal/BDCC/special_issues/7G0EFWK098"
+                                            target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-4 w-100 fw-bold">
+                                            View Details <i class="bi bi-arrow-right ms-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <!-- Tab Pane 2: Smart Cities -->
-            <div class="tab-pane fade" id="pane-smart-cities" role="tabpanel" aria-labelledby="tab-smart-cities">
-                <div class="content-pane-inner d-flex flex-column h-100">
-                    <div class="row justify-content-center flex-grow-1">
+            <!-- ====== PANE: FAST TRACK ====== -->
+            <div class="tab-pane fade" id="pane-fasttrack" role="tabpanel" aria-labelledby="tab-fasttrack">
+                <div class="content-pane-inner">
+                    <div class="row justify-content-center">
                         <div class="col-lg-10 d-flex flex-column">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <span class="journal-badge">Smart Cities, MDPI</span>
-                            </div>
 
-                            <h3 class="fw-bold mb-4 text-dark" style="line-height: 1.4;">
-                                Innovative IoT Solutions for Sustainable Smart Cities
-                            </h3>
-
-                            <div class="mb-4">
-                                <div class="deadline-box d-inline-block">
-                                    <i class="bi bi-calendar-event me-2"></i> Deadline: Nov 2026
+                            <div class="alert alert-warning border-0 shadow-sm mb-5 bg-warning-soft" style="border-left: 5px solid #f59e0b !important;">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-exclamation-triangle-fill fs-4 me-3 text-warning"></i>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold text-dark">Important Note</h6>
+                                        <p class="mb-0 text-muted small">The following are <strong>Fast-Track</strong> publication opportunities, not Special Issues. Selection for fast-track ensures a rapid review and publication process for extended versions of high-quality papers.</p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="mb-5 flex-grow-1">
-                                <h5 class="guest-editors-title mb-3">Guest Editors</h5>
-                                <ul class="editor-list">
-                                    <li>
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Dr. Giancarlo Nota</span>
-                                            <span class="editor-affiliation">University of Salerno, Salerno,
-                                                Italy</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Prof. Giancarlo Fortino</span>
-                                            <span class="editor-affiliation">University of Calabria, Rende, Italy</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="mt-auto pt-4 border-top">
-                                <a href="https://www.mdpi.com/journal/smartcities/special_issues/75KBM19Q4I"
-                                    target="_blank"
-                                    class="btn btn-primary btn-lg w-100 d-flex align-items-center justify-content-center gap-2">
-                                    <span>View Special Issue Details</span> <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tab Pane 3: Radiomics -->
-            <div class="tab-pane fade" id="pane-radiomics" role="tabpanel" aria-labelledby="tab-radiomics">
-                <div class="content-pane-inner d-flex flex-column h-100">
-                    <div class="row justify-content-center flex-grow-1">
-                        <div class="col-lg-10 d-flex flex-column">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <span class="journal-badge">Computer Methods and Programs in Biomedicine,
-                                    Elsevier</span>
-                            </div>
-
-                            <h3 class="fw-bold mb-4 text-dark" style="line-height: 1.4;">
-                                Exploring the Frontiers of Radiomics: Unveiling Novel Insights through Advanced
-                                Techniques and Multimodal Approaches
+                            <h3 class="fw-bold mb-4 text-dark text-center" style="line-height: 1.4;">
+                                Rapid Publication via Fast-Track Tracks
                             </h3>
 
-                            <div class="mb-4">
-                                <div class="deadline-box d-inline-block">
-                                    <i class="bi bi-calendar-event me-2"></i> Deadline: Dec 2027
+                            <p class="fs-5 text-muted mb-5 text-center">
+                                We are pleased to announce two fast-track journal opportunities associated with <a href="../atc/" class="fw-bold text-decoration-none">ATC 2026</a>:
+                            </p>
+
+                            <div class="row g-4 mb-5">
+                                <!-- Expert Systems -->
+                                <div class="col-md-6">
+                                    <div class="p-4 rounded-4 border bg-light h-100 d-flex flex-column text-start issue-card shadow-sm border-0">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                                <i class="bi bi-lightning-fill"></i>
+                                            </div>
+                                            <h5 class="mb-0 fw-bold">Expert Systems</h5>
+                                        </div>
+                                        <p class="mb-2 text-dark fw-medium">Wiley</p>
+                                        <div class="d-flex flex-wrap gap-2 mb-4">
+                                            <span class="badge bg-secondary-soft text-secondary">Q2</span>
+                                            <span class="badge bg-secondary-soft text-secondary">Citescore 9.1</span>
+                                            <span class="badge bg-secondary-soft text-secondary">IF 2.3</span>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <a href="https://onlinelibrary.wiley.com/journal/14680394" target="_blank" class="btn btn-warning btn-sm rounded-pill px-3 w-100 fw-bold">
+                                                Visit Journal <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- IJIMAI -->
+                                <div class="col-md-6">
+                                    <div class="p-4 rounded-4 border bg-light h-100 d-flex flex-column text-start issue-card shadow-sm border-0">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                                <i class="bi bi-lightning-fill"></i>
+                                            </div>
+                                            <h5 class="mb-0 fw-bold">IJIMAI</h5>
+                                        </div>
+                                        <p class="mb-2 text-dark fw-medium">International Journal of Interactive Multimedia and Artificial Intelligence</p>
+                                        <div class="d-flex flex-wrap gap-2 mb-4">
+                                            <span class="badge bg-secondary-soft text-secondary">Q2</span>
+                                            <span class="badge bg-secondary-soft text-secondary">Citescore 6.9</span>
+                                            <span class="badge bg-secondary-soft text-secondary">IF 2.4</span>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <a href="https://www.ijimai.org/" target="_blank" class="btn btn-warning btn-sm rounded-pill px-3 w-100 fw-bold">
+                                                Visit Journal <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="mb-5 flex-grow-1">
-                                <h5 class="guest-editors-title mb-3">Guest Editors</h5>
-                                <ul class="editor-list row mx-0 g-3">
-                                    <li class="col-md-6 px-2">
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Prof. Giancarlo Fortino</span>
-                                            <span class="editor-affiliation">University of Calabria, Rende, Italy</span>
-                                        </div>
-                                    </li>
-                                    <li class="col-md-6 px-2">
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Dr. Antonella Guzzo</span>
-                                            <span class="editor-affiliation">University of Calabria, Rende, Italy</span>
-                                        </div>
-                                    </li>
-                                    <li class="col-md-6 px-2">
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Prof. Filippo Molinari</span>
-                                            <span class="editor-affiliation">Polytechnic of Turin, Turin, Italy</span>
-                                        </div>
-                                    </li>
-                                    <li class="col-md-6 px-2">
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Prof. Ye Li</span>
-                                            <span class="editor-affiliation">Shenzhen Institutes of Advanced Technology,
-                                                Shenzhen, China</span>
-                                        </div>
-                                    </li>
-                                    <li class="col-md-6 px-2">
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Prof. Karen Panetta</span>
-                                            <span class="editor-affiliation">Tufts University, Medford, MA, USA</span>
-                                        </div>
-                                    </li>
-                                    <li class="col-md-6 px-2">
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Prof. Maria Francesca Spadea</span>
-                                            <span class="editor-affiliation">Karlsruhe Institute of Technology,
-                                                Karlsruhe, Germany</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
                             <div class="mt-auto pt-4 border-top">
-                                <a href="https://www.sciencedirect.com/special-issue/10WJNQ07306" target="_blank"
-                                    class="btn btn-primary btn-lg w-100 d-flex align-items-center justify-content-center gap-2">
-                                    <span>View Special Issue Details</span> <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tab Pane 4: BDCC -->
-            <div class="tab-pane fade" id="pane-bdcc" role="tabpanel" aria-labelledby="tab-bdcc">
-                <div class="content-pane-inner d-flex flex-column h-100">
-                    <div class="row justify-content-center flex-grow-1">
-                        <div class="col-lg-10 d-flex flex-column">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <span class="journal-badge">Big Data and Cognitive Computing (BDCC), MDPI</span>
-                            </div>
-
-                            <h3 class="fw-bold mb-4 text-dark" style="line-height: 1.4;">
-                                Big Data and Cognitive Computing in 2026
-                            </h3>
-
-                            <div class="mb-4">
-                                <div class="deadline-box d-inline-block">
-                                    <i class="bi bi-calendar-event me-2"></i> Deadline: 31 March 2027
+                                <div class="alert alert-info d-flex align-items-center shadow-sm border-0 mb-0" role="alert" style="border-left: 5px solid #0dcaf0 !important;">
+                                    <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+                                    <div>
+                                        <p class="mb-0 text-dark">Selected authors will receive direct invitations with submission instructions and deadlines.</p>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="mb-5 flex-grow-1">
-                                <h5 class="guest-editors-title mb-3">Guest Editors</h5>
-                                <ul class="editor-list">
-                                    <li>
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Prof. Dr. Min Chen</span>
-                                            <span class="editor-affiliation">South China University of Technology,
-                                                Guangzhou, China</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Prof. Dr. Giancarlo Fortino</span>
-                                            <span class="editor-affiliation">University of Calabria, Rende, Italy</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-person-circle editor-icon"></i>
-                                        <div>
-                                            <span class="fw-medium text-dark">Dr. Wenjing Xiao</span>
-                                            <span class="editor-affiliation">Guangxi University, Nanning, China</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="mt-auto pt-4 border-top">
-                                <a href="https://www.mdpi.com/journal/BDCC/special_issues/7G0EFWK098" target="_blank"
-                                    class="btn btn-primary btn-lg w-100 d-flex align-items-center justify-content-center gap-2">
-                                    <span>View Special Issue Details</span> <i class="bi bi-arrow-right"></i>
-                                </a>
                             </div>
                         </div>
                     </div>
