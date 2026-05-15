@@ -1,0 +1,346 @@
+---
+layout: default
+title: AAM Digital Twin Tutorial 2026
+
+---
+
+<!-- Hero Section -->
+<section class="jumbotron text-center" style="
+    background: linear-gradient(135deg, #064e3b 0%, #0ea5e9 100%);
+    height: 60vh;
+    position: relative;
+    color: white;
+    overflow: hidden;
+  ">
+  <!-- Decorative glow overlay -->
+  <div style="
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(14,165,233,0.18) 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 80%, rgba(6,78,59,0.25) 0%, transparent 50%);
+    pointer-events: none;
+  "></div>
+  <div class="hero-section" style="background-color: transparent;">
+    <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3"
+      style="position:relative; z-index:1;">
+      <div class="mb-1">
+        <span class="badge rounded-pill px-3 py-2 fw-semibold"
+          style="background: rgba(255,255,255,0.12); font-size: 0.85rem; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.2);">Tutorial
+          @ IEEE SWC 2026</span>
+      </div>
+      <h1 class="display-6 fw-bolder mt-2"
+        style="text-shadow: 0 2px 20px rgba(0,0,0,0.4); line-height: 1.2; max-width: 860px;">
+        Designing the Urban Sky for Flying Cars: Digital Twin Requirements for Advanced Air Mobility
+      </h1>
+      <div class="d-flex gap-4 mt-1" style="opacity: 0.9;">
+        <span><i class="bi bi-geo-alt-fill me-1"></i>Rende, Italy</span>
+        <span><i class="bi bi-calendar3 me-1"></i>{{site.data.swc_data.dates.conferenceDates}}</span>
+        <span><i class="bi bi-clock me-1"></i>Half-day (3 hours)</span>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+<section class="container-fluid bg-white px-0 mt-2">
+  <div class="page-section container px-3 pt-3 pb-5 d-flex flex-column gap-2">
+    <div class="row g-5">
+      <div class="col-12 d-flex flex-column gap-4">
+        <div>
+          <h2 class="section-title fs-2 text-center">Abstract</h2>
+          <p class="fs-5 lh-lg text-muted">
+            As commercial eVTOL services move toward a 2026 launch in UAE, China, and USA, the aviation industry
+            requires a "Digital Shadow" capable of predicting and mitigating risks in high-density urban airspaces.
+            Synthesized from a PRISMA-guided Systematic Literature Review (SLR) of over 2,000 papers conducted with
+            the UAE General Civil Aviation Authority (GCAA), this tutorial presents a blueprint for DT-enabled
+            Advanced Air Mobility (AAM).
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            We decompose deployment into three phases: (i) <strong>Vertiport network design</strong>, where DTs model
+            demand and node throughput; (ii) <strong>Corridor formulation</strong>, where DTs simulate safe separation
+            buffers; and (iii) <strong>Operations management</strong>, where DTs enable "what-if" analysis for
+            strategic deconfliction. The session highlights how the DT acts as the "brain" for AAM, providing a sandbox
+            for regulatory compliance and safety-critical decision-making.
+          </p>
+          <p class="fs-5 lh-lg text-muted">
+            While IoT/ISAC provides the data and sensing, only a Digital Twin can provide the predictive foresight
+            required for high-density AAM. To move from conservative legacy separation to autonomous, high-density
+            operations, the industry needs a systemic "Virtual Sandbox." This tutorial positions the DT as the
+            essential tool for bridging the gap between real-world environmental uncertainty and the rigorous safety
+            requirements of civil aviation.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="track-card h-100 shadow-sm overflow-hidden">
+          <div class="track-header bg-light border-bottom p-3 d-flex align-items-center">
+            <i class="bi bi-book-fill text-primary me-2 fs-4"></i>
+            <h4 class="mb-0 fw-bold text-dark">Tutorial Topics</h4>
+          </div>
+          <div class="track-body p-4 d-flex flex-column gap-3">
+
+            <div>
+              <h5 class="fw-bold text-dark"><i class="bi bi-diagram-3 text-primary me-2"></i>The AAM Digital Twin Architecture</h5>
+              <p class="text-muted">
+                Data ingestion from IoT/ISAC for state synchronization. Defining the synchronization loop between
+                physical IoT assets and their Digital Twin counterparts, and how the DT becomes a real-time
+                "Digital Shadow" of the urban airspace.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="fw-bold text-dark"><i class="bi bi-building text-primary me-2"></i>Phase 1: Vertiport Network Twin</h5>
+              <p class="text-muted">
+                Demand-driven network design and virtual feasibility checks for vertiport site selection. Modeling
+                AAM demand via cellular heatmaps and Intelligent Transport System (ITS) data; simulating vertiport
+                node capacity including turnaround times, charging cycles, and passenger boarding flows.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="fw-bold text-dark"><i class="bi bi-shield-check text-primary me-2"></i>Phase 2: Corridor Twin &amp; Safety Physics</h5>
+              <p class="text-muted">
+                Dynamic Corridor Twins—modeling the geometric expansion of safety buffers based on predictive
+                Total System Error (TSE = √(NSE² + FTE²)). Simulating how urban micro-climates, wind shear,
+                and wake vortices impact virtual safety geofences.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="fw-bold text-dark"><i class="bi bi-cpu text-primary me-2"></i>Phase 3: Operational Twins &amp; Strategic Orchestration</h5>
+              <p class="text-muted">
+                Operational Orchestration—using DTs for dynamic capacity balancing and emergency rerouting
+                simulations. Strategic deconfliction and "what-if" analysis for arrival/departure management
+                across the entire U-space ecosystem.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="fw-bold text-dark"><i class="bi bi-signpost-split text-primary me-2"></i>Roadmap, Standards &amp; Regulatory Paths</h5>
+              <p class="text-muted">
+                Current state of DT standardization (ISO/IEEE), the transition from Static to Live Twins, and
+                regulatory paths for "Digital Sky" certification. How aviation authorities (GCAA, FAA) expect the
+                DT to serve as an automated "Regulatory Shadow."
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="alert alert-info d-flex align-items-center mt-4 shadow-sm border-0" role="alert"
+          style="border-left: 5px solid var(--bs-info) !important;">
+          <i class="bi bi-info-circle-fill fs-5 me-3"></i>
+          <p class="mb-0 small"><strong>Notice:</strong> A PDF copy of the presentation will be made available to
+            attendees through the conference website.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<section class="container-fluid bg-light px-0">
+  <div class="page-section container px-3 py-5 d-flex flex-column gap-4">
+
+    <!-- Tentative Schedule -->
+    <div class="text-center mx-auto" style="max-width: 900px;">
+      <h3 class="section-title fs-2 fw-bold mb-4">Schedule</h3>
+      <p class="fs-5 lh-lg text-muted mb-4">The following is the tentative time schedule for the tutorial (total: 3 hours).</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="custom-card shadow-sm overflow-hidden">
+          <table class="table table-hover mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col" style="width: 30%;">Time Slot</th>
+                <th scope="col">Topic</th>
+              </tr>
+            </thead>
+            <tbody class="text-muted">
+              <tr>
+                <td class="fw-bold text-secondary">00:00 – 00:30</td>
+                <td>The AAM Digital Twin Vision: Introduction to AAM and the role of the DT as a predictive "Digital Shadow." Defining the synchronization loop between physical IoT assets and DT.</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-secondary">00:30 – 01:10</td>
+                <td>Phase 1 – The Vertiport Network Twin: Modeling AAM demand via cellular heatmaps and ITS data; DT-based feasibility checks (land, power, topography) and vertiport node capacity simulation.</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-secondary">01:10 – 01:50</td>
+                <td>Phase 2 – The Corridor Twin &amp; Safety Physics: Translating the "3D tube" into a dynamic virtual buffer; breaking down the error budget (TSE = √(NSE² + FTE²)) and simulating environmental factors on virtual safety geofences.</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-secondary">01:50 – 02:30</td>
+                <td>Phase 3 – Operational Twins: Strategic deconfliction and "what-if" analysis for arrival/departure management; DT-based dynamic capacity balancing and emergency contingency planning.</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-secondary">02:30 – 03:00</td>
+                <td>Roadmap, Standards &amp; Q&amp;A: Current DT standardization (ISO/IEEE), transition from Static to Live Twins, and regulatory paths for "Digital Sky" certification.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Instructor Biographies -->
+<section class="container-fluid bg-white px-0">
+  <div class="page-section container px-3 py-5 d-flex flex-column gap-4">
+
+    <div class="text-center mx-auto" style="max-width: 900px;">
+      <h3 class="section-title fs-2 fw-bold mb-2">Organizers' Biographies</h3>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Evgenii Vinogradov -->
+      <div class="col-lg-10">
+        <div class="custom-card p-4 shadow-sm d-flex flex-column flex-md-row gap-4 align-items-start">
+          <div class="flex-shrink-0 text-center">
+            <img src="{{ 'assets/images_26/people/evengii_vinogradov.webp' | relative_url }}" alt="Evgenii Vinogradov"
+              class="rounded-circle shadow"
+              style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #e2e8f0;">
+            <div class="mt-2 fw-bold text-dark small">Evgenii Vinogradov</div>
+            <div class="text-muted" style="font-size: 0.8rem;">Universitat Politècnica <br/>de Catalunya, Spain</div>
+          </div>
+          <div class="flex-grow-1 text-align-justify">
+            <p class="text-muted mb-2">
+              Evgenii Vinogradov (Senior member IEEE) is currently a Ramon y Cajal Fellow and Research Director at
+              Universitat Politècnica de Catalunya (Spain), as well as a Visiting Professor at KU Leuven (Belgium).
+              He received his Ph.D. degree from UCLouvain (Belgium) in 2017. His research focuses on 6G wireless
+              communication networks and Advanced Air Mobility (AAM) systems.
+            </p>
+            <p class="text-muted mb-2">
+              He actively participated in the SESAR (Single European Sky ATM Research) project PercEvite and a
+              bilateral project between Technology Innovation Institute (TII) and the UAE's General Civil Aviation
+              Authority, granting him a deep understanding of aviation regulators' needs and goals. Dr. Vinogradov
+              has extensive experience in knowledge dissemination, having organized multiple AAM and 6G-focused
+              workshops and delivered 8 highly attended tutorials on aerial communications for both flagship IEEE
+              conferences (including ICC, GLOBECOM, and VTC) and industry professionals.
+            </p>
+            <a href="https://www.linkedin.com/in/evgenii-genia-vinogradov-31219232/" target="_blank"
+              class="btn btn-outline-primary btn-sm rounded-pill px-3">
+              <i class="bi bi-linkedin me-1"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Debashisha Mishra -->
+      <div class="col-lg-10">
+        <div class="custom-card p-4 shadow-sm d-flex flex-column flex-md-row gap-4 align-items-start">
+          <div class="flex-shrink-0 text-center">
+            <img src="{{ 'assets/images_26/people/Debashisha-Mishra.webp' | relative_url }}" alt="Debashisha Mishra"
+              class="rounded-circle shadow"
+              style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #e2e8f0;">
+            <div class="mt-2 fw-bold text-dark small">Debashisha Mishra</div>
+            <div class="text-muted" style="font-size: 0.8rem;">Technology Innovation <br/>Institute, UAE</div>
+          </div>
+          <div class="flex-grow-1 text-align-justify">
+            <p class="text-muted mb-2">
+              Debashisha Mishra is a Senior Researcher at the Autonomous Robotics Research Center, Technology
+              Innovation Institute (TII), a leading UAE-based scientific research organization. He obtained his
+              M.Tech. degree from the Indian Institute of Technology (IIT) Hyderabad and completed his Ph.D. in
+              Computer Science at the Université de Lorraine (France).
+            </p>
+            <p class="text-muted mb-2">
+              His research interests include networked robotics, advanced air mobility, and next-generation cellular
+              networks, including 5G and beyond. His scholarly contributions have been published in areas such as
+              UAV networking, wireless communication, and autonomous mobility systems, reflecting a sustained focus
+              on communication-enabled robotic and aerial platforms.
+            </p>
+            <a href="https://www.linkedin.com/in/debashisha-mishra-967366140/" target="_blank"
+              class="btn btn-outline-primary btn-sm rounded-pill px-3">
+              <i class="bi bi-linkedin me-1"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jennifer Simonjan -->
+      <div class="col-lg-10">
+        <div class="custom-card p-4 shadow-sm d-flex flex-column flex-md-row gap-4 align-items-start">
+          <div class="flex-shrink-0 text-center">
+            <img src="{{ 'assets/images_26/people/Jennifer_Simonjan.webp' | relative_url }}" alt="Jennifer Simonjan"
+              class="rounded-circle shadow"
+              style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #e2e8f0;">
+            <div class="mt-2 fw-bold text-dark small">Jennifer Simonjan</div>
+            <div class="text-muted" style="font-size: 0.8rem;">Technology Innovation <br/>Institute, UAE</div>
+          </div>
+          <div class="flex-grow-1 text-align-justify">
+            <p class="text-muted mb-2">
+              Jennifer Simonjan is a Research Director at the Autonomous Robotics Research Center of Technology
+              Innovation Institute (TII), where she leads the Networked Robotics research group. She obtained her
+              master's degree and her Ph.D. magna cum laude in Computer Engineering at the University of Klagenfurt
+              (Austria) in 2019, with a focus on distributed and self-organizing sensor networks.
+            </p>
+            <p class="text-muted mb-2">
+              Following her doctorate, she worked as a Postdoctoral Researcher at Georgia Institute of Technology,
+              USA, conducting research in wireless communications and networking. Since joining TII in 2022, her
+              research has focused on wireless communication and networking solutions for autonomous robotic systems,
+              including applications in Advanced Air Mobility and networked multi-robot systems.
+            </p>
+            <a href="https://www.linkedin.com/in/jennifer-simonjan-37b8975b/" target="_blank"
+              class="btn btn-outline-primary btn-sm rounded-pill px-3">
+              <i class="bi bi-linkedin me-1"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enrico Natalizio -->
+      <div class="col-lg-10">
+        <div class="custom-card p-4 shadow-sm d-flex flex-column flex-md-row gap-4 align-items-start">
+          <div class="flex-shrink-0 text-center">
+            <img src="{{ 'assets/images_26/people/enrico_natalizio.webp' | relative_url }}" alt="Enrico Natalizio"
+              class="rounded-circle shadow"
+              style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #e2e8f0;">
+            <div class="mt-2 fw-bold text-dark small">Enrico Natalizio</div>
+            <div class="text-muted" style="font-size: 0.8rem;">Technology Innovation <br/>Institute, UAE</div>
+          </div>
+          <div class="flex-grow-1 text-align-justify">
+            <p class="text-muted mb-2">
+              Enrico Natalizio (Senior member IEEE) is currently Chief Researcher of the Autonomous Robotics
+              Research Center with the Technology Innovation Institute (UAE) and a Full Professor with the LORIA
+              laboratory at the Université de Lorraine (France). He obtained his master's degree magna cum laude and
+              his Ph.D. in Computer Engineering at the University of Calabria (Italy) in 2000 and 2005 respectively.
+            </p>
+            <p class="text-muted mb-2">
+              His research interests include UAV communications and networking, robot and sensor communications with
+              applications in disaster management and infrastructure monitoring, and IoT privacy and security. He is
+              an associated editor of Elsevier Vehicular Communications and Computer Networks. He has been ranked in
+              the top-2% worldwide scientists of the Stanford University's bibliometric study for the year 2024.
+            </p>
+            <a href="https://www.linkedin.com/in/enrico-natalizio-0628821/" target="_blank"
+              class="btn btn-outline-primary btn-sm rounded-pill px-3">
+              <i class="bi bi-linkedin me-1"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div style="background-color: white !important;">
+  {% include colocated-conferences.html %}
+</div>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

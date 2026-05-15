@@ -102,6 +102,8 @@ main:
         url: /tutorials/pervasive-iot/
       - title: "Designing and Assembling Smart Cyber-Physical Systems"
         url: /tutorials/smart-cps/
+      - title: "Designing the Urban Sky for Flying Cars: Digital Twin Requirements for Advanced Air Mobility"
+        url: /tutorials/aam-digital-twin/
       - title: "Digital Twin Engineering"
         url: /tutorials/digital-twin/
       - title: PhD Forum
