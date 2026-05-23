@@ -108,8 +108,8 @@ main:
         url: /tutorials/digital-twin/
       - title: PhD Forum
         header: true
-      - title: "Coming soon..."
-        text_only: true
+      - title: "PhD Forum & PhD in ICT Day"
+        url: /phd-forum/
 
   - title: Special Issues
     url: /special-issues/
