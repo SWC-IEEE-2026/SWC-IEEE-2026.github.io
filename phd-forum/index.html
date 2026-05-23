@@ -1,10 +1,9 @@
 ---
 layout: default
-title: PhD Forum & PhD in ICT Day
+title: PhD Forum
 ---
 
 <style>
-  /* Sticky sidebar behavior only on desktop viewports */
   @media (min-width: 992px) {
     .sticky-sidebar {
       position: sticky;
@@ -17,31 +16,39 @@ title: PhD Forum & PhD in ICT Day
 
 <!-- Hero Section -->
 <section class="jumbotron text-center" style="
-    background-image: url('{{ '/assets/images_26/imgs/unical_start.webp' | relative_url }}');
-    background-size: cover;
-    background-position: center 30%;
+    background: linear-gradient(135deg, #0c4a6e 0%, #0d6efd 50%, #0dcaf0 100%);
     height: 60vh;
     position: relative;
     color: white;
+    overflow: hidden;
   ">
-  <div class="hero-section">
-    <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3">
+  <!-- Decorative glow overlay -->
+  <div style="
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 40%, rgba(13,202,240,0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 80%, rgba(12,74,110,0.25) 0%, transparent 50%);
+    pointer-events: none;
+  "></div>
+  <div class="hero-section" style="background-color: transparent;">
+    <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3"
+      style="position:relative; z-index:1;">
       <div class="mb-1">
         <span class="badge rounded-pill px-3 py-2 fw-semibold"
           style="background: rgba(255,255,255,0.12); font-size: 0.85rem; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.2);">
-          Joint Event @ IEEE SWC 2026
+          PhD Forum @ IEEE SWC 2026
         </span>
       </div>
-      <h1 class="display-5 fw-bolder mt-5" style="text-shadow: 0 2px 20px rgba(0,0,0,0.4); line-height: 1.2;">
-        PhD Forum & PhD in ICT Day
+      <h1 class="display-5 fw-bolder mt-2"
+        style="text-shadow: 0 2px 20px rgba(0,0,0,0.3); line-height: 1.2; max-width: 860px;">
+        PhD Forum
       </h1>
-      <div class="d-flex flex-wrap justify-content-center gap-4 mt-2" style="opacity: 0.9;">
+      <div class="d-flex flex-wrap justify-content-center gap-4 mt-1" style="opacity: 0.9;">
         <span><i class="bi bi-geo-alt-fill me-1"></i>Rende (Cosenza), Italy</span>
         <span><i class="bi bi-calendar3 me-1"></i>September 7–11, 2026</span>
         <span><i class="bi bi-person-fill me-1"></i>Chair: Vincenzo Barbuto</span>
       </div>
       <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
-        <a class="btn btn-primary rounded-pill px-4 py-2 shadow-sm fw-bold"
+        <a class="btn btn-light rounded-pill px-4 py-2 shadow-sm fw-bold text-primary"
           href="https://conferences.sparcly.ai/author/conferences/63/entity/235/show?conference_id=63&conference_entity_id=235"
           target="_blank">
           <i class="bi bi-send-fill me-2"></i>Submit Paper
@@ -55,7 +62,7 @@ title: PhD Forum & PhD in ICT Day
   </div>
 </section>
 
-<!-- Content Section -->
+<!-- Main Content Section: Sidebar + Overview + Eligibility -->
 <section class="page-section container-fluid px-3 pt-3 pb-5 mt-2 d-flex flex-column gap-2">
   <div class="row g-5">
 
@@ -97,10 +104,10 @@ title: PhD Forum & PhD in ICT Day
 
               <div class="date-item active">
                 <div class="d-flex flex-column">
-                  <div class="d-flex justify-content-between align-items-center w-100">
-                    <span class="fw-bold text-primary">Submission Deadline</span>
-                  </div>
-                  <span class="text-dark fw-semibold">{{ site.data.swc_data.dates.phdForumDue }}</span>
+                  <span class="fw-bold text-primary">Submission Deadline</span>
+                  <span class="text-dark fw-semibold">
+                    {{ site.data.swc_data.dates.phdForumDue }}
+                  </span>
                 </div>
               </div>
 
@@ -108,7 +115,7 @@ title: PhD Forum & PhD in ICT Day
                 <div class="d-flex flex-column">
                   <span class="fw-bold text-secondary">Authors Notification</span>
                   <span class="text-muted">
-                    July 31, 2026
+                    {{ site.data.swc_data.dates.phdForumNotification }}
                   </span>
                 </div>
               </div>
@@ -147,17 +154,6 @@ title: PhD Forum & PhD in ICT Day
                   </a>
                 </div>
               </div>
-
-              <hr class="my-3" style="opacity: 0.15;" />
-
-              <div>
-                <h5 class="fw-bold text-dark mb-2">Scientific Framework</h5>
-                <p class="small text-muted mb-0 text-align-justify">
-                  Organized within the framework of the PhD Program in Information and Communication Technologies (ICT)
-                  of the Department of Computer, Modeling, Electronics and Systems Engineering (DIMES) at the University
-                  of Calabria.
-                </p>
-              </div>
             </div>
           </div>
 
@@ -170,17 +166,16 @@ title: PhD Forum & PhD in ICT Day
 
       <!-- Overview Section -->
       <div>
-        <h2 class="section-title fs-2 text-center text-lg">PhD Forum & PhD in ICT Day</h2>
+        <h2 class="section-title fs-2 text-center text-lg-start">PhD Forum</h2>
         <p class="fs-5 text-muted text-align-justify">
-          The <strong>IEEE SWC 2026 PhD Forum</strong>, held jointly with the <strong>PhD in ICT Day</strong>, provides
-          PhD students with a dedicated platform to present their ongoing research through a poster session. The Forum
-          is organized within the framework of the PhD Program in ICT of the Department of Computer, Modeling,
-          Electronics and Systems Engineering (DIMES) at the University of Calabria.
+          The <strong>IEEE SWC 2026 PhD Forum</strong> provides PhD students with a dedicated platform to present their
+          ongoing research and discuss it with leading experts from academia and industry. The Forum offers students a
+          unique opportunity to receive constructive feedback, build valuable connections, and explore future career
+          paths in the research community.
         </p>
         <p class="fs-5 text-muted text-align-justify">
-          During a dedicated poster session, PhD students will have the opportunity to discuss their research with
-          leading experts from academia and industry, receive constructive feedback, and build valuable connections
-          within the research community.
+          During a dedicated poster session, PhD students will have the opportunity to discuss their research, exchange
+          ideas, and network with congress attendees.
         </p>
       </div>
 
@@ -188,108 +183,249 @@ title: PhD Forum & PhD in ICT Day
       <div>
         <h3 class="fw-bold text-dark mb-3">Eligibility</h3>
         <p class="fs-5 text-muted text-align-justify">
-          The PhD Forum is open to PhD students enrolled in the <strong>39th, 40th, and 41st cycle</strong> of the PhD
-          in ICT program. Participants are invited to submit an extended abstract describing their research work.
+          The PhD Forum is open to <strong>all PhD students</strong> registered for the IEEE SWC 2026 conference.
+          Participants are invited to submit an extended abstract of 2 pages describing their research work.
         </p>
-      </div>
-
-      <!-- Submission Guidelines -->
-      <div>
-        <h3 class="fw-bold text-dark mb-3">Submission Guidelines</h3>
-        <p class="fs-5 text-muted text-align-justify">
-          Submissions must consist of a <strong>2-page paper</strong> formatted according to the official <a
-            href="https://www.ieee.org/conferences/publishing/templates" target="_blank"
-            class="fw-bold text-decoration-none">IEEE conference paper template</a> (double-column, 10pt font).
-        </p>
-        <p class="fs-5 text-muted text-align-justify">
-          Papers should describe the student's ongoing research and include the following key elements:
-        </p>
-
-        <!-- Use a styled track-card for topics list, matching the site style -->
-        <div class="track-card shadow-sm overflow-hidden mb-4" style="height: auto !important;">
-          <div class="track-header bg-light border-bottom p-3 d-flex align-items-center">
-            <i class="bi bi-file-earmark-richtext text-primary me-2 fs-4"></i>
-            <h5 class="mb-0 fw-bold text-dark">Required Paper Content</h5>
-          </div>
-          <div class="track-body p-4">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
-                <i class="bi bi-caret-right-fill text-primary me-2"></i>
-                <span class="text-secondary fw-medium">Motivation & Problem Statement</span>
-              </li>
-              <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
-                <i class="bi bi-caret-right-fill text-primary me-2"></i>
-                <span class="text-secondary fw-medium">Research Methodology & Approach</span>
-              </li>
-              <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
-                <i class="bi bi-caret-right-fill text-primary me-2"></i>
-                <span class="text-secondary fw-medium">Preliminary Results (if available)</span>
-              </li>
-              <li class="list-group-item bg-transparent d-flex align-items-center py-2 border-0 ps-0">
-                <i class="bi bi-caret-right-fill text-primary me-2"></i>
-                <span class="text-secondary fw-medium">Expected Key Contributions</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="alert alert-info d-flex align-items-center shadow-sm border-0 mb-4" role="alert"
-          style="border-left: 5px solid var(--bs-info) !important;">
-          <i class="bi bi-info-circle-fill fs-4 me-3 text-info"></i>
-          <div>
-            <p class="mb-0 fs-6 text-muted">
-              <strong>Submission Policy:</strong> By submitting an abstract, authors agree that at least one author will
-              register and present their poster in person at the IEEE SWC 2026 conference.
-            </p>
-          </div>
-        </div>
-
-        <!-- Submission Call to Action -->
-        <div class="mt-4 p-4 rounded-3 text-center shadow-sm"
-          style="background: linear-gradient(135deg, rgba(13, 110, 253, 0.05) 0%, rgba(13, 202, 240, 0.05) 100%); border: 1px solid rgba(13, 110, 253, 0.15);">
-          <h5 class="fw-bold text-dark mb-2">Paper Submission Portal</h5>
-          <p class="text-muted small mb-3">All papers must be uploaded via the Sparcly platform by the submission
-            deadline.</p>
-          <a class="btn btn-primary rounded-pill px-4 py-2 shadow-sm fw-bold"
-            href="https://conferences.sparcly.ai/author/conferences/63/entity/235/show?conference_id=63&conference_entity_id=235"
-            target="_blank">
-            <i class="bi bi-send-fill me-2"></i>Submit Paper via Sparcly
-          </a>
-        </div>
-      </div>
-
-      <!-- Poster Session -->
-      <div>
-        <h3 class="fw-bold text-dark mb-3">Poster Session & Awards</h3>
-        <p class="fs-5 text-muted text-align-justify">
-          Accepted papers will be presented during a dedicated poster session at the congress. A jury of experts will
-          evaluate the posters and award a <strong>Best Poster Award</strong>. Detailed formatting and dimension
-          guidelines for the posters will be provided to authors upon acceptance.
-        </p>
-      </div>
-
-      <!-- Registration & CFU -->
-      <div>
-        <h3 class="fw-bold text-dark mb-3">Registration & Academic Credits (CFU)</h3>
-        <p class="fs-5 text-muted text-align-justify">
-          Participants in the PhD Forum are eligible to register using the <strong>student registration fee</strong>.
-          This registration grants full access to all IEEE SWC 2026 events, including 4 tutorials, 6 keynotes, 6
-          co-located conferences, 10 workshops, and 5 special sessions.
-        </p>
-
-        <div class="alert alert-success d-flex align-items-center shadow-sm border-0 mt-4 mb-0" role="alert"
-          style="border-left: 5px solid var(--bs-success) !important;">
-          <i class="bi bi-award-fill fs-4 me-3 text-success"></i>
-          <div>
-            <p class="mb-0 fs-6 text-muted">
-              <strong>Academic Credits:</strong> Active participation in the PhD Forum and attendance at the related
-              conference activities grants <strong>3 CFU</strong> for PhD students of the DIMES ICT program.
-            </p>
-          </div>
-        </div>
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- Submission Guidelines Section (alternating bg) -->
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
+
+    <div class="text-center mx-auto" style="max-width: 800px;">
+      <h3 class="section-title fs-2 fw-bold mb-4">Submission Guidelines</h3>
+      <p class="fs-5 lh-lg text-muted">
+        Submit a single PDF file formatted according to the official <a
+          href="https://www.ieee.org/conferences/publishing/templates" target="_blank"
+          class="fw-bold text-decoration-none">IEEE conference paper template</a>:
+      </p>
+    </div>
+
+    <div class="row g-4 mt-2 justify-content-center">
+      <div class="col-lg-5 d-flex">
+        <div class="topic-card h-100 p-4 shadow-sm d-flex flex-column align-items-center text-center w-100">
+          <i class="bi bi-file-earmark-richtext topic-icon mb-3"></i>
+          <h4 class="fw-bold mb-2 text-dark">Extended Abstract</h4>
+          <span class="badge bg-primary rounded-pill mb-3 px-3 py-2 text-white">2 pages</span>
+          <p class="mb-0 text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+            IEEE conference format, double-column, 10pt font. Accepted papers will be presented as posters.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mx-auto mt-4" style="max-width: 750px;">
+      <p class="fs-6 text-muted mb-3">Papers should describe the student's ongoing research and include:</p>
+    </div>
+
+    <div class="row g-3 justify-content-center">
+      <div class="col-md-6 col-lg-3">
+        <div class="topic-card topic-card-horizontal h-100 shadow-sm p-3">
+          <i class="bi bi-lightbulb"></i>
+          <span class="fw-bold text-dark">Motivation & Problem</span>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="topic-card topic-card-horizontal h-100 shadow-sm p-3">
+          <i class="bi bi-diagram-3"></i>
+          <span class="fw-bold text-dark">Methodology</span>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="topic-card topic-card-horizontal h-100 shadow-sm p-3">
+          <i class="bi bi-graph-up-arrow"></i>
+          <span class="fw-bold text-dark">Preliminary Results</span>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="topic-card topic-card-horizontal h-100 shadow-sm p-3">
+          <i class="bi bi-stars"></i>
+          <span class="fw-bold text-dark">Expected Contributions</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4 mx-auto w-100">
+      <div class="alert alert-info d-flex align-items-center shadow-sm border-0" role="alert"
+        style="border-left: 5px solid var(--bs-info) !important;">
+        <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+        <div>
+          <p class="mb-0 fs-6">
+            <strong>Submission Policy:</strong> By submitting an abstract, authors agree that at least one author will
+            register and present their poster in person at the IEEE SWC 2026 conference.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submission CTA -->
+    <div class="text-center mt-3">
+      <a class="btn btn-primary rounded-pill px-5 py-3 shadow-sm fw-bold fs-6"
+        href="https://conferences.sparcly.ai/author/conferences/63/entity/235/show?conference_id=63&conference_entity_id=235"
+        target="_blank">
+        <i class="bi bi-send-fill me-2"></i>Submit Paper via Sparcly
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Poster Session & Awards (alternating bg) -->
+<section class="container-fluid d-flex flex-column gap-4">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
+
+    <h3 class="section-title fs-2 text-center">Poster Session & Awards</h3>
+    <p class="fs-5 lh-lg mb-4 text-align-justify text-muted mx-auto" style="max-width: 900px;">
+      All accepted 2-page papers will be featured in the congress program and presented as posters during a dedicated
+      session, offering students direct engagement with the SWC community.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-5">
+        <div class="custom-card p-4 h-100 d-flex align-items-center">
+          <div class="me-4">
+            <div
+              class="bg-primary-gradient text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+              style="width: 3.5rem; height: 3.5rem; font-size: 1.5rem; font-weight: bold;">
+              <i class="bi bi-easel2-fill"></i>
+            </div>
+          </div>
+          <div>
+            <h5 class="fw-bold mb-1">Poster Presentation</h5>
+            <p class="text-muted mb-0">Every accepted paper must be presented as a poster. Format guidelines will be
+              sent upon acceptance.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="custom-card p-4 h-100 d-flex align-items-center">
+          <div class="me-4">
+            <div class="text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+              style="width: 3.5rem; height: 3.5rem; font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg, #f59e0b, #eab308);">
+              <i class="bi bi-trophy-fill"></i>
+            </div>
+          </div>
+          <div>
+            <h5 class="fw-bold mb-1">Best Poster Award</h5>
+            <p class="text-muted mb-0">A panel of expert judges will evaluate all posters and award a prize to the
+              top-rated presentation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Registration (alternating bg) -->
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
+
+    <h3 class="section-title fs-2 text-center">Registration</h3>
+    <p class="fs-5 lh-lg mb-4 text-align-justify text-muted mx-auto" style="max-width: 900px;">
+      Participants in the PhD Forum register using the <strong>student registration fee</strong>. This fee grants full
+      access to all IEEE SWC 2026 events, including co-located conferences, tutorials, keynotes, workshops, and special
+      sessions.
+    </p>
+
+    <div class="row g-3 justify-content-center">
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="topic-card p-3 shadow-sm d-flex flex-column align-items-center text-center h-100">
+          <h4 class="fw-bold text-primary mb-1">4</h4>
+          <span class="fw-bold text-dark" style="font-size: 0.8rem;">Tutorials</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="topic-card p-3 shadow-sm d-flex flex-column align-items-center text-center h-100">
+          <h4 class="fw-bold text-primary mb-1">6</h4>
+          <span class="fw-bold text-dark" style="font-size: 0.8rem;">Keynotes</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="topic-card p-3 shadow-sm d-flex flex-column align-items-center text-center h-100">
+          <h4 class="fw-bold text-primary mb-1">6</h4>
+          <span class="fw-bold text-dark" style="font-size: 0.8rem;">Conferences</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="topic-card p-3 shadow-sm d-flex flex-column align-items-center text-center h-100">
+          <h4 class="fw-bold text-primary mb-1">10</h4>
+          <span class="fw-bold text-dark" style="font-size: 0.8rem;">Workshops</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="topic-card p-3 shadow-sm d-flex flex-column align-items-center text-center h-100">
+          <h4 class="fw-bold text-primary mb-1">5</h4>
+          <span class="fw-bold text-dark" style="font-size: 0.8rem;">Special Sessions</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-3">
+      <a class="btn btn-secondary-gradient rounded-pill px-5 py-2 shadow-sm fw-bold"
+        href="{{ '/registration' | relative_url }}">
+        Register for SWC 2026
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- PhD in ICT Day (UNICAL) -->
+<section class="container-fluid d-flex flex-column gap-4">
+  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
+
+    <h3 class="section-title fs-2 text-center">
+      PhD in ICT Day
+      <span class="badge rounded-pill px-3 py-2 ms-2 align-middle"
+        style="font-size: 0.55em; background: linear-gradient(135deg, #0c4a6e, #0d6efd); color: white; vertical-align: middle;">
+        <i class="bi bi-building me-1"></i>UNICAL Only
+      </span>
+    </h3>
+    <p class="fs-5 lh-lg mb-2 text-align-justify text-muted mx-auto" style="max-width: 900px;">
+      Organized jointly within the PhD Forum, the <strong>PhD in ICT Day</strong> is a dedicated track <strong>exclusively for PhD students of the University of Calabria (UNICAL)</strong>. This special session recognizes the participation of UNICAL doctoral students in the congress activities.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-5">
+        <div class="custom-card p-4 h-100 d-flex align-items-center">
+          <div class="me-4">
+            <div
+              class="bg-primary-gradient text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+              style="width: 3.5rem; height: 3.5rem; font-size: 1.5rem; font-weight: bold;">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+          </div>
+          <div>
+            <h5 class="fw-bold mb-1">Target Students</h5>
+            <p class="text-muted mb-0">Open to PhD students enrolled in the <strong>39th, 40th, and 41st cycle</strong>
+              of the PhD in ICT program at DIMES, University of Calabria.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="custom-card p-4 h-100 d-flex align-items-center">
+          <div class="me-4">
+            <div class="text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+              style="width: 3.5rem; height: 3.5rem; font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg, #198754, #20c997);">
+              <i class="bi bi-award-fill"></i>
+            </div>
+          </div>
+          <div>
+            <h5 class="fw-bold mb-1">3 CFU</h5>
+            <p class="text-muted mb-0">Active participation in the PhD Forum and attendance at the related conference
+              activities grants <strong>3 academic credits</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
