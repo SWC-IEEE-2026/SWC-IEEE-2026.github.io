@@ -44,8 +44,6 @@ main:
         url: /workshops/nextgen-xdv/
       - title: WS - PRInCePS
         url: /workshops/princeps/
-      - title: WS - RoboTwin
-        url: /workshops/robo-twin/
       - title: WS - TrustGenBOT
         url: /workshops/trust-gen-bot/
       - title: "WS - UI4Health"
