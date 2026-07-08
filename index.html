@@ -25,8 +25,8 @@ title: Home
 </section>
 
 <section class="page-section container pt-5 px-4 pb-5 mt-2 d-flex flex-column gap-3">
-  <div class="alert alert-warning alert-dismissible fade show text-center shadow-sm" role="alert">
-    <strong>Paper Submission Extended!</strong> The deadline for paper submissions has been extended to <strong>{{site.data.swc_data.dates.paperSubmission}}</strong>. Don't miss the chance to submit your work!
+  <div class="alert alert-info alert-dismissible fade show text-center shadow-sm mb-4" role="alert">
+    <strong>Authors Notification in Progress!</strong> The notification process for paper submissions is currently underway.
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   
@@ -89,22 +89,22 @@ title: Home
               </div>
             </div>
 
-            <div class="date-item">
-              <div class="fw-semibold text-danger mb-1 d-flex justify-content-between align-items-center" style="font-size: 0.9rem;">
-                <span>Paper Submission</span>
-                <span class="badge bg-danger rounded-pill shadow-sm" style="font-size: 0.65rem;">Extended</span>
+            <div class="date-item past">
+              <div class="fw-semibold mb-1" style="font-size: 0.9rem;">
+                Paper Submission
               </div>
-              <div class="text-danger fw-bold" style="font-size: 0.85rem;">
-                {{site.data.swc_data.dates.paperSubmission}}
+              <div class="fw-bold d-flex align-items-center gap-2" style="font-size: 0.85rem;">
+                {{site.data.swc_data.dates.paperSubmission}} <span class="badge-closed">Closed</span>
               </div>
             </div>
 
 
-            <div class="date-item">
-              <div class="fw-semibold text-dark mb-1" style="font-size: 0.9rem;">
-                Authors Notification
+            <div class="date-item primary">
+              <div class="fw-semibold text-primary mb-1 d-flex justify-content-between align-items-center" style="font-size: 0.9rem;">
+                <span>Authors Notification</span>
+                <span class="badge bg-primary rounded-pill shadow-sm" style="font-size: 0.65rem;">In Progress</span>
               </div>
-              <div class="text-muted" style="font-size: 0.85rem;">
+              <div class="text-primary fw-bold" style="font-size: 0.85rem;">
                 {{site.data.swc_data.dates.authorsNotification}}
               </div>
             </div>
