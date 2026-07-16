@@ -124,6 +124,10 @@ main:
         url: /travel/accommodation/
       - title: Visa and Invitation Letter
         url: /travel/visa-information
+      - title: Registration
+        url: /registration
+      - title: Camera-Ready Submission
+        url: /camera-ready
       - title: Sponsors
         url: /sponsors
         
