@@ -23,19 +23,23 @@ title: Camera-Ready Submission
       Authors of accepted papers must submit their camera-ready version, copyright form, and presenter details through
       the Sparcly platform.
     </p>
-    <a href="https://conferences.sparcly.ai/my-papers" target="_blank"
+    <a href="https://conferences.sparcly.ai/author/conferences/papers" target="_blank"
       class="btn btn-light btn-lg fw-bold px-4 py-3 shadow-sm text-primary">
       Go to My Papers <i class="bi bi-box-arrow-up-right ms-1"></i>
     </a>
   </div>
 
   <!-- Registration Prerequisite -->
-  <div class="alert alert-danger border-0 bg-danger bg-opacity-10 shadow-sm d-flex align-items-start gap-3 p-4" role="alert">
+  <div class="alert alert-danger border-0 bg-danger bg-opacity-10 shadow-sm d-flex align-items-start gap-3 p-4"
+    role="alert">
     <i class="bi bi-exclamation-octagon-fill text-danger fs-4 flex-shrink-0 mt-1"></i>
     <div>
       <h5 class="fw-bold text-danger mb-1">Author Registration Required</h5>
       <p class="mb-0">
-        In order to submit the camera-ready paper, you must have completed and <strong>paid the full Author Registration</strong>. The platform will not allow camera-ready submission until your registration payment has been confirmed. Please visit the <a href="{{ '/registration' | relative_url }}" class="fw-bold alert-link">Registration Page</a> to register first.
+        In order to submit the camera-ready paper, you must have completed and <strong>paid the full Author
+          Registration</strong>. The platform will not allow camera-ready submission until your registration payment has
+        been confirmed. Please visit the <a href="{{ '/registration' | relative_url }}"
+          class="fw-bold alert-link">Registration Page</a> to register first.
       </p>
     </div>
   </div>
@@ -111,17 +115,82 @@ title: Camera-Ready Submission
         <div
           class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 shadow-sm"
           style="width: 50px; height: 50px; font-size: 1.25rem; font-weight: bold;">4</div>
-        <div>
+        <div class="w-100">
           <h4 class="fw-bold h5 mb-2">Upload the Camera-Ready Paper</h4>
-          <p class="text-muted mb-2">
+          <p class="text-muted mb-3">
             Upload the final version of your paper in <strong>PDF format</strong>. Please ensure that your paper:
           </p>
-          <ul class="text-muted mb-0">
+          <ul class="text-muted mb-4">
             <li>Follows the IEEE conference format template</li>
             <li>Incorporates all reviewer feedback and required revisions</li>
             <li>Respects the page limits for your paper category</li>
-            <li>Includes the IEEE copyright notice on the first page</li>
+            <li>Includes the IEEE copyright notice on the <strong>bottom left of the first page</strong></li>
           </ul>
+
+          <!-- PDF eXpress Instructions -->
+          <div class="mt-4 p-4 rounded-3 border border-primary bg-primary bg-opacity-10 shadow-sm"
+            style="border-left: 5px solid #0d6efd !important;">
+            <h5 class="fw-bold text-primary h5 mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-shield-fill-check"></i>
+              IEEE PDF eXpress Verification Process
+            </h5>
+
+            <div class="alert alert-danger border-0 bg-danger bg-opacity-10 py-2 px-3 mb-3 small" role="alert">
+              <i class="bi bi-exclamation-triangle-fill me-1"></i>
+              <strong>Important:</strong> Make sure that there are no grammatical, spelling, or content errors in
+              articles prior to submitting to PDF eXpress.
+            </div>
+
+            <p class="text-dark fw-bold mb-3">
+              Go to the <a href="https://ieee-pdf-express.org" target="_blank"
+                class="fw-bold text-primary text-decoration-underline">IEEE PDF eXpress portal</a> and follow these
+              steps using Conference ID: <strong class="text-danger fw-bolder fs-5">69865X</strong>:
+            </p>
+
+            <ol class="text-dark ps-3 mb-0 d-flex flex-column gap-3">
+              <li>
+                <strong>Create an account:</strong> Sign up for a new account by entering your basic contact
+                information. You will receive an account creation email confirmation.
+              </li>
+              <li>
+                <strong>Upload files:</strong> Upload your PDF for <strong>Checking</strong> or your source file(s)
+                (such as Word or LaTeX) for <strong>Conversion</strong>. You will receive an email confirmation of file
+                receipt.
+              </li>
+              <li>
+                <strong>Compatibility check / conversion:</strong> Submitted PDFs are Checked for IEEE
+                Xplore®-compatibility; source file(s) are Converted to IEEE Xplore-compatible PDFs.
+              </li>
+              <li>
+                <strong>Verify the results:</strong>
+                <ul>
+                  <li><strong>If a PDF was submitted:</strong> You will receive an email stating that your PDF Passed or
+                    Failed the Check. If it fails, a PDF Check report is attached to the email. Go to your account and
+                    click "Understanding the PDF Check Report" for solutions.</li>
+                  <li><strong>If source files were submitted:</strong> You will receive the PDF eXpress-generated PDF as
+                    an attachment, and it will also be available through your account. Review the PDF to ensure that it
+                    views on screen and prints as you intended.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Revisions (if necessary):</strong> If revisions are needed, they may be submitted (either PDF or
+                source files) by returning to Step 2.
+              </li>
+              <li>
+                <strong>Approve and submit copyright:</strong> When you have an acceptable IEEE Xplore-compatible PDF:
+                <ul>
+                  <li>Submit the electronic copyright form by clicking the <strong>Copyright</strong> link in PDF
+                    eXpress.</li>
+                  <li>Submit the final PDF to the conference by clicking the <strong>Approve</strong> button in the PDF
+                    eXpress portal.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Submit to Sparcly:</strong> Upload this final approved PDF from IEEE PDF eXpress into the
+                Sparcly camera-ready submission page.
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
@@ -158,7 +227,8 @@ title: Camera-Ready Submission
           <div class="col-md-4">
             <div class="card shadow-sm border-0 h-100">
               <div class="card-body p-4 text-center d-flex flex-column align-items-center">
-                <div class="bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center mb-3"
+                <div
+                  class="bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center mb-3"
                   style="width: 60px; height: 60px;">
                   <i class="bi bi-calendar-check fs-4"></i>
                 </div>
@@ -173,7 +243,8 @@ title: Camera-Ready Submission
           <div class="col-md-4">
             <div class="card shadow-sm border-0 h-100">
               <div class="card-body p-4 text-center d-flex flex-column align-items-center">
-                <div class="bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center mb-3"
+                <div
+                  class="bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center mb-3"
                   style="width: 60px; height: 60px;">
                   <i class="bi bi-file-earmark-lock fs-4"></i>
                 </div>
@@ -188,7 +259,8 @@ title: Camera-Ready Submission
           <div class="col-md-4">
             <div class="card shadow-sm border-0 h-100">
               <div class="card-body p-4 text-center d-flex flex-column align-items-center">
-                <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
+                <div
+                  class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
                   style="width: 60px; height: 60px;">
                   <i class="bi bi-person-badge fs-4"></i>
                 </div>
