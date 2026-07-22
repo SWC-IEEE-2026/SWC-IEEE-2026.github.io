@@ -3,8 +3,6 @@ main:
     dropdown: true
     menu_class: dropdown-menu-glass
     items:
-      - title: SWC 2026
-        url: /swc/
       - title: ATC 2026
         url: /atc
       - title: Digital Twin 2026
@@ -13,9 +11,10 @@ main:
         url: /metaverse
       - title: ScalCom 2026
         url: /scalcom
+      - title: SWC 2026
+        url: /swc/
       - title: UIC 2026
         url: /uic
-
 
   - title: Symposia
     dropdown: true
@@ -40,10 +39,10 @@ main:
         url: /workshops/ease-6g/
       - title: "WS - IoWT"
         url: /workshops/iowt/
-      - title: WS - Secure & Trusted NextGen-XDV Mobility
-        url: /workshops/nextgen-xdv/
       - title: WS - PRInCePS
         url: /workshops/princeps/
+      - title: WS - Secure & Trusted NextGen-XDV Mobility
+        url: /workshops/nextgen-xdv/
       - title: WS - TrustGenBOT
         url: /workshops/trust-gen-bot/
       - title: "WS - UI4Health"
@@ -74,10 +73,10 @@ main:
     items:
       - title: 8 September
         header: true
-      - title: Dr. Schahram Dustdar
-        url: /keynotes/schahram-dustdar
       - title: Dr. Qingsong Wen
         url: /keynotes/qingsong-wen
+      - title: Dr. Schahram Dustdar
+        url: /keynotes/schahram-dustdar
       - title: 9 September
         header: true
       - title: Dr. Zidong Wang
@@ -88,7 +87,7 @@ main:
         url: /keynotes/vincenzo-piuri
       - title: Dr. Weisong Shi
         url: /keynotes/weisong-shi
-  
+
   - title: PhD & Tutorials
     dropdown: true
     menu_class: dropdown-menu-glass
@@ -116,20 +115,20 @@ main:
     dropdown: true
     menu_class: dropdown-menu-glass dropdown-menu-end
     items:
-      - title: Venue
-        url: /venue/unical_congress_center/
-      - title: Getting There
-        url: /travel/getting-there/
       - title: Accommodation
         url: /travel/accommodation/
-      - title: Visa and Invitation Letter
-        url: /travel/visa-information
-      - title: Registration
-        url: /registration
       - title: Camera-Ready Submission
         url: /camera-ready
+      - title: Getting There
+        url: /travel/getting-there/
+      - title: Registration
+        url: /registration
       - title: Sponsors
         url: /sponsors
-        
+      - title: Venue
+        url: /venue/unical_congress_center/
+      - title: Visa and Invitation Letter
+        url: /travel/visa-information
+
   - title: Info & Contact
     url: /contact
