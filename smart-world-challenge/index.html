@@ -1,0 +1,637 @@
+---
+layout: default
+title: IEEE Smart World Challenge
+---
+
+<style>
+  /* Cyber Dark Hero Container */
+  .hero-cyber-container {
+    background-color: #070d19;
+    background-image: 
+      radial-gradient(rgba(13, 202, 240, 0.12) 1.2px, transparent 1.2px),
+      linear-gradient(180deg, #070d19 0%, #0e1e36 60%, #132744 100%);
+    background-size: 32px 32px, 100% 100%;
+    position: relative;
+    padding-top: 5.5rem;
+    padding-bottom: 4.5rem;
+    overflow: hidden;
+    color: white;
+  }
+
+  /* Dual Ambient Glow Spotlights */
+  .hero-cyber-container::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 500px;
+    background: radial-gradient(ellipse at center, rgba(13, 202, 240, 0.22) 0%, rgba(13, 110, 253, 0.08) 50%, transparent 75%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Live Status Pill */
+  .live-status-pill {
+    background: rgba(34, 197, 94, 0.12);
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    backdrop-filter: blur(12px);
+    color: #4ade80;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 0.55rem 1.25rem;
+    box-shadow: 0 4px 16px rgba(34, 197, 94, 0.15);
+    transition: all 0.3s ease;
+  }
+
+  .live-status-pill:hover {
+    background: rgba(34, 197, 94, 0.18);
+    border-color: rgba(34, 197, 94, 0.5);
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.25);
+  }
+
+  .pulse-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #22c55e;
+    box-shadow: 0 0 12px #22c55e;
+    animation: pulseGlow 2s infinite;
+  }
+
+  @keyframes pulseGlow {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+    70% { transform: scale(1.15); box-shadow: 0 0 0 9px rgba(34, 197, 94, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+  }
+
+  /* Glassmorphic Hero Meta Chips */
+  .hero-glass-chip {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(14px);
+    color: #ffffff;
+    font-size: 0.94rem;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .hero-glass-chip:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(13, 202, 240, 0.5);
+    box-shadow: 0 8px 24px rgba(13, 202, 240, 0.25);
+    color: #ffffff;
+  }
+
+  /* Banner Frame Showcase */
+  .banner-showcase-frame {
+    position: relative;
+    z-index: 1;
+    max-width: 920px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 8px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.04) 100%);
+    box-shadow: 
+      0 25px 50px -12px rgba(0, 0, 0, 0.7),
+      0 0 40px rgba(13, 202, 240, 0.25),
+      inset 0 1px 1px rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .banner-showcase-frame:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+      0 30px 60px -12px rgba(0, 0, 0, 0.8),
+      0 0 55px rgba(13, 202, 240, 0.35);
+  }
+
+  .banner-img-element {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+  }
+
+  /* Cyber CTA Buttons */
+  .btn-cyber-primary {
+    background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+    color: #080e18 !important;
+    border: none;
+    font-weight: 700;
+    padding: 0.85rem 2.2rem;
+    border-radius: 50px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.35);
+  }
+
+  .btn-cyber-primary:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(255, 193, 7, 0.5);
+    filter: brightness(1.1);
+  }
+
+  .btn-cyber-outline {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #ffffff !important;
+    backdrop-filter: blur(10px);
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .btn-cyber-outline:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+  }
+
+  /* Single Column Content Area */
+  .content-wrapper-single {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  /* Key Metrics Bar */
+  .floating-metrics-card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    margin-top: -2.75rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  .metric-block {
+    padding: 1.35rem 1rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.07);
+  }
+
+  .metric-block:last-child {
+    border-right: none;
+  }
+
+  @media (max-width: 767.98px) {
+    .metric-block {
+      border-right: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    }
+    .metric-block:last-child {
+      border-bottom: none;
+    }
+  }
+
+  /* Section Card Blocks */
+  .info-card-block {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 1.85rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+  }
+
+  .info-card-block:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.07);
+    border-color: rgba(13, 110, 253, 0.3);
+  }
+
+  .icon-circle-lg {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  /* Timeline Stream */
+  .timeline-stream {
+    position: relative;
+    padding-left: 3.2rem;
+  }
+
+  .timeline-stream::before {
+    content: '';
+    position: absolute;
+    left: 1.25rem;
+    top: 2rem;
+    bottom: 2rem;
+    width: 3px;
+    background: linear-gradient(180deg, #0d6efd 0%, #0dcaf0 100%);
+    border-radius: 2px;
+  }
+
+  .timeline-event-node {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-event-node:last-child {
+    margin-bottom: 0;
+  }
+
+  .node-number-badge {
+    position: absolute;
+    left: -3.2rem;
+    top: 1rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 4px 14px rgba(13, 110, 253, 0.35);
+    border: 3px solid #ffffff;
+  }
+
+  /* Target Role Pills */
+  .role-tile {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    padding: 1.35rem 1rem;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  }
+
+  .role-tile:hover {
+    transform: translateY(-3px);
+    border-color: rgba(13, 110, 253, 0.35);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.07);
+  }
+
+  /* Partner Logo Cards */
+  .partner-logo-tile {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    transition: all 0.25s ease;
+  }
+
+  .partner-logo-tile:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border-color: rgba(13, 110, 253, 0.3);
+  }
+
+  .partner-logo-tile img {
+    max-height: 48px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+</style>
+
+<!-- Hero Section -->
+<section class="hero-cyber-container text-center">
+  <div class="container px-3 d-flex flex-column align-items-center gap-3" style="position: relative; z-index: 1;">
+    
+    <!-- Status Badge -->
+    <div>
+      <span class="live-status-pill rounded-pill d-inline-flex align-items-center gap-2">
+        <span class="pulse-dot"></span>
+        <span>Applications Open • 35 Selected Spots</span>
+      </span>
+    </div>
+
+    <!-- Centered Hero Title Header -->
+    <h1 class="display-4 fw-bolder text-white mt-1 mb-0" style="text-shadow: 0 4px 20px rgba(0,0,0,0.6); max-width: 900px;">
+      IEEE Smart World Challenge
+    </h1>
+
+    <p class="fs-4 text-info fw-semibold mb-2" style="max-width: 800px; text-shadow: 0 2px 10px rgba(0,0,0,0.4);">
+      International Research Hackathon @ IEEE SWC 2026
+    </p>
+
+    <!-- Official Banner Frame -->
+    <div class="banner-showcase-frame w-100 my-2">
+      <img src="{{ '/assets/images_26/imgs/smart_world_challenge_banner.webp' | relative_url }}"
+        alt="IEEE Smart World Challenge - International Research Hackathon"
+        class="banner-img-element" />
+    </div>
+
+    <!-- Tagline description -->
+    <div class="max-w-75" style="max-width: 800px;">
+      <p class="fs-5 text-white opacity-90 fw-light mb-1">
+        A collaborative design experience bringing together 35 selected international participants to tackle cutting-edge AI & Smart World research challenges.
+      </p>
+    </div>
+
+    <!-- Enhanced Glassmorphic Meta Pills -->
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-1">
+      <div class="hero-glass-chip">
+        <i class="bi bi-geo-alt-fill text-danger fs-6 me-2"></i>
+        <span>University of Calabria, Rende (CS), Italy</span>
+      </div>
+      <div class="hero-glass-chip">
+        <i class="bi bi-calendar3-event-fill text-warning fs-6 me-2"></i>
+        <span>10–11 September 2026</span>
+      </div>
+      <div class="hero-glass-chip">
+        <i class="bi bi-people-fill text-info fs-6 me-2"></i>
+        <span>35 Selected Participants</span>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-2">
+      <a class="btn btn-cyber-primary fs-5"
+        href="https://www.eventbrite.it/e/ieee-smart-world-challenge-international-research-hackathon-tickets-1994788936407?aff=IEEE"
+        target="_blank">
+        <i class="bi bi-rocket-takeoff-fill me-2"></i>Apply via Eventbrite
+      </a>
+      <a class="btn btn-cyber-outline fs-6" href="#the-challenge">
+        <i class="bi bi-arrow-down-circle me-2"></i>Explore Challenge
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Page Content Section (Single Column Layout) -->
+<section class="page-section container px-3 pb-5">
+  
+  <!-- Floating Key Metrics Quick Bar -->
+  <div class="floating-metrics-card content-wrapper-single mb-5">
+    <div class="row g-0 text-center">
+      <div class="col-6 col-md-3 metric-block">
+        <div class="fs-2 fw-bolder text-primary">35</div>
+        <div class="small text-muted fw-semibold">Selected Spots</div>
+      </div>
+      <div class="col-6 col-md-3 metric-block">
+        <div class="fs-2 fw-bolder text-info">2 Days</div>
+        <div class="small text-muted fw-semibold">Collaborative Sprint</div>
+      </div>
+      <div class="col-6 col-md-3 metric-block">
+        <div class="fs-2 fw-bolder text-success">AI & DT</div>
+        <div class="small text-muted fw-semibold">Smart Cities Focus</div>
+      </div>
+      <div class="col-6 col-md-3 metric-block">
+        <div class="fs-2 fw-bolder text-warning">IEEE</div>
+        <div class="small text-muted fw-semibold">Mentors & Experts</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-wrapper-single d-flex flex-column gap-5">
+
+    <!-- About Section -->
+    <div class="d-flex flex-column gap-3 text-center">
+      <h2 class="section-title fs-2 text-center">About the Challenge</h2>
+      <p class="fs-5 text-muted text-align-justify leading-relaxed">
+        The <strong>IEEE Smart World Challenge</strong> is an international hackathon bringing together 
+        <strong>35 selected participants</strong> to tackle a research challenge focused on 
+        <strong>AI for smart cities and next-gen technologies, including digital twins</strong>.
+      </p>
+      <p class="fs-5 text-muted text-align-justify leading-relaxed">
+        Over two days, participants will work in multidisciplinary teams, supported by academics, researchers and experts from the IEEE community, with the goal of transforming a research challenge into a concrete solution.
+      </p>
+    </div>
+
+    <!-- Why Take Part Section -->
+    <div class="d-flex flex-column gap-3 text-center">
+      <h2 class="section-title fs-2 text-center">Why Take Part</h2>
+      <p class="fs-5 text-muted text-align-justify">
+        The Smart World Challenge offers the opportunity to experience the IEEE Smart World Congress from an active perspective, contributing to a collaborative design experience that brings together research, technology and expertise from different backgrounds.
+      </p>
+
+      <div class="row g-4 mt-1 text-start">
+        <div class="col-md-6">
+          <div class="info-card-block h-100 d-flex flex-column gap-3">
+            <div class="icon-circle-lg bg-primary bg-opacity-10 text-primary">
+              <i class="bi bi-globe2"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold text-dark mb-1">Multidisciplinary Teams</h5>
+              <p class="text-muted small m-0">Collaborating in multidisciplinary, international teams with complementary skills.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="info-card-block h-100 d-flex flex-column gap-3">
+            <div class="icon-circle-lg bg-info bg-opacity-10 text-info">
+              <i class="bi bi-cpu-fill"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold text-dark mb-1">AI & Digital Twins</h5>
+              <p class="text-muted small m-0">Working on a research challenge focused on AI for smart cities and next-gen technologies, including digital twins.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="info-card-block h-100 d-flex flex-column gap-3">
+            <div class="icon-circle-lg bg-success bg-opacity-10 text-success">
+              <i class="bi bi-lightbulb-fill"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold text-dark mb-1">Experimental Environment</h5>
+              <p class="text-muted small m-0">Developing a project in a collaborative and experimental environment supported by IEEE experts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="info-card-block h-100 d-flex flex-column gap-3">
+            <div class="icon-circle-lg bg-warning bg-opacity-10 text-dark">
+              <i class="bi bi-award-fill"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold text-dark mb-1">Final Presentation</h5>
+              <p class="text-muted small m-0">Presenting your solution during the event's final session to an international panel of experts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How It Works Section -->
+    <div class="d-flex flex-column gap-3 text-center">
+      <h2 class="section-title fs-2 text-center">How It Works</h2>
+      
+      <div class="timeline-stream mt-2 text-start">
+        
+        <div class="timeline-event-node">
+          <div class="node-number-badge">1</div>
+          <div class="info-card-block">
+            <h5 class="fw-bold text-dark mb-2">Challenge Launch & Team Formation</h5>
+            <p class="text-muted m-0">
+              The IEEE Smart World Challenge opens with the presentation of the challenge and the formation of multidisciplinary teams.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-event-node">
+          <div class="node-number-badge">2</div>
+          <div class="info-card-block">
+            <h5 class="fw-bold text-dark mb-2">2-Day Collaborative Design Sprint</h5>
+            <p class="text-muted m-0">
+              From that point on, participants will work collaboratively over two days, supported throughout the event by mentors and experts.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-event-node">
+          <div class="node-number-badge">3</div>
+          <div class="info-card-block">
+            <h5 class="fw-bold text-dark mb-2">Final Showcase & Panel Pitch</h5>
+            <p class="text-muted m-0">
+              The programme concludes with the presentation of the proposed solutions to an international panel of researchers and professionals.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Who Can Take Part Section -->
+    <div class="d-flex flex-column gap-3 text-center">
+      <h2 class="section-title fs-2 text-center">Who Can Take Part</h2>
+      <p class="fs-5 text-muted">
+        The IEEE Smart World Challenge is open to <strong>35 selected participants</strong>. Applications are open to:
+      </p>
+
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <div class="role-tile text-center h-100 d-flex flex-column align-items-center justify-content-center gap-2">
+            <i class="bi bi-mortarboard-fill fs-2 text-primary"></i>
+            <span class="fw-bold text-dark">Researchers</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="role-tile text-center h-100 d-flex flex-column align-items-center justify-content-center gap-2">
+            <i class="bi bi-book-half fs-2 text-info"></i>
+            <span class="fw-bold text-dark">PhD Students</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="role-tile text-center h-100 d-flex flex-column align-items-center justify-content-center gap-2">
+            <i class="bi bi-briefcase-fill fs-2 text-success"></i>
+            <span class="fw-bold text-dark">Professionals</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="role-tile text-center h-100 d-flex flex-column align-items-center justify-content-center gap-2">
+            <i class="bi bi-rocket-takeoff-fill fs-2 text-warning"></i>
+            <span class="fw-bold text-dark">Innovators</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info border-0 shadow-sm d-flex align-items-center gap-3 mt-2 text-start" style="background: rgba(13, 202, 240, 0.08); border-left: 4px solid #0dcaf0 !important;">
+        <i class="bi bi-info-circle-fill text-info fs-4 flex-shrink-0"></i>
+        <span class="small text-dark">
+          Applications will be evaluated with the aim of building multidisciplinary teams with complementary skills and interdisciplinary perspectives.
+        </span>
+      </div>
+    </div>
+
+    <!-- The Challenge Section -->
+    <div id="the-challenge" class="d-flex flex-column gap-3 pt-2 text-center">
+      <h2 class="section-title fs-2 text-center">The Challenge</h2>
+      <div class="info-card-block p-4 p-md-5 bg-light border-0 shadow-sm text-start" style="border-radius: 18px;">
+        <h4 class="fw-bold text-dark mb-3">AI for Smart Cities & Next-Gen Technologies (including Digital Twins)</h4>
+        <p class="fs-5 text-muted text-align-justify leading-relaxed mb-4">
+          The challenge will focus on AI for Smart Cities and Next-Gen Technologies, including Digital Twins; an area exploring how artificial intelligence can drive smarter, more adaptive and responsive urban systems and services. Participants will be invited to design innovative solutions that explore how AI-driven technologies, including digital twins, can support smarter, more adaptive and intelligent systems in real-world scenarios.
+        </p>
+        <div class="p-3.5 bg-white rounded-3 border border-primary border-opacity-25 d-flex align-items-center gap-3">
+          <i class="bi bi-lock-fill text-primary fs-4 flex-shrink-0"></i>
+          <span class="fw-medium text-dark">
+            The detailed challenge statement will be presented at the opening of the event.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Organizers & Supporting Entities Section -->
+    <div class="d-flex flex-column gap-3 pt-2 text-center">
+      <h2 class="section-title fs-2 text-center">Organizers & Partners</h2>
+      
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="partner-logo-tile" title="IEEE">
+            <img src="{{ '/assets/images/ieee mb black png.png' | relative_url }}" alt="IEEE Logo" />
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="partner-logo-tile" title="IEEE Italy Section">
+            <img src="{{ '/assets/images_26/sponsor/IEEE_Italy_logo_small.webp' | relative_url }}" alt="IEEE Italy Section" />
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="partner-logo-tile" title="IEEE Computational Intelligence Society">
+            <img src="{{ '/assets/images_26/sponsor/cis.webp' | relative_url }}" alt="IEEE CIS" />
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="partner-logo-tile" title="IEEE CIS Italy Chapter">
+            <img src="{{ '/assets/images_26/sponsor/icis.webp' | relative_url }}" alt="IEEE CIS Italy Chapter" />
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="partner-logo-tile" title="IEEE SMC Society">
+            <img src="{{ '/assets/images_26/sponsor/smc.webp' | relative_url }}" alt="IEEE SMC" />
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="partner-logo-tile" title="IEEE Internet of Things">
+            <img src="{{ '/assets/images_26/sponsor/ieee_technical_community.webp' | relative_url }}" alt="IEEE IoT" />
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="partner-logo-tile" title="IEEE Student Branch University of Calabria">
+            <img src="{{ '/assets/images_26/sponsor/STB_universita_della_calabria_logo.webp' | relative_url }}" alt="IEEE Unical SB" />
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="partner-logo-tile" title="Università della Calabria">
+            <img src="{{ '/assets/images_26/sponsor/unical-2.webp' | relative_url }}" alt="Università della Calabria" />
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="partner-logo-tile" title="DIMES - Università della Calabria">
+            <img src="{{ '/assets/images_26/sponsor/dimes.svg' | relative_url }}" alt="DIMES" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Registration CTA Banner -->
+    <div class="p-4 p-md-5 text-center text-white rounded-4 shadow-lg my-3" style="background: linear-gradient(135deg, #070d19 0%, #132744 100%);">
+      <h3 class="display-6 fw-bold mb-3 text-white">Apply for the Challenge</h3>
+      <p class="fs-5 opacity-90 max-w-75 mx-auto mb-4" style="max-width: 650px;">
+        To apply, complete the Eventbrite application form. Applications are evaluated to select 35 multidisciplinary participants.
+      </p>
+      <a class="btn btn-cyber-primary fs-5"
+        href="https://www.eventbrite.it/e/ieee-smart-world-challenge-international-research-hackathon-tickets-1994788936407?aff=IEEE"
+        target="_blank">
+        <i class="bi bi-rocket-takeoff-fill me-2"></i>Complete Application Form
+      </a>
+    </div>
+
+  </div>
+</section>

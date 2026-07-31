@@ -311,6 +311,10 @@ h5 {
   border-left-color: #0d6efd;
 }
 
+.date-item.urgent {
+  border-left-color: #dc3545 !important;
+}
+
 .date-item::before {
   content: '';
   position: absolute;
@@ -331,6 +335,11 @@ h5 {
 .date-item.primary::before {
   border-color: #0d6efd;
   background: #0d6efd;
+}
+
+.date-item.urgent::before {
+  border-color: #dc3545 !important;
+  background: #dc3545 !important;
 }
 
 /* Past / Closed deadline */

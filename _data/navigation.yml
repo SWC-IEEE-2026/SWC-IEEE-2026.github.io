@@ -88,11 +88,19 @@ main:
       - title: Dr. Weisong Shi
         url: /keynotes/weisong-shi
 
-  - title: PhD & Tutorials
+  - title: Events
     dropdown: true
     menu_class: dropdown-menu-glass
     link_class: text-wrap
     items:
+      - title: Smart World Challenge
+        header: true
+      - title: "IEEE Smart World Challenge (Hackathon)"
+        url: /smart-world-challenge/
+      - title: PhD Forum
+        header: true
+      - title: "PhD Forum"
+        url: /phd-forum/
       - title: Tutorials
         header: true
       - title: "Beyond Connected Things: New Paradigms for the Pervasive IoT"
@@ -103,10 +111,6 @@ main:
         url: /tutorials/aam-digital-twin/
       - title: "Digital Twin Engineering"
         url: /tutorials/digital-twin/
-      - title: PhD Forum
-        header: true
-      - title: "PhD Forum"
-        url: /phd-forum/
 
   - title: Special Issues
     url: /special-issues/

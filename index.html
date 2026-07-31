@@ -117,11 +117,11 @@ title: Home
               </div>
             </div> -->
 
-            <div class="date-item">
-              <div class="fw-semibold text-dark mb-1" style="font-size: 0.9rem;">
+            <div class="date-item urgent">
+              <div class="fw-bold text-danger mb-1" style="font-size: 0.9rem;">
                 Camera-ready Submission
               </div>
-              <div class="text-muted" style="font-size: 0.85rem;">
+              <div class="text-danger fw-bold" style="font-size: 0.85rem;">
                 {{site.data.swc_data.dates.cameraReadyDue}}
               </div>
             </div>
@@ -350,6 +350,46 @@ title: Home
       </div>
     </div>
 
+</section>
+
+<!-- Featured Event: IEEE Smart World Challenge (Hackathon) -->
+<section class="container-fluid py-5" style="background: linear-gradient(135deg, #070d19 0%, #0e1e36 50%, #132744 100%); color: white;">
+  <div class="page-section container px-3">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6 text-center text-lg-start">
+        <span class="badge rounded-pill bg-warning text-dark px-3 py-2 fw-bold mb-2">
+          <i class="bi bi-fire me-1"></i> International Research Hackathon
+        </span>
+        <h2 class="display-6 fw-bold text-white mb-3">
+          IEEE Smart World Challenge
+        </h2>
+        <p class="fs-5 text-light opacity-90 mb-3">
+          An international 2-day hackathon bringing together 35 selected participants to solve cutting-edge AI for Smart Cities and Next-Gen Technologies (including Digital Twins).
+        </p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+          <span class="small text-white-50"><i class="bi bi-geo-alt-fill text-info me-1"></i>University of Calabria, Italy</span>
+          <span class="small text-white-50"><i class="bi bi-calendar3 text-info me-1"></i>10–11 September 2026</span>
+          <span class="small text-white-50"><i class="bi bi-people-fill text-info me-1"></i>35 Selected Spots</span>
+        </div>
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+          <a href="{{ '/smart-world-challenge/' | relative_url }}" class="btn btn-warning rounded-pill px-4 py-2.5 fw-bold text-dark shadow-sm">
+            <i class="bi bi-cpu-fill me-2"></i>Explore Challenge & Apply
+          </a>
+          <a href="https://www.eventbrite.it/e/ieee-smart-world-challenge-international-research-hackathon-tickets-1994788936407?aff=IEEE" target="_blank" class="btn btn-outline-light rounded-pill px-4 py-2.5 fw-bold">
+            <i class="bi bi-ticket-perforated-fill me-2"></i>Apply via Eventbrite
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <div class="p-2 rounded-4 shadow-lg" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+          <a href="{{ '/smart-world-challenge/' | relative_url }}">
+            <img src="{{ '/assets/images_26/imgs/smart_world_challenge_banner.webp' | relative_url }}" 
+                 alt="IEEE Smart World Challenge Banner" 
+                 class="img-fluid rounded-3 shadow" />
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

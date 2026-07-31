@@ -1,6 +1,14 @@
-<nav class="navbar navbar-expand-xl navbar-glass px-sm-3 px-2 fixed-top"
-  style="padding-top: 0.8rem !important; padding-bottom: 0.8rem !important">
-  <div class="container-fluid navbar-content p-0">
+<nav class="navbar navbar-expand-xl navbar-glass px-sm-3 px-2 fixed-top d-flex flex-column p-0"
+  style="padding: 0 !important;">
+  
+  <!-- Site-wide Camera-Ready Deadline Alert Bar -->
+  <div class="w-100 bg-warning text-dark py-1 px-3 text-center fw-bold small border-bottom shadow-sm d-flex align-items-center justify-content-center gap-2 flex-wrap" style="font-size: 0.84rem; letter-spacing: 0.2px;">
+    <span class="badge bg-danger text-white text-uppercase font-monospace px-2 py-0.5"><i class="bi bi-exclamation-circle-fill me-1"></i>Deadline Alert</span>
+    <span>Camera-Ready Submission Deadline: <strong>July 31, 2026</strong></span>
+    <a href="{{ '/camera-ready' | relative_url }}" class="btn btn-dark btn-sm rounded-pill px-3 py-0 fw-semibold text-white ms-1" style="font-size: 0.78rem;">Submit Paper &rarr;</a>
+  </div>
+
+  <div class="container-fluid navbar-content px-sm-3 px-2 py-2 w-100">
     <a class="navbar-brand d-flex flex-row align-items-center gap-2" href="{{ '/' | relative_url }}"><img
         src="{{ '/assets/images/ieee mb white png.png' | relative_url }}" height="22px" />
 
