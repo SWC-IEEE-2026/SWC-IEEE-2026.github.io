@@ -1,0 +1,35 @@
+# Women in the Smart World Symposium 2026 (SmartWomen) - session pages.
+# Single source of truth for the symposium hero buttons, the overview cards,
+# the step navigation bar (_includes/wswf-nav.html) and the prev/next pager
+# (_includes/wswf-pager.html). Order here is the order shown everywhere.
+- key: welcome
+  step: Welcome
+  title: Welcome Message
+  short: Welcome
+  url: /symposia/wswf/welcome/
+  icon: bi-emoji-smile
+  description: Words of welcome and an introduction to Women in the Smart World.
+
+- key: keynote
+  step: Session 1
+  title: Keynote Address
+  short: "Session 1: Keynote Address"
+  url: /symposia/wswf/keynote/
+  icon: bi-mic-fill
+  description: Prof. Sandra Savaglio, University of Calabria.
+
+- key: presentations
+  step: Session 2
+  title: Presentations and Posters
+  short: "Session 2: Presentations and Posters"
+  url: /symposia/wswf/presentations/
+  icon: bi-easel-fill
+  description: Accepted papers and poster presentations.
+
+- key: panel
+  step: Session 3
+  title: Panel Discussion
+  short: "Session 3: Panel Discussion"
+  url: /symposia/wswf/panel/
+  icon: bi-people-fill
+  description: "Converging Perspectives: from delivery to conversation."

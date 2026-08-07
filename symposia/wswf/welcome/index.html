@@ -1,0 +1,104 @@
+---
+layout: default
+title: SmartWomen 2026 - Welcome Message
+---
+
+<!-- Hero Section -->
+<section class="jumbotron text-center" style="
+    background: linear-gradient(rgba(60,0,80,0.40), rgba(10,20,80,0.50)),
+                url('/assets/images_26/imgs/WSW Banner Image.webp') center/cover no-repeat;
+    min-height: 50vh !important;
+    position: relative;
+    color: white;
+  ">
+    <div class="hero-section" style="min-height: 50vh !important">
+        <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3">
+            <h5 class="fw-light mt-5 mb-0">Women in the Smart World Symposium 2026</h5>
+            <h1 class="display-5 fw-bolder">Welcome Message</h1>
+            <div class="keynote-meta-minimal mb-0">
+                <span><i class="fas fa-calendar-alt"></i>September 11, 2026</span>
+                <span><i class="fas fa-map-marker-alt"></i>University of Calabria – Rende, Italy</span>
+                <span><i class="fas fa-clock"></i>Room and time TBA</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include wswf-nav.html active="welcome" %}
+
+<section class="page-section container py-5 mt-4">
+    <div class="text-reading-width">
+        <h2 class="section-title text-center mb-4" style="padding-bottom: 0;">Words of Welcome</h2>
+
+        <h3 class="abstract-title-large">
+            Introducing Women in the Smart World
+        </h3>
+        <p class="text-center text-muted mb-5">
+            Dr. Runhe Huang, Hosei University, Deputy Director of Hosei Library, Japan
+        </p>
+
+        <p class="abstract-text text-align-justify">
+            Launched in 2024 by founding chairs Prof. Runhe Huang (Hosei University, Japan) and Prof. Zhi Jin (Peking
+            University, China), the Women in the Smart World Forum was created to recognize and strengthen the
+            leadership of women advancing artificial intelligence, the Internet of Things, and smart technologies.
+            Following two successful gatherings, the first in Fiji and then in Canada, we are proud to continue this
+            global movement at the Third Women in the Smart World Symposium, held in conjunction with the 2026 IEEE
+            Smart World Congress at the University of Calabria in Rende, Italy.
+        </p>
+        <p class="abstract-text text-align-justify">
+            Aligned with the Congress theme, "Convergence of Minds: Forging Human-AI Partnerships Across Disciplines,"
+            this Symposium envisions a future where technological innovation is guided by human values and is enriched
+            by diverse and collaborative perspectives.
+        </p>
+        <p class="abstract-text text-align-justify">
+            The Symposium will bring together accomplished researchers, innovators, industry leaders, policymakers, and
+            emerging scholars to exchange ideas, inspire collaboration, and challenge conventional thinking about the
+            future of intelligent systems. We invite participants to explore how women are helping to shape a Smart
+            World through the keynote address, paper and poster presentations, and dialogue, with panel discussions
+            during this Symposium.
+        </p>
+        <p class="abstract-text text-align-justify">
+            We hope this Symposium will be defined by showing how a Smart World can be formed by building inclusive
+            relationships and collaborations, and as such, this Symposium will serve as a call to action to ensure that
+            the evolution of the next generation of Smart World will reflect diverse and shared values of a global
+            community.
+        </p>
+    </div>
+</section>
+
+<section class="page-section container py-4">
+    <div class="glass-card p-4">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-4 text-center">
+                <div class="position-relative d-inline-block">
+                    <img src="{{ '/assets/images_26/people/runhe_huang.webp' | relative_url }}" alt="Dr. Runhe Huang"
+                        class="circle-img shadow-lg" style="width: 180px; height: 180px; border-width: 6px;" />
+                    <div class="position-absolute bottom-0 start-50 translate-middle-x bg-primary text-white px-2 py-1 rounded-pill shadow"
+                        style="width: max-content; font-size: 0.85rem;">
+                        Words of Welcome
+                    </div>
+                </div>
+                <h4 class="mt-3 mb-1">Dr. Runhe Huang</h4>
+                <h6 class="text-muted small"><i>Hosei University, Deputy Director of Hosei Library, Japan</i></h6>
+            </div>
+            <div class="col-md-8 px-md-4">
+                <h3 class="section-title text-center mb-3">Biography</h3>
+                <p class="text-align-justify" style="line-height: 1.6;">
+                    Runhe Huang earned her Ph.D. in Computer Science and Mathematics in the UK in 1993. After seven
+                    years at the University of Aizu, she joined Hosei University, Japan, in 2000. Becoming a full
+                    professor in 2003, she has led the Laboratory of Artificial Intelligence. She chaired the Computer
+                    Science Department from 2008 to 2010 and served as chair and vice-chair for the IEEE Computational
+                    Intelligence Society's Smart World Technical Committee from 2019 to 2022.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include wswf-pager.html active="welcome" %}
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+    {% include colocated-conferences.html %}
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

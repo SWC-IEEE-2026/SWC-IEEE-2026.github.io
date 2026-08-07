@@ -16,9 +16,14 @@ title: Camera-Ready Submission
 
 <section class="page-section container px-3 pb-5 d-flex flex-column gap-5">
 
+  <div class="alert alert-warning alert-dismissible fade show text-center shadow-sm mb-4" role="alert">
+    <strong>Camera-Ready Submission Deadline Has Passed.</strong> Registrations are still open! Please visit the <a href="{{ '/registration' | relative_url }}" class="alert-link">Registration Page</a> to register.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
   <!-- Important Notice -->
   <div class="registration-banner text-center" role="alert">
-    <h3 class="mb-3 fw-bold">Camera-Ready Deadline: {{site.data.swc_data.dates.cameraReadyDue}}</h3>
+    <h3 class="mb-3 fw-bold">Camera-Ready Deadline: {{site.data.swc_data.dates.cameraReadyDue}} <span class="badge bg-light text-danger ms-2 fs-6 align-middle">Deadline Passed</span></h3>
     <p class="mb-4 fs-5 opacity-90">
       Authors of accepted papers must submit their camera-ready version, copyright form, and presenter details through
       the Sparcly platform.

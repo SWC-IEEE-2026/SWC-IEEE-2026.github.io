@@ -1,0 +1,91 @@
+---
+layout: default
+title: SmartWomen 2026 - Session 1 - Keynote Address
+---
+
+<!-- Hero Section -->
+<section class="jumbotron text-center" style="
+    background: linear-gradient(rgba(60,0,80,0.40), rgba(10,20,80,0.50)),
+                url('/assets/images_26/imgs/WSW Banner Image.webp') center/cover no-repeat;
+    min-height: 55vh !important;
+    position: relative;
+    color: white;
+  ">
+    <div class="hero-section" style="min-height: 55vh !important">
+        <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3">
+            <div class="keynote-badge mt-5">Session 1 &middot; Keynote Address</div>
+            <h1 class="display-6 fw-bolder" style="line-height: 1.2;">
+                Exploring the Universe in a Male-Dominated Environment: Enabling a More Inclusive Future
+            </h1>
+            <h3>Prof. Sandra Savaglio</h3>
+            <div class="keynote-meta-minimal mb-0">
+                <span><i class="fas fa-calendar-alt"></i>September 11, 2026</span>
+                <span><i class="fas fa-map-marker-alt"></i>University of Calabria – Rende, Italy</span>
+                <span><i class="fas fa-clock"></i>Room and time TBA</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include wswf-nav.html active="keynote" %}
+
+<section id="abstract" class="page-section container py-5 mt-4">
+    <div class="text-reading-width">
+        <h2 class="section-title text-center mb-5" style="padding-bottom: 0;">Abstract</h2>
+
+        <p class="abstract-text text-align-justify">
+            Astrophysics is a highly competitive and truly global discipline, where the most ambitious achievements are
+            possible only through international collaboration and cutting-edge research infrastructures. Building a
+            career as a woman in such a traditionally male-dominated environment is far from easy. Drawing on my
+            experience across Europe and the United States, I will share a personal perspective, including some
+            unexpected and encouraging experiences along the way. The key lesson I have learned is that resilience and
+            inclusion are essential to building a better future for all.
+        </p>
+    </div>
+</section>
+
+<section class="page-section container py-4">
+    <div class="glass-card p-4">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-4 text-center">
+                <div class="position-relative d-inline-block">
+                    <img src="{{ '/assets/images_26/people/sandra_savaglio.webp' | relative_url }}"
+                        alt="Prof. Sandra Savaglio" class="circle-img shadow-lg"
+                        style="width: 180px; height: 180px; border-width: 6px;" />
+                    <div class="position-absolute bottom-0 start-50 translate-middle-x bg-primary text-white px-2 py-1 rounded-pill shadow"
+                        style="width: max-content; font-size: 0.85rem;">
+                        Keynote Speaker
+                    </div>
+                </div>
+                <h4 class="mt-3 mb-1">Prof. Sandra Savaglio</h4>
+                <h6 class="text-muted small"><i>Professor, Astrophysics, Cosmology, and Space Science</i></h6>
+                <h6 class="text-muted small"><i>University of Calabria, Rende, Italy</i></h6>
+            </div>
+            <div class="col-md-8 px-md-4">
+                <h3 class="section-title text-center mb-3">Biography</h3>
+                <p class="text-align-justify" style="line-height: 1.6;">
+                    Prof. Sandra Savaglio is a multiple international award-winning Italian astrophysicist and
+                    professor whose research explores the evolution of galaxies, the young universe, and gamma-ray
+                    bursts. She has held research positions at leading international institutions such as the Space
+                    Telescope Science Institute and Johns Hopkins University, Baltimore and Germany (European Southern
+                    Observatory and Max-Planck Institute for Extraterrestrial Physics, Munich). She is recognized for
+                    advancing our understanding of galaxy formation through observations with some of the world's most
+                    powerful telescopes. She was featured on the cover of Time magazine in 2004. Beyond her scientific
+                    contributions, she is a strong advocate for increasing the visibility and participation of women in
+                    science, inspiring future generations through research, mentorship, and public engagement. Prof.
+                    Savaglio has served on Councils, such as the Scientific Council of the National Institute of
+                    Astrophysics. Since 2024, she is a member of the Scientific Technical Council of the Italian Space
+                    Agency.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include wswf-pager.html active="keynote" %}
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+    {% include colocated-conferences.html %}
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

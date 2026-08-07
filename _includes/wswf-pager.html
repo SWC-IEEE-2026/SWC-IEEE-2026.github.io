@@ -1,0 +1,42 @@
+{% comment %}
+  Previous / next pager for the SmartWomen 2026 symposium pages.
+  Usage: {% include wswf-pager.html active="keynote" %}
+  Order comes from _data/wswf_sessions.yml. Before the first session and after
+  the last one the pager falls back to the symposium home page.
+{% endcomment %}
+
+{% assign sessions = site.data.wswf_sessions %}
+{% assign current = 0 %}
+{% for session in sessions %}
+{% if session.key == include.active %}{% assign current = forloop.index0 %}{% endif %}
+{% endfor %}
+{% assign prev_index = current | minus: 1 %}
+{% assign next_index = current | plus: 1 %}
+{% assign prev = sessions[prev_index] %}
+{% assign next = sessions[next_index] %}
+
+<section class="page-section container py-5">
+  <div class="d-flex flex-wrap justify-content-center gap-3">
+
+    {% if current > 0 %}
+    <a class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold" href="{{ prev.url | relative_url }}">
+      <i class="bi bi-arrow-left me-2"></i>{{ prev.short }}
+    </a>
+    {% else %}
+    <a class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold" href="{{ '/symposia/wswf/' | relative_url }}">
+      <i class="bi bi-arrow-left me-2"></i>Symposium Home
+    </a>
+    {% endif %}
+
+    {% if next %}
+    <a class="btn btn-primary rounded-pill px-4 py-2 fw-bold" href="{{ next.url | relative_url }}">
+      {{ next.short }}<i class="bi bi-arrow-right ms-2"></i>
+    </a>
+    {% else %}
+    <a class="btn btn-primary rounded-pill px-4 py-2 fw-bold" href="{{ '/symposia/wswf/' | relative_url }}">
+      Symposium Home<i class="bi bi-arrow-right ms-2"></i>
+    </a>
+    {% endif %}
+
+  </div>
+</section>

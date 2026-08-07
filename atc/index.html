@@ -94,10 +94,13 @@ title: IEEE ATC 2026
                 </div>
               </div>
 
-              <div class="date-item urgent">
+              <div class="date-item past">
                 <div class="d-flex flex-column">
-                  <span class="fw-bold text-danger">Camera-ready</span>
-                  <span class="text-danger fw-bold">{{site.data.swc_data.dates.cameraReadyDue}}</span>
+                  <span class="fw-bold">Camera-ready</span>
+                  <div class="fw-bold text-muted d-flex align-items-center gap-2">
+                    {{site.data.swc_data.dates.cameraReadyDue}}
+                    <span class="badge-closed">Closed</span>
+                  </div>
                 </div>
               </div>
 
@@ -251,7 +254,7 @@ title: IEEE ATC 2026
     </div>
     <div class="col-lg-8 d-flex flex-column gap-4">
       <div class="alert alert-success alert-dismissible fade show text-center shadow-sm mb-4" role="alert">
-        <strong>Registration & Camera-Ready Submission Now Open!</strong> <a href="{{ '/registration' | relative_url }}" class="alert-link">Register</a> and <a href="{{ '/camera-ready' | relative_url }}" class="alert-link">submit your camera-ready paper</a>.
+        <strong>Registration is Still Open!</strong> Please visit the <a href="{{ '/registration' | relative_url }}" class="alert-link">Registration Page</a> to register.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
       <div>

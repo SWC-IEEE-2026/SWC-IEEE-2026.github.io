@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Women in the Smart World Forum 2026
+title: Women in the Smart World Symposium 2026
 ---
 
 <!-- Hero Section -->
@@ -14,24 +14,29 @@ title: Women in the Smart World Forum 2026
     <div class="hero-section" style="min-height: 60vh !important">
         <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3">
             <h1 class="display-5 fw-bolder mt-5">
-                Women in the Smart World Forum 2026 (SmartWomen 2026)
+                Women in the Smart World Symposium 2026 (SmartWomen 2026)
             </h1>
             <div>
+                <h5 class="fw-light mb-3">A part of the IEEE Smart World Congress</h5>
                 <h3>University of Calabria – Rende, Italy</h3>
-                <h3 class="">{{site.data.swc_data.dates.conferenceDates}}</h3>
+                <h3 class="">September 11, 2026</h3>
             </div>
             <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
                 <a class="btn btn-primary rounded-pill px-4 py-2 shadow-sm fw-bold"
-                    href="https://conferences.sparcly.ai/SP/SWC2026" target="_blank">
-                    <i class="bi bi-send-fill me-2"></i>Submit Paper
+                    href="{{ '/symposia/wswf/welcome/' | relative_url }}">
+                    <i class="bi bi-compass me-2"></i>Explore the Symposium
                 </a>
-                <a class="btn btn-pdf rounded-pill px-4 py-2 shadow-sm fw-bold" href="https://drive.google.com/file/d/1vJCV9TH2qoz6fWtVfcUjnishnTT5vFi1/view?usp=sharing" target="_blank">
+                <a class="btn btn-pdf rounded-pill px-4 py-2 shadow-sm fw-bold"
+                    href="https://drive.google.com/file/d/1vJCV9TH2qoz6fWtVfcUjnishnTT5vFi1/view?usp=sharing"
+                    target="_blank">
                     <i class="bi bi-file-earmark-pdf-fill me-2"></i>Download CFP Flyer
                 </a>
             </div>
         </div>
     </div>
 </section>
+
+{% include wswf-nav.html %}
 
 <section class="page-section container-fluid px-3 pt-3 pb-5 mt-2 d-flex flex-column gap-2">
     <div class="row g-5">
@@ -43,7 +48,7 @@ title: Women in the Smart World Forum 2026
                 <div class="px-4 pt-4 pb-3" style="background: #ffffff;">
                     <h4 class="fw-semibold mb-3 text-dark d-flex align-items-center"
                         style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; color: #6c757d;">
-                        <span>Forum Info</span>
+                        <span>Symposium Info</span>
                     </h4>
 
                     <ul class="nav nav-pills nav-fill nav-pills-minimal gap-1" id="sidebarTabs-wswf" role="tablist"
@@ -99,11 +104,13 @@ title: Women in the Smart World Forum 2026
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="date-item">
+                                    <div class="date-item past">
                                         <div class="d-flex flex-column">
-                                            <span class="fw-bold text-secondary"
-                                                style="font-size: 0.85rem;">Camera-ready</span>
-                                            <span class="text-muted" style="font-size: 0.85rem;">July 31, 2026</span>
+                                            <span class="fw-bold" style="font-size: 0.85rem;">Camera-ready</span>
+                                            <div class="fw-bold text-muted d-flex align-items-center gap-2" style="font-size: 0.85rem;">
+                                                July 31, 2026
+                                                <span class="badge-closed">Closed</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -138,11 +145,13 @@ title: Women in the Smart World Forum 2026
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="date-item">
+                                    <div class="date-item past">
                                         <div class="d-flex flex-column">
-                                            <span class="fw-bold text-secondary"
-                                                style="font-size: 0.85rem;">Camera-ready</span>
-                                            <span class="text-muted" style="font-size: 0.85rem;">July 31, 2026</span>
+                                            <span class="fw-bold" style="font-size: 0.85rem;">Camera-ready</span>
+                                            <div class="fw-bold text-muted d-flex align-items-center gap-2" style="font-size: 0.85rem;">
+                                                July 31, 2026
+                                                <span class="badge-closed">Closed</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -151,10 +160,9 @@ title: Women in the Smart World Forum 2026
                             <div class="mt-1 p-3 rounded-3 border border-success bg-light text-success shadow-sm">
                                 <div class="d-flex flex-column align-items-center text-center">
                                     <span class="small text-uppercase fw-bold text-success"
-                                        style="letter-spacing: 1px;">Forum
-                                        Dates</span>
-                                    <span
-                                        class="fs-5 fw-bold text-success">{{site.data.swc_data.dates.conferenceDates}}</span>
+                                        style="letter-spacing: 1px;">Symposium
+                                        Date</span>
+                                    <span class="fs-5 fw-bold text-success">September 11, 2026</span>
                                 </div>
                             </div>
                         </div>
@@ -351,22 +359,57 @@ title: Women in the Smart World Forum 2026
 
         <div class="col-lg-8 d-flex flex-column gap-4">
               <div class="alert alert-success alert-dismissible fade show text-center shadow-sm mb-4" role="alert">
-                <strong>Registration & Camera-Ready Submission Now Open!</strong> <a href="{{ '/registration' | relative_url }}" class="alert-link">Register</a> and <a href="{{ '/camera-ready' | relative_url }}" class="alert-link">submit your camera-ready paper</a>.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
+        <strong>Registration is Still Open!</strong> Please visit the <a href="{{ '/registration' | relative_url }}" class="alert-link">Registration Page</a> to register.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
             <div>
-                <h2 class="section-title fs-2 text-center">About the Forum</h2>
+                <h2 class="section-title fs-2 text-center">Join Us at the IEEE Women in the Smart World Symposium</h2>
                 <p class="fs-5 text-muted text-align-justify">
-                    The Women in the Smart World Forum is a premier platform exploring the role of women in shaping
-                    and thriving in the rapidly evolving landscape of smart technology and innovation in an era
-                    defined by Artificial Intelligence, the Internet of Things, and Cyber-Physical-Social Systems.
-                    Gender diversity is not just a matter of equity but a catalyst for more efficient, sustainable,
-                    and human-centric technological solutions.
+                    The Women in the Smart World Symposium is a premier platform exploring the role of women in
+                    shaping and thriving in the rapidly evolving landscape of smart technology and innovation in an
+                    era defined by Artificial Intelligence, the Internet of Things, and Cyber-Physical-Social
+                    Systems. Gender diversity is not just a matter of equity but a catalyst for more efficient,
+                    sustainable, and human-centric technological solutions. Whether you are an established
+                    professional, a seasoned or emerging researcher, an entrepreneur, a policymaker, or a student
+                    beginning your journey, the IEEE Women in the Smart World Symposium offers an inspiring
+                    environment to learn from leading voices, showcase innovative work, exchange experiences, and
+                    develop meaningful partnerships. Together, we will explore how diverse perspectives can shape a
+                    smarter, more equitable, and more sustainable future for all.
                     <br /><br />
-                    Whether you're a seasoned professional, an aspiring student, an entrepreneur, or someone simply
-                    interested in technology and gender equality, this forum is the place for you to share your
-                    insights, challenges met, and aspirations, and the building of meaningful connections.
+                    Discussions will examine how women are leading innovation across STEM disciplines, overcoming
+                    barriers to participation and leadership, fostering entrepreneurship, and creating smart systems
+                    that improve the quality of life through applications in healthcare, education, sustainable
+                    communities, and public services. Special attention will be given to designing technologies that
+                    reflect the diversity of society by considering gender, race, age, disability, geography, and
+                    other lived experiences, ensuring that the benefits of the Smart World are accessible to
+                    everyone.
+                    <br /><br />
+                    Participants will also explore the future of responsible and inclusive intelligence through
+                    conversations on ethical AI, cybersecurity, generative AI, digital education, mentorship, and the
+                    development of resilient smart infrastructures.
                 </p>
+            </div>
+
+            <div>
+                <h2 class="section-title fs-2 text-center">Symposium Programme</h2>
+                <p class="text-center text-muted mb-4">Follow the Symposium step by step, from the words of welcome to
+                    the closing panel discussion.</p>
+                <div class="row g-3">
+                    {% for session in site.data.wswf_sessions %}
+                    <div class="col-md-6 d-flex">
+                        <a href="{{ session.url | relative_url }}"
+                            class="custom-card p-4 h-100 w-100 text-decoration-none d-flex align-items-center gap-3">
+                            <i class="bi {{ session.icon }} topic-icon m-0"></i>
+                            <div>
+                                <span class="badge bg-primary bg-opacity-10 text-primary fw-bold mb-1">{{ session.step
+                                    }}</span>
+                                <h5 class="fw-bold mb-1 text-dark">{{ session.title }}</h5>
+                                <p class="text-muted mb-0 small">{{ session.description }}</p>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
 
             <div class="row">
