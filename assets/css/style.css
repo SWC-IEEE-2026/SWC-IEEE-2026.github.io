@@ -2,6 +2,7 @@
 
 /* Custom Styles */
 @import url("navbar-glass.css");
+@import url("program.css");
 
 html {
   font-size: 100%;

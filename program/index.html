@@ -1,112 +1,1354 @@
 ---
 layout: default
-title: Program
-published: false
+title: Conference Program - IEEE SWC 2026
+published: true
 ---
 
-<!-- Hero Section -->
-<section
-  class="jumbotron text-center"
-  style="
-    background-image: url('../assets/images//product-school-nOvIa_x_tfo-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 60vh;
-    position: relative;
-    color: white;
-  "
->
-  <div class="hero-section">
-    <div
-      class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3"
-    >
-      <h1 class="display-5 fw-bolder mt-5">
-        IEEE Smart World Congress 2025 <br />Program
-      </h1>
-      <div
-        class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center w-100"
-      >
-        <!-- <a
-          href=""
-          class="btn btn-primary"
-          download
-        >
-          <i class="bi bi-download"></i> Download Program Schedule (PDF)
-        </a> -->
-        <a
-          style="
-            background: #2dacee;
-            color: #ffffff;
-            border-radius: 5px;
-            font-size: 16px;
-            text-decoration: none;
-          "
-          href="https://whova.com/portal/e2ofmZ1VEhHRCKBJo9GMWT-Bp-S-G35Si0RidTNO20c=/?source=btn_link"
-          target="_blank"
-          rel="noreferrer"
-          data-reactroot=""
-          class="btn"
-          >Get Whova Now</a
-        >
+<!-- Redesigned Clean & Airy Hero Section -->
+<section class="jumbotron text-center program-hero">
+  <div class="container px-3 d-flex flex-column align-items-center gap-2">
+    
+    <!-- Top Eyebrow Badge -->
+    <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill bg-white bg-opacity-10 text-white border border-white border-opacity-20 mb-1">
+      <i class="bi bi-calendar-event text-warning"></i>
+      <span class="small fw-semibold">7—11 September 2026 · Rende (Calabria), Italy</span>
+    </div>
+    
+    <!-- Title -->
+    <h1 class="display-5 fw-bolder text-white mb-1">
+      Conference Programme & Schedule
+    </h1>
+    
+    <!-- Subtitle -->
+    <p class="lead text-white-50 max-w-700 mb-3 fs-6">
+      IEEE Smart World Congress (SWC 2026) · Technical Sessions, Keynotes & Workshops
+      <span class="d-block small text-white-50 mt-1"><i class="bi bi-clock me-1"></i>All times are in CEST (UTC+02:00)</span>
+    </p>
+
+    <!-- Sleek Inline Stats Strip with Crisp White Numbers -->
+    <div class="d-flex flex-wrap gap-2 justify-content-center align-items-center">
+      <div class="hero-stat-chip">
+        <i class="bi bi-calendar3 text-white-50"></i>
+        <span><strong>5</strong> Days</span>
+      </div>
+      <div class="hero-stat-chip">
+        <i class="bi bi-file-earmark-text text-white-50"></i>
+        <span><strong>56</strong> Technical Sessions</span>
+      </div>
+      <div class="hero-stat-chip">
+        <i class="bi bi-mic text-white-50"></i>
+        <span><strong>6</strong> Keynotes</span>
+      </div>
+      <div class="hero-stat-chip">
+        <i class="bi bi-mortarboard text-white-50"></i>
+        <span><strong>4</strong> Tutorials</span>
       </div>
     </div>
+
   </div>
 </section>
 
-<section class="container-fluid d-flex flex-column gap-4">
-  <div class="page-section w-100 px-3 pb-5 py-5 d-flex flex-column gap-4">
-    {% include whova-lg-row.html %}
-  </div>
-</section>
+<!-- Sticky Controls Bar: Navigation, Global Search, and Mobile-Optimized Horizontal Filters -->
+<section class="program-controls-sticky py-2 py-md-3" id="programControlsBar">
+  <div class="container">
+    
+    <!-- Top Row: View Switcher + Search Bar -->
+    <div class="row g-2 g-md-3 align-items-center justify-content-between mb-2">
+      <!-- Primary View Switcher Pills -->
+      <div class="col-lg-5 col-md-6 col-12">
+        <ul class="nav nav-pills nav-pills-program justify-content-start gap-1 flex-nowrap overflow-auto" id="mainViewTabs" role="tablist">
+          <li class="nav-item">
+            <button class="nav-link active" id="tab-btn-day" onclick="switchMainView('day')">
+              <i class="bi bi-calendar4-week me-1"></i>Day by Day
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="tab-btn-week" onclick="switchMainView('week')">
+              <i class="bi bi-grid-3x3-gap me-1"></i>Week Grid
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="tab-btn-authors" onclick="switchMainView('authors')">
+              <i class="bi bi-person-lines-fill me-1"></i>Authors
+            </button>
+          </li>
+        </ul>
+      </div>
 
-<section class="container-fluid d-flex flex-column gap-4 p-0">
-  <div class="page-section w-100 px-3 py-5 d-flex flex-column gap-4">
-    <hr />
-    <div class="row py-5">
-      <div class="col-12 mb-3 mb-sm-0 d-flex flex-column gap-4">
-        <div class="mb-4">
-          <h3 class="text-center mb-0">Schedule for IEEE SWC 2025</h3>
-          <p class="text-center">
-            All times local to Calgary, Alberta, Canada (MDT)
-          </p>
-        </div>
-      </div>
-      <div class="p-0">
-        <div class="alert alert-warning mb-3" role="alert">
-          Please note that the banquet location on Thursday has changed. The new
-          location is <b>Macleod Hall D, Telus Convention Center</b>.
-        </div>
-      </div>
-      <div class="card bg-white p-3">
-        <div title="Whova event and conference app" id="whova-agendawidget">
-          <p id="whova-loading">Loading...</p>
-        </div>
-        <script
-          src="https://whova.com/static/frontend/xems/js/embed/embedagenda.js?eid=w9ILgbX0vWSosYfbQb9JegbmGR3yIje%406scLgt407CU%3D&host=https://whova.com"
-          type="text/javascript"
-          id="embeded-agenda-script"
-        ></script>
-        <div id="whova-wrap" class="whova-wrap-class">
-          Powered By
-          <a class="brandlink" target="_blank" href="https://whova.com">
-            <b>Whova</b>
-          </a>
-          <br />
-          <a
-            class="whova-emslink brandanchorlink"
-            target="_blank"
-            href="https://whova.com/blog/free-event-planning-software-make-you-rockstar/"
-          >
-            Conference planning tools
-          </a>
+      <!-- Global Live Search Input -->
+      <div class="col-lg-7 col-md-6 col-12">
+        <div class="input-group search-input-group shadow-sm">
+          <span class="input-group-text bg-white border-0 text-muted ps-3">
+            <i class="bi bi-search text-primary"></i>
+          </span>
+          <input
+            type="text"
+            id="programSearchInput"
+            class="form-control"
+            placeholder="Search all papers, authors, tracks, topics, rooms..."
+            autocomplete="off"
+            oninput="handleGlobalSearch(this.value)"
+          />
+          <button class="btn btn-link text-muted pe-3 text-decoration-none" type="button" id="clearSearchBtn" onclick="clearGlobalSearch()" style="display: none;">
+            <i class="bi bi-x-circle-fill fs-5"></i>
+          </button>
         </div>
       </div>
     </div>
+
+    <!-- Bottom Row: Filter Pills (Smooth Horizontal Touch Scroll on Mobile) -->
+    <div class="filters-scroll-row pt-2 border-top">
+      
+      <!-- Track / Conference Filters -->
+      <div class="filter-group-scroll pe-2 border-end">
+        <span class="small text-muted fw-bold me-1"><i class="bi bi-tag-fill me-1"></i>Track:</span>
+        <button class="filter-pill-btn active" data-track="all" onclick="filterByTrack('all')">All</button>
+        <button class="filter-pill-btn" data-track="IEEE Digital Twin 2026" onclick="filterByTrack('IEEE Digital Twin 2026')">
+          <span class="badge badge-track-dt me-1">DT</span>Digital Twin
+        </button>
+        <button class="filter-pill-btn" data-track="IEEE UIC 2026" onclick="filterByTrack('IEEE UIC 2026')">
+          <span class="badge badge-track-uic me-1">UIC</span>UIC
+        </button>
+        <button class="filter-pill-btn" data-track="IEEE ATC 2026" onclick="filterByTrack('IEEE ATC 2026')">
+          <span class="badge badge-track-atc me-1">ATC</span>ATC
+        </button>
+        <button class="filter-pill-btn" data-track="IEEE ScalCom 2026" onclick="filterByTrack('IEEE ScalCom 2026')">
+          <span class="badge badge-track-scalcom me-1">ScalCom</span>ScalCom
+        </button>
+        <button class="filter-pill-btn" data-track="IEEE METAVERSE 2026" onclick="filterByTrack('IEEE METAVERSE 2026')">
+          <span class="badge badge-track-metaverse me-1">Meta</span>Metaverse
+        </button>
+        <button class="filter-pill-btn" data-track="IEEE SWC 2026" onclick="filterByTrack('IEEE SWC 2026')">
+          <span class="badge badge-track-swc me-1">SWC</span>SWC
+        </button>
+        <button class="filter-pill-btn" data-track="IEEE SmartEdu 2026" onclick="filterByTrack('IEEE SmartEdu 2026')">
+          <span class="badge badge-track-smartedu me-1">Edu</span>SmartEdu
+        </button>
+        <button class="filter-pill-btn" data-track="SmartWomen 2026" onclick="filterByTrack('SmartWomen 2026')">
+          <span class="badge badge-track-smartwomen me-1">Women</span>SmartWomen
+        </button>
+        <button class="filter-pill-btn" data-track="workshops" onclick="filterByTrack('workshops')">
+          <span class="badge badge-track-workshop me-1">WS/SS</span>Workshops & SS
+        </button>
+      </div>
+
+      <!-- Room Filter Pills -->
+      <div class="filter-group-scroll ps-1">
+        <span class="small text-muted fw-bold me-1"><i class="bi bi-geo-alt-fill me-1"></i>Room:</span>
+        <button class="filter-pill-btn active" data-room="all" onclick="filterByRoom('all')">All</button>
+        <button class="filter-pill-btn" data-room="Aula Magna" onclick="filterByRoom('Aula Magna')">
+          <span class="badge badge-room-magna me-1">●</span>Aula Magna
+        </button>
+        <button class="filter-pill-btn" data-room="Sala Stampa" onclick="filterByRoom('Sala Stampa')">
+          <span class="badge badge-room-stampa me-1">●</span>Sala Stampa
+        </button>
+        <button class="filter-pill-btn" data-room="Aula A" onclick="filterByRoom('Aula A')">
+          <span class="badge badge-room-a me-1">●</span>Aula A
+        </button>
+        <button class="filter-pill-btn" data-room="Aula Caldora" onclick="filterByRoom('Aula Caldora')">
+          <span class="badge badge-room-caldora me-1">●</span>Aula Caldora
+        </button>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
-<section class="container-fluid d-flex flex-column gap-4 bg-light">
+<!-- MAIN CONTENT CONTAINER -->
+<div class="container py-3 py-md-4">
+
+  <!-- ================================================================= -->
+  <!-- DEDICATED SEARCH RESULTS PANE (Triggered on typing in search) -->
+  <!-- ================================================================= -->
+  <div id="view-search-results" class="d-none mb-5">
+    
+    <div class="card border-0 shadow-sm rounded-4 p-3 p-md-4 mb-4 bg-light">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <div>
+          <span class="badge bg-primary px-3 py-1 rounded-pill mb-2"><i class="bi bi-search me-1"></i>Global Program Search</span>
+          <h3 class="fw-bold text-dark mb-1" id="searchResultsHeader">Searching...</h3>
+          <p class="text-muted mb-0 small" id="searchResultsSubheader">Results matched across all 5 conference days, 56 sessions, conferences/tracks, keynotes, and tutorials.</p>
+        </div>
+        <div>
+          <button class="btn btn-outline-secondary btn-sm rounded-pill px-3 fw-bold" onclick="clearGlobalSearch()">
+            <i class="bi bi-arrow-left me-1"></i>Back to Full Program
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results List Container -->
+    <div class="row g-3" id="searchResultsContainer">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- Empty Results Template -->
+    <div id="searchEmptyState" class="card border-0 shadow-sm rounded-4 p-5 text-center d-none bg-white">
+      <i class="bi bi-search fs-1 text-muted mb-3 d-block"></i>
+      <h4 class="fw-bold text-dark mb-2">No matching papers or sessions found</h4>
+      <p class="text-muted max-w-500 mx-auto mb-4">
+        We couldn't find any entries matching your query. Try searching by author surname, track name (e.g. <em>Digital Twin</em>, <em>UIC</em>, <em>EASE-6G</em>), session ID (e.g. <code>TS-1</code>), or keywords.
+      </p>
+      <div>
+        <button class="btn btn-primary rounded-pill px-4 py-2 fw-semibold" onclick="clearGlobalSearch()">
+          Clear Search
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- VIEW 1: DAY BY DAY PROGRAM (Default View) -->
+  <!-- ================================================================= -->
+  <div id="view-day-container" class="program-view-section">
+    
+    <!-- Day Switcher Tabs -->
+    <div class="day-nav-wrapper justify-content-start justify-content-md-center mb-4" id="dayButtonsBar">
+      {% for day in site.data.program.days %}
+      <button class="day-tab-btn {% if forloop.first %}active{% endif %}" id="btn-{{ day.id }}" onclick="switchDay('{{ day.id }}')">
+        <span class="day-label">Day {{ day.dayNum }}</span>
+        <span class="day-date">{{ day.shortName }}</span>
+      </button>
+      {% endfor %}
+    </div>
+
+    <!-- DAYS CONTENT PANES -->
+    {% for day in site.data.program.days %}
+    <div class="day-content-pane {% if forloop.first %}d-block{% else %}d-none{% endif %}" id="pane-{{ day.id }}">
+      
+      <!-- Day Header Banner -->
+      <div class="card bg-white border-0 shadow-sm rounded-4 p-3 p-md-4 mb-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+              <span class="badge bg-primary text-uppercase fw-bold px-3 py-1 rounded-pill">{{ day.badgeText }}</span>
+              <span class="badge bg-light text-secondary border px-2 py-1 rounded-pill small">
+                <i class="bi bi-clock me-1"></i>08:30 — {% if day.dayNum == 1 %}18:30{% elsif day.dayNum == 2 or day.dayNum == 3 %}22:00{% elsif day.dayNum == 4 %}18:30{% else %}12:30{% endif %}
+              </span>
+            </div>
+            <h2 class="fw-bold text-dark mb-1 fs-4 fs-md-3">{{ day.name }} — {{ day.date }}</h2>
+            <p class="text-muted mb-0 small">{{ day.summary }}</p>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-primary btn-sm rounded-pill px-3 shadow-xs" id="toggle-all-btn-{{ day.id }}" onclick="toggleAllSessionsInDay('{{ day.id }}')">
+              <i class="bi bi-arrows-expand me-1"></i><span class="toggle-all-text">Expand All</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHRONOLOGICAL TIMELINE BLOCKS -->
+      {% for block in day.blocks %}
+        
+        <!-- GENERAL EVENT BLOCK (Registration, Break, Lunch, Opening, Closing) -->
+        {% if block.type == 'general' %}
+          <div class="general-event-card d-flex align-items-center justify-content-between mb-3" data-room="{{ block.room }}" data-track="all" data-search="{{ block.title }} {{ block.room }}">
+            <div class="d-flex align-items-center gap-2 gap-md-3">
+              <span class="badge bg-secondary rounded-pill px-2 px-md-3 py-1 py-md-2 fw-bold small">{{ block.time }}</span>
+              <h6 class="fw-bold mb-0 text-dark">
+                {% if block.icon %}<i class="bi {{ block.icon }} me-1 me-md-2 text-primary"></i>{% endif %}
+                {{ block.title }}
+              </h6>
+            </div>
+            <span class="badge badge-room-general">{{ block.room }}</span>
+          </div>
+        {% endif %}
+
+        <!-- SOCIAL EVENT BLOCK (Welcome Reception, Social Dinner) -->
+        {% if block.type == 'social' %}
+          <div class="general-event-card d-flex align-items-center justify-content-between mb-3 bg-primary bg-opacity-10 border-primary" data-room="{{ block.room }}" data-track="all" data-search="{{ block.title }} {{ block.room }}">
+            <div class="d-flex align-items-center gap-2 gap-md-3">
+              <span class="badge bg-primary rounded-pill px-2 px-md-3 py-1 py-md-2 fw-bold small">{{ block.time }}</span>
+              <h6 class="fw-bold mb-0 text-primary">
+                {% if block.icon %}<i class="bi {{ block.icon }} me-1 me-md-2"></i>{% endif %}
+                {{ block.title }}
+              </h6>
+            </div>
+            <span class="badge badge-room-general">{{ block.room }}</span>
+          </div>
+        {% endif %}
+
+        <!-- KEYNOTE BLOCK -->
+        {% if block.type == 'keynote' %}
+          <div class="keynote-program-card p-3 p-md-4 shadow mb-4" data-room="{{ block.room }}" data-track="all" data-search="{{ block.speaker }} {{ block.title }} Keynote Speaker {{ block.number }} {{ block.room }} {{ block.affiliation }}">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-3">
+              <div class="d-flex flex-wrap align-items-center gap-2">
+                <span class="keynote-badge"><i class="bi bi-mic-fill me-1"></i>Keynote Speaker {{ block.number }}</span>
+                <span class="badge bg-light text-dark px-3 py-2 rounded-pill fw-bold">{{ block.time }}</span>
+                <span class="badge badge-room-magna">{{ block.room }}</span>
+              </div>
+              {% if block.url %}
+              <a href="{{ block.url | relative_url }}" class="btn btn-warning btn-sm rounded-pill px-3 fw-bold align-self-start align-self-md-center">
+                View Speaker Bio <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+              {% endif %}
+            </div>
+            <h4 class="fw-bold text-white mb-2 fs-5 fs-md-4">{{ block.title }}</h4>
+            <p class="text-white-50 mb-0 small">
+              <i class="bi bi-person-fill text-warning me-1"></i><strong>{{ block.speaker }}</strong>
+              {% if block.affiliation %} · {{ block.affiliation }}{% endif %}
+            </p>
+          </div>
+        {% endif %}
+
+        <!-- TUTORIALS BLOCK -->
+        {% if block.type == 'tutorials' %}
+          <div class="mb-4">
+            <div class="timeslot-header">
+              <div class="d-flex align-items-center gap-2">
+                <span class="timeslot-badge"><i class="bi bi-clock-fill"></i>{{ block.time }}</span>
+                <h5 class="timeslot-title mb-0">{{ block.title }}</h5>
+              </div>
+            </div>
+            <div class="row g-3">
+              {% for tut in block.items %}
+              <div class="col-lg-6 col-12" data-room="{{ tut.room }}" data-track="all" data-search="{{ tut.title }} {{ tut.speakers }} {{ tut.room }}">
+                <div class="tutorial-program-card p-3 p-md-4 h-100 shadow-sm" id="{{ tut.id }}">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge {% if tut.room == 'Aula Magna' %}badge-room-magna{% else %}badge-room-stampa{% endif %}">{{ tut.room }}</span>
+                    <a href="{{ tut.url | relative_url }}" class="btn btn-sm btn-outline-primary rounded-pill px-3">
+                      Tutorial Details <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                  </div>
+                  <h6 class="fw-bold text-dark mb-2">{{ tut.title }}</h6>
+                  <p class="text-muted mb-0 small"><i class="bi bi-people-fill me-1 text-primary"></i>Speakers: <strong>{{ tut.speakers }}</strong></p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
+        <!-- SPECIAL SESSION BLOCK (Day 1) -->
+        {% if block.type == 'special' %}
+          <div class="card border-primary border-2 p-3 p-md-4 shadow-sm bg-primary bg-opacity-10 mb-4" data-room="{{ block.room }}" data-track="workshops" data-search="{{ block.title }} {{ block.topic }} {{ block.room }}">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge bg-primary px-3 py-2 rounded-pill fw-bold">{{ block.time }}</span>
+              <span class="badge badge-room-magna">{{ block.room }}</span>
+            </div>
+            <h5 class="fw-bold text-primary mb-1">{{ block.title }}</h5>
+            <p class="text-muted mb-0 small">{{ block.topic }}</p>
+          </div>
+        {% endif %}
+
+        <!-- PARALLEL TECHNICAL SESSIONS BLOCK (Unified Neutral Card Theme) -->
+        {% if block.type == 'parallel_sessions' %}
+          {% capture slot_id %}{{ day.id }}-slot-{{ forloop.index }}{% endcapture %}
+          <div class="mb-4 timeslot-sessions-block" id="timeslot-block-{{ slot_id }}">
+            
+            <!-- Time Slot Header with Synchronized Slot Toggle Button -->
+            <div class="timeslot-header d-flex justify-content-between align-items-center flex-wrap gap-2">
+              <div class="d-flex align-items-center gap-2">
+                <span class="timeslot-badge"><i class="bi bi-clock-fill"></i>{{ block.time }}</span>
+                <h5 class="timeslot-title mb-0">{{ block.title }}</h5>
+              </div>
+              
+              <!-- Time-Slot Level Synchronized Toggle Button (Default: Expand Slot) -->
+              <div>
+                <button class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1 timeslot-toggle-btn" id="btn-toggle-slot-{{ slot_id }}" type="button" onclick="toggleTimeSlot('{{ slot_id }}')">
+                  <span class="slot-toggle-text">Expand Slot</span> <i class="bi bi-chevron-down ms-1 slot-toggle-chevron"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="row g-3 g-md-4">
+              {% for session in block.sessions %}
+              <div class="col-lg-6 col-12 session-wrapper-col" data-session-id="{{ session.id }}" data-room="{{ session.room }}" data-track="{{ session.track }}" data-search="{{ session.id }} {{ session.title }} {{ session.track }} {{ session.trackLabel }} {{ session.room }} {% for p in session.papers %}{{ p.title }} {% for a in p.authors %}{{ a }} {% endfor %}{% for aff in p.affiliations %}{{ aff }} {% endfor %}{% endfor %}">
+                
+                <!-- Unified Common Neutral Session Card -->
+                <div class="session-card h-100" id="{{ session.id }}">
+                  
+                  <!-- Session Header -->
+                  <div class="session-card-header d-flex flex-column flex-sm-row justify-content-between align-items-sm-start gap-2">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-center gap-1 mb-1 flex-wrap">
+                        <span class="badge bg-dark text-white fw-bold">{{ session.id }}</span>
+                        <!-- Track Badge -->
+                        <span class="badge {{ session.trackBadge }} shadow-xs fw-bold">
+                          <i class="bi bi-tag-fill me-1"></i>{{ session.trackLabel }}
+                        </span>
+                      </div>
+                      <strong class="fs-6 text-dark d-block">{{ session.title }}</strong>
+                    </div>
+                    
+                    <div class="d-flex align-items-center gap-1 flex-wrap align-self-start">
+                      <span class="badge {% if session.room == 'Aula Magna' %}badge-room-magna{% elsif session.room == 'Sala Stampa' %}badge-room-stampa{% elsif session.room == 'Aula A' %}badge-room-a{% elsif session.room == 'Aula Caldora' %}badge-room-caldora{% else %}badge-room-general{% endif %}">
+                        {{ session.room }}
+                      </span>
+                      <span class="badge bg-light text-secondary border">
+                        <i class="bi bi-clock me-1"></i>{{ session.time }}
+                      </span>
+                      <span class="badge bg-light text-dark border fw-bold">
+                        {{ session.papersCount }} Papers
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Session Papers List (Collapsed by Default) -->
+                  <div class="session-papers-list" id="papers-list-{{ session.id }}" style="display: none;">
+                    {% if session.pendingAllocation %}
+                      <div class="p-4 text-center text-muted">
+                        <i class="bi bi-hourglass-split fs-3 text-secondary mb-2 d-block"></i>
+                        <h6 class="fw-semibold mb-1">Paper allocation to follow</h6>
+                        <p class="small text-muted mb-0">The specific presentations for this workshop/session track will be published soon.</p>
+                      </div>
+                    {% else %}
+                      {% for paper in session.papers %}
+                      <div class="paper-item" data-search="{{ paper.title }} {{ paper.track }} {% for a in paper.authors %}{{ a }} {% endfor %}{% for aff in paper.affiliations %}{{ aff }} {% endfor %}">
+                        <div class="d-flex gap-2 gap-md-3 align-items-start">
+                          <span class="paper-num-badge">{{ paper.num }}</span>
+                          <div class="flex-grow-1">
+                            <h6 class="paper-title mb-1 mb-md-2">{{ paper.title }}</h6>
+                            <div class="paper-authors mb-1">
+                              <i class="bi bi-person-fill text-primary me-1"></i>
+                              {% for author in paper.authors %}
+                                <span class="fw-semibold text-dark cursor-pointer author-clickable" onclick="searchAuthorDirectly('{{ author }}'); event.stopPropagation();">{{ author }}</span>{% unless forloop.last %}, {% endunless %}
+                              {% endfor %}
+                            </div>
+                            <div class="paper-affiliations">
+                              {% for aff in paper.affiliations %}
+                                <div class="text-muted"><i class="bi bi-building me-1"></i>{{ aff }}</div>
+                              {% endfor %}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {% endfor %}
+                    {% endif %}
+                  </div>
+
+                </div>
+
+              </div>
+              {% endfor %}
+            </div>
+
+          </div>
+        {% endif %}
+
+      {% endfor %}
+
+      <!-- Day Bottom Navigation Pager -->
+      <div class="d-flex justify-content-between align-items-center mt-4 mt-md-5 pt-3 pt-md-4 border-top flex-wrap gap-2">
+        {% if day.dayNum > 1 %}
+        <button class="btn btn-outline-primary rounded-pill px-3 px-md-4 py-2 small" onclick="switchDay('day-{{ day.dayNum | minus: 1 }}')">
+          <i class="bi bi-arrow-left me-1"></i>Day {{ day.dayNum | minus: 1 }}
+        </button>
+        {% else %}
+        <div></div>
+        {% endif %}
+
+        <button class="btn btn-light rounded-pill px-3 py-2 text-muted border small" onclick="scrollToTopProgram()">
+          <i class="bi bi-arrow-up me-1"></i>Top
+        </button>
+
+        {% if day.dayNum < 5 %}
+        <button class="btn btn-primary rounded-pill px-3 px-md-4 py-2 small" onclick="switchDay('day-{{ day.dayNum | plus: 1 }}')">
+          Day {{ day.dayNum | plus: 1 }}<i class="bi bi-arrow-right ms-1"></i>
+        </button>
+        {% else %}
+        <div></div>
+        {% endif %}
+      </div>
+
+    </div>
+    {% endfor %}
+
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- VIEW 2: WEEK AT A GLANCE (TIMETABLE MATRIX) -->
+  <!-- ================================================================= -->
+  <div id="view-week-container" class="program-view-section d-none">
+    
+    <div class="card bg-white border-0 shadow-sm rounded-4 p-3 p-md-4 mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-3">
+        <div>
+          <h3 class="fw-bold text-dark mb-1 fs-4">Week at a Glance</h3>
+          <p class="text-muted mb-0 small">Overview grid from the booklet. Click any session card to jump to its detailed presentations.</p>
+        </div>
+        <!-- Legend -->
+        <div class="d-flex flex-wrap gap-1 gap-md-2 align-items-center">
+          <span class="badge badge-room-magna">Aula Magna</span>
+          <span class="badge badge-room-stampa">Sala Stampa</span>
+          <span class="badge badge-room-a">Aula A</span>
+          <span class="badge badge-room-caldora">Aula Caldora</span>
+          <span class="badge badge-room-general">General</span>
+        </div>
+      </div>
+
+      <!-- Mobile swipe helper -->
+      <div class="d-md-none small text-muted text-center mb-2 bg-light py-1 px-2 rounded-3 border">
+        <i class="bi bi-arrows-expand me-1 text-primary"></i>Swipe horizontally to view all 5 conference days →
+      </div>
+
+      <!-- Timetable Grid -->
+      <div class="timetable-container">
+        <table class="timetable-grid">
+          <thead>
+            <tr>
+              <th>Day 1 · Mon 7 Sep</th>
+              <th>Day 2 · Tue 8 Sep</th>
+              <th>Day 3 · Wed 9 Sep</th>
+              <th>Day 4 · Thu 10 Sep</th>
+              <th>Day 5 · Fri 11 Sep</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row: 08:30 - 09:00 / Registration -->
+            <tr>
+              <td>
+                <div class="timetable-cell-block cell-general">Registration<br><small>08:30–17:00</small></div>
+              </td>
+              <td>
+                <div class="timetable-cell-block cell-general">Registration<br><small>08:30–17:00</small></div>
+              </td>
+              <td>
+                <div class="timetable-cell-block cell-general">Registration<br><small>08:30–17:00</small></div>
+              </td>
+              <td>
+                <div class="timetable-cell-block cell-general">Registration<br><small>08:30–17:00</small></div>
+              </td>
+              <td>
+                <div class="timetable-cell-block cell-general">Registration<br><small>08:30–09:00</small></div>
+              </td>
+            </tr>
+
+            <!-- Row: 09:00 - 10:30 -->
+            <tr>
+              <td>
+                <div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-1', 'tut-1')">
+                  <strong>Tutorial 1 - Part I</strong><br>Beyond Connected Things<br><small>Aula Magna · 09:00–10:30</small>
+                </div>
+                <div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-1', 'tut-2')">
+                  <strong>Tutorial 2 - Part I</strong><br>Urban Sky & Flying Cars<br><small>Sala Stampa · 09:00–10:30</small>
+                </div>
+              </td>
+              <td>
+                <div class="timetable-cell-block cell-general">
+                  <strong>Opening Remarks</strong><br><small>Ballroom · 09:00–09:30</small>
+                </div>
+                <div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-2', 'keynote-1')">
+                  <strong>Keynote 1: Dr. Q. Wen</strong><br>Agentic AI Tutors<br><small>Aula Magna · 09:30–10:30</small>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-3', 'TS-17')"><strong>TS-17</strong><br><span class="badge badge-track-swc p-1 small">SWC</span><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-3', 'TS-18')"><strong>TS-18</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-3', 'TS-19')"><strong>TS-19</strong><br><span class="badge badge-track-smartedu p-1 small">Edu</span><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-3', 'TS-20')"><strong>TS-20</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>09:00-10:30</small></div></div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-4', 'TS-33')"><strong>TS-33</strong><br><span class="badge badge-track-smartedu p-1 small">Edu</span><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-4', 'TS-34')"><strong>TS-34</strong><br><span class="badge badge-track-smartwomen p-1 small">Women</span><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-4', 'TS-35')"><strong>TS-35</strong><br><span class="badge badge-track-workshop p-1 small">EASE-6G</span><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-4', 'TS-36')"><strong>TS-36</strong><br><span class="badge badge-track-workshop p-1 small">XR-HEART</span><br><small>09:00-10:30</small></div></div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-5', 'TS-49')"><strong>TS-49</strong><br><span class="badge badge-track-workshop p-1 small">AI-RADIO</span><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-5', 'TS-50')"><strong>TS-50</strong><br><span class="badge badge-track-workshop p-1 small">IoWT</span><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-5', 'TS-51')"><strong>TS-51</strong><br><span class="badge badge-track-workshop p-1 small">PRInCePS</span><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-5', 'TS-52')"><strong>TS-52</strong><br><span class="badge badge-track-workshop p-1 small">TrustGen</span><br><small>09:00-10:30</small></div></div>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Coffee Break 10:30 - 11:00 -->
+            <tr>
+              <td><div class="timetable-cell-block cell-general">Coffee Break<br><small>10:30–11:00</small></div></td>
+              <td><div class="timetable-cell-block cell-general">Coffee Break<br><small>10:30–11:00</small></div></td>
+              <td><div class="timetable-cell-block cell-general">Coffee Break<br><small>10:30–11:00</small></div></td>
+              <td><div class="timetable-cell-block cell-general">Coffee Break<br><small>10:30–11:00</small></div></td>
+              <td><div class="timetable-cell-block cell-general">Coffee Break<br><small>10:30–11:00</small></div></td>
+            </tr>
+
+            <!-- 11:00 - 12:00 / 12:30 -->
+            <tr>
+              <td>
+                <div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-1', 'tut-1')">
+                  <strong>Tutorial 1 - Part II</strong><br><small>Aula Magna · 11:00–12:30</small>
+                </div>
+                <div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-1', 'tut-2')">
+                  <strong>Tutorial 2 - Part II</strong><br><small>Sala Stampa · 11:00–12:30</small>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-2', 'TS-1')"><strong>TS-1</strong><br><span class="badge badge-track-uic p-1 small">UIC</span><br><small>11:00-12:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-2', 'TS-2')"><strong>TS-2</strong><br><span class="badge badge-track-metaverse p-1 small">Meta</span><br><small>11:00-12:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-2', 'TS-3')"><strong>TS-3</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>11:00-12:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-2', 'TS-4')"><strong>TS-4</strong><br><span class="badge badge-track-scalcom p-1 small">ScalCom</span><br><small>11:00-12:00</small></div></div>
+                </div>
+              </td>
+              <td>
+                <div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-3', 'keynote-3')">
+                  <strong>Keynote 3: Dr. Z. Wang</strong><br>Big Data to Big Science<br><small>Aula Magna · 11:00–12:00</small>
+                </div>
+              </td>
+              <td>
+                <div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-4', 'keynote-5')">
+                  <strong>Keynote 5: Dr. V. Piuri</strong><br>AI in Cloud/Fog/Edge<br><small>Aula Magna · 11:00–12:00</small>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-5', 'TS-53')"><strong>TS-53</strong><br><span class="badge badge-track-workshop p-1 small">AI&ML</span><br><small>11:00-12:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-5', 'TS-54')"><strong>TS-54</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>11:00-12:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-5', 'TS-55')"><strong>TS-55</strong><br><span class="badge badge-track-uic p-1 small">UIC</span><br><small>11:00-12:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-5', 'TS-56')"><strong>TS-56</strong><br><span class="badge badge-track-uic p-1 small">UIC</span><br><small>11:00-12:00</small></div></div>
+                </div>
+              </td>
+            </tr>
+
+            <!-- 12:00 - 13:00 / Closing -->
+            <tr>
+              <td>
+                <div class="timetable-cell-block cell-general">Lunch<br><small>12:30–14:00</small></div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-2', 'TS-5')"><strong>TS-5</strong><br><span class="badge badge-track-swc p-1 small">SWC</span><br><small>12:00-13:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-2', 'TS-6')"><strong>TS-6</strong><br><span class="badge badge-track-atc p-1 small">ATC</span><br><small>12:00-13:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-2', 'TS-7')"><strong>TS-7</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>12:00-13:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-2', 'TS-8')"><strong>TS-8</strong><br><span class="badge badge-track-atc p-1 small">ATC</span><br><small>12:00-13:00</small></div></div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-3', 'TS-21')"><strong>TS-21</strong><br><span class="badge badge-track-uic p-1 small">UIC</span><br><small>12:00-13:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-3', 'TS-22')"><strong>TS-22</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>12:00-13:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-3', 'TS-23')"><strong>TS-23</strong><br><span class="badge badge-track-uic p-1 small">UIC</span><br><small>12:00-13:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-3', 'TS-24')"><strong>TS-24</strong><br><span class="badge badge-track-uic p-1 small">UIC</span><br><small>12:00-13:00</small></div></div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-4', 'TS-37')"><strong>TS-37</strong><br><span class="badge badge-track-workshop p-1 small">UI4Health</span><br><small>12:00-13:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-4', 'TS-38')"><strong>TS-38</strong><br><span class="badge badge-track-scalcom p-1 small">ScalCom</span><br><small>12:00-13:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-4', 'TS-39')"><strong>TS-39</strong><br><span class="badge badge-track-workshop p-1 small">SSITLS</span><br><small>12:00-13:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-4', 'TS-40')"><strong>TS-40</strong><br><span class="badge badge-track-workshop p-1 small">SSITLS</span><br><small>12:00-13:00</small></div></div>
+                </div>
+              </td>
+              <td>
+                <div class="timetable-cell-block cell-general">
+                  <strong>Closing Ceremony</strong><br><small>Ballroom · 12:00–12:30</small>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Lunch 13:00 - 14:30 -->
+            <tr>
+              <td><em>(Tutorials cont. below)</em></td>
+              <td><div class="timetable-cell-block cell-general">Lunch<br><small>13:00–14:30</small></div></td>
+              <td><div class="timetable-cell-block cell-general">Lunch<br><small>13:00–14:30</small></div></td>
+              <td><div class="timetable-cell-block cell-general">Lunch<br><small>13:00–14:30</small></div></td>
+              <td><em>Conference End</em></td>
+            </tr>
+
+            <!-- 14:00/14:30 - 16:00 -->
+            <tr>
+              <td>
+                <div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-1', 'tut-3')">
+                  <strong>Tutorial 3 - Part I</strong><br>Digital Twin Engineering<br><small>Aula Magna · 14:00–16:00</small>
+                </div>
+                <div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-1', 'tut-4')">
+                  <strong>Tutorial 4 - Part I</strong><br>Smart CPS<br><small>Sala Stampa · 14:00–16:00</small>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-2', 'TS-9')"><strong>TS-9</strong><br><span class="badge badge-track-swc p-1 small">SWC</span><br><small>14:30-16:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-2', 'TS-10')"><strong>TS-10</strong><br><span class="badge badge-track-uic p-1 small">UIC</span><br><small>14:30-16:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-2', 'TS-11')"><strong>TS-11</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>14:30-16:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-2', 'TS-12')"><strong>TS-12</strong><br><span class="badge badge-track-uic p-1 small">UIC</span><br><small>14:30-16:00</small></div></div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-3', 'TS-25')"><strong>TS-25</strong><br><span class="badge badge-track-swc p-1 small">SWC</span><br><small>14:30-16:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-3', 'TS-26')"><strong>TS-26</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>14:30-16:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-3', 'TS-27')"><strong>TS-27</strong><br><span class="badge badge-track-atc p-1 small">ATC</span><br><small>14:30-16:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-3', 'TS-28')"><strong>TS-28</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>14:30-16:00</small></div></div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-4', 'TS-41')"><strong>TS-41</strong><br><span class="badge badge-track-smartwomen p-1 small">Women</span><br><small>14:30-16:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-4', 'TS-42')"><strong>TS-42</strong><br><span class="badge badge-track-workshop p-1 small">Radiomics</span><br><small>14:30-16:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-4', 'TS-43')"><strong>TS-43</strong><br><span class="badge badge-track-uic p-1 small">UIC</span><br><small>14:30-16:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-4', 'TS-44')"><strong>TS-44</strong><br><span class="badge badge-track-smartedu p-1 small">Edu</span><br><small>14:30-16:00</small></div></div>
+                </div>
+              </td>
+              <td>—</td>
+            </tr>
+
+            <!-- Coffee Break 16:00 - 16:30 -->
+            <tr>
+              <td><div class="timetable-cell-block cell-general">Coffee Break<br><small>16:00–16:30</small></div></td>
+              <td><div class="timetable-cell-block cell-general">Coffee Break<br><small>16:00–16:30</small></div></td>
+              <td><div class="timetable-cell-block cell-general">Coffee Break<br><small>16:00–16:30</small></div></td>
+              <td><div class="timetable-cell-block cell-general">Coffee Break<br><small>16:00–16:30</small></div></td>
+              <td>—</td>
+            </tr>
+
+            <!-- 16:30 - 17:30 -->
+            <tr>
+              <td>
+                <div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-1', 'tut-3')">
+                  <strong>Tutorial 3 - Part II</strong><br><small>Aula Magna · 16:30–17:30</small>
+                </div>
+                <div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-1', 'tut-4')">
+                  <strong>Tutorial 4 - Part II</strong><br><small>Sala Stampa · 16:30–17:30</small>
+                </div>
+              </td>
+              <td>
+                <div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-2', 'keynote-2')">
+                  <strong>Keynote 2: Dr. S. Dustdar</strong><br>Distributed Intelligence<br><small>Aula Magna · 16:30–17:30</small>
+                </div>
+              </td>
+              <td>
+                <div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-3', 'keynote-4')">
+                  <strong>Keynote 4</strong><br>Plenary Address<br><small>Aula Magna · 16:30–17:30</small>
+                </div>
+              </td>
+              <td>
+                <div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-4', 'keynote-6')">
+                  <strong>Keynote 6: Dr. W. Shi</strong><br>Physical Intelligence<br><small>Aula Magna · 16:30–17:30</small>
+                </div>
+              </td>
+              <td>—</td>
+            </tr>
+
+            <!-- 17:30 - 18:30 -->
+            <tr>
+              <td>
+                <div class="timetable-cell-block cell-general">
+                  <strong>Special Session</strong><br><small>Aula Magna · 17:30–18:30</small>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-2', 'TS-13')"><strong>TS-13</strong><br><span class="badge badge-track-swc p-1 small">SWC</span><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-2', 'TS-14')"><strong>TS-14</strong><br><span class="badge badge-track-atc p-1 small">ATC</span><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-2', 'TS-15')"><strong>TS-15</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-2', 'TS-16')"><strong>TS-16</strong><br><span class="badge badge-track-atc p-1 small">ATC</span><br><small>17:30-18:30</small></div></div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-3', 'TS-29')"><strong>TS-29</strong><br><span class="badge badge-track-uic p-1 small">UIC</span><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-3', 'TS-30')"><strong>TS-30</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-3', 'TS-31')"><strong>TS-31</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-3', 'TS-32')"><strong>TS-32</strong><br><span class="badge badge-track-atc p-1 small">ATC</span><br><small>17:30-18:30</small></div></div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1">
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-4', 'TS-45')"><strong>TS-45</strong><br><span class="badge badge-track-workshop p-1 small">CitiVerse</span><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-4', 'TS-46')"><strong>TS-46</strong><br><span class="badge badge-track-workshop p-1 small">NextGen</span><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-4', 'TS-47')"><strong>TS-47</strong><br><span class="badge badge-track-workshop p-1 small">ARIES</span><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-4', 'TS-48')"><strong>TS-48</strong><br><span class="badge badge-track-workshop p-1 small">SuPer-IoT</span><br><small>17:30-18:30</small></div></div>
+                </div>
+              </td>
+              <td>—</td>
+            </tr>
+
+            <!-- Evening Social 20:00 - 22:00 -->
+            <tr>
+              <td>—</td>
+              <td>
+                <div class="timetable-cell-block cell-general">
+                  <strong>Welcome Reception</strong><br><small>20:00–22:00</small>
+                </div>
+              </td>
+              <td>
+                <div class="timetable-cell-block cell-general">
+                  <strong>Social Dinner</strong><br><small>20:00–22:00</small>
+                </div>
+              </td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- VIEW 3: AUTHOR INDEX DIRECTORY -->
+  <!-- ================================================================= -->
+  <div id="view-authors-container" class="program-view-section d-none">
+    
+    <div class="card bg-white border-0 shadow-sm rounded-4 p-3 p-md-4 mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-3">
+        <div>
+          <h3 class="fw-bold text-dark mb-1 fs-4">Index of Authors</h3>
+          <p class="text-muted mb-0 small">Browse contributing authors alphabetically. Click any paper badge to jump to its presentation.</p>
+        </div>
+        <div class="w-100 max-w-300">
+          <input
+            type="text"
+            id="authorSearchInput"
+            class="form-control rounded-pill"
+            placeholder="Filter author name..."
+            oninput="filterAuthorIndex(this.value)"
+          />
+        </div>
+      </div>
+
+      <!-- Alphabet quick bar -->
+      <div class="d-flex flex-wrap gap-1 mb-4" id="authorAlphabetBar">
+        <button class="author-letter-pill active" onclick="filterAuthorLetter('all')">All</button>
+        {% for letter in site.data.program.authorLetters %}
+        <button class="author-letter-pill" onclick="filterAuthorLetter('{{ letter }}')">{{ letter }}</button>
+        {% endfor %}
+      </div>
+
+      <!-- Authors Cards Grid -->
+      <div class="row g-3" id="authorsListGrid">
+        {% for author in site.data.program.authors %}
+        <div class="col-lg-4 col-md-6 col-12 author-item-wrapper" data-author-name="{{ author.name | downcase }}" data-letter="{{ author.name | slice: 0, 1 | upcase }}">
+          <div class="author-card h-100 d-flex flex-column justify-content-between">
+            <div class="fw-bold text-dark mb-2">
+              <i class="bi bi-person-fill me-1 text-primary"></i>{{ author.name }}
+            </div>
+            <div class="d-flex flex-wrap gap-1">
+              {% for p in author.papers %}
+              <span class="author-paper-badge" title="{{ p.paperTitle }}" onclick="jumpToSession('{{ p.dayId }}', '{{ p.sessionId }}')">
+                {{ p.code }} ({{ p.dayName }})
+              </span>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Floating Action Button (Scroll to Top) -->
+<button class="btn-floating-top" id="btnFloatingTop" onclick="scrollToTopProgram()" title="Back to top">
+  <i class="bi bi-arrow-up fs-5"></i>
+</button>
+
+<!-- Colocated & Sponsors -->
+<section class="container-fluid d-flex flex-column gap-4 bg-light mt-5">
   {% include colocated-conferences.html %}
 </section>
 
 {% include sponsors.html sponsors=site.data.sponsors %}
+
+<!-- Client-side Interactive Engine -->
+<script>
+  // Complete structured program data in-memory
+  const PROGRAM_DATA = {{ site.data.program | jsonify }};
+
+  let currentMainView = "day";
+  let activeDayId = "day-1";
+  let activeTrackFilter = "all";
+  let activeRoomFilter = "all";
+  let activeAuthorLetter = "all";
+  let isSearchActive = false;
+
+  // View Switcher
+  function switchMainView(viewName) {
+    if (isSearchActive && viewName !== "search") {
+      clearGlobalSearch();
+    }
+
+    currentMainView = viewName;
+    
+    // Toggle active buttons
+    document.querySelectorAll(".nav-pills-program .nav-link").forEach(btn => btn.classList.remove("active"));
+    const activeBtn = document.getElementById("tab-btn-" + viewName);
+    if (activeBtn) activeBtn.classList.add("active");
+
+    // Toggle container views
+    document.getElementById("view-search-results").classList.add("d-none");
+    document.getElementById("view-day-container").classList.toggle("d-none", viewName !== "day");
+    document.getElementById("view-week-container").classList.toggle("d-none", viewName !== "week");
+    document.getElementById("view-authors-container").classList.toggle("d-none", viewName !== "authors");
+
+    if (viewName === "day") {
+      switchDay(activeDayId);
+    }
+  }
+
+  // Day Switcher
+  function switchDay(dayId) {
+    if (isSearchActive) {
+      clearGlobalSearch();
+    }
+
+    activeDayId = dayId;
+    
+    // Update day buttons
+    document.querySelectorAll(".day-tab-btn").forEach(btn => btn.classList.remove("active"));
+    const btn = document.getElementById("btn-" + dayId);
+    if (btn) btn.classList.add("active");
+
+    // Update day panes
+    document.querySelectorAll(".day-content-pane").forEach(pane => {
+      pane.classList.remove("d-block");
+      pane.classList.add("d-none");
+    });
+    const activePane = document.getElementById("pane-" + dayId);
+    if (activePane) {
+      activePane.classList.remove("d-none");
+      activePane.classList.add("d-block");
+    }
+
+    applyCombinedFilters();
+  }
+
+  // OPTION 1: Time-Slot Level Synchronized Toggle
+  function toggleTimeSlot(slotId) {
+    const slotBlock = document.getElementById("timeslot-block-" + slotId);
+    if (!slotBlock) return;
+    const lists = slotBlock.querySelectorAll(".session-papers-list");
+    if (!lists.length) return;
+
+    const isCurrentlyHidden = (lists[0].style.display === "none");
+    const newDisplay = isCurrentlyHidden ? "block" : "none";
+
+    lists.forEach(l => {
+      l.style.display = newDisplay;
+    });
+
+    const btn = document.getElementById("btn-toggle-slot-" + slotId);
+    if (btn) {
+      const textSpan = btn.querySelector(".slot-toggle-text");
+      const chevron = btn.querySelector(".slot-toggle-chevron");
+      if (textSpan) {
+        textSpan.innerText = isCurrentlyHidden ? "Collapse Slot" : "Expand Slot";
+      }
+      if (chevron) {
+        chevron.classList.toggle("bi-chevron-up", isCurrentlyHidden);
+        chevron.classList.toggle("bi-chevron-down", !isCurrentlyHidden);
+      }
+    }
+  }
+
+  // Toggle All Sessions in a Day
+  function toggleAllSessionsInDay(dayId) {
+    const pane = document.getElementById("pane-" + dayId);
+    if (!pane) return;
+    const lists = pane.querySelectorAll(".session-papers-list");
+    if (!lists.length) return;
+    
+    // Check if at least one is hidden
+    let hasHidden = false;
+    lists.forEach(l => {
+      if (l.style.display === "none") hasHidden = true;
+    });
+
+    const newDisplay = hasHidden ? "block" : "none";
+    
+    lists.forEach(l => {
+      l.style.display = newDisplay;
+    });
+
+    // Update all slot toggle buttons in this day
+    pane.querySelectorAll(".timeslot-toggle-btn").forEach(btn => {
+      const textSpan = btn.querySelector(".slot-toggle-text");
+      const chevron = btn.querySelector(".slot-toggle-chevron");
+      if (textSpan) {
+        textSpan.innerText = hasHidden ? "Collapse Slot" : "Expand Slot";
+      }
+      if (chevron) {
+        chevron.classList.toggle("bi-chevron-up", hasHidden);
+        chevron.classList.toggle("bi-chevron-down", !hasHidden);
+      }
+    });
+
+    const toggleBtnText = pane.querySelector(".toggle-all-text");
+    if (toggleBtnText) {
+      toggleBtnText.innerText = hasHidden ? "Collapse All" : "Expand All";
+    }
+  }
+
+  // Track Filters
+  function filterByTrack(track) {
+    activeTrackFilter = track;
+    
+    document.querySelectorAll("[data-track]").forEach(btn => {
+      if (btn.classList.contains("filter-pill-btn")) {
+        btn.classList.toggle("active", btn.getAttribute("data-track") === track);
+      }
+    });
+
+    if (isSearchActive) {
+      handleGlobalSearch(document.getElementById("programSearchInput").value);
+    } else {
+      applyCombinedFilters();
+    }
+  }
+
+  // Room Filters
+  function filterByRoom(room) {
+    activeRoomFilter = room;
+    
+    document.querySelectorAll("[data-room]").forEach(btn => {
+      if (btn.classList.contains("filter-pill-btn")) {
+        btn.classList.toggle("active", btn.getAttribute("data-room") === room);
+      }
+    });
+
+    if (isSearchActive) {
+      handleGlobalSearch(document.getElementById("programSearchInput").value);
+    } else {
+      applyCombinedFilters();
+    }
+  }
+
+  function applyCombinedFilters() {
+    const activePane = document.getElementById("pane-" + activeDayId);
+    if (!activePane) return;
+
+    // Filter sessions
+    activePane.querySelectorAll(".session-wrapper-col").forEach(col => {
+      const room = col.getAttribute("data-room") || "";
+      const track = col.getAttribute("data-track") || "";
+      
+      const roomMatch = (activeRoomFilter === "all" || room.toLowerCase() === activeRoomFilter.toLowerCase());
+      
+      let trackMatch = true;
+      if (activeTrackFilter !== "all") {
+        if (activeTrackFilter === "workshops") {
+          trackMatch = track.startsWith("WS -") || track.startsWith("SS -") || track === "workshops";
+        } else {
+          trackMatch = (track.toLowerCase() === activeTrackFilter.toLowerCase());
+        }
+      }
+
+      col.classList.toggle("d-none", !(roomMatch && trackMatch));
+    });
+
+    // Filter general event cards
+    activePane.querySelectorAll(".general-event-card, .keynote-program-card, .tutorial-program-card").forEach(card => {
+      const room = card.getAttribute("data-room") || "";
+      const roomMatch = (activeRoomFilter === "all" || room.toLowerCase() === activeRoomFilter.toLowerCase());
+      const trackMatch = (activeTrackFilter === "all");
+      card.classList.toggle("d-none", !(roomMatch && trackMatch));
+    });
+  }
+
+  // GLOBAL SEARCH ENGINE
+  function handleGlobalSearch(query) {
+    const q = query.trim();
+    const clearBtn = document.getElementById("clearSearchBtn");
+    const searchResultsView = document.getElementById("view-search-results");
+    const dayContainer = document.getElementById("view-day-container");
+    const weekContainer = document.getElementById("view-week-container");
+    const authorsContainer = document.getElementById("view-authors-container");
+    const resultsContainer = document.getElementById("searchResultsContainer");
+    const emptyState = document.getElementById("searchEmptyState");
+    const resultsHeader = document.getElementById("searchResultsHeader");
+
+    if (q.length < 2) {
+      clearBtn.style.display = "none";
+      isSearchActive = false;
+      searchResultsView.classList.add("d-none");
+      if (currentMainView === "day") dayContainer.classList.remove("d-none");
+      else if (currentMainView === "week") weekContainer.classList.remove("d-none");
+      else if (currentMainView === "authors") authorsContainer.classList.remove("d-none");
+      return;
+    }
+
+    clearBtn.style.display = "block";
+    isSearchActive = true;
+
+    // Hide normal views, show search results view
+    dayContainer.classList.add("d-none");
+    weekContainer.classList.add("d-none");
+    authorsContainer.classList.add("d-none");
+    searchResultsView.classList.remove("d-none");
+
+    const queryLower = q.toLowerCase();
+    const results = [];
+
+    // Search Keynotes
+    PROGRAM_DATA.keynotes.forEach(kn => {
+      const matchSpeaker = kn.speaker.toLowerCase().includes(queryLower);
+      const matchTitle = kn.title.toLowerCase().includes(queryLower);
+      const matchAffil = (kn.affiliation || "").toLowerCase().includes(queryLower);
+      const matchRoom = (kn.room || "").toLowerCase().includes(queryLower);
+
+      const roomMatch = (activeRoomFilter === "all" || kn.room.toLowerCase() === activeRoomFilter.toLowerCase());
+      const trackMatch = (activeTrackFilter === "all");
+
+      if (roomMatch && trackMatch && (matchSpeaker || matchTitle || matchAffil || matchRoom)) {
+        results.push({
+          type: "Keynote Talk",
+          badgeClass: "badge-room-magna",
+          trackBadge: "badge-track-swc",
+          trackLabel: "Plenary Keynote",
+          dayId: kn.dayId,
+          dayName: kn.dayShort + " (" + kn.day + ")",
+          time: kn.time,
+          room: kn.room,
+          title: kn.title,
+          speakers: kn.speaker,
+          affiliations: [kn.affiliation],
+          url: kn.url,
+          sessionId: "keynote-" + kn.number
+        });
+      }
+    });
+
+    // Search Tutorials
+    PROGRAM_DATA.tutorials.forEach(tut => {
+      const matchSpeakers = tut.speakers.toLowerCase().includes(queryLower);
+      const matchTitle = tut.title.toLowerCase().includes(queryLower);
+      const matchRoom = (tut.room || "").toLowerCase().includes(queryLower);
+
+      const roomMatch = (activeRoomFilter === "all" || tut.room.toLowerCase() === activeRoomFilter.toLowerCase());
+      const trackMatch = (activeTrackFilter === "all");
+
+      if (roomMatch && trackMatch && (matchSpeakers || matchTitle || matchRoom)) {
+        results.push({
+          type: "Tutorial",
+          badgeClass: tut.room === "Aula Magna" ? "badge-room-magna" : "badge-room-stampa",
+          trackBadge: "badge-track-uic",
+          trackLabel: "In-Depth Tutorial",
+          dayId: "day-1",
+          dayName: "Mon 7 Sep (Monday, 7 September 2026)",
+          time: tut.part1_time + " & " + tut.part2_time,
+          room: tut.room,
+          title: tut.title,
+          speakers: tut.speakers,
+          affiliations: [],
+          url: tut.url,
+          sessionId: tut.id
+        });
+      }
+    });
+
+    // Search Technical Sessions & Papers
+    PROGRAM_DATA.days.forEach(day => {
+      (day.sessions || []).forEach(session => {
+        const roomMatch = (activeRoomFilter === "all" || session.room.toLowerCase() === activeRoomFilter.toLowerCase());
+        
+        let trackMatch = true;
+        if (activeTrackFilter !== "all") {
+          if (activeTrackFilter === "workshops") {
+            trackMatch = (session.track || "").startsWith("WS -") || (session.track || "").startsWith("SS -") || session.track === "workshops";
+          } else {
+            trackMatch = ((session.track || "").toLowerCase() === activeTrackFilter.toLowerCase());
+          }
+        }
+
+        if (!roomMatch || !trackMatch) return;
+
+        (session.papers || []).forEach(paper => {
+          const matchTitle = paper.title.toLowerCase().includes(queryLower);
+          const matchAuthors = paper.authors.some(a => a.toLowerCase().includes(queryLower));
+          const matchAffil = (paper.affiliations || []).some(aff => aff.toLowerCase().includes(queryLower));
+          const matchSession = session.id.toLowerCase().includes(queryLower) || session.title.toLowerCase().includes(queryLower);
+          const matchTrack = (session.track || "").toLowerCase().includes(queryLower) || (session.trackLabel || "").toLowerCase().includes(queryLower);
+
+          if (matchTitle || matchAuthors || matchAffil || matchSession || matchTrack) {
+            results.push({
+              type: "Paper Presentation",
+              badgeClass: session.room === "Aula Magna" ? "badge-room-magna" : (session.room === "Sala Stampa" ? "badge-room-stampa" : (session.room === "Aula A" ? "badge-room-a" : "badge-room-caldora")),
+              trackBadge: session.trackBadge || "badge-track-swc",
+              trackLabel: session.trackLabel || session.track || "IEEE SWC 2026",
+              dayId: day.id,
+              dayName: day.shortName + " (" + day.date + ")",
+              time: session.time,
+              room: session.room,
+              sessionId: session.id,
+              sessionTitle: session.title,
+              paperNum: paper.num,
+              paperCode: paper.code,
+              title: paper.title,
+              authors: paper.authors,
+              affiliations: paper.affiliations || []
+            });
+          }
+        });
+      });
+    });
+
+    // Render results
+    if (results.length === 0) {
+      resultsHeader.innerText = `0 results for "${q}"`;
+      resultsContainer.innerHTML = "";
+      emptyState.classList.remove("d-none");
+    } else {
+      emptyState.classList.add("d-none");
+      resultsHeader.innerHTML = `Found <span class="text-primary">${results.length}</span> results for "<strong>${escapeHtml(q)}</strong>"`;
+      
+      const regex = new RegExp(`(${escapeRegex(q)})`, "gi");
+
+      let html = "";
+      results.forEach(res => {
+        const highlightedTitle = res.title.replace(regex, "<mark class='search-highlight'>$1</mark>");
+        
+        let authorsHtml = "";
+        if (res.speakers) {
+          const highSpeakers = res.speakers.replace(regex, "<mark class='search-highlight'>$1</mark>");
+          authorsHtml = `<div class="paper-authors mb-1"><i class="bi bi-person-fill text-primary me-1"></i><strong>${highSpeakers}</strong></div>`;
+        } else if (res.authors) {
+          const highAuthors = res.authors.map(a => a.replace(regex, "<mark class='search-highlight'>$1</mark>")).join(", ");
+          authorsHtml = `<div class="paper-authors mb-1"><i class="bi bi-person-fill text-primary me-1"></i>${highAuthors}</div>`;
+        }
+
+        let affHtml = "";
+        if (res.affiliations && res.affiliations.length > 0) {
+          affHtml = `<div class="paper-affiliations mt-1">` + res.affiliations.map(aff => {
+            const highAff = aff.replace(regex, "<mark class='search-highlight'>$1</mark>");
+            return `<div class="text-muted small"><i class="bi bi-building me-1"></i>${highAff}</div>`;
+          }).join("") + `</div>`;
+        }
+
+        let jumpAction = "";
+        if (res.dayId && res.sessionId) {
+          jumpAction = `<button class="btn btn-sm btn-primary rounded-pill px-3 fw-semibold shadow-xs" onclick="jumpToSession('${res.dayId}', '${res.sessionId}')">
+            <i class="bi bi-geo-alt-fill me-1"></i>Jump to Session in Program
+          </button>`;
+        }
+
+        html += `
+        <div class="col-12">
+          <div class="search-result-card">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 mb-2 pb-2 border-bottom">
+              <div class="d-flex flex-wrap align-items-center gap-2">
+                <span class="badge bg-dark text-white">${res.dayName}</span>
+                <span class="badge ${res.trackBadge}"><i class="bi bi-tag-fill me-1"></i>${res.trackLabel}</span>
+                <span class="badge ${res.badgeClass}">${res.room}</span>
+                <span class="badge bg-light text-secondary border"><i class="bi bi-clock me-1"></i>${res.time}</span>
+                ${res.sessionId ? `<span class="badge bg-light text-dark border fw-bold">${res.sessionId}</span>` : ""}
+              </div>
+              <div>${jumpAction}</div>
+            </div>
+            
+            <h5 class="paper-title mb-2 text-dark">${res.paperNum ? `<span class="paper-num-badge me-2">${res.paperNum}</span>` : ""}${highlightedTitle}</h5>
+            ${authorsHtml}
+            ${affHtml}
+          </div>
+        </div>
+        `;
+      });
+
+      resultsContainer.innerHTML = html;
+    }
+  }
+
+  function clearGlobalSearch() {
+    const input = document.getElementById("programSearchInput");
+    input.value = "";
+    handleGlobalSearch("");
+  }
+
+  function focusSearch() {
+    const input = document.getElementById("programSearchInput");
+    input.focus();
+    input.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  function searchAuthorDirectly(authorName) {
+    const input = document.getElementById("programSearchInput");
+    input.value = authorName;
+    handleGlobalSearch(authorName);
+    input.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  function jumpToSession(dayId, sessionId) {
+    clearGlobalSearch();
+    switchMainView("day");
+    switchDay(dayId);
+    
+    setTimeout(() => {
+      const target = document.getElementById(sessionId);
+      if (target) {
+        // Expand the timeslot containing this session
+        const timeslotBlock = target.closest(".timeslot-sessions-block");
+        if (timeslotBlock) {
+          timeslotBlock.querySelectorAll(".session-papers-list").forEach(l => {
+            l.style.display = "block";
+          });
+          const slotBtn = timeslotBlock.querySelector(".timeslot-toggle-btn");
+          if (slotBtn) {
+            const textSpan = slotBtn.querySelector(".slot-toggle-text");
+            const chevron = slotBtn.querySelector(".slot-toggle-chevron");
+            if (textSpan) textSpan.innerText = "Collapse Slot";
+            if (chevron) {
+              chevron.classList.add("bi-chevron-up");
+              chevron.classList.remove("bi-chevron-down");
+            }
+          }
+        }
+
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        target.style.transition = "all 0.3s ease";
+        target.style.boxShadow = "0 0 0 4px #0d6efd, 0 12px 32px rgba(13,110,253,0.35)";
+        target.style.transform = "scale(1.01)";
+        setTimeout(() => {
+          target.style.boxShadow = "";
+          target.style.transform = "";
+        }, 2200);
+      }
+    }, 180);
+  }
+
+  function scrollToTopProgram() {
+    window.scrollTo({ top: 260, behavior: "smooth" });
+  }
+
+  // Floating Back to top button visibility
+  window.addEventListener("scroll", () => {
+    const btn = document.getElementById("btnFloatingTop");
+    if (btn) {
+      if (window.scrollY > 350) {
+        btn.classList.add("show");
+      } else {
+        btn.classList.remove("show");
+      }
+    }
+  });
+
+  function escapeHtml(text) {
+    const map = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" };
+    return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+  }
+
+  function escapeRegex(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  // Handle URL hash navigation (e.g. #day-3 or #TS-22)
+  document.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash.replace("#", "");
+    if (hash.startsWith("day-")) {
+      switchMainView("day");
+      switchDay(hash);
+    } else if (hash.startsWith("TS-")) {
+      PROGRAM_DATA.days.forEach(d => {
+        (d.sessions || []).forEach(s => {
+          if (s.id === hash) {
+            jumpToSession(d.id, hash);
+          }
+        });
+      });
+    } else if (hash === "week") {
+      switchMainView("week");
+    } else if (hash === "authors") {
+      switchMainView("authors");
+    }
+  });
+</script>

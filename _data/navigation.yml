@@ -67,6 +67,9 @@ main:
           - title: Call for Papers
             url: /swc/#call-for-ws-ss
 
+  - title: Program
+    url: /program/
+
   - title: Keynotes
     dropdown: true
     menu_class: dropdown-menu-glass
