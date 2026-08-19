@@ -25,10 +25,32 @@ title: Home
 </section>
 
 <section class="page-section container pt-5 px-4 pb-5 mt-2 d-flex flex-column gap-3">
-  <div class="alert alert-info alert-dismissible fade show text-center shadow-sm mb-3" role="alert">
-    <i class="bi bi-bell-fill me-2 text-primary"></i>
-    <strong>News:</strong> The first preliminary program will be published before <strong>August 15th</strong>!
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  <!-- Program Announcement Spotlight Card -->
+  <div class="card border-0 shadow-sm rounded-4 p-4 mb-3 text-white position-relative overflow-hidden" style="background: linear-gradient(135deg, #07152f 0%, #1e3a8a 50%, #0284c7 100%);">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+      <div class="d-flex align-items-start align-items-sm-center gap-3">
+        <div class="rounded-circle bg-white bg-opacity-20 p-3 d-flex align-items-center justify-content-center text-white flex-shrink-0" style="width: 54px; height: 54px;">
+          <i class="bi bi-calendar-check-fill fs-3 text-warning"></i>
+        </div>
+        <div>
+          <div class="d-flex align-items-center gap-2 mb-1 flex-wrap">
+            <span class="badge bg-warning text-dark fw-bold px-2.5 py-1 rounded-pill">INITIAL PROGRAM RELEASE</span>
+            <span class="badge rounded-pill px-3 py-1 fw-bold" style="background: rgba(255, 255, 255, 0.25); color: #ffffff !important; border: 1px solid rgba(255, 255, 255, 0.4); font-size: 0.85rem;">
+              <i class="bi bi-layers-fill text-warning me-1"></i>56 Sessions · 6 Keynotes · 4 Tutorials
+            </span>
+          </div>
+          <h4 class="fw-bold mb-1 text-white">Conference Technical Programme & Schedule is Live!</h4>
+          <p class="mb-0 small" style="color: rgba(255, 255, 255, 0.85);">
+            Explore all 5 conference days, parallel session allocations, keynote bios, interactive track filters, and author search.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap gap-2 align-items-center flex-shrink-0">
+        <a href="{{ '/program/' | relative_url }}" class="btn btn-warning rounded-pill px-4 py-2.5 fw-bold text-dark shadow-sm text-nowrap">
+          <i class="bi bi-calendar4-week me-1"></i>View Full Schedule &rarr;
+        </a>
+      </div>
+    </div>
   </div>
 
   <div class="alert alert-success alert-dismissible fade show text-center shadow-sm mb-4" role="alert">
@@ -130,6 +152,15 @@ title: Home
               </div>
               <div class="fw-bold d-flex align-items-center gap-2" style="font-size: 0.85rem;">
                 {{site.data.swc_data.dates.cameraReadyDue}} <span class="badge-closed">Closed</span>
+              </div>
+            </div>
+
+            <div class="date-item active">
+              <div class="fw-semibold text-primary mb-1" style="font-size: 0.9rem;">
+                <i class="bi bi-calendar-check text-primary me-1"></i>Technical Program
+              </div>
+              <div class="text-primary fw-bold d-flex align-items-center gap-2" style="font-size: 0.85rem;">
+                <a href="{{ '/program/' | relative_url }}" class="text-primary text-decoration-none fw-bold">Published Online</a> <span class="badge bg-primary text-white rounded-pill px-2 py-0.5 small">Live</span>
               </div>
             </div>
 
