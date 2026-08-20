@@ -8,6 +8,9 @@
   short: Welcome
   url: /symposia/wswf/welcome/
   icon: bi-emoji-smile
+  time: "09:00 — 10:30"
+  room: "Sala Stampa"
+  session_id: "TS-34"
   description: Words of welcome and an introduction to Women in the Smart World.
 
 - key: keynote
@@ -16,6 +19,9 @@
   short: "Session 1: Keynote Address"
   url: /symposia/wswf/keynote/
   icon: bi-mic-fill
+  time: "09:00 — 10:30"
+  room: "Sala Stampa"
+  session_id: "TS-34"
   description: Prof. Sandra Savaglio, University of Calabria.
 
 - key: presentations
@@ -24,6 +30,9 @@
   short: "Session 2: Presentations and Posters"
   url: /symposia/wswf/presentations/
   icon: bi-easel-fill
+  time: "09:00–10:30 & 14:30–16:00"
+  room: "Sala Stampa & Aula Magna"
+  session_id: "TS-34 & TS-41"
   description: Accepted papers and poster presentations.
 
 - key: panel
@@ -32,4 +41,7 @@
   short: "Session 3: Panel Discussion"
   url: /symposia/wswf/panel/
   icon: bi-people-fill
+  time: "14:30 — 16:00"
+  room: "Aula Magna"
+  session_id: "TS-41"
   description: "Converging Perspectives: from delivery to conversation."

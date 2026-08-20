@@ -19,7 +19,7 @@ title: Women in the Smart World Symposium 2026
             <div>
                 <h5 class="fw-light mb-3">A part of the IEEE Smart World Congress</h5>
                 <h3>University of Calabria – Rende, Italy</h3>
-                <h3 class="">September 11, 2026</h3>
+                <h3 class="">Thursday, September 10, 2026</h3>
             </div>
             <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
                 <a class="btn btn-primary rounded-pill px-4 py-2 shadow-sm fw-bold"
@@ -168,7 +168,7 @@ title: Women in the Smart World Symposium 2026
                                     <span class="small text-uppercase fw-bold text-success"
                                         style="letter-spacing: 1px;">Symposium
                                         Date</span>
-                                    <span class="fs-5 fw-bold text-success">September 11, 2026</span>
+                                    <span class="fs-5 fw-bold text-success">September 10, 2026</span>
                                 </div>
                             </div>
                         </div>
@@ -411,8 +411,12 @@ title: Women in the Smart World Symposium 2026
                             class="custom-card p-4 h-100 w-100 text-decoration-none d-flex align-items-center gap-3">
                             <i class="bi {{ session.icon }} topic-icon m-0"></i>
                             <div>
-                                <span class="badge bg-primary bg-opacity-10 text-primary fw-bold mb-1">{{ session.step
-                                    }}</span>
+                                <div class="d-flex align-items-center gap-2 mb-1 flex-wrap">
+                                    <span class="badge bg-primary bg-opacity-10 text-primary fw-bold">{{ session.step }}</span>
+                                    {% if session.room %}
+                                    <span class="badge bg-secondary bg-opacity-10 text-secondary small"><i class="bi bi-geo-alt-fill me-1"></i>{{ session.room }}</span>
+                                    {% endif %}
+                                </div>
                                 <h5 class="fw-bold mb-1 text-dark">{{ session.title }}</h5>
                                 <p class="text-muted mb-0 small">{{ session.description }}</p>
                             </div>
