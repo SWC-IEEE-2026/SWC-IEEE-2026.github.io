@@ -365,10 +365,12 @@ published: true
                     <div class="flex-grow-1">
                       <div class="d-flex align-items-center gap-1 mb-1 flex-wrap">
                         <span class="badge bg-dark text-white fw-bold">{{ session.id }}</span>
+                        {% if session.trackLabel and session.trackLabel != "" %}
                         <!-- Track Badge -->
                         <span class="badge {{ session.trackBadge }} shadow-xs fw-bold">
                           <i class="bi bi-tag-fill me-1"></i>{{ session.trackLabel }}
                         </span>
+                        {% endif %}
                       </div>
                       <strong class="fs-6 text-dark d-block">{{ session.title }}</strong>
                     </div>
@@ -391,8 +393,8 @@ published: true
                     {% if session.pendingAllocation %}
                       <div class="p-4 text-center text-muted">
                         <i class="bi bi-hourglass-split fs-3 text-secondary mb-2 d-block"></i>
-                        <h6 class="fw-semibold mb-1">Paper allocation to follow</h6>
-                        <p class="small text-muted mb-0">The specific presentations for this workshop/session track will be published soon.</p>
+                        <h6 class="fw-semibold mb-1">No Papers Scheduled</h6>
+                        <p class="small text-muted mb-0">No presentations are currently assigned to this session slot.</p>
                       </div>
                     {% else %}
                       {% for paper in session.papers %}
@@ -552,10 +554,10 @@ published: true
               </td>
               <td>
                 <div class="row g-1">
-                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-5', 'TS-49')"><strong>TS-49</strong><br><span class="badge badge-track-workshop p-1 small">AI-RADIO</span><br><small>09:00-10:30</small></div></div>
-                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-5', 'TS-50')"><strong>TS-50</strong><br><span class="badge badge-track-workshop p-1 small">IoWT</span><br><small>09:00-10:30</small></div></div>
-                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-5', 'TS-51')"><strong>TS-51</strong><br><span class="badge badge-track-workshop p-1 small">PRInCePS</span><br><small>09:00-10:30</small></div></div>
-                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-5', 'TS-52')"><strong>TS-52</strong><br><span class="badge badge-track-workshop p-1 small">TrustGen</span><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-5', 'TS-49')"><strong>TS-49</strong><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-5', 'TS-50')"><strong>TS-50</strong><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-5', 'TS-51')"><strong>TS-51</strong><br><small>09:00-10:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-5', 'TS-52')"><strong>TS-52</strong><br><small>09:00-10:30</small></div></div>
                 </div>
               </td>
             </tr>
@@ -599,7 +601,7 @@ published: true
               </td>
               <td>
                 <div class="row g-1">
-                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-5', 'TS-53')"><strong>TS-53</strong><br><span class="badge badge-track-workshop p-1 small">AI&ML</span><br><small>11:00-12:00</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-5', 'TS-53')"><strong>TS-53</strong><br><small>11:00-12:00</small></div></div>
                   <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-5', 'TS-54')"><strong>TS-54</strong><br><span class="badge badge-track-dt p-1 small">DT</span><br><small>11:00-12:00</small></div></div>
                   <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-5', 'TS-55')"><strong>TS-55</strong><br><span class="badge badge-track-uic p-1 small">UIC</span><br><small>11:00-12:00</small></div></div>
                   <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-5', 'TS-56')"><strong>TS-56</strong><br><span class="badge badge-track-uic p-1 small">UIC</span><br><small>11:00-12:00</small></div></div>
@@ -751,10 +753,10 @@ published: true
               </td>
               <td>
                 <div class="row g-1">
-                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-4', 'TS-45')"><strong>TS-45</strong><br><span class="badge badge-track-workshop p-1 small">CitiVerse</span><br><small>17:30-18:30</small></div></div>
-                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-4', 'TS-46')"><strong>TS-46</strong><br><span class="badge badge-track-workshop p-1 small">NextGen</span><br><small>17:30-18:30</small></div></div>
-                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-4', 'TS-47')"><strong>TS-47</strong><br><span class="badge badge-track-workshop p-1 small">ARIES</span><br><small>17:30-18:30</small></div></div>
-                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-4', 'TS-48')"><strong>TS-48</strong><br><span class="badge badge-track-workshop p-1 small">SuPer-IoT</span><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-magna" onclick="jumpToSession('day-4', 'TS-45')"><strong>TS-45</strong><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-stampa" onclick="jumpToSession('day-4', 'TS-46')"><strong>TS-46</strong><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-aula-a" onclick="jumpToSession('day-4', 'TS-47')"><strong>TS-47</strong><br><small>17:30-18:30</small></div></div>
+                  <div class="col-6"><div class="timetable-cell-block cell-caldora" onclick="jumpToSession('day-4', 'TS-48')"><strong>TS-48</strong><br><small>17:30-18:30</small></div></div>
                 </div>
               </td>
               <td>—</td>

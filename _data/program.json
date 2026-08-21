@@ -8025,9 +8025,9 @@
           "dayId": "day-4",
           "dayName": "Day 4 · Thursday",
           "shortName": "Thu 10 Sep",
-          "track": "WS - CitiVerse",
-          "trackBadge": "badge-track-workshop",
-          "trackLabel": "WS - CitiVerse"
+          "track": "",
+          "trackBadge": "",
+          "trackLabel": ""
         },
         {
           "id": "TS-46",
@@ -8041,9 +8041,9 @@
           "dayId": "day-4",
           "dayName": "Day 4 · Thursday",
           "shortName": "Thu 10 Sep",
-          "track": "WS - NextGen-XDV",
-          "trackBadge": "badge-track-workshop",
-          "trackLabel": "WS - NextGen-XDV"
+          "track": "",
+          "trackBadge": "",
+          "trackLabel": ""
         },
         {
           "id": "TS-47",
@@ -8057,9 +8057,9 @@
           "dayId": "day-4",
           "dayName": "Day 4 · Thursday",
           "shortName": "Thu 10 Sep",
-          "track": "SS - ARIES",
-          "trackBadge": "badge-track-workshop",
-          "trackLabel": "SS - ARIES"
+          "track": "",
+          "trackBadge": "",
+          "trackLabel": ""
         },
         {
           "id": "TS-48",
@@ -8073,9 +8073,9 @@
           "dayId": "day-4",
           "dayName": "Day 4 · Thursday",
           "shortName": "Thu 10 Sep",
-          "track": "SS - SuPer-IoT",
-          "trackBadge": "badge-track-workshop",
-          "trackLabel": "SS - SuPer-IoT"
+          "track": "",
+          "trackBadge": "",
+          "trackLabel": ""
         }
       ],
       "blocks": [
@@ -9331,9 +9331,9 @@
               "dayId": "day-4",
               "dayName": "Day 4 · Thursday",
               "shortName": "Thu 10 Sep",
-              "track": "WS - CitiVerse",
-              "trackBadge": "badge-track-workshop",
-              "trackLabel": "WS - CitiVerse"
+              "track": "",
+              "trackBadge": "",
+              "trackLabel": ""
             },
             {
               "id": "TS-46",
@@ -9347,9 +9347,9 @@
               "dayId": "day-4",
               "dayName": "Day 4 · Thursday",
               "shortName": "Thu 10 Sep",
-              "track": "WS - NextGen-XDV",
-              "trackBadge": "badge-track-workshop",
-              "trackLabel": "WS - NextGen-XDV"
+              "track": "",
+              "trackBadge": "",
+              "trackLabel": ""
             },
             {
               "id": "TS-47",
@@ -9363,9 +9363,9 @@
               "dayId": "day-4",
               "dayName": "Day 4 · Thursday",
               "shortName": "Thu 10 Sep",
-              "track": "SS - ARIES",
-              "trackBadge": "badge-track-workshop",
-              "trackLabel": "SS - ARIES"
+              "track": "",
+              "trackBadge": "",
+              "trackLabel": ""
             },
             {
               "id": "TS-48",
@@ -9379,9 +9379,9 @@
               "dayId": "day-4",
               "dayName": "Day 4 · Thursday",
               "shortName": "Thu 10 Sep",
-              "track": "SS - SuPer-IoT",
-              "trackBadge": "badge-track-workshop",
-              "trackLabel": "SS - SuPer-IoT"
+              "track": "",
+              "trackBadge": "",
+              "trackLabel": ""
             }
           ]
         }
@@ -9454,9 +9454,9 @@
           "dayId": "day-5",
           "dayName": "Day 5 · Friday",
           "shortName": "Fri 11 Sep",
-          "track": "WS - AI-RADIO",
-          "trackBadge": "badge-track-workshop",
-          "trackLabel": "WS - AI-RADIO"
+          "track": "",
+          "trackBadge": "",
+          "trackLabel": ""
         },
         {
           "id": "TS-50",
@@ -9470,9 +9470,9 @@
           "dayId": "day-5",
           "dayName": "Day 5 · Friday",
           "shortName": "Fri 11 Sep",
-          "track": "WS - IoWT",
-          "trackBadge": "badge-track-workshop",
-          "trackLabel": "WS - IoWT"
+          "track": "",
+          "trackBadge": "",
+          "trackLabel": ""
         },
         {
           "id": "TS-51",
@@ -9486,9 +9486,9 @@
           "dayId": "day-5",
           "dayName": "Day 5 · Friday",
           "shortName": "Fri 11 Sep",
-          "track": "WS - PRInCePS",
-          "trackBadge": "badge-track-workshop",
-          "trackLabel": "WS - PRInCePS"
+          "track": "",
+          "trackBadge": "",
+          "trackLabel": ""
         },
         {
           "id": "TS-52",
@@ -9502,9 +9502,9 @@
           "dayId": "day-5",
           "dayName": "Day 5 · Friday",
           "shortName": "Fri 11 Sep",
-          "track": "WS - TrustGenBOT",
-          "trackBadge": "badge-track-workshop",
-          "trackLabel": "WS - TrustGenBOT"
+          "track": "",
+          "trackBadge": "",
+          "trackLabel": ""
         },
         {
           "id": "TS-53",
@@ -9518,9 +9518,9 @@
           "dayId": "day-5",
           "dayName": "Day 5 · Friday",
           "shortName": "Fri 11 Sep",
-          "track": "SS - AI&ML",
-          "trackBadge": "badge-track-workshop",
-          "trackLabel": "SS - AI&ML"
+          "track": "",
+          "trackBadge": "",
+          "trackLabel": ""
         },
         {
           "id": "TS-54",
@@ -9754,9 +9754,9 @@
               "dayId": "day-5",
               "dayName": "Day 5 · Friday",
               "shortName": "Fri 11 Sep",
-              "track": "WS - AI-RADIO",
-              "trackBadge": "badge-track-workshop",
-              "trackLabel": "WS - AI-RADIO"
+              "track": "",
+              "trackBadge": "",
+              "trackLabel": ""
             },
             {
               "id": "TS-50",
@@ -9770,9 +9770,9 @@
               "dayId": "day-5",
               "dayName": "Day 5 · Friday",
               "shortName": "Fri 11 Sep",
-              "track": "WS - IoWT",
-              "trackBadge": "badge-track-workshop",
-              "trackLabel": "WS - IoWT"
+              "track": "",
+              "trackBadge": "",
+              "trackLabel": ""
             },
             {
               "id": "TS-51",
@@ -9786,9 +9786,9 @@
               "dayId": "day-5",
               "dayName": "Day 5 · Friday",
               "shortName": "Fri 11 Sep",
-              "track": "WS - PRInCePS",
-              "trackBadge": "badge-track-workshop",
-              "trackLabel": "WS - PRInCePS"
+              "track": "",
+              "trackBadge": "",
+              "trackLabel": ""
             },
             {
               "id": "TS-52",
@@ -9802,9 +9802,9 @@
               "dayId": "day-5",
               "dayName": "Day 5 · Friday",
               "shortName": "Fri 11 Sep",
-              "track": "WS - TrustGenBOT",
-              "trackBadge": "badge-track-workshop",
-              "trackLabel": "WS - TrustGenBOT"
+              "track": "",
+              "trackBadge": "",
+              "trackLabel": ""
             }
           ]
         },
@@ -9832,9 +9832,9 @@
               "dayId": "day-5",
               "dayName": "Day 5 · Friday",
               "shortName": "Fri 11 Sep",
-              "track": "SS - AI&ML",
-              "trackBadge": "badge-track-workshop",
-              "trackLabel": "SS - AI&ML"
+              "track": "",
+              "trackBadge": "",
+              "trackLabel": ""
             },
             {
               "id": "TS-54",
