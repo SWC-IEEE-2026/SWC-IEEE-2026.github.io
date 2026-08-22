@@ -72,7 +72,7 @@ published: true
     </div>
 
     <!-- Pane 2: Full Technical Program (Booklet) -->
-    <div id="paneFull" class="card border-0 shadow-sm rounded-4 overflow-hidden bg-white p-2 p-md-4 mb-4 d-none">
+    <div id="paneFull" class="card border-0 shadow-sm rounded-4 bg-white p-2 p-md-4 mb-4 d-none">
       <div class="d-flex justify-content-between align-items-center pb-3 mb-3 border-bottom flex-wrap gap-2">
         <div>
           <h4 class="fw-bold mb-1 text-dark d-flex align-items-center gap-2">
@@ -80,10 +80,26 @@ published: true
           </h4>
           <p class="text-muted small mb-0">Comprehensive booklet with full session breakdowns, paper listings, authors, and presentation details.</p>
         </div>
-        <span class="badge bg-success bg-opacity-10 text-success px-3 py-1.5 rounded-pill fw-semibold">Complete Booklet</span>
+        <div class="d-flex align-items-center gap-2 flex-wrap">
+          <!-- Mobile Fit/100% Size Switcher (Shows on screens < 860px) -->
+          <div class="btn-group btn-group-sm d-md-none shadow-xs" role="group" id="mobileBookletZoomToggle">
+            <button type="button" class="btn btn-primary btn-sm active" id="btnFitMobile" onclick="setBookletMobileMode('fit')">
+              <i class="bi bi-arrows-angle-contract me-1"></i>Fit Width
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="btnActualMobile" onclick="setBookletMobileMode('actual')">
+              <i class="bi bi-zoom-in me-1"></i>100% Size
+            </button>
+          </div>
+          <span class="badge bg-success bg-opacity-10 text-success px-3 py-1.5 rounded-pill fw-semibold d-none d-md-inline-block">Complete Booklet</span>
+        </div>
       </div>
-      <iframe src="https://api-conferences.sparcly.ai/api/core/v1/public/technical-program/63/embed?document=booklet"
-        title="Technical programme - Full Booklet" width="100%" height="1400" style="border:0;max-width:100%" loading="lazy"></iframe>
+      
+      <!-- Responsive Booklet Viewport Wrapper -->
+      <div class="booklet-wrapper" id="bookletWrapper" style="width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; position: relative;">
+        <iframe src="https://api-conferences.sparcly.ai/api/core/v1/public/technical-program/63/embed?document=booklet"
+          id="bookletIframe"
+          title="Technical programme - Full Booklet" width="100%" height="1400" style="border:0; display:block;" loading="lazy"></iframe>
+      </div>
     </div>
 
   </div>
@@ -96,8 +112,55 @@ published: true
 
 {% include sponsors.html sponsors=site.data.sponsors %}
 
-<!-- Interactive Tab Switcher Logic -->
+<!-- Interactive Tab Switcher & Mobile Responsive Scaling Logic -->
 <script>
+  let bookletMobileMode = 'fit'; // 'fit' or 'actual'
+
+  function updateBookletScale() {
+    const paneFull = document.getElementById('paneFull');
+    if (!paneFull || paneFull.classList.contains('d-none')) return;
+
+    const wrapper = document.getElementById('bookletWrapper');
+    const iframe = document.getElementById('bookletIframe');
+    if (!wrapper || !iframe) return;
+
+    const containerWidth = wrapper.clientWidth || wrapper.offsetWidth;
+    const standardBookletWidth = 860; // Standard 8.5" booklet layout width
+
+    if (containerWidth > 0 && containerWidth < standardBookletWidth && bookletMobileMode === 'fit') {
+      const scale = containerWidth / standardBookletWidth;
+      iframe.style.width = standardBookletWidth + 'px';
+      iframe.style.maxWidth = 'none';
+      iframe.style.transform = `scale(${scale})`;
+      iframe.style.transformOrigin = 'top left';
+      iframe.style.height = '1400px';
+      wrapper.style.height = (1400 * scale) + 'px';
+      wrapper.style.overflowX = 'hidden';
+    } else {
+      iframe.style.width = (containerWidth < standardBookletWidth) ? (standardBookletWidth + 'px') : '100%';
+      iframe.style.maxWidth = (containerWidth < standardBookletWidth) ? 'none' : '100%';
+      iframe.style.transform = 'none';
+      iframe.style.height = '1400px';
+      wrapper.style.height = 'auto';
+      wrapper.style.overflowX = (containerWidth < standardBookletWidth) ? 'auto' : 'hidden';
+    }
+  }
+
+  function setBookletMobileMode(mode) {
+    bookletMobileMode = mode;
+    const btnFit = document.getElementById('btnFitMobile');
+    const btnActual = document.getElementById('btnActualMobile');
+
+    if (mode === 'fit') {
+      if (btnFit) { btnFit.classList.add('btn-primary', 'active'); btnFit.classList.remove('btn-outline-secondary'); }
+      if (btnActual) { btnActual.classList.remove('btn-primary', 'active'); btnActual.classList.add('btn-outline-secondary'); }
+    } else {
+      if (btnActual) { btnActual.classList.add('btn-primary', 'active'); btnActual.classList.remove('btn-outline-secondary'); }
+      if (btnFit) { btnFit.classList.remove('btn-primary', 'active'); btnFit.classList.add('btn-outline-secondary'); }
+    }
+    updateBookletScale();
+  }
+
   function switchProgramView(viewName) {
     const isFull = (viewName === 'full' || viewName === 'booklet' || viewName === 'full-program');
     
@@ -131,6 +194,9 @@ published: true
           window.location.hash = '#full-program';
         }
       }
+
+      // Update responsive scaling
+      setTimeout(updateBookletScale, 50);
     } else {
       if (tabGlance) {
         tabGlance.classList.remove('btn-light', 'text-secondary');
@@ -179,4 +245,6 @@ published: true
       switchProgramView('glance');
     }
   });
+
+  window.addEventListener('resize', updateBookletScale);
 </script>
