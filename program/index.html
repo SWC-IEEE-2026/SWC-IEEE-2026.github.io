@@ -204,42 +204,26 @@ published: true
   </div>
 </section>
 
-<!-- Protected Fullscreen Overlay Viewer (Prevents Safari iOS Text Inflation & Overlapping) -->
+<!-- Full Screen Modal Overlay (Native Smooth Scrolling for iOS & Desktop) -->
 <div id="fullscreenViewerOverlay" class="fullscreen-viewer-overlay">
   <!-- Top Navigation Bar -->
   <div class="fullscreen-viewer-header">
-    <div class="d-flex align-items-center gap-2">
-      <button type="button" class="btn btn-dark btn-sm rounded-pill px-3 py-1.5 fw-bold d-inline-flex align-items-center gap-1 shadow-xs" onclick="closeProtectedFullscreen()">
-        <i class="bi bi-arrow-left"></i><span>Back</span>
-      </button>
-      <span class="badge bg-light text-dark border px-3 py-1.5 rounded-pill fw-semibold d-none d-sm-inline-block" id="fullscreenViewerTitle">
-        Full Technical Program
-      </span>
-    </div>
+    <button type="button" class="btn btn-dark btn-sm rounded-pill px-3 py-1.5 fw-bold d-inline-flex align-items-center gap-1.5 shadow-xs" onclick="closeProtectedFullscreen()">
+      <i class="bi bi-arrow-left"></i><span>Back</span>
+    </button>
+    
+    <span class="fw-bold text-dark small text-truncate px-2" id="fullscreenViewerTitle">
+      Full Technical Program
+    </span>
 
-    <div class="d-flex align-items-center gap-2">
-      <!-- Fullscreen Zoom Controls -->
-      <div class="btn-group btn-group-sm shadow-xs" role="group">
-        <button type="button" class="btn btn-primary btn-sm active" id="fsBtnFit" onclick="setFsMobileMode('fit')">
-          <i class="bi bi-arrows-angle-contract me-1"></i>Fit Width
-        </button>
-        <button type="button" class="btn btn-outline-secondary btn-sm" id="fsBtnActual" onclick="setFsMobileMode('actual')">
-          <i class="bi bi-zoom-in me-1"></i>100% Size
-        </button>
-      </div>
-
-      <!-- Close Button -->
-      <button type="button" class="btn btn-light rounded-circle p-1 border shadow-xs d-flex align-items-center justify-content-center" style="width: 34px; height: 34px;" onclick="closeProtectedFullscreen()" title="Close (Esc)">
-        <i class="bi bi-x-lg"></i>
-      </button>
-    </div>
+    <button type="button" class="btn btn-light rounded-circle p-1 border shadow-xs d-flex align-items-center justify-content-center" style="width: 34px; height: 34px;" onclick="closeProtectedFullscreen()" title="Close (Esc)">
+      <i class="bi bi-x-lg"></i>
+    </button>
   </div>
 
-  <!-- Fullscreen Scalable Body Area -->
-  <div class="fullscreen-viewer-body" id="fsViewerBody">
-    <div class="fullscreen-scalable-box" id="fsScalableBox">
-      <iframe id="fsViewerIframe" src="" title="Protected Fullscreen Program View" style="width: 860px; height: 100vh; border: 0; display: block;" loading="lazy"></iframe>
-    </div>
+  <!-- Fullscreen Iframe Content Container -->
+  <div class="fullscreen-viewer-content" id="fsViewerContent">
+    <iframe id="fsViewerIframe" src="" title="Fullscreen Program Viewer" loading="lazy" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -247,16 +231,21 @@ published: true
   /* Fullscreen Viewer Styles */
   body.fullscreen-viewer-open {
     overflow: hidden !important;
+    position: fixed;
+    width: 100%;
   }
   .fullscreen-viewer-overlay {
     display: none !important;
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
     width: 100vw !important;
     height: 100vh !important;
+    height: 100dvh !important;
     z-index: 999999 !important;
-    background: #525659 !important;
+    background: #ffffff !important;
     flex-direction: column !important;
     overflow: hidden !important;
     -webkit-text-size-adjust: 100% !important;
@@ -266,32 +255,33 @@ published: true
     display: flex !important;
   }
   .fullscreen-viewer-header {
-    height: 54px;
+    height: 52px;
     background: #ffffff;
-    border-bottom: 1px solid #cbd5e1;
+    border-bottom: 1px solid #e2e8f0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 1rem;
     flex-shrink: 0;
     z-index: 10;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   }
-  .fullscreen-viewer-body {
+  .fullscreen-viewer-content {
     flex: 1;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: calc(100% - 52px);
     position: relative;
-    display: flex;
-    justify-content: center;
-    background: #525659;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    background: #f8fafc;
   }
-  .fullscreen-scalable-box {
-    transform-origin: top left;
-    width: 860px;
-    background: #ffffff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  .fullscreen-viewer-content iframe {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    border: 0;
+    display: block;
   }
 </style>
 
@@ -307,7 +297,6 @@ published: true
   let activeMainView = 'glance';
   let bookletMobileMode = 'fit'; // 'fit' or 'actual'
   let glanceMobileMode = 'fit';   // 'fit' or 'actual'
-  let fsMobileMode = 'fit';       // 'fit' or 'actual'
   let isFullscreenViewerOpen = false;
 
   const STANDARD_DESKTOP_WIDTH = 860; // Standard 8.5" desktop layout width
@@ -333,8 +322,6 @@ published: true
     if (overlay) {
       overlay.classList.add('active');
     }
-
-    setTimeout(updateFsScale, 50);
   }
 
   function closeProtectedFullscreen() {
@@ -344,47 +331,6 @@ published: true
     if (overlay) {
       overlay.classList.remove('active');
     }
-  }
-
-  function updateFsScale() {
-    if (!isFullscreenViewerOpen) return;
-    const body = document.getElementById('fsViewerBody');
-    const box = document.getElementById('fsScalableBox');
-    const iframe = document.getElementById('fsViewerIframe');
-    if (!body || !box || !iframe) return;
-
-    const availableWidth = window.innerWidth;
-
-    if (availableWidth < STANDARD_DESKTOP_WIDTH && fsMobileMode === 'fit') {
-      const scale = availableWidth / STANDARD_DESKTOP_WIDTH;
-      box.style.width = STANDARD_DESKTOP_WIDTH + 'px';
-      box.style.transform = `scale(${scale})`;
-      box.style.transformOrigin = 'top left';
-      iframe.style.width = STANDARD_DESKTOP_WIDTH + 'px';
-      iframe.style.height = `calc(100vh / ${scale})`;
-      body.style.overflowX = 'hidden';
-    } else {
-      box.style.width = (availableWidth < STANDARD_DESKTOP_WIDTH) ? (STANDARD_DESKTOP_WIDTH + 'px') : '100%';
-      box.style.transform = 'none';
-      iframe.style.width = (availableWidth < STANDARD_DESKTOP_WIDTH) ? (STANDARD_DESKTOP_WIDTH + 'px') : '100%';
-      iframe.style.height = '100vh';
-      body.style.overflowX = (availableWidth < STANDARD_DESKTOP_WIDTH) ? 'auto' : 'hidden';
-    }
-  }
-
-  function setFsMobileMode(mode) {
-    fsMobileMode = mode;
-    const btnFit = document.getElementById('fsBtnFit');
-    const btnActual = document.getElementById('fsBtnActual');
-
-    if (mode === 'fit') {
-      if (btnFit) { btnFit.classList.add('btn-primary', 'active'); btnFit.classList.remove('btn-outline-secondary'); }
-      if (btnActual) { btnActual.classList.remove('btn-primary', 'active'); btnActual.classList.add('btn-outline-secondary'); }
-    } else {
-      if (btnActual) { btnActual.classList.add('btn-primary', 'active'); btnActual.classList.remove('btn-outline-secondary'); }
-      if (btnFit) { btnFit.classList.remove('btn-primary', 'active'); btnFit.classList.add('btn-outline-secondary'); }
-    }
-    updateFsScale();
   }
 
   function getAvailableWidth(container) {
@@ -397,9 +343,6 @@ published: true
   }
 
   function updateActiveScale() {
-    if (isFullscreenViewerOpen) {
-      updateFsScale();
-    }
     if (activeMainView === 'full') {
       updateBookletScale();
     } else {
