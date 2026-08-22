@@ -68,7 +68,13 @@ main:
             url: /swc/#call-for-ws-ss
 
   - title: Program
-    url: /program/
+    dropdown: true
+    menu_class: dropdown-menu-glass
+    items:
+      - title: Program at a Glance
+        url: /program/#at-a-glance
+      - title: Full Technical Program
+        url: /program/#full-program
 
   - title: Keynotes
     dropdown: true
