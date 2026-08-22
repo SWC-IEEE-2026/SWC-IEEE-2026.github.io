@@ -216,14 +216,28 @@ published: true
       Full Technical Program
     </span>
 
-    <button type="button" class="btn btn-light rounded-circle p-1 border shadow-xs d-flex align-items-center justify-content-center" style="width: 34px; height: 34px;" onclick="closeProtectedFullscreen()" title="Close (Esc)">
-      <i class="bi bi-x-lg"></i>
-    </button>
+    <div class="d-flex align-items-center gap-2">
+      <!-- Mobile Fit/100% Size Switcher -->
+      <div class="btn-group btn-group-sm d-lg-none shadow-xs" role="group" id="fsZoomToggle">
+        <button type="button" class="btn btn-primary btn-sm active" id="btnFsFit" onclick="setFullscreenZoomMode('fit')" title="Fit width">
+          <i class="bi bi-arrows-angle-contract"></i>
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-sm" id="btnFsActual" onclick="setFullscreenZoomMode('actual')" title="100% size">
+          <i class="bi bi-zoom-in"></i>
+        </button>
+      </div>
+
+      <button type="button" class="btn btn-light rounded-circle p-1 border shadow-xs d-flex align-items-center justify-content-center flex-shrink-0" style="width: 34px; height: 34px;" onclick="closeProtectedFullscreen()" title="Close (Esc)">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
   </div>
 
   <!-- Fullscreen Iframe Content Container -->
   <div class="fullscreen-viewer-content" id="fsViewerContent">
-    <iframe id="fsViewerIframe" src="" title="Fullscreen Program Viewer" loading="lazy" allowfullscreen></iframe>
+    <div class="fs-viewer-scale-box" id="fsViewerScaleBox">
+      <iframe id="fsViewerIframe" src="" title="Fullscreen Program Viewer" loading="lazy" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 
@@ -232,6 +246,8 @@ published: true
   body.fullscreen-viewer-open {
     overflow: hidden !important;
     position: fixed;
+    left: 0;
+    right: 0;
     width: 100%;
   }
   .fullscreen-viewer-overlay {
@@ -267,19 +283,26 @@ published: true
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   }
   .fullscreen-viewer-content {
-    flex: 1;
+    flex: 1 1 auto;
     width: 100%;
-    height: calc(100% - 52px);
+    min-height: 0;
     position: relative;
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
     background: #f8fafc;
   }
+  /* The iframe is laid out at a fixed desktop-ish width and scaled down with a
+     transform. Rendering the embed at the raw phone width makes iOS apply its
+     text-autosizing on top of the embed's own CSS `zoom`, which inflates the
+     body copy past its line boxes and overlaps the lines. */
+  .fs-viewer-scale-box {
+    width: 100%;
+    height: 100%;
+    transform-origin: top left;
+  }
   .fullscreen-viewer-content iframe {
     width: 100%;
-    min-width: 100%;
     height: 100%;
-    min-height: 100%;
     border: 0;
     display: block;
   }
@@ -300,6 +323,15 @@ published: true
   let isFullscreenViewerOpen = false;
 
   const STANDARD_DESKTOP_WIDTH = 860; // Standard 8.5" desktop layout width
+
+  // Natural layout width of each embedded document (measured: portrait booklet
+  // sheet ~934px, landscape overview sheet ~1223px, margins included). Giving
+  // the fullscreen iframe at least this much width keeps the embed's internal
+  // `zoom` at 1, which is what stops iOS from inflating the body copy.
+  const FS_BASE_WIDTH_BOOKLET = 960;
+  const FS_BASE_WIDTH_GLANCE = 1240;
+  let fullscreenZoomMode = 'fit'; // 'fit' or 'actual'
+  let fullscreenSavedScrollY = 0;
   const GLANCE_EMBED_URL = 'https://api-conferences.sparcly.ai/api/core/v1/public/technical-program/63/embed';
   const BOOKLET_EMBED_URL = 'https://api-conferences.sparcly.ai/api/core/v1/public/technical-program/63/embed?document=booklet';
 
@@ -318,19 +350,90 @@ published: true
       title.innerText = (activeMainView === 'full') ? 'Full Technical Program (Booklet)' : 'Program at a Glance';
     }
 
+    fullscreenSavedScrollY = window.scrollY || window.pageYOffset || 0;
+    document.body.style.top = `-${fullscreenSavedScrollY}px`;
     document.body.classList.add('fullscreen-viewer-open');
     if (overlay) {
       overlay.classList.add('active');
     }
+
+    setFullscreenZoomMode('fit');
+    requestAnimationFrame(updateFullscreenScale);
+    setTimeout(updateFullscreenScale, 150);
   }
 
   function closeProtectedFullscreen() {
     isFullscreenViewerOpen = false;
     document.body.classList.remove('fullscreen-viewer-open');
+    document.body.style.top = '';
     const overlay = document.getElementById('fullscreenViewerOverlay');
     if (overlay) {
       overlay.classList.remove('active');
     }
+    // Force a reflow so the document regains its full height before scrolling:
+    // while the body was `position: fixed` it collapsed, and scrollTo would clamp to 0.
+    void document.documentElement.offsetHeight;
+
+    // The document uses `scroll-behavior: smooth`, so restore without animating.
+    try {
+      window.scrollTo({ top: fullscreenSavedScrollY, left: 0, behavior: 'instant' });
+    } catch (err) {
+      window.scrollTo(0, fullscreenSavedScrollY);
+    }
+  }
+
+  function getFullscreenBaseWidth() {
+    return (activeMainView === 'full') ? FS_BASE_WIDTH_BOOKLET : FS_BASE_WIDTH_GLANCE;
+  }
+
+  function updateFullscreenScale() {
+    if (!isFullscreenViewerOpen) return;
+
+    const content = document.getElementById('fsViewerContent');
+    const box = document.getElementById('fsViewerScaleBox');
+    if (!content || !box) return;
+
+    const availableWidth = content.clientWidth;
+    const availableHeight = content.clientHeight;
+    if (!availableWidth || !availableHeight) return;
+
+    const baseWidth = getFullscreenBaseWidth();
+
+    if (availableWidth >= baseWidth) {
+      box.style.width = '100%';
+      box.style.height = '100%';
+      box.style.transform = 'none';
+      content.style.overflowX = 'hidden';
+    } else if (fullscreenZoomMode === 'actual') {
+      // 1:1 rendering, user pans horizontally; start centred on the sheet
+      box.style.width = baseWidth + 'px';
+      box.style.height = '100%';
+      box.style.transform = 'none';
+      content.style.overflowX = 'auto';
+      content.scrollLeft = Math.max(0, (baseWidth - availableWidth) / 2);
+    } else {
+      const scale = availableWidth / baseWidth;
+      box.style.width = baseWidth + 'px';
+      box.style.height = (availableHeight / scale) + 'px';
+      box.style.transform = `scale(${scale})`;
+      content.style.overflowX = 'hidden';
+      content.scrollLeft = 0;
+    }
+  }
+
+  function setFullscreenZoomMode(mode) {
+    fullscreenZoomMode = (mode === 'actual') ? 'actual' : 'fit';
+    const btnFit = document.getElementById('btnFsFit');
+    const btnActual = document.getElementById('btnFsActual');
+
+    if (fullscreenZoomMode === 'fit') {
+      if (btnFit) { btnFit.classList.add('btn-primary', 'active'); btnFit.classList.remove('btn-outline-secondary'); }
+      if (btnActual) { btnActual.classList.remove('btn-primary', 'active'); btnActual.classList.add('btn-outline-secondary'); }
+    } else {
+      if (btnActual) { btnActual.classList.add('btn-primary', 'active'); btnActual.classList.remove('btn-outline-secondary'); }
+      if (btnFit) { btnFit.classList.remove('btn-primary', 'active'); btnFit.classList.add('btn-outline-secondary'); }
+    }
+    updateFullscreenScale();
   }
 
   function getAvailableWidth(container) {
@@ -533,5 +636,17 @@ published: true
     }
   });
 
-  window.addEventListener('resize', updateActiveScale);
+  function handleViewportResize() {
+    updateActiveScale();
+    updateFullscreenScale();
+  }
+
+  window.addEventListener('resize', handleViewportResize);
+  window.addEventListener('orientationchange', () => {
+    handleViewportResize();
+    setTimeout(handleViewportResize, 300);
+  });
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', updateFullscreenScale);
+  }
 </script>
