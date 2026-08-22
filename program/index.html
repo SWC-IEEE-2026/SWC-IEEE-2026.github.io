@@ -48,13 +48,8 @@ published: true
         </div>
       </div>
 
-      <!-- Right: Action Buttons (Download PDF - Booklet Only, External Link) -->
+      <!-- Right: Action Buttons -->
       <div class="d-flex align-items-center gap-2 flex-wrap justify-content-center">
-        <!-- Download PDF Button (Shown only for Booklet / Full Program) -->
-        <a href="https://api-conferences.sparcly.ai/api/core/v1/public/technical-program/63/embed?document=booklet" target="_blank" class="btn btn-danger btn-sm rounded-pill px-3 py-1.5 fw-bold shadow-xs text-white d-none align-items-center gap-1.5" id="downloadPdfBtn" title="Download or Print Booklet PDF">
-          <i class="bi bi-file-earmark-pdf-fill"></i><span>Download PDF</span>
-        </a>
-
         <span class="badge bg-white text-secondary border px-3 py-2 rounded-pill small d-none d-lg-inline-block" id="viewModeBadge">
           <i class="bi bi-info-circle text-primary me-1"></i>Overview Timetable
         </span>
@@ -112,11 +107,6 @@ published: true
           <p class="text-muted small mb-0">Comprehensive booklet with full session breakdowns, paper listings, authors, and presentation details.</p>
         </div>
         <div class="d-flex align-items-center gap-2 flex-wrap">
-          <!-- Download PDF Button in Header -->
-          <a href="https://api-conferences.sparcly.ai/api/core/v1/public/technical-program/63/embed?document=booklet" target="_blank" class="btn btn-danger btn-sm rounded-pill px-3 py-1.5 fw-bold shadow-xs text-white d-inline-flex align-items-center gap-1.5">
-            <i class="bi bi-file-earmark-pdf-fill"></i><span>Download PDF</span>
-          </a>
-
           <!-- Mobile Fit/100% Size Switcher -->
           <div class="btn-group btn-group-sm d-md-none shadow-xs" role="group" id="mobileBookletZoomToggle">
             <button type="button" class="btn btn-primary btn-sm active" id="btnFitMobile" onclick="setBookletMobileMode('fit')">
@@ -156,6 +146,15 @@ published: true
 
   const STANDARD_PAGE_WIDTH = 860; // 8.5" standard document width
 
+  function getAvailableWidth(wrapper) {
+    if (!wrapper) return window.innerWidth - 32;
+    const clientW = wrapper.clientWidth;
+    if (clientW > 0) return clientW;
+    const card = wrapper.closest('.card');
+    if (card && card.clientWidth > 0) return card.clientWidth - 32;
+    return Math.min(window.innerWidth - 32, 1140);
+  }
+
   function updateActiveScale() {
     if (activeMainView === 'full') {
       updateBookletScale();
@@ -172,10 +171,10 @@ published: true
     const iframe = document.getElementById('glanceIframe');
     if (!wrapper || !iframe) return;
 
-    const containerWidth = wrapper.clientWidth || wrapper.offsetWidth;
+    const availableWidth = getAvailableWidth(wrapper);
 
-    if (containerWidth > 0 && containerWidth < STANDARD_PAGE_WIDTH && glanceMobileMode === 'fit') {
-      const scale = containerWidth / STANDARD_PAGE_WIDTH;
+    if (availableWidth > 0 && availableWidth < STANDARD_PAGE_WIDTH && glanceMobileMode === 'fit') {
+      const scale = availableWidth / STANDARD_PAGE_WIDTH;
       iframe.style.width = STANDARD_PAGE_WIDTH + 'px';
       iframe.style.maxWidth = 'none';
       iframe.style.transform = `scale(${scale})`;
@@ -184,12 +183,12 @@ published: true
       wrapper.style.height = (1160 * scale) + 'px';
       wrapper.style.overflowX = 'hidden';
     } else {
-      iframe.style.width = (containerWidth < STANDARD_PAGE_WIDTH) ? (STANDARD_PAGE_WIDTH + 'px') : '100%';
-      iframe.style.maxWidth = (containerWidth < STANDARD_PAGE_WIDTH) ? 'none' : '100%';
+      iframe.style.width = (availableWidth < STANDARD_PAGE_WIDTH) ? (STANDARD_PAGE_WIDTH + 'px') : '100%';
+      iframe.style.maxWidth = (availableWidth < STANDARD_PAGE_WIDTH) ? 'none' : '100%';
       iframe.style.transform = 'none';
       iframe.style.height = '1160px';
       wrapper.style.height = 'auto';
-      wrapper.style.overflowX = (containerWidth < STANDARD_PAGE_WIDTH) ? 'auto' : 'hidden';
+      wrapper.style.overflowX = (availableWidth < STANDARD_PAGE_WIDTH) ? 'auto' : 'hidden';
     }
   }
 
@@ -201,10 +200,10 @@ published: true
     const iframe = document.getElementById('bookletIframe');
     if (!wrapper || !iframe) return;
 
-    const containerWidth = wrapper.clientWidth || wrapper.offsetWidth;
+    const availableWidth = getAvailableWidth(wrapper);
 
-    if (containerWidth > 0 && containerWidth < STANDARD_PAGE_WIDTH && bookletMobileMode === 'fit') {
-      const scale = containerWidth / STANDARD_PAGE_WIDTH;
+    if (availableWidth > 0 && availableWidth < STANDARD_PAGE_WIDTH && bookletMobileMode === 'fit') {
+      const scale = availableWidth / STANDARD_PAGE_WIDTH;
       iframe.style.width = STANDARD_PAGE_WIDTH + 'px';
       iframe.style.maxWidth = 'none';
       iframe.style.transform = `scale(${scale})`;
@@ -213,12 +212,12 @@ published: true
       wrapper.style.height = (1400 * scale) + 'px';
       wrapper.style.overflowX = 'hidden';
     } else {
-      iframe.style.width = (containerWidth < STANDARD_PAGE_WIDTH) ? (STANDARD_PAGE_WIDTH + 'px') : '100%';
-      iframe.style.maxWidth = (containerWidth < STANDARD_PAGE_WIDTH) ? 'none' : '100%';
+      iframe.style.width = (availableWidth < STANDARD_PAGE_WIDTH) ? (STANDARD_PAGE_WIDTH + 'px') : '100%';
+      iframe.style.maxWidth = (availableWidth < STANDARD_PAGE_WIDTH) ? 'none' : '100%';
       iframe.style.transform = 'none';
       iframe.style.height = '1400px';
       wrapper.style.height = 'auto';
-      wrapper.style.overflowX = (containerWidth < STANDARD_PAGE_WIDTH) ? 'auto' : 'hidden';
+      wrapper.style.overflowX = (availableWidth < STANDARD_PAGE_WIDTH) ? 'auto' : 'hidden';
     }
   }
 
@@ -262,7 +261,6 @@ published: true
     const paneFull = document.getElementById('paneFull');
     const viewModeBadge = document.getElementById('viewModeBadge');
     const openExternalBtn = document.getElementById('openExternalBtn');
-    const downloadPdfBtn = document.getElementById('downloadPdfBtn');
 
     if (isFull) {
       if (tabFull) {
@@ -279,12 +277,6 @@ published: true
 
       if (viewModeBadge) viewModeBadge.innerHTML = '<i class="bi bi-journal-check text-success me-1"></i>Full Technical Program Booklet';
       if (openExternalBtn) openExternalBtn.href = 'https://api-conferences.sparcly.ai/api/core/v1/public/technical-program/63/embed?document=booklet';
-      
-      // Show Download PDF button only for booklet
-      if (downloadPdfBtn) {
-        downloadPdfBtn.classList.remove('d-none');
-        downloadPdfBtn.classList.add('d-inline-flex');
-      }
 
       if (window.location.hash !== '#full-program') {
         if (history.replaceState) {
@@ -309,12 +301,6 @@ published: true
       if (viewModeBadge) viewModeBadge.innerHTML = '<i class="bi bi-info-circle text-primary me-1"></i>Overview Timetable';
       if (openExternalBtn) openExternalBtn.href = 'https://api-conferences.sparcly.ai/api/core/v1/public/technical-program/63/embed';
 
-      // Hide Download PDF button for overview schedule
-      if (downloadPdfBtn) {
-        downloadPdfBtn.classList.add('d-none');
-        downloadPdfBtn.classList.remove('d-inline-flex');
-      }
-
       if (window.location.hash !== '#at-a-glance') {
         if (history.replaceState) {
           history.replaceState(null, null, '#at-a-glance');
@@ -324,7 +310,11 @@ published: true
       }
     }
 
-    setTimeout(updateActiveScale, 60);
+    // Ensure scaling updates immediately upon tab switch
+    requestAnimationFrame(() => {
+      updateActiveScale();
+    });
+    setTimeout(updateActiveScale, 100);
   }
 
   // Handle URL hashes and query parameters on page load
