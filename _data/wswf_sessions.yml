@@ -8,7 +8,7 @@
   short: Welcome
   url: /symposia/wswf/welcome/
   icon: bi-emoji-smile
-  time: "09:00 — 10:30"
+  time: "09:00 — 10:45"
   room: "Sala Stampa"
   session_id: "TS-32"
   description: Words of welcome and an introduction to Women in the Smart World.
@@ -29,7 +29,7 @@
   short: "Session 2: Paper Presentations"
   url: /symposia/wswf/presentations/
   icon: bi-easel-fill
-  time: "09:00–10:30 & 17:30–18:30"
+  time: "09:00–10:45 & 17:30–18:30"
   room: "Sala Stampa & Aula Magna"
   session_id: "TS-32, TS-42 & TS-43"
   description: Accepted papers and presentations across parallel tracks.
