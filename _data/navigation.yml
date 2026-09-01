@@ -80,22 +80,25 @@ main:
     dropdown: true
     menu_class: dropdown-menu-glass
     items:
-      - title: 8 September
+      - title: Academic Keynotes
         header: true
-      - title: Dr. Qingsong Wen
+      - title: "Dr. Qingsong Wen (8 Sep)"
         url: /keynotes/qingsong-wen
-      - title: Dr. Schahram Dustdar
+      - title: "Dr. Schahram Dustdar (8 Sep)"
         url: /keynotes/schahram-dustdar
-      - title: 9 September
-        header: true
-      - title: Dr. Zidong Wang
+      - title: "Dr. Zidong Wang (9 Sep)"
         url: /keynotes/zidong-wang
-      - title: 10 September
-        header: true
-      - title: Dr. Vincenzo Piuri
+      - title: "Dr. Vincenzo Piuri (10 Sep)"
         url: /keynotes/vincenzo-piuri
-      - title: Dr. Weisong Shi
+      - title: "Dr. Weisong Shi (10 Sep)"
         url: /keynotes/weisong-shi
+      - divider: true
+        class: "border-top mt-2 pt-2"
+        items: []
+      - title: Industrial Keynote
+        header: true
+      - title: "Giuseppe Padula (9 Sep)"
+        url: /keynotes/giuseppe-padula
 
   - title: Events
     dropdown: true

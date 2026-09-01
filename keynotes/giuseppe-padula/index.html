@@ -1,0 +1,96 @@
+---
+layout: default
+title: Industrial Keynote - Giuseppe Padula
+---
+
+<!-- Hero Section -->
+<section class="jumbotron text-center" style="
+    background: linear-gradient(135deg, #07152f 0%, #0e2a47 40%, #103b60 70%, #0369a1 100%);
+    min-height: 60vh;
+    position: relative;
+    color: white;
+    overflow: hidden;
+  ">
+    <!-- Subtle glow accents -->
+    <div style="
+        position: absolute; inset: 0;
+        background: radial-gradient(ellipse at 75% 30%, rgba(13, 202, 240, 0.18) 0%, transparent 60%),
+                    radial-gradient(ellipse at 25% 85%, rgba(13, 110, 253, 0.22) 0%, transparent 55%);
+        pointer-events: none;
+    "></div>
+    <div class="hero-overlay-gradient w-100" style="background: transparent; position: relative; z-index: 1;">
+        <div class="container minimal-hero-content py-5 mt-5">
+            <div class="keynote-badge mb-4">Industrial Keynote</div>
+            <h1 class="display-3 fw-bolder mb-4" style="line-height: 1.2;">
+                Breaking the OEM–End User Deadlock in Pharma: Software-Defined Automation for Manufacturing Agility in Regulated Environments
+            </h1>
+            <h3 class="mb-4">Giuseppe Padula</h3>
+            <div class="keynote-meta-minimal mb-0">
+                <span><i class="fas fa-calendar-alt"></i>9 September 2026 · 16:30 – 17:00</span>
+                <span><i class="fas fa-map-marker-alt"></i>Aula Magna</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="abstract" class="page-section container py-5 mt-4">
+    <div class="text-reading-width">
+        <h2 class="section-title text-center mb-5" style="padding-bottom: 0;">Abstract</h2>
+
+        <h3 class="abstract-title-large">
+            Software-Defined Automation for Manufacturing Agility in Regulated Environments
+        </h3>
+
+        <p class="abstract-text text-align-justify">
+            The pharmaceutical manufacturing sector is entering a structural transition driven by a convergence of business, regulatory, and technological pressures.
+        </p>
+
+        <p class="abstract-text text-align-justify">
+            Shorter time-to-market requirements, small-batch and high-mix production economics driven by the rise of personalized therapies, distributed manufacturing across regional supply networks with inter-facility data interoperability, and the regulatory trajectory toward real-time release testing are some of the factors which are collectively redefining what a next-generation automatic machine must be capable of — and what its underlying control and information architecture must support.
+        </p>
+
+        <p class="abstract-text text-align-justify">
+            This presentation argues that software-defined automation, combined with executable digital twin architectures, provides the technical foundation for meeting these requirements in a regulatory-compliant manner. Drawing on the Bologna Pilot Project — a consortium initiative developing a full pharmaceutical packaging line built on software-defined automation in Bologna — the paper examines how the transition from hardware-defined to software-defined control opens a viable pathway toward Plug &amp; Produce interoperability and Module Type Package standardisation, reducing integration overhead, revalidation burden, and supplier lock-in across the equipment lifecycle.
+        </p>
+
+        <p class="abstract-text text-align-justify">
+            The pilot also positions the Asset Administration Shell, developed within the Industrial Digital Twin Association framework, as a candidate architecture for the information layer that regulated manufacturing environments require but OEM offerings have not yet addressed — a hypothesis the Bologna demonstrator is designed to test.
+        </p>
+
+        <p class="abstract-text text-align-justify">
+            The presentation is delivered in the capacity of Regional Branch Organiser of the Digital Twin Consortium, whose Pharma and Regulatory sub-Working Group is actively developing the digital twin taxonomy for regulated manufacturing environments.
+        </p>
+    </div>
+</section>
+
+<section class="page-section container py-4">
+    <div class="glass-card p-4">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-4 text-center">
+                <div class="position-relative d-inline-block">
+                    <img src="{{ '/assets/images_26/people/giuseppe_padula.webp' | relative_url }}"
+                        alt="Giuseppe Padula" class="circle-img shadow-lg"
+                        style="width: 180px; height: 180px; border-width: 6px; object-fit: cover;" />
+                    <div class="position-absolute bottom-0 start-50 translate-middle-x bg-primary text-white px-2 py-1 rounded-pill shadow"
+                        style="width: max-content; font-size: 0.85rem;">
+                        Speaker
+                    </div>
+                </div>
+                <h4 class="mt-3 mb-1">Giuseppe Padula</h4>
+                <h6 class="text-muted small"><i>Research Associate, University of Bologna | Regional Branch Organiser, Digital Twin Consortium</i></h6>
+            </div>
+            <div class="col-md-8 px-md-4">
+                <h3 class="section-title text-center mb-3">Biography</h3>
+                <p class="text-align-justify" style="line-height: 1.6;">
+                    <a class="fw-bold text-decoration-none">Giuseppe Padula</a> is an independent consultant specializing in software-defined manufacturing and digital twin architectures, with focus on regulated industrial environments. He serves as Regional Branch Organiser for the Digital Twin Consortium and is a Research Associate at the University of Bologna. He conceived and leads the Bologna Pilot Project, a multi-stakeholder consortium initiative designing a distributed computing and distributed AI ecosystem for pharmaceutical manufacturing, in which software-defined automation and executable digital twins function as foundational architectural components. The project is developed in partnership with SEW-Eurodrive Italy and world-leading OEMs in pharmaceutical downstream processing. He is an active participant in the Industrial Digital Twin Association (IDTA) and collaborates with ISPE on Module Type Package definition for modular pharmaceutical manufacturing. His work operates at the intersection of advanced automation architectures, asset information standards, and the emerging regulatory frameworks that govern their adoption — including FDA Computer Software Assurance guidance, the anticipated revision of EU GMP Annex 11, and the ISPE Good Practice Guide on Module Type Package. His consulting practice bridges OEM equipment design, end-user digital transformation, and the regulatory pathways that make advanced digital architectures viable in quality-critical manufacturing.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+    {% include colocated-conferences.html %}
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}
