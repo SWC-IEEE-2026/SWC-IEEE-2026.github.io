@@ -1,0 +1,102 @@
+---
+layout: default
+title: Industrial Keynote - Giorgio Tesoniero
+---
+
+<!-- Hero Section -->
+<section class="jumbotron text-center" style="
+    background: linear-gradient(135deg, #07152f 0%, #0e2a47 40%, #103b60 70%, #0369a1 100%);
+    min-height: 60vh;
+    position: relative;
+    color: white;
+    overflow: hidden;
+  ">
+    <!-- Subtle glow accents -->
+    <div style="
+        position: absolute; inset: 0;
+        background: radial-gradient(ellipse at 75% 30%, rgba(13, 202, 240, 0.18) 0%, transparent 60%),
+                    radial-gradient(ellipse at 25% 85%, rgba(13, 110, 253, 0.22) 0%, transparent 55%);
+        pointer-events: none;
+    "></div>
+    <div class="hero-overlay-gradient w-100" style="background: transparent; position: relative; z-index: 1;">
+        <div class="container minimal-hero-content py-5 mt-5">
+            <div class="keynote-badge mb-4">Industrial Keynote</div>
+            <h1 class="display-3 fw-bolder mb-4" style="line-height: 1.2;">
+                From Connected Assets to Industrial Intelligence: Edge-to-Cloud IoT for Energy Systems
+            </h1>
+            <h3 class="mb-4">Giorgio Tesoniero</h3>
+            <div class="keynote-meta-minimal mb-0">
+                <span><i class="fas fa-calendar-alt"></i>9 September 2026 · 17:00 – 17:30</span>
+                <span><i class="fas fa-map-marker-alt"></i>Aula Magna</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="abstract" class="page-section container py-5 mt-4">
+    <div class="text-reading-width">
+        <h2 class="section-title text-center mb-5" style="padding-bottom: 0;">Abstract</h2>
+
+        <h3 class="abstract-title-large">
+            From Connected Assets to Industrial Intelligence: Edge-to-Cloud IoT for Energy Systems
+        </h3>
+
+        <p class="abstract-text text-align-justify">
+            Industrial IoT is moving beyond connectivity and data collection toward distributed systems capable of turning field data into operational intelligence.
+        </p>
+
+        <p class="abstract-text text-align-justify">
+            This talk presents an industry-driven perspective based on real-world projects across gas, electricity and renewable energy infrastructures. It will show how modern edge-to-cloud architectures can integrate heterogeneous field technologies while keeping application logic independent from specific devices and industrial protocols.
+        </p>
+
+        <p class="abstract-text text-align-justify">
+            The discussion will focus on three key architectural principles: protocol abstraction and data normalization, event-driven communication between edge and cloud, and local processing through analytics and AI.
+        </p>
+
+        <p class="abstract-text text-align-justify">
+            Through practical examples, the talk will illustrate how these patterns support use cases such as asset monitoring, anomaly detection, operational optimization and distributed intelligence, while addressing the scalability and interoperability requirements typical of industrial environments.
+        </p>
+
+        <p class="abstract-text text-align-justify">
+            The objective is to share the engineering approach behind our Industrial IoT platform and the lessons learned from applying these architectural patterns to complex energy systems.
+        </p>
+    </div>
+</section>
+
+<section class="page-section container py-4">
+    <div class="glass-card p-4">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-4 text-center">
+                <div class="position-relative d-inline-block">
+                    <img src="{{ '/assets/images_26/people/placeholder_avatar.svg' | relative_url }}"
+                        alt="Giorgio Tesoniero" class="circle-img shadow-lg"
+                        style="width: 180px; height: 180px; border-width: 6px; object-fit: cover;" />
+                    <div class="position-absolute bottom-0 start-50 translate-middle-x bg-primary text-white px-2 py-1 rounded-pill shadow"
+                        style="width: max-content; font-size: 0.85rem;">
+                        Speaker
+                    </div>
+                </div>
+                <h4 class="mt-3 mb-1">Giorgio Tesoniero</h4>
+                <h6 class="text-muted small"><i>Technical Manager &amp; IoT Expert, BIP | Center of Excellence for IoT and Edge Computing</i></h6>
+            </div>
+            <div class="col-md-8 px-md-4">
+                <h3 class="section-title text-center mb-3">Biography</h3>
+                <p class="text-align-justify" style="line-height: 1.6;">
+                    <a class="fw-bold text-decoration-none">Giorgio Tesoniero</a> is an IoT and Industrial IoT expert and Technical Manager within BIP, a global consulting firm specializing in business transformation, technology and innovation, and a member of its Center of Excellence for IoT and Edge Computing. He has over 16 years of experience in software engineering, embedded systems, edge computing and industrial digitalization, with a strong focus on the energy and utilities sectors.
+                </p>
+                <p class="text-align-justify" style="line-height: 1.6;">
+                    Throughout his career, he has worked on international technology and R&amp;D initiatives, designing and leading solutions spanning industrial IoT architectures, OT/IT integration, distributed edge systems, telecommunications and AI-enabled industrial applications.
+                </p>
+                <p class="text-align-justify" style="line-height: 1.6;">
+                    He holds a Master’s degree in Computer Engineering and a postgraduate Master in IoT Systems Integration from the University of Calabria. At BIP, he currently leads technical initiatives and teams focused on the design and evolution of advanced Industrial IoT and Edge Computing solutions.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light">
+    {% include colocated-conferences.html %}
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

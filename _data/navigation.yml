@@ -95,10 +95,12 @@ main:
       - divider: true
         class: "border-top mt-2 pt-2"
         items: []
-      - title: Industrial Keynote
+      - title: Industrial Keynotes
         header: true
       - title: "Giuseppe Padula (9 Sep)"
         url: /keynotes/giuseppe-padula
+      - title: "Giorgio Tesoniero (9 Sep)"
+        url: /keynotes/giorgio-tesoniero
 
   - title: Events
     dropdown: true
