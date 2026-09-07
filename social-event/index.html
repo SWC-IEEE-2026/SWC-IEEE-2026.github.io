@@ -1,0 +1,716 @@
+---
+layout: default
+title: Social Event & Gala Dinner - IEEE SWC 2026
+---
+
+<style>
+  :root {
+    --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    --card-hover-shadow: 0 16px 32px rgba(13, 110, 253, 0.12);
+  }
+
+  /* Hero Section Styling */
+  .hero-social-event {
+    background-image: linear-gradient(rgba(13, 18, 29, 0.78), rgba(13, 18, 29, 0.7)),
+      url("{{ '/assets/images_26/social-event/villa-rendano-facciata.jpg' | relative_url }}");
+    background-size: cover;
+    background-position: center;
+    min-height: 58vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
+  }
+
+  .feature-icon-box {
+    width: 54px;
+    height: 54px;
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    flex-shrink: 0;
+  }
+
+  .stat-badge {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+  }
+
+  /* Gallery Card Hover Effects */
+  .gallery-card {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--card-hover-shadow);
+  }
+
+  .gallery-img-wrapper {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+  }
+
+  .gallery-img-wrapper.tall {
+    height: 340px;
+  }
+
+  .gallery-overlay-tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(13, 18, 29, 0.75);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 50rem;
+    letter-spacing: 0.5px;
+    z-index: 3;
+  }
+
+  /* --- Image Credit Overlay (Identical to Venue Page) --- */
+  .image-credit-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-credit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 12px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    font-size: 0.7rem;
+    opacity: 0;
+    /* Hidden by default */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    text-align: right;
+    pointer-events: none;
+  }
+
+  .image-credit a {
+    color: #fff;
+    text-decoration: underline;
+    pointer-events: auto;
+  }
+
+  /* Show on hover for cards */
+  .custom-card:hover .image-credit,
+  .rounded-4:hover .image-credit,
+  .gallery-card:hover .image-credit {
+    opacity: 1;
+  }
+
+  /* Hover scale effect for images inside cards */
+  .transition-scale {
+    transition: transform 0.5s ease;
+  }
+
+  .gallery-card:hover .transition-scale {
+    transform: scale(1.08);
+  }
+
+  /* Front Desk Highlight Callout */
+  .front-desk-banner {
+    background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%);
+    border: 1px solid #bae6fd;
+    border-left: 5px solid #0284c7;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(2, 132, 199, 0.08);
+  }
+
+  /* Transportation Card */
+  .transport-highlight-card {
+    border-radius: 18px;
+    border: 1px solid rgba(13, 110, 253, 0.15);
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+  }
+
+  .transport-highlight-card:hover {
+    box-shadow: var(--card-hover-shadow);
+  }
+
+  /* Timeline Steps */
+  .timeline-pill {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+  }
+</style>
+
+<!-- Hero Section -->
+<section class="hero-social-event text-center">
+  <div class="container px-3 py-5 d-flex flex-column align-items-center gap-3" style="position: relative; z-index: 2;">
+    <div class="mb-1">
+      <span class="badge rounded-pill px-3 py-2 fw-semibold stat-badge">
+        <i class="bi bi-stars text-warning me-1"></i>IEEE SWC 2026 Social Event &amp; Gala Dinner
+      </span>
+    </div>
+    
+    <h1 class="display-4 fw-bolder text-white mb-2" style="max-width: 900px; line-height: 1.2;">
+      Social Event @ Villa Rendano
+    </h1>
+
+    <div class="d-flex flex-wrap justify-content-center gap-4 text-white opacity-95 fs-6 mt-1">
+      <span class="d-inline-flex align-items-center gap-1">
+        <i class="bi bi-calendar3 text-warning"></i>
+        <strong>Wednesday, September 9, 2026</strong>
+      </span>
+      <span class="d-inline-flex align-items-center gap-1">
+        <i class="bi bi-clock-fill text-warning"></i>
+        <strong>20:00 CEST</strong>
+      </span>
+      <span class="d-inline-flex align-items-center gap-1">
+        <i class="bi bi-geo-alt-fill text-warning"></i>
+        <span>Villa Rendano, Cosenza (Italy)</span>
+      </span>
+      <span class="d-inline-flex align-items-center gap-1">
+        <i class="bi bi-bus-front text-warning"></i>
+        <span>Shuttle Buses Provided from Venue</span>
+      </span>
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+      <a class="btn btn-primary rounded-pill px-4 py-2.5 shadow-sm fw-bold" href="#transportation">
+        <i class="bi bi-bus-front me-2"></i>Shuttle Bus Details
+      </a>
+      <a class="btn btn-light rounded-pill px-4 py-2.5 shadow-sm fw-bold text-dark" href="#about-venue">
+        <i class="bi bi-bank2 me-2"></i>About Villa Rendano
+      </a>
+      <a class="btn btn-outline-light rounded-pill px-4 py-2.5 shadow-sm fw-bold" href="#gallery">
+        <i class="bi bi-images me-2"></i>Photo Gallery
+      </a>
+      <a class="btn btn-outline-light rounded-pill px-4 py-2.5 shadow-sm fw-bold" href="https://www.villarendano.it/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-box-arrow-up-right me-2"></i>Official Website ↗
+      </a>
+    </div>
+
+    <!-- Hero Image Credit -->
+    <div class="position-absolute bottom-0 end-0 p-2 pe-3 text-white text-opacity-75 small" style="font-size: 0.72rem; z-index: 3;">
+      <i class="bi bi-camera me-1"></i>Photo: <a href="https://www.villarendano.it/la-villa/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-underline">Fondazione Attilio ed Elena Giuliani / Villa Rendano</a>
+    </div>
+  </div>
+</section>
+
+<!-- Main Content -->
+<section class="container px-3 py-5">
+
+  <!-- Quick Info Badges Bar -->
+  <div class="row g-3 mb-5">
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white d-flex flex-row align-items-center gap-3">
+        <div class="feature-icon-box bg-primary bg-opacity-10 text-primary">
+          <i class="bi bi-calendar-check"></i>
+        </div>
+        <div>
+          <div class="text-muted small fw-semibold text-uppercase" style="letter-spacing: 0.5px;">Date &amp; Time</div>
+          <div class="fw-bold text-dark fs-6">Wed, 9 Sept 2026</div>
+          <div class="text-primary small fw-semibold">Starts at 20:00 CEST</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white d-flex flex-row align-items-center gap-3">
+        <div class="feature-icon-box bg-success bg-opacity-10 text-success">
+          <i class="bi bi-geo-alt"></i>
+        </div>
+        <div>
+          <div class="text-muted small fw-semibold text-uppercase" style="letter-spacing: 0.5px;">Location</div>
+          <div class="fw-bold text-dark fs-6">Villa Rendano</div>
+          <div class="text-muted small">Via San Triglio, 21 – Cosenza</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white d-flex flex-row align-items-center gap-3">
+        <div class="feature-icon-box bg-info bg-opacity-10 text-info">
+          <i class="bi bi-bus-front"></i>
+        </div>
+        <div>
+          <div class="text-muted small fw-semibold text-uppercase" style="letter-spacing: 0.5px;">Transfers</div>
+          <div class="fw-bold text-dark fs-6">Dedicated Shuttles</div>
+          <div class="text-muted small">Departing from UNICAL Venue</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white d-flex flex-row align-items-center gap-3">
+        <div class="feature-icon-box bg-warning bg-opacity-10 text-warning">
+          <i class="bi bi-info-circle"></i>
+        </div>
+        <div>
+          <div class="text-muted small fw-semibold text-uppercase" style="letter-spacing: 0.5px;">Support</div>
+          <div class="fw-bold text-dark fs-6">Front Desk Team</div>
+          <div class="text-muted small">Registration lobby for info</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Prominent Front Desk Callout Card -->
+  <div class="front-desk-banner p-4 p-md-4 mb-5">
+    <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-3">
+      <div class="d-flex align-items-start gap-3">
+        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 shadow-sm" style="width: 52px; height: 52px; background: #0284c7 !important;">
+          <i class="bi bi-bell-fill fs-4"></i>
+        </div>
+        <div>
+          <h4 class="fw-bold text-dark mb-1">
+            Questions &amp; Assistance? Ask at the Conference Front Desk!
+          </h4>
+          <p class="text-secondary mb-0" style="font-size: 0.95rem; line-height: 1.5;">
+            Dedicated shuttle buses will transport all registered participants from the <strong>University of Calabria Congress Center</strong> directly to <strong>Villa Rendano</strong> and back. For detailed departure timetables, boarding pick-up zones, dietary requirements, or any specific logistics, please stop by the <strong>Conference Front Desk / Registration Desk</strong> located in the congress center foyer. Our staff will be delighted to assist you.
+          </p>
+        </div>
+      </div>
+      <div class="flex-shrink-0 align-self-stretch align-self-lg-center text-lg-end">
+        <a href="{{ '/contact' | relative_url }}" class="btn btn-primary rounded-pill px-4 py-2.5 fw-semibold text-nowrap shadow-xs">
+          <i class="bi bi-headset me-1"></i>Contact Team
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Villa Rendano Section -->
+  <div class="row align-items-center g-5 mb-5" id="about-venue">
+    <div class="col-lg-6">
+      <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold mb-2">
+        <i class="bi bi-bank me-1"></i>Historic Venue &amp; Cultural Landmark
+      </span>
+      <h2 class="display-6 fw-bolder text-dark mb-3">
+        Villa Rendano: History, Elegance &amp; Panoramic Beauty
+      </h2>
+      <p class="fs-5 text-secondary text-align-justify mb-3">
+        The IEEE SWC 2026 Social Event will be celebrated in the magnificent setting of <strong>Villa Rendano</strong> (<a href="https://www.villarendano.it/" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-semibold">villarendano.it ↗</a>), one of the most prestigious historic residences in Cosenza, Calabria.
+      </p>
+      <p class="text-secondary text-align-justify mb-3">
+        Built in <strong>1891</strong> by the world-renowned concert pianist and composer <strong>Alfonso Rendano</strong> (inventor of the independent third pedal on the piano), the villa stands proudly atop the scenic <em>Colle Triglio</em>, overlooking the historical center of Cosenza, the convergence of the Crati and Busento rivers, and the Norman-Swabian Castle.
+      </p>
+      <p class="text-secondary text-align-justify mb-4">
+        Characterized by a refined <strong>Tuscan and Florentine Renaissance Revival</strong> architectural style, the residence boasts splendid frescoed ceilings, Pompeian decorative motifs, an imposing grand staircase, and the legendary <em>Sala della Musica</em>. Lovingly preserved and revitalized by the <strong>Fondazione Attilio ed Elena Giuliani</strong>, Villa Rendano is today both a vibrant cultural center and home to <strong>Consentia Itinera</strong>, a cutting-edge multimedia museum honoring the rich cultural heritage of Cosenza.
+      </p>
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge bg-light text-dark border px-3 py-2 rounded-pill small">
+          <i class="bi bi-check-circle-fill text-success me-1"></i>Tuscan Renaissance Architecture
+        </span>
+        <span class="badge bg-light text-dark border px-3 py-2 rounded-pill small">
+          <i class="bi bi-check-circle-fill text-success me-1"></i>Original 19th-Century Frescoes
+        </span>
+        <span class="badge bg-light text-dark border px-3 py-2 rounded-pill small">
+          <i class="bi bi-check-circle-fill text-success me-1"></i>Historic Sala della Musica
+        </span>
+        <span class="badge bg-light text-dark border px-3 py-2 rounded-pill small">
+          <i class="bi bi-check-circle-fill text-success me-1"></i>Consentia Itinera Multimedia Museum
+        </span>
+        <span class="badge bg-light text-dark border px-3 py-2 rounded-pill small">
+          <i class="bi bi-check-circle-fill text-success me-1"></i>Panoramic City &amp; Castle Views
+        </span>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="gallery-card shadow-sm border-0">
+        <div class="gallery-img-wrapper tall image-credit-container">
+          <img src="{{ '/assets/images_26/social-event/villa-rendano-facciata.jpg' | relative_url }}" alt="Villa Rendano Facade and Gardens" class="w-100 h-100 object-fit-cover transition-scale">
+          <span class="gallery-overlay-tag"><i class="bi bi-geo-alt-fill me-1"></i>Colle Triglio, Cosenza</span>
+          <div class="image-credit">
+            Photo: <a href="https://www.villarendano.it/la-villa/" target="_blank" rel="noopener noreferrer">Villa Rendano Facciata e Giardino</a> by Fondazione Attilio ed Elena Giuliani
+          </div>
+        </div>
+        <div class="p-4 bg-white">
+          <h5 class="fw-bold text-dark mb-1">Villa Rendano &amp; Its Historic Gardens</h5>
+          <p class="text-muted small mb-0">
+            Panoramic estate overlooking ancient Cosenza and the Crati river valley. Recognized by the Italian Ministry of Cultural Heritage for its historical and artistic value.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Photo Gallery Showcase Section -->
+  <div class="py-4 mb-5" id="gallery">
+    <div class="text-center mb-5">
+      <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold mb-2">
+        <i class="bi bi-images me-1"></i>Atmosphere &amp; Spaces
+      </span>
+      <h2 class="display-6 fw-bolder text-dark mb-2">
+        Explore Villa Rendano
+      </h2>
+      <p class="text-muted max-w-700 mx-auto">
+        A visual tour of the halls, historic salons, frescoes, and gardens that will host our conference banquet and evening social gathering.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Image 1: Sala della Musica -->
+      <div class="col-md-6 col-lg-6">
+        <div class="gallery-card h-100 shadow-sm border-0">
+          <div class="gallery-img-wrapper tall image-credit-container">
+            <img src="{{ '/assets/images_26/social-event/villa-rendano-musica.jpg' | relative_url }}" alt="Sala della Musica at Villa Rendano" class="w-100 h-100 object-fit-cover transition-scale">
+            <span class="gallery-overlay-tag"><i class="bi bi-music-note-beamed me-1"></i>Sala della Musica</span>
+            <div class="image-credit">
+              Photo: <a href="https://www.villarendano.it/la-villa/" target="_blank" rel="noopener noreferrer">Sala della Musica</a> by Fondazione Attilio ed Elena Giuliani
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h5 class="fw-bold text-dark mb-1">The Grand Music Hall (Sala della Musica)</h5>
+            <p class="text-muted small mb-0">
+              The heart of Alfonso Rendano's artistic home, featuring his beloved grand piano, ornate chandeliers, and painted ceilings where legendary concerts and musical gatherings took place.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 2: Gala Dinner & Evening Atmosphere -->
+      <div class="col-md-6 col-lg-6">
+        <div class="gallery-card h-100 shadow-sm border-0">
+          <div class="gallery-img-wrapper tall image-credit-container">
+            <img src="{{ '/assets/images_26/social-event/villa-rendano-dinner.jpg' | relative_url }}" alt="Evening Dinner Setup at Villa Rendano" class="w-100 h-100 object-fit-cover transition-scale">
+            <span class="gallery-overlay-tag"><i class="bi bi-cup-straw me-1"></i>Gala Dinner &amp; Reception</span>
+            <div class="image-credit">
+              Photo: <a href="https://www.villarendano.it/i-servizi/" target="_blank" rel="noopener noreferrer">Serata a Villa Rendano</a> by Fondazione Attilio ed Elena Giuliani
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h5 class="fw-bold text-dark mb-1">Gala Dinner &amp; Social Gathering</h5>
+            <p class="text-muted small mb-0">
+              Experience an unforgettable evening of networking, authentic Calabrian gastronomy, and refined Italian hospitality under the stars in the historic estate.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 3: Frescoed Reception Salon -->
+      <div class="col-md-6 col-lg-6">
+        <div class="gallery-card h-100 shadow-sm border-0">
+          <div class="gallery-img-wrapper image-credit-container">
+            <img src="{{ '/assets/images_26/social-event/villa-rendano-affreschi.jpg' | relative_url }}" alt="Noble Floor and Frescoed Salon" class="w-100 h-100 object-fit-cover transition-scale">
+            <span class="gallery-overlay-tag"><i class="bi bi-palette me-1"></i>Piano Nobile Salons</span>
+            <div class="image-credit">
+              Photo: <a href="https://www.villarendano.it/la-villa/" target="_blank" rel="noopener noreferrer">Salone Piano Nobile</a> by Fondazione Attilio ed Elena Giuliani
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h5 class="fw-bold text-dark mb-1">Noble Floor (Piano Nobile)</h5>
+            <p class="text-muted small mb-0">
+              Elegant interconnected reception chambers arranged around the central staircase, preserving historic mirrors, antique furnishings, and intricate Pompeian-style ceiling murals.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 4: Architectural & Fresco Details -->
+      <div class="col-md-6 col-lg-6">
+        <div class="gallery-card h-100 shadow-sm border-0">
+          <div class="gallery-img-wrapper image-credit-container">
+            <img src="{{ '/assets/images_26/social-event/villa-rendano-dettaglio.jpg' | relative_url }}" alt="Architectural and Fresco Details" class="w-100 h-100 object-fit-cover transition-scale">
+            <span class="gallery-overlay-tag"><i class="bi bi-brush me-1"></i>Artistic Details</span>
+            <div class="image-credit">
+              Photo: <a href="https://www.villarendano.it/la-villa/" target="_blank" rel="noopener noreferrer">Dettaglio Affreschi</a> by Fondazione Attilio ed Elena Giuliani
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h5 class="fw-bold text-dark mb-1">Neoclassical Frescoes &amp; Artistic Motifs</h5>
+            <p class="text-muted small mb-0">
+              Meticulously restored nineteenth-century decorative cycles depicting allegorical figures, pastoral landscapes, and floral garlands celebrating Mediterranean art and culture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Attribution Notice Banner -->
+    <div class="mt-4 p-3 bg-white rounded-4 border shadow-xs text-center text-muted small">
+      <i class="bi bi-camera-fill me-1 text-primary"></i>
+      <strong>Image Sources &amp; Attribution:</strong> All images of Villa Rendano, its historical halls, frescoed ceilings, and gardens are courtesy of <strong>Fondazione Attilio ed Elena Giuliani – Villa Rendano</strong> (<a href="https://www.villarendano.it/" target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-underline">villarendano.it</a>).
+    </div>
+  </div>
+
+  <!-- Transportation & Shuttle Bus Section -->
+  <div class="py-4 mb-5" id="transportation">
+    <div class="text-center mb-5">
+      <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold mb-2">
+        <i class="bi bi-bus-front-fill me-1"></i>Hassle-Free Transit
+      </span>
+      <h2 class="display-6 fw-bolder text-dark mb-2">
+        Shuttle Bus Service &amp; Logistics
+      </h2>
+      <p class="text-muted max-w-700 mx-auto">
+        Complimentary coach transfers are arranged for all conference attendees between the University of Calabria and Villa Rendano.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="transport-highlight-card p-4 p-md-5 h-100">
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="feature-icon-box bg-primary text-white" style="background: #0d6efd !important;">
+              <i class="bi bi-bus-front text-white"></i>
+            </div>
+            <div>
+              <h4 class="fw-bold text-dark mb-0">Outbound Shuttles (To Villa Rendano)</h4>
+              <span class="badge bg-primary bg-opacity-10 text-primary fw-semibold">Departure from Conference Venue</span>
+            </div>
+          </div>
+
+          <ul class="list-unstyled d-flex flex-column gap-3 mb-4 text-secondary">
+            <li class="d-flex align-items-start gap-3">
+              <i class="bi bi-geo-alt-fill text-primary fs-5 mt-0.5"></i>
+              <div>
+                <strong>Pick-up Location:</strong> Conference Congress Center ("Beniamino Andreatta" Center), University of Calabria, Rende.
+              </div>
+            </li>
+            <li class="d-flex align-items-start gap-3">
+              <i class="bi bi-clock-fill text-primary fs-5 mt-0.5"></i>
+              <div>
+                <strong>Departure Times:</strong> Exact pick-up locations and departure times will be announced at the <strong>Front Desk</strong> on Wednesday, September 9, 2026.
+              </div>
+            </li>
+            <li class="d-flex align-items-start gap-3">
+              <i class="bi bi-pin-map-fill text-primary fs-5 mt-0.5"></i>
+              <div>
+                <strong>Arrival:</strong> Drop-off right at the entrance of Villa Rendano on Colle Triglio in time for the 20:00 welcome aperitif.
+              </div>
+            </li>
+          </ul>
+
+          <div class="p-3 bg-light rounded-3 border-start border-primary border-3 small text-muted">
+            <i class="bi bi-info-circle-fill text-primary me-1"></i>
+            Please check with the <strong>Conference Front Desk / Registration Desk</strong> for the exact departure schedule, designated bus bays, and any updates.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="transport-highlight-card p-4 p-md-5 h-100">
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="feature-icon-box bg-success text-white" style="background: #198754 !important;">
+              <i class="bi bi-arrow-return-left text-white"></i>
+            </div>
+            <div>
+              <h4 class="fw-bold text-dark mb-0">Return Shuttles (To Venue &amp; Hotels)</h4>
+              <span class="badge bg-success bg-opacity-10 text-success fw-semibold">End-of-Evening Return Service</span>
+            </div>
+          </div>
+
+          <ul class="list-unstyled d-flex flex-column gap-3 mb-4 text-secondary">
+            <li class="d-flex align-items-start gap-3">
+              <i class="bi bi-geo-alt-fill text-success fs-5 mt-0.5"></i>
+              <div>
+                <strong>Pick-up Location:</strong> Villa Rendano Main Gate (Cosenza).
+              </div>
+            </li>
+            <li class="d-flex align-items-start gap-3">
+              <i class="bi bi-clock-fill text-success fs-5 mt-0.5"></i>
+              <div>
+                <strong>Return Waves:</strong> Staggered departures will commence starting from <strong>22:45</strong> through the conclusion of the evening.
+              </div>
+            </li>
+            <li class="d-flex align-items-start gap-3">
+              <i class="bi bi-shield-check text-success fs-5 mt-0.5"></i>
+              <div>
+                <strong>Destinations:</strong> University campus bus terminal and primary conference partner hotels in Rende and Cosenza.
+              </div>
+            </li>
+          </ul>
+
+          <div class="p-3 bg-light rounded-3 border-start border-success border-3 small text-muted">
+            <i class="bi bi-check-circle-fill text-success me-1"></i>
+            Return shuttle boarding times will also be announced during the banquet so attendees can plan their departure comfortably.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Need Assistance Notice -->
+    <div class="card border-0 shadow-sm rounded-4 p-4 mt-4 bg-white">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3">
+          <div class="feature-icon-box bg-warning bg-opacity-10 text-dark">
+            <i class="bi bi-chat-quote-fill fs-3 text-warning"></i>
+          </div>
+          <div>
+            <h5 class="fw-bold text-dark mb-1">Have Questions Regarding Shuttles or Access?</h5>
+            <p class="text-secondary small mb-0">
+              Feel free to visit the <strong>Front Desk</strong> at the Conference Center any time during conference hours, or contact the organizing committee.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex gap-2">
+          <a href="{{ '/contact' | relative_url }}" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-semibold btn-sm">
+            Contact Support
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Evening Program Timeline -->
+  <div class="py-4 mb-5">
+    <div class="text-center mb-5">
+      <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold mb-2">
+        <i class="bi bi-clock-history me-1"></i>Evening Schedule
+      </span>
+      <h2 class="display-6 fw-bolder text-dark mb-2">
+        Program of the Evening
+      </h2>
+      <p class="text-muted max-w-700 mx-auto">
+        Wednesday, 9 September 2026 · A celebration of research, friendship, and regional culture.
+      </p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+          <div class="d-flex flex-column gap-4">
+            
+            <div class="d-flex align-items-start gap-3">
+              <div class="timeline-pill">1</div>
+              <div>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <h5 class="fw-bold text-dark mb-0">Pre-Event Transfer</h5>
+                  <span class="badge bg-primary bg-opacity-10 text-primary">Boarding</span>
+                </div>
+                <h6 class="fw-semibold text-primary mt-1 mb-1">Shuttle Bus Departure from Conference Venue</h6>
+                <p class="text-muted small mb-0">
+                  Exact departure times and boarding bays will be announced at the Front Desk. Shuttles will transport delegates to Villa Rendano in time for the 20:00 event.
+                </p>
+              </div>
+            </div>
+
+            <hr class="my-0 text-muted opacity-25">
+
+            <div class="d-flex align-items-start gap-3">
+              <div class="timeline-pill bg-info">2</div>
+              <div>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <h5 class="fw-bold text-dark mb-0">20:00</h5>
+                  <span class="badge bg-info bg-opacity-10 text-info">Arrival</span>
+                </div>
+                <h6 class="fw-semibold text-primary mt-1 mb-1">Welcome Aperitif in the Panoramic Gardens</h6>
+                <p class="text-muted small mb-0">
+                  Arrival at Villa Rendano on Colle Triglio. Guests are welcomed with an aperitivo and regional delicacies while enjoying twilight views over Cosenza and the Norman-Swabian Castle.
+                </p>
+              </div>
+            </div>
+
+            <hr class="my-0 text-muted opacity-25">
+
+            <div class="d-flex align-items-start gap-3">
+              <div class="timeline-pill bg-success">3</div>
+              <div>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <h5 class="fw-bold text-dark mb-0">20:45</h5>
+                  <span class="badge bg-success bg-opacity-10 text-success">Gala Dinner</span>
+                </div>
+                <h6 class="fw-semibold text-primary mt-1 mb-1">Conference Banquet &amp; Gastronomic Dinner</h6>
+                <p class="text-muted small mb-0">
+                  A seated multi-course dinner featuring contemporary interpretations of traditional Calabrian cuisine and regional wines.
+                </p>
+              </div>
+            </div>
+
+            <hr class="my-0 text-muted opacity-25">
+
+            <div class="d-flex align-items-start gap-3">
+              <div class="timeline-pill bg-secondary">4</div>
+              <div>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <h5 class="fw-bold text-dark mb-0">From 22:45 onwards</h5>
+                  <span class="badge bg-secondary bg-opacity-10 text-secondary">Return</span>
+                </div>
+                <h6 class="fw-semibold text-primary mt-1 mb-1">Return Shuttles to UNICAL Campus &amp; Hotels</h6>
+                <p class="text-muted small mb-0">
+                  Coaches will transport attendees safely back to the campus and primary accommodation points in Rende and Cosenza.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Map & Location Section -->
+  <div class="py-4 mb-4">
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-5 d-flex flex-column justify-content-between">
+        <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white h-100">
+          <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold mb-3 align-self-start">
+            <i class="bi bi-map-fill me-1"></i>Location &amp; Coordinates
+          </span>
+          <h3 class="fw-bold text-dark mb-3">Villa Rendano</h3>
+          <p class="text-secondary mb-3">
+            <strong>Address:</strong><br>
+            Via San Triglio, 21<br>
+            87100 Cosenza (CS), Italy
+          </p>
+          <p class="text-secondary mb-4">
+            <strong>Coordinates:</strong> 39.2941° N, 16.2575° E<br>
+            <strong>Position:</strong> Historical center of Cosenza, Colle Triglio hill.
+          </p>
+
+          <div class="d-flex flex-column gap-2 mt-auto">
+            <a href="https://maps.google.com/?q=Villa+Rendano+Via+San+Triglio+21+Cosenza" target="_blank" rel="noopener noreferrer" class="btn btn-primary rounded-pill px-4 py-2.5 fw-semibold shadow-xs">
+              <i class="bi bi-geo-alt me-2"></i>Open in Google Maps ↗
+            </a>
+            <a href="https://www.villarendano.it/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary rounded-pill px-4 py-2.5 fw-semibold">
+              <i class="bi bi-globe me-2"></i>Visit villarendano.it ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100" style="min-height: 380px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.706173004313!2d16.256247776495147!3d39.29414212318854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133f00938634e5a9%3A0x62955f137e0e7a2b!2sVilla%20Rendano!5e0!3m2!1sen!2sit!4v1700000000000!5m2!1sen!2sit"
+            width="100%" height="100%" style="border:0; min-height: 380px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Villa Rendano Map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Co-located Conferences & Sponsors Included as in standard site layout -->
+<section class="container-fluid d-flex flex-column gap-4 bg-light py-5">
+  {% include colocated-conferences.html %}
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

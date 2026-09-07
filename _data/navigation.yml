@@ -75,6 +75,8 @@ main:
         url: /program/#at-a-glance
       - title: Full Technical Program
         url: /program/#full-program
+      - title: Social Event
+        url: /social-event/
 
   - title: Keynotes
     dropdown: true
@@ -107,6 +109,10 @@ main:
     menu_class: dropdown-menu-glass
     link_class: text-wrap
     items:
+      - title: Social Event
+        header: true
+      - title: "Social Event @ Villa Rendano"
+        url: /social-event/
       - title: Smart World Challenge
         header: true
       - title: "IEEE Smart World Challenge (Hackathon)"
@@ -141,6 +147,8 @@ main:
         url: /travel/getting-there/
       - title: Registration
         url: /registration
+      - title: Social Event
+        url: /social-event/
       - title: Sponsors
         url: /sponsors
       - title: Venue
