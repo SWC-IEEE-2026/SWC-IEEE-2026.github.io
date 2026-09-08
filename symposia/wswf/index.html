@@ -424,6 +424,10 @@ title: Women in the Smart World Symposium 2026
                                 <div class="d-flex align-items-center gap-2 mb-1 flex-wrap">
                                     <span class="badge bg-primary bg-opacity-10 text-primary fw-bold">{{ session.step
                                         }}</span>
+                                    {% if session.time %}
+                                    <span class="badge bg-light text-dark border small"><i
+                                            class="bi bi-clock me-1 text-primary"></i>{{ session.time }}</span>
+                                    {% endif %}
                                     {% if session.room %}
                                     <span class="badge bg-secondary bg-opacity-10 text-secondary small"><i
                                             class="bi bi-geo-alt-fill me-1"></i>{{ session.room }}</span>
