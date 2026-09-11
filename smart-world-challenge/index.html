@@ -62,6 +62,25 @@ title: IEEE Smart World Challenge
     animation: pulseGlow 2s infinite;
   }
 
+  .live-status-pill.closed {
+    background: rgba(239, 68, 68, 0.12);
+    border-color: rgba(239, 68, 68, 0.35);
+    color: #fca5a5;
+    box-shadow: 0 4px 16px rgba(239, 68, 68, 0.15);
+  }
+
+  .live-status-pill.closed:hover {
+    background: rgba(239, 68, 68, 0.18);
+    border-color: rgba(239, 68, 68, 0.5);
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.25);
+  }
+
+  .pulse-dot.closed {
+    background-color: #ef4444;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.6);
+    animation: none;
+  }
+
   @keyframes pulseGlow {
     0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
     70% { transform: scale(1.15); box-shadow: 0 0 0 9px rgba(34, 197, 94, 0); }
@@ -311,9 +330,9 @@ title: IEEE Smart World Challenge
     
     <!-- Status Badge -->
     <div>
-      <span class="live-status-pill rounded-pill d-inline-flex align-items-center gap-2">
-        <span class="pulse-dot"></span>
-        <span>Applications Open • 35 Selected Spots</span>
+      <span class="live-status-pill closed rounded-pill d-inline-flex align-items-center gap-2">
+        <span class="pulse-dot closed"></span>
+        <span>Applications Closed • 35 Selected Spots</span>
       </span>
     </div>
 
@@ -357,12 +376,10 @@ title: IEEE Smart World Challenge
     </div>
 
     <!-- Action Buttons -->
-    <div class="d-flex flex-wrap justify-content-center gap-3 mt-2">
-      <a class="btn btn-cyber-primary fs-5"
-        href="https://www.eventbrite.it/e/ieee-smart-world-challenge-international-research-hackathon-tickets-1994788936407?aff=IEEE"
-        target="_blank">
-        <i class="bi bi-rocket-takeoff-fill me-2"></i>Apply via Eventbrite
-      </a>
+    <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 mt-2">
+      <span class="badge bg-secondary bg-opacity-75 text-white fs-6 px-3 py-2.5 rounded-pill fw-semibold">
+        <i class="bi bi-x-circle me-1"></i>Applications Closed
+      </span>
       <a class="btn btn-cyber-outline fs-6" href="#the-challenge">
         <i class="bi bi-arrow-down-circle me-2"></i>Explore Challenge
       </a>
@@ -622,15 +639,10 @@ title: IEEE Smart World Challenge
 
     <!-- Registration CTA Banner -->
     <div class="p-4 p-md-5 text-center text-white rounded-4 shadow-lg my-3" style="background: linear-gradient(135deg, #070d19 0%, #132744 100%);">
-      <h3 class="display-6 fw-bold mb-3 text-white">Apply for the Challenge</h3>
-      <p class="fs-5 opacity-90 max-w-75 mx-auto mb-4" style="max-width: 650px;">
-        To apply, complete the Eventbrite application form. Applications are evaluated to select 35 multidisciplinary participants.
+      <h3 class="display-6 fw-bold mb-3 text-white">Applications Closed</h3>
+      <p class="fs-5 opacity-90 max-w-75 mx-auto mb-0" style="max-width: 650px;">
+        Applications and registrations for the IEEE Smart World Challenge are now officially closed.
       </p>
-      <a class="btn btn-cyber-primary fs-5"
-        href="https://www.eventbrite.it/e/ieee-smart-world-challenge-international-research-hackathon-tickets-1994788936407?aff=IEEE"
-        target="_blank">
-        <i class="bi bi-rocket-takeoff-fill me-2"></i>Complete Application Form
-      </a>
     </div>
 
   </div>
