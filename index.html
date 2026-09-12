@@ -49,9 +49,31 @@ title: Home
     </div>
   </div>
 
-  <div class="alert alert-info alert-dismissible fade show text-center shadow-sm mb-4" role="alert">
-    <i class="bi bi-geo-alt-fill me-1"></i><strong>On-Site Check-in:</strong> Upon arrival, attendee check-in and attendance registration will take place at the entrance of <strong>Aula Magna</strong>.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  <!-- Next Year Announcement Spotlight Card -->
+  <div class="card border-0 shadow-sm rounded-4 p-3 mb-4 text-dark position-relative overflow-hidden" style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-left: 5px solid #0d6efd !important;">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <div class="d-flex align-items-center gap-3">
+        <div class="rounded-circle bg-primary text-white p-2 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 44px; height: 44px;">
+          <i class="bi bi-stars fs-5 text-warning"></i>
+        </div>
+        <div>
+          <div class="d-flex align-items-center gap-2 mb-0.5 flex-wrap">
+            <span class="badge bg-primary text-white fw-bold px-2 py-0.5 rounded-pill" style="font-size: 0.72rem;">NEXT EDITION</span>
+            <span class="fw-bold text-dark" style="font-size: 0.95rem;">IEEE SWC Next Year (2027) &bull; Zhengzhou, Henan, China</span>
+          </div>
+          <p class="mb-0 small text-muted">
+            <i class="bi bi-calendar3 me-1 text-primary"></i><strong>{{site.data.swc_data.dates.nextYearDates}}</strong> (Tentative) &mdash; Explore presentation slides on venue, co-located conferences, and organization.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap gap-2 align-items-center flex-shrink-0">
+        <a href="{{ site.data.swc_data.dates.nextYearSlides | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary rounded-pill px-3.5 py-1.5 fw-bold shadow-sm text-nowrap d-inline-flex align-items-center gap-1.5" style="font-size: 0.85rem;">
+          <i class="bi bi-file-earmark-slides-fill"></i>
+          <span>View Slides</span>
+          <i class="bi bi-box-arrow-up-right small"></i>
+        </a>
+      </div>
+    </div>
   </div>
 
   <div class="row g-5">
@@ -89,9 +111,38 @@ title: Home
     </div>
 
     <div class="col-lg-4 mb-3 mb-sm-0">
-      <div class="card dates-card border-0">
+      <div class="card dates-card border-0 shadow-sm">
         <div class="card-body p-4">
-          <h4 class="fs-5 fw-bold mb-4">Key Dates and Deadlines</h4>
+          <h4 class="fs-5 fw-bold mb-3">Key Dates and Deadlines</h4>
+
+          <!-- Next Year Featured Spotlight Box -->
+          <div class="p-3 mb-4 rounded-3 shadow-sm position-relative overflow-hidden" style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1.5px solid #0d6efd;">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <span class="badge bg-primary text-white text-uppercase fw-bold px-2 py-1 rounded-pill" style="font-size: 0.72rem; letter-spacing: 0.5px;">
+                <i class="bi bi-stars text-warning me-1"></i>Next Edition
+              </span>
+              <span class="badge bg-warning text-dark fw-bold px-2 py-0.5 rounded-pill" style="font-size: 0.7rem;">Tentative</span>
+            </div>
+            <h5 class="fw-bold text-primary mb-1" style="font-size: 1.05rem;">
+              IEEE SWC Next Year (2027)
+            </h5>
+            <div class="fw-bold text-dark mb-1" style="font-size: 0.88rem;">
+              <i class="bi bi-calendar3 me-1 text-primary"></i>{{site.data.swc_data.dates.nextYearDates}}
+            </div>
+            <div class="text-secondary small mb-3" style="font-size: 0.82rem;">
+              <i class="bi bi-geo-alt-fill text-danger me-1"></i>{{site.data.swc_data.dates.nextYearLocation}}
+            </div>
+            <a href="{{ site.data.swc_data.dates.nextYearSlides | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm w-100 fw-bold d-flex align-items-center justify-content-center gap-2 shadow-sm py-2" style="border-radius: 8px;">
+              <i class="bi bi-file-earmark-slides-fill"></i>
+              <span>View Presentation Slides</span>
+              <i class="bi bi-box-arrow-up-right small"></i>
+            </a>
+          </div>
+
+          <div class="text-muted small fw-bold text-uppercase mb-3" style="font-size: 0.72rem; letter-spacing: 0.5px;">
+            2026 Deadlines
+          </div>
+
           <div class="d-flex flex-column">
 
             <div class="date-item past">

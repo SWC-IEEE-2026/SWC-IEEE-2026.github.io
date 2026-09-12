@@ -9,6 +9,9 @@
     "tutorialWorkshopSpecialSessionDue": "Feb 28, 2026",
     "tutorialWorkshopSpecialSessionAcceptance": "Mar 7, 2026",
     "conferenceDates": "September 7 - 11, 2026",
-    "earlyBird": "August 15, 2026"
+    "earlyBird": "August 15, 2026",
+    "nextYearDates": "Oct 29 - Nov 02, 2027",
+    "nextYearLocation": "Zhengzhou, Henan, China",
+    "nextYearSlides": "/assets/files/IEEE-SWC-2027.pdf"
   }
 }

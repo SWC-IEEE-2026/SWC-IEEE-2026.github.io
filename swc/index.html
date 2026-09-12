@@ -132,6 +132,22 @@ title: IEEE SWC 2026
                 </div>
               </div>
 
+              <!-- Next Year Box in SWC Sidebar -->
+              <div class="mt-3 p-3 rounded-3 border border-primary bg-primary-subtle text-dark shadow-sm">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge bg-primary text-white text-uppercase fw-bold" style="font-size: 0.7rem;">
+                    <i class="bi bi-stars text-warning me-1"></i>Next Edition
+                  </span>
+                  <span class="badge bg-warning text-dark fw-bold" style="font-size: 0.7rem;">Tentative</span>
+                </div>
+                <div class="fw-bold text-primary mb-1" style="font-size: 0.95rem;">IEEE SWC Next Year (2027)</div>
+                <div class="small fw-bold text-dark mb-1"><i class="bi bi-calendar3 me-1 text-primary"></i>{{site.data.swc_data.dates.nextYearDates}}</div>
+                <div class="small text-muted mb-2"><i class="bi bi-geo-alt-fill text-danger me-1"></i>{{site.data.swc_data.dates.nextYearLocation}}</div>
+                <a href="{{ site.data.swc_data.dates.nextYearSlides | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm w-100 fw-bold d-flex align-items-center justify-content-center gap-1.5" style="border-radius: 6px;">
+                  <i class="bi bi-file-earmark-slides-fill"></i> View Slides <i class="bi bi-box-arrow-up-right small"></i>
+                </a>
+              </div>
+
             </div>
           </div>
 
@@ -303,10 +319,6 @@ title: IEEE SWC 2026
 
     <div class="col-lg-8 d-flex flex-column gap-4">
       {% include presentation-callout.html %}
-      <div class="alert alert-info alert-dismissible fade show text-center shadow-sm mb-4" role="alert">
-        <i class="bi bi-geo-alt-fill me-1"></i><strong>On-Site Check-in:</strong> Upon arrival, attendee check-in and attendance registration will take place at the entrance of <strong>Aula Magna</strong>.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
       <div>
         <h2 class="section-title fs-2 text-center">Call for Papers</h2>
         <p class="fs-5 text-muted text-align-justify">
