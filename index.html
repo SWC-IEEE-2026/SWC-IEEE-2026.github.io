@@ -49,6 +49,39 @@ title: Home
     </div>
   </div>
 
+  <!-- Keynotes & Tutorials Slides Spotlight Card -->
+  <div class="card border-0 shadow-sm rounded-4 p-4 mb-3 text-white position-relative overflow-hidden" style="background: linear-gradient(135deg, #07152f 0%, #064e3b 50%, #047857 100%);">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+      <div class="d-flex align-items-start align-items-sm-center gap-3">
+        <div class="rounded-circle bg-white bg-opacity-20 p-3 d-flex align-items-center justify-content-center text-white flex-shrink-0" style="width: 54px; height: 54px;">
+          <i class="bi bi-file-earmark-slides-fill fs-3 text-warning"></i>
+        </div>
+        <div>
+          <div class="d-flex align-items-center gap-2 mb-1 flex-wrap">
+            <span class="badge bg-warning text-dark fw-bold px-2.5 py-1 rounded-pill">CONFERENCE MATERIALS</span>
+            <span class="badge rounded-pill px-3 py-1 fw-bold" style="background: rgba(255, 255, 255, 0.25); color: #ffffff !important; border: 1px solid rgba(255, 255, 255, 0.4); font-size: 0.85rem;">
+              <i class="bi bi-collection-play-fill text-warning me-1"></i>Keynotes &amp; Tutorials Slides
+            </span>
+          </div>
+          <h4 class="fw-bold mb-1 text-white">Presentation Slides are Now Available!</h4>
+          <p class="mb-0 small" style="color: rgba(255, 255, 255, 0.88);">
+            Access and download the official presentation slides from the distinguished Keynote Speakers and Tutorial sessions held during IEEE SWC 2026.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap gap-2 align-items-center flex-shrink-0">
+        <a href="{{ '/slides/' | relative_url }}" class="btn btn-outline-light rounded-pill px-3.5 py-2.5 fw-bold text-nowrap">
+          <i class="bi bi-grid-fill me-1"></i>View Catalog
+        </a>
+        <a href="{{ site.data.swc_data.slidesDrive }}" target="_blank" rel="noopener noreferrer" class="btn btn-warning rounded-pill px-4 py-2.5 fw-bold text-dark shadow-sm text-nowrap d-inline-flex align-items-center gap-1.5">
+          <i class="bi bi-google"></i>
+          <span>Open Google Drive</span>
+          <i class="bi bi-box-arrow-up-right small"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- Next Year Announcement Spotlight Card -->
   <div class="card border-0 shadow-sm rounded-4 p-3 mb-4 text-dark position-relative overflow-hidden" style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-left: 5px solid #0d6efd !important;">
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
@@ -334,6 +367,36 @@ title: Home
       shaping the future of Smart Worlds.</p>
   </div>
 
+  <!-- Keynotes & Tutorials Slides Notice Banner -->
+  <div class="alert bg-white border border-primary border-opacity-25 rounded-4 p-3 p-md-4 shadow-sm mb-5 mx-auto" style="max-width: 960px; background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%); border-left: 5px solid #198754 !important;">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 text-center text-md-start">
+      <div class="d-flex align-items-center gap-3">
+        <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 shadow-sm" style="width: 48px; height: 48px; background: linear-gradient(135deg, #198754 0%, #20c997 100%) !important;">
+          <i class="bi bi-file-earmark-slides-fill fs-5"></i>
+        </div>
+        <div>
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 flex-wrap mb-1">
+            <h5 class="fw-bold text-dark mb-0">Presentation Slides &amp; Materials Available</h5>
+            <span class="badge bg-success bg-opacity-10 text-success small fw-semibold">Google Drive</span>
+          </div>
+          <p class="text-muted small mb-0">
+            Official slides from all Keynote talks and Tutorial sessions are archived and ready for download.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex gap-2 flex-shrink-0 flex-wrap justify-content-center">
+        <a href="{{ '/slides/' | relative_url }}" class="btn btn-outline-secondary btn-sm rounded-pill px-3 py-2 fw-semibold text-nowrap">
+          <i class="bi bi-collection-play me-1"></i>All Sessions
+        </a>
+        <a href="{{ site.data.swc_data.slidesFolders.keynotes }}" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-sm rounded-pill px-3.5 py-2 fw-semibold text-nowrap d-inline-flex align-items-center gap-1.5 shadow-xs" style="background: linear-gradient(135deg, #198754 0%, #0f5132 100%); border: none;">
+          <i class="bi bi-google"></i>
+          <span>Keynotes Folder (Drive)</span>
+          <i class="bi bi-box-arrow-up-right small"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- Academic Keynotes Subsection -->
   <div class="text-center mb-4">
     <h3 class="fs-4 fw-bold text-dark mb-1">Academic Keynotes</h3>
@@ -426,6 +489,24 @@ title: Home
         </p>
         <div class="mt-auto">
           <a href="{{ 'keynotes/weisong-shi/' | relative_url }}" class="btn btn-outline-primary rounded-pill w-100">Read
+            Abstract</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="custom-card h-100 p-4 text-center">
+        <img src="{{ '/assets/images_26/people/sandra_savaglio.webp' | relative_url }}" alt="Prof. Sandra Savaglio"
+          class="circle-img mb-4" style="width: 150px; height: 150px; object-fit: cover;" />
+        <h5 class="fw-bold">Prof. Sandra Savaglio</h5>
+        <p class="text-muted small mb-2">University of Calabria, Italy</p>
+        <p class="text-primary fw-bold small mb-3"><i class="bi bi-calendar-event me-2"></i>10 September 2026 &middot; <i class="bi bi-geo-alt-fill me-1"></i>Aula Magna</p>
+        <h6 class="fw-bold text-primary mb-3">Exploring the Universe in a Male-Dominated Environment</h6>
+        <p class="small text-secondary mb-4">
+          Resilience and inclusion lessons from an international career in astrophysics across Europe and the USA.
+        </p>
+        <div class="mt-auto">
+          <a href="{{ 'symposia/wswf/keynote/' | relative_url }}" class="btn btn-outline-primary rounded-pill w-100">Read
             Abstract</a>
         </div>
       </div>

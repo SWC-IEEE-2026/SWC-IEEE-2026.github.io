@@ -75,6 +75,8 @@ main:
         url: /program/#at-a-glance
       - title: Full Technical Program
         url: /program/#full-program
+      - title: Keynotes & Tutorials Slides
+        url: /slides/
       - title: Social Event
         url: /social-event/
 
@@ -82,6 +84,11 @@ main:
     dropdown: true
     menu_class: dropdown-menu-glass
     items:
+      - title: Keynotes & Tutorials Slides
+        url: /slides/
+      - divider: true
+        class: "border-top mt-2 pt-2"
+        items: []
       - title: Academic Keynotes
         header: true
       - title: "Dr. Qingsong Wen (8 Sep)"
@@ -94,6 +101,8 @@ main:
         url: /keynotes/vincenzo-piuri
       - title: "Dr. Weisong Shi (10 Sep)"
         url: /keynotes/weisong-shi
+      - title: "Prof. Sandra Savaglio (10 Sep)"
+        url: /symposia/wswf/keynote/
       - divider: true
         class: "border-top mt-2 pt-2"
         items: []
@@ -123,6 +132,8 @@ main:
         url: /phd-forum/
       - title: Tutorials
         header: true
+      - title: "Keynotes & Tutorials Slides"
+        url: /slides/
       - title: "Beyond Connected Things: New Paradigms for the Pervasive IoT"
         url: /tutorials/pervasive-iot/
       - title: "Designing and Assembling Smart Cyber-Physical Systems"

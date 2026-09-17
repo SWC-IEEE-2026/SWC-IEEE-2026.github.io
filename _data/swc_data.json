@@ -12,6 +12,15 @@
     "earlyBird": "August 15, 2026",
     "nextYearDates": "Oct 29 - Nov 02, 2027",
     "nextYearLocation": "Zhengzhou, Henan, China",
-    "nextYearSlides": "/assets/files/IEEE-SWC-2027.pdf"
+    "nextYearSlides": "/assets/files/IEEE-SWC-2027.pdf",
+    "slidesDrive": "https://drive.google.com/drive/folders/1AxkYN5cOVUilyf-wMzAFb0598k1ZlN9_?usp=drive_link"
+  },
+  "slidesDrive": "https://drive.google.com/drive/folders/1AxkYN5cOVUilyf-wMzAFb0598k1ZlN9_?usp=drive_link",
+  "slidesFolders": {
+    "root": "https://drive.google.com/drive/folders/1AxkYN5cOVUilyf-wMzAFb0598k1ZlN9_?usp=drive_link",
+    "keynotes": "https://drive.google.com/drive/folders/1EhhRwONMGVDQ46TX2w2ti5CAm5n9uF4E?usp=drive_link",
+    "keynotesAcademic": "https://drive.google.com/drive/folders/1tHS7Frb67J4jxNjtkVnCwLg1txTmZp5S?usp=drive_link",
+    "keynotesIndustrial": "https://drive.google.com/drive/folders/1AO3dGKpywn0huSWt7PE6rrS9ZXeT_Qya?usp=drive_link",
+    "tutorials": "https://drive.google.com/drive/folders/15cXhBLikVYrkeduJCUPaG-CxsN-xyLU4?usp=drive_link"
   }
 }
